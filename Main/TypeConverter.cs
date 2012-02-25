@@ -312,6 +312,10 @@ namespace TESVSnip
 
         public static bool IsLikelyString(ArraySegment<byte> data)
         {
+            if (data.Array[0]>=0xE0&&data.Count>=7)
+            {
+                return true;
+            }
             bool isAscii = true;
             for (int i = 0; i < data.Count - 1 && isAscii; ++i)
             {
@@ -371,13 +375,13 @@ namespace TESVSnip
         {
             int len = Encoding.CP1252.GetByteCount(str);
             var data = new byte[len + 1];
-            Encoding.CP1252.GetBytes(str, 0, len, data, 0);
+            Encoding.CP1252.GetBytes(str).CopyTo(data,0);
             data[len] = 0;
             return data;
         }
-
         /// <summary>
         /// Encode short byte length prefixed string
+        /// fix for UTF-8
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>

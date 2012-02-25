@@ -192,7 +192,7 @@ namespace TESVSnip.Collections.Generic
         //
         // Returns:
         //     The zero-based index of the first occurrence of an element that matches the
-        //     conditions defined by match, if found; otherwise, –1.
+        //     conditions defined by match, if found; otherwise, ?.
         //
         // Exceptions:
         //   System.ArgumentNullException:

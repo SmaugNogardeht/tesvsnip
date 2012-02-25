@@ -672,7 +672,7 @@ namespace TESVSnip
                                 }
                                 else
                                 {
-                                    byte[] conv = System.Text.Encoding.Default.GetBytes(ltag.str.Text);
+                                    byte[] conv = System.Text.Encoding.UTF8.GetBytes(ltag.str.Text);//强制使用UFT-8
                                     bytes.AddRange(conv);
                                     bytes.Add(0);
                                 }

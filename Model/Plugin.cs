@@ -355,7 +355,7 @@ namespace TESVSnip
 
             string prefix = Path.Combine(StringsFolder, FileName);
             prefix += "_" + Properties.Settings.Default.LocalizationName;
-
+            //utf8 fix
             System.Text.Encoding enc = Encoding.CP1252;
             FontLangInfo fontInfo;
             if (Encoding.TryGetFontInfo(locName, out fontInfo))

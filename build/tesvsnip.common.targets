@@ -25,8 +25,8 @@
     <Trademark>All Rights Reserved</Trademark>
     <!-- <SignAssembly>true</SignAssembly> -->
     <PublisherName>TESVSnip</PublisherName>
-    <AssemblyOriginatorKeyFile Condition="'$(AssemblyOriginatorKeyFile)' == ''">$(BUILD_ROOT)\build\be.snk</AssemblyOriginatorKeyFile>
-    <ManifestKeyFile Condition="'$(ManifestKeyFile)' == ''">$(BUILD_ROOT)\build\be.snk</ManifestKeyFile>
+    <AssemblyOriginatorKeyFile Condition="'$(AssemblyOriginatorKeyFile)' == ''">$(BUILD_ROOT)\build\tesvsnip.snk</AssemblyOriginatorKeyFile>
+    <ManifestKeyFile Condition="'$(ManifestKeyFile)' == ''">$(BUILD_ROOT)\build\tesvsnip.snk</ManifestKeyFile>
     <GitVersionNumber>0</GitVersionNumber>
   </PropertyGroup>
       
