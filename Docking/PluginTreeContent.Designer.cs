@@ -35,6 +35,7 @@
             // 
             // pluginTreeControl
             // 
+            this.pluginTreeControl.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             resources.ApplyResources(this.pluginTreeControl, "pluginTreeControl");
             this.pluginTreeControl.Name = "pluginTreeControl";
             this.pluginTreeControl.SelectedRecord = null;

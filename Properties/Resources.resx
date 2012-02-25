@@ -127,23 +127,11 @@
   <data name="configure_toolbars" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\configure_toolbars.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Filter_Options_Text" xml:space="preserve">
-    <value>过滤器设置</value>
-    <comment>Filter Options</comment>
-  </data>
   <data name="Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Save.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="editclear" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\editclear.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Copy_Record_to_Clipboard" xml:space="preserve">
-    <value>复制到剪贴板</value>
-    <comment>Copy Record to Clipboard</comment>
-  </data>
-  <data name="CannotCopyPlugin" xml:space="preserve">
-    <value>不能复制整个MOD</value>
-    <comment>Cannot copy a plugin</comment>
   </data>
   <data name="Filtering" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Controls\ObjectListView\Resources\filter1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,11 +154,6 @@
   <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CannotDropOnDescendent" xml:space="preserve">
-    <value>不能拖放至子项目内(否则将导致循环错误!)</value>
-    <comment>Cannot drop on descendant
-(think of the temporal paradoxes!)</comment>
-  </data>
   <data name="checkedbox1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkedbox1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -179,16 +162,6 @@
   </data>
   <data name="Edit_UndoHS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Edit_UndoHS.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MainView_FirstTimeSkyrimLoad_ExcludeInquiry" xml:space="preserve">
-    <value>首次载入 'skyrim.esm' 文件.需要占用大量内存.是否设置分类过滤器控制载入?</value>
-    <comment>This is the first time 'skyrim.esm' has been loaded.
-The file is large size and takes significant memory to load.
-Would you like to configure which Records to exclude?</comment>
-  </data>
-  <data name="CannotSanitizeLooseGroups" xml:space="preserve">
-    <value>MOD的 cell, world 或 dial 结构错误, 自动修复失败</value>
-    <comment>The subgroup structure of this plugins cell, world or dial records appears to be incorrect, and cannot be fixed automatically</comment>
   </data>
   <data name="RolledBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RolledBack.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,34 +175,17 @@ Would you like to configure which Records to exclude?</comment>
   <data name="bookmark_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bookmark_add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Missing_Record" xml:space="preserve">
-    <value>记录丢失</value>
-    <comment>Missing Record</comment>
-  </data>
   <data name="tesv_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>../Resources/tesv_ico.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="xdays" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\xdays.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="InfoText" xml:space="preserve">
-    <value>提示</value>
-    <comment>Info</comment>
-  </data>
-  <data name="CannotParseRecordStructure" xml:space="preserve">
-    <value>无法解析 RecordStructure.xml 文件. 部分记录编辑功能将失效.</value>
-    <comment>Could not parse RecordStructure.xml. Record-at-once editing will be unavailable.</comment>
-  </data>
   <data name="LoadWarning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoadWarning.rtf;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="next" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\next.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CloseActivePluginInquiry" xml:space="preserve">
-    <value>关闭已打开的MOD,将会丢失未保存的内容,是否继续?</value>
-    <comment>This will close the active plugin, and you will lose any unsaved changes.
-Are you sure you wish to continue?</comment>
   </data>
   <data name="move_task_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\move_task_down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -243,73 +199,20 @@ Are you sure you wish to continue?</comment>
   <data name="special_paste" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\special_paste.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CannotSanitizeUnknownRecords" xml:space="preserve">
-    <value>MOD包含了无法识别的记录,自动修复失败</value>
-    <comment>The plugin contained records which were not recognized, and cannot be fixed automatically</comment>
-  </data>
-  <data name="No_Plugins_Loaded" xml:space="preserve">
-    <value>未载入mod</value>
-    <comment>No Plugins Loaded</comment>
-  </data>
-  <data name="NoPluginSelectedToSave" xml:space="preserve">
-    <value>未选中MOD,保存终止</value>
-    <comment>No plugin selected to save</comment>
-  </data>
   <data name="Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Copy.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="deletecell" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deletecell.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TheClipboardIsEmpty" xml:space="preserve">
-    <value>剪贴板是空的</value>
-    <comment>The clipboard is empty</comment>
-  </data>
-  <data name="NoPluginSelectedCannotContinue" xml:space="preserve">
-    <value>未选中MOD,操作终止.</value>
-    <comment>No plugin selected. Cannot continue.</comment>
-  </data>
-  <data name="CannotDragNodesWithDifferentParents" xml:space="preserve">
-    <value>不能拖放父节点不同的多个节点</value>
-    <comment>Cannot drag nodes with different parents</comment>
-  </data>
-  <data name="CannotCopyNodesFromDifferentParents" xml:space="preserve">
-    <value>不能复制父节点不同的多个节点</value>
-    <comment>Cannot copy nodes from different parents</comment>
-  </data>
-  <data name="ErrorText" xml:space="preserve">
-    <value>错误</value>
-    <comment>Error</comment>
-  </data>
-  <data name="CloseAllLoseChangesInquiry" xml:space="preserve">
-    <value>关闭所有已打开的MOD,将会丢失未保存的内容,是否继续?</value>
-    <comment>This will close all open plugins, and you will lose any unsaved changes.
-Are you sure you wish to continue?</comment>
-  </data>
-  <data name="NoPluginSelected" xml:space="preserve">
-    <value>未选中MOD.</value>
-    <comment>No plugin selected</comment>
-  </data>
   <data name="Open" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Open.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cannot_cut_a_plugin" xml:space="preserve">
-    <value>不能剪切整个MOD</value>
-    <comment>Cannot cut a plugin</comment>
   </data>
   <data name="Revert" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Revert.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Missing_Plugin" xml:space="preserve">
-    <value>mod丢失</value>
-    <comment>Missing Plugin</comment>
-  </data>
   <data name="ClearFiltering" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Controls\ObjectListView\Resources\clear-filter1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DeleteNode" xml:space="preserve">
-    <value>删除提示</value>
-    <comment>Delete Node</comment>
   </data>
   <data name="EditTable" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EditTable.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -317,21 +220,8 @@ Are you sure you wish to continue?</comment>
   <data name="checkedbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkedbox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FirstLoadOptions" xml:space="preserve">
-    <value>初始化设置</value>
-    <comment>First Load Options</comment>
-  </data>
-  <data name="ESM_Large_File_Size_Inquiry" xml:space="preserve">
-    <value>大型文件需要占用大量内存载入.是否设置排除该文件?</value>
-    <comment>The file is large size and takes significant memory to load.
-Would you like to apply the record exclusions?</comment>
-  </data>
   <data name="agt_stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\agt_stop.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FullRecordEditorTitle" xml:space="preserve">
-    <value>完整编辑器</value>
-    <comment>Full Record Editor</comment>
   </data>
   <data name="down" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -342,19 +232,11 @@ Would you like to apply the record exclusions?</comment>
   <data name="insertcell" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\insertcell.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SearchProgressChanged_Items_Found" xml:space="preserve">
-    <value>共找到{0}个</value>
-    <comment>{0} Found</comment>
-  </data>
   <data name="edit_remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit_remove.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="find" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\find.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PluginLacksAValidTes4RecordCannotContinue" xml:space="preserve">
-    <value>TES4记录丢失,操作终止</value>
-    <comment>Plugin lacks a valid TES4 record. Cannot continue</comment>
   </data>
   <data name="emptybox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\emptybox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -362,29 +244,11 @@ Would you like to apply the record exclusions?</comment>
   <data name="quick_restart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\quick_restart.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WarningText" xml:space="preserve">
-    <value>警告</value>
-    <comment>Warning</comment>
-  </data>
-  <data name="AreYouSureInquiry" xml:space="preserve">
-    <value>确定?</value>
-    <comment>Are you sure?</comment>
-  </data>
   <data name="reload_all_tabs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reload_all_tabs.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GeneralSpellWarningInquiry" xml:space="preserve">
-    <value>请再次确认你正在进行什么操作,是否继续?</value>
-    <comment>If you don't know what this does, you probably don't want to click it
- Continue anyway?</comment>
-  </data>
-  <data name="SavePluginWithFilterAppliedInquiry" xml:space="preserve">
-    <value>这个文件可能被修改或删除内容,是否保存?</value>
-    <comment>This file has had a filter applied and contents potentially removed.  
-Do you still want to save?</comment>
   </data>
   <data name="Warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\warning.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -392,7 +256,111 @@ Do you still want to save?</comment>
   <data name="_14_layer_deletelayer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\14_layer_deletelayer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AreYouSureInquiry" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="CannotCopyNodesFromDifferentParents" xml:space="preserve">
+    <value>Cannot copy nodes from different parents</value>
+  </data>
+  <data name="CannotCopyPlugin" xml:space="preserve">
+    <value>Cannot copy a plugin</value>
+  </data>
+  <data name="CannotDragNodesWithDifferentParents" xml:space="preserve">
+    <value>Cannot drag nodes with different parents</value>
+  </data>
+  <data name="CannotDropOnDescendent" xml:space="preserve">
+    <value>Cannot drop on descendant
+(think of the temporal paradoxes!)</value>
+  </data>
+  <data name="CannotParseRecordStructure" xml:space="preserve">
+    <value>Could not parse RecordStructure.xml. Record-at-once editing will be unavailable.</value>
+  </data>
+  <data name="CannotSanitizeLooseGroups" xml:space="preserve">
+    <value>The subgroup structure of this plugins cell, world or dial records appears to be incorrect, and cannot be fixed automatically</value>
+  </data>
+  <data name="CannotSanitizeUnknownRecords" xml:space="preserve">
+    <value>The plugin contained records which were not recognized, and cannot be fixed automatically</value>
+  </data>
+  <data name="Cannot_cut_a_plugin" xml:space="preserve">
+    <value>Cannot cut a plugin</value>
+  </data>
+  <data name="CloseActivePluginInquiry" xml:space="preserve">
+    <value>This will close the active plugin, and you will lose any unsaved changes.
+Are you sure you wish to continue?</value>
+  </data>
+  <data name="CloseAllLoseChangesInquiry" xml:space="preserve">
+    <value>This will close all open plugins, and you will lose any unsaved changes.
+Are you sure you wish to continue?</value>
+  </data>
+  <data name="Copy_Record_to_Clipboard" xml:space="preserve">
+    <value>Copy Record to Clipboard</value>
+  </data>
+  <data name="DeleteNode" xml:space="preserve">
+    <value>Delete Node</value>
+  </data>
+  <data name="ErrorText" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ESM_Large_File_Size_Inquiry" xml:space="preserve">
+    <value>The file is large size and takes significant memory to load.
+Would you like to apply the record exclusions?</value>
+  </data>
+  <data name="Filter_Options_Text" xml:space="preserve">
+    <value>Filter Options</value>
+  </data>
+  <data name="FirstLoadOptions" xml:space="preserve">
+    <value>First Load Options</value>
+  </data>
+  <data name="FullRecordEditorTitle" xml:space="preserve">
+    <value>Full Record Editor</value>
+  </data>
+  <data name="GeneralSpellWarningInquiry" xml:space="preserve">
+    <value>If you don't know what this does, you probably don't want to click it
+ Continue anyway?</value>
+  </data>
+  <data name="InfoText" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="MainView_FirstTimeSkyrimLoad_ExcludeInquiry" xml:space="preserve">
+    <value>This is the first time 'skyrim.esm' has been loaded.
+The file is large size and takes significant memory to load.
+Would you like to configure which Records to exclude?</value>
+  </data>
+  <data name="Missing_Plugin" xml:space="preserve">
+    <value>Missing Plugin</value>
+  </data>
+  <data name="Missing_Record" xml:space="preserve">
+    <value>Missing Record</value>
+  </data>
+  <data name="NoPluginSelected" xml:space="preserve">
+    <value>No plugin selected</value>
+  </data>
+  <data name="NoPluginSelectedCannotContinue" xml:space="preserve">
+    <value>No plugin selected. Cannot continue.</value>
+  </data>
+  <data name="NoPluginSelectedToSave" xml:space="preserve">
+    <value>No plugin selected to save</value>
+  </data>
+  <data name="No_Plugins_Loaded" xml:space="preserve">
+    <value>No Plugins Loaded</value>
+  </data>
+  <data name="PluginLacksAValidTes4RecordCannotContinue" xml:space="preserve">
+    <value>Plugin lacks a valid TES4 record. Cannot continue</value>
+  </data>
   <data name="RestartText" xml:space="preserve">
-    <value>是否立即重启程序应用编码设置(注意修改是否已经保存)</value>
+    <value>To confirm the coding setting, restart Tesvsnip now?</value>
+  </data>
+  <data name="SavePluginWithFilterAppliedInquiry" xml:space="preserve">
+    <value>This file has had a filter applied and contents potentially removed.  
+Do you still want to save?</value>
+  </data>
+  <data name="SearchProgressChanged_Items_Found" xml:space="preserve">
+    <value>{0} Found</value>
+  </data>
+  <data name="TheClipboardIsEmpty" xml:space="preserve">
+    <value>The clipboard is empty</value>
+  </data>
+  <data name="WarningText" xml:space="preserve">
+    <value>Warning</value>
   </data>
 </root>

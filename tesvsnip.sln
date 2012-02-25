@@ -35,6 +35,6 @@ Global
 		{5FA31161-DDBB-430F-9E99-0ECE98B733DE}.StrongMagic|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
+		HideSolutionNode = TRUE
 	EndGlobalSection
 EndGlobal

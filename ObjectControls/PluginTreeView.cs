@@ -64,7 +64,7 @@ namespace TESVSnip.ObjectControls
             set { PluginTree.SelectedRecords = value; }            
         }
 
-        public event EventHandler SelectionChanged;
+        public event EventHandler SelectionChanged;//修改标记
 
         private void InitializeTreeList()
         {

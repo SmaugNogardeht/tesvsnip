@@ -294,7 +294,8 @@ namespace TESVSnip
         public static int ExtractInternalStrings(Plugin plugin)
         {
             int count = 0;
-            uint maxid = plugin.Masters.Max(x=>x.Strings.Count > 0 ? x.Strings.Keys.Max() : 0);
+//            uint maxid = plugin.Masters.Max(x=>x.Strings.Count > 0 ? x.Strings.Keys.Max() : 0);
+            uint maxid = 0;
             bool anyModified = false;
             foreach (var record in plugin.Enumerate().OfType<Record>())
             {

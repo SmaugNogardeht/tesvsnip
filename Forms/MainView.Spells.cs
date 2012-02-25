@@ -655,9 +655,14 @@ namespace TESVSnip
         {
             // Find all lstring that are internalized and rewrite to 
             var plugin = GetPluginFromNode(this.PluginTree.SelectedRecord);
-            if (plugin == null)
+            if (plugin == null)//what....
             {
                 MessageBox.Show(Resources.NoPluginSelected, Resources.ErrorText);
+                return;
+            }
+            if (plugin.Masters.Length <= 1)
+            {
+                MessageBox.Show("No plugin selected.", Resources.ErrorText);
                 return;
             }
             int count = Spells.ExtractInternalStrings(plugin);

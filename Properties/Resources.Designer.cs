@@ -89,7 +89,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 确定? 的本地化字符串。
+        ///   查找类似 Are you sure? 的本地化字符串。
         /// </summary>
         internal static string AreYouSureInquiry {
             get {
@@ -112,7 +112,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 不能剪切整个MOD 的本地化字符串。
+        ///   查找类似 Cannot cut a plugin 的本地化字符串。
         /// </summary>
         internal static string Cannot_cut_a_plugin {
             get {
@@ -121,7 +121,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 不能复制父节点不同的多个节点 的本地化字符串。
+        ///   查找类似 Cannot copy nodes from different parents 的本地化字符串。
         /// </summary>
         internal static string CannotCopyNodesFromDifferentParents {
             get {
@@ -130,7 +130,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 不能复制整个MOD 的本地化字符串。
+        ///   查找类似 Cannot copy a plugin 的本地化字符串。
         /// </summary>
         internal static string CannotCopyPlugin {
             get {
@@ -139,7 +139,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 不能拖放父节点不同的多个节点 的本地化字符串。
+        ///   查找类似 Cannot drag nodes with different parents 的本地化字符串。
         /// </summary>
         internal static string CannotDragNodesWithDifferentParents {
             get {
@@ -148,7 +148,8 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 不能拖放至子项目内(否则将导致循环错误!) 的本地化字符串。
+        ///   查找类似 Cannot drop on descendant
+        ///(think of the temporal paradoxes!) 的本地化字符串。
         /// </summary>
         internal static string CannotDropOnDescendent {
             get {
@@ -157,7 +158,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 无法解析 RecordStructure.xml 文件. 部分记录编辑功能将失效. 的本地化字符串。
+        ///   查找类似 Could not parse RecordStructure.xml. Record-at-once editing will be unavailable. 的本地化字符串。
         /// </summary>
         internal static string CannotParseRecordStructure {
             get {
@@ -166,7 +167,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 MOD的 cell, world 或 dial 结构错误, 自动修复失败 的本地化字符串。
+        ///   查找类似 The subgroup structure of this plugins cell, world or dial records appears to be incorrect, and cannot be fixed automatically 的本地化字符串。
         /// </summary>
         internal static string CannotSanitizeLooseGroups {
             get {
@@ -175,7 +176,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 MOD包含了无法识别的记录,自动修复失败 的本地化字符串。
+        ///   查找类似 The plugin contained records which were not recognized, and cannot be fixed automatically 的本地化字符串。
         /// </summary>
         internal static string CannotSanitizeUnknownRecords {
             get {
@@ -205,7 +206,8 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 关闭已打开的MOD,将会丢失未保存的内容,是否继续? 的本地化字符串。
+        ///   查找类似 This will close the active plugin, and you will lose any unsaved changes.
+        ///Are you sure you wish to continue? 的本地化字符串。
         /// </summary>
         internal static string CloseActivePluginInquiry {
             get {
@@ -214,7 +216,8 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 关闭所有已打开的MOD,将会丢失未保存的内容,是否继续? 的本地化字符串。
+        ///   查找类似 This will close all open plugins, and you will lose any unsaved changes.
+        ///Are you sure you wish to continue? 的本地化字符串。
         /// </summary>
         internal static string CloseAllLoseChangesInquiry {
             get {
@@ -244,7 +247,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 复制到剪贴板 的本地化字符串。
+        ///   查找类似 Copy Record to Clipboard 的本地化字符串。
         /// </summary>
         internal static string Copy_Record_to_Clipboard {
             get {
@@ -267,7 +270,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 删除提示 的本地化字符串。
+        ///   查找类似 Delete Node 的本地化字符串。
         /// </summary>
         internal static string DeleteNode {
             get {
@@ -325,7 +328,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 错误 的本地化字符串。
+        ///   查找类似 Error 的本地化字符串。
         /// </summary>
         internal static string ErrorText {
             get {
@@ -334,7 +337,8 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 大型文件需要占用大量内存载入.是否设置排除该文件? 的本地化字符串。
+        ///   查找类似 The file is large size and takes significant memory to load.
+        ///Would you like to apply the record exclusions? 的本地化字符串。
         /// </summary>
         internal static string ESM_Large_File_Size_Inquiry {
             get {
@@ -350,7 +354,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 过滤器设置 的本地化字符串。
+        ///   查找类似 Filter Options 的本地化字符串。
         /// </summary>
         internal static string Filter_Options_Text {
             get {
@@ -380,7 +384,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 初始化设置 的本地化字符串。
+        ///   查找类似 First Load Options 的本地化字符串。
         /// </summary>
         internal static string FirstLoadOptions {
             get {
@@ -389,7 +393,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 完整编辑器 的本地化字符串。
+        ///   查找类似 Full Record Editor 的本地化字符串。
         /// </summary>
         internal static string FullRecordEditorTitle {
             get {
@@ -398,7 +402,8 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 请再次确认你正在进行什么操作,是否继续? 的本地化字符串。
+        ///   查找类似 If you don&apos;t know what this does, you probably don&apos;t want to click it
+        /// Continue anyway? 的本地化字符串。
         /// </summary>
         internal static string GeneralSpellWarningInquiry {
             get {
@@ -407,7 +412,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 提示 的本地化字符串。
+        ///   查找类似 Info 的本地化字符串。
         /// </summary>
         internal static string InfoText {
             get {
@@ -440,7 +445,9 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 首次载入 &apos;skyrim.esm&apos; 文件.需要占用大量内存.是否设置分类过滤器控制载入? 的本地化字符串。
+        ///   查找类似 This is the first time &apos;skyrim.esm&apos; has been loaded.
+        ///The file is large size and takes significant memory to load.
+        ///Would you like to configure which Records to exclude? 的本地化字符串。
         /// </summary>
         internal static string MainView_FirstTimeSkyrimLoad_ExcludeInquiry {
             get {
@@ -449,7 +456,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 mod丢失 的本地化字符串。
+        ///   查找类似 Missing Plugin 的本地化字符串。
         /// </summary>
         internal static string Missing_Plugin {
             get {
@@ -458,7 +465,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 记录丢失 的本地化字符串。
+        ///   查找类似 Missing Record 的本地化字符串。
         /// </summary>
         internal static string Missing_Record {
             get {
@@ -488,7 +495,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 未载入mod 的本地化字符串。
+        ///   查找类似 No Plugins Loaded 的本地化字符串。
         /// </summary>
         internal static string No_Plugins_Loaded {
             get {
@@ -497,7 +504,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 未选中MOD. 的本地化字符串。
+        ///   查找类似 No plugin selected 的本地化字符串。
         /// </summary>
         internal static string NoPluginSelected {
             get {
@@ -506,7 +513,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 未选中MOD,操作终止. 的本地化字符串。
+        ///   查找类似 No plugin selected. Cannot continue. 的本地化字符串。
         /// </summary>
         internal static string NoPluginSelectedCannotContinue {
             get {
@@ -515,7 +522,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 未选中MOD,保存终止 的本地化字符串。
+        ///   查找类似 No plugin selected to save 的本地化字符串。
         /// </summary>
         internal static string NoPluginSelectedToSave {
             get {
@@ -538,7 +545,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 TES4记录丢失,操作终止 的本地化字符串。
+        ///   查找类似 Plugin lacks a valid TES4 record. Cannot continue 的本地化字符串。
         /// </summary>
         internal static string PluginLacksAValidTes4RecordCannotContinue {
             get {
@@ -561,7 +568,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 是否立即重启程序应用编码设置(注意修改是否已经保存) 的本地化字符串。
+        ///   查找类似 To confirm the coding setting, restart Tesvsnip now? 的本地化字符串。
         /// </summary>
         internal static string RestartText {
             get {
@@ -591,7 +598,8 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 这个文件可能被修改或删除内容,是否保存? 的本地化字符串。
+        ///   查找类似 This file has had a filter applied and contents potentially removed.  
+        ///Do you still want to save? 的本地化字符串。
         /// </summary>
         internal static string SavePluginWithFilterAppliedInquiry {
             get {
@@ -607,7 +615,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 共找到{0}个 的本地化字符串。
+        ///   查找类似 {0} Found 的本地化字符串。
         /// </summary>
         internal static string SearchProgressChanged_Items_Found {
             get {
@@ -644,7 +652,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 剪贴板是空的 的本地化字符串。
+        ///   查找类似 The clipboard is empty 的本地化字符串。
         /// </summary>
         internal static string TheClipboardIsEmpty {
             get {
@@ -667,7 +675,7 @@ namespace TESVSnip.Properties {
         }
         
         /// <summary>
-        ///   查找类似 警告 的本地化字符串。
+        ///   查找类似 Warning 的本地化字符串。
         /// </summary>
         internal static string WarningText {
             get {

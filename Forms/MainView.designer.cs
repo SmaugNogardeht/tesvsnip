@@ -545,14 +545,14 @@ namespace TESVSnip {
             // 
             // saveStringsFilesToolStripMenuItem
             // 
-            this.saveStringsFilesToolStripMenuItem.Name = "saveStringsFilesToolStripMenuItem";
             resources.ApplyResources(this.saveStringsFilesToolStripMenuItem, "saveStringsFilesToolStripMenuItem");
+            this.saveStringsFilesToolStripMenuItem.Name = "saveStringsFilesToolStripMenuItem";
             this.saveStringsFilesToolStripMenuItem.Click += new System.EventHandler(this.saveStringsFilesToolStripMenuItem_Click);
             // 
             // saveStringsToolStripMenuItem
             // 
-            this.saveStringsToolStripMenuItem.Name = "saveStringsToolStripMenuItem";
             resources.ApplyResources(this.saveStringsToolStripMenuItem, "saveStringsToolStripMenuItem");
+            this.saveStringsToolStripMenuItem.Name = "saveStringsToolStripMenuItem";
             this.saveStringsToolStripMenuItem.Click += new System.EventHandler(this.saveStringsToolStripMenuItem_Click);
             // 
             // stringLocalizerToolStripMenuItem
