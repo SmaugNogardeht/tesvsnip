@@ -1,0 +1,257 @@
+[color=#FF8080][u][b]TESVSnip Skyrim Edition v4.2.4447.2 With Translator Helper 1.11 Release 1[/b][/u]
+[/color]
+
+[color=orange][u][b]TABLE OF CONTENTS[/b][/u][/color]
+
+ * Credit
+ * Version history
+ * Information
+ * Instalaltion
+ * Extract Skyrim strings files
+ * Build the dictionnary
+ * Begin new translation
+ * Translator Helper - The screen
+ * Write translation
+ * Manage project
+ * Update mod from esp already translated
+ * Update mod with new version
+ * Edit long text
+ * ToolTip
+ * Message and Debug
+
+[color=limegreen][b][u]CREDIT[/u][/b] [/color]
+
+[i][b][color=yellow]Please endorse it to thank them for their great work.[/color][/b][/i]
+
+Thank's to:
+
+[url=http://skyrim.nexusmods.com/downloads/file.php?id=5064]tesvsnip v 4.2 by figment[/url]
+[url=http://skyrim.nexusmods.com/downloads/file.php?id=11405]tesvsnip_utf-8 by leihao figment[/url]
+
+[color=limegreen][b][u]VERSION HISTORY[/u][/b] [/color]
+
+[b]v1.11r1[/b] - [color=yellow][u][b]Very important :[/b] Rebuild dictionnary[/u][/color]
+   - Improve reading of records
+   - Improve UI (see chapter <Translator Helper - The screen>, subchapter <SCREEN 5,6 and 7>)
+   - Bugs fix
+   - Add fix of [url=http://skyrim.nexusmods.com/downloads/file.php?id=11405]tesvsnip_utf-8 by Leihao [/url]
+   - Add 'Export to CSV'
+   - Before writing the strings in the mod see <Translator Helper - The screen>, subchapter <SCREEN 4> and read the point number 2
+
+[b]v1.10r2[/b] - Fix Twice menu display. Thank's Scharesoft.
+
+[b]v1.10r1[/b] - [color=yellow][u][b]Very important :[/b] Rebuild dictionnary[/u][/color]
+* Change log:
+   - Big thank's at Leihao for utf-8 version
+   - Add fix of [url=http://skyrim.nexusmods.com/downloads/file.php?id=11405]tesvsnip_utf-8 by Leihao [/url]
+   - Add japenese support (UTF-8) of [url=http://skyrim.nexusmods.com/downloads/file.php?id=11405]Leihao [/url] 
+   - Version of [url=http://skyrim.nexusmods.com/downloads/file.php?id=11405]leihao[/url] better parse BTW/WRLD/DIAL/INFO records[/td]
+   - Open project also open mod if file exist
+   - Improve deletion of a project
+   - Improve the cleaning of a project
+   - Improve dictionnary generation
+   - Refactoring display code 
+   - Improve reading of records
+   - Improve identification of records
+   - Best visual identification of differences between strings
+   - Reorganize records in tabs
+   - Reorganize source code
+   - Add japanese support
+   - Add multi-choice string possibility
+   - Add possibility write/not write string in mod
+   - Bugs fix
+
+[b]v1.04[/b] - Fix bugs
+v1.03 - Fix bugs - Add editor for long text (see chapter Edit long text) - Adding translated text in lists - Add tooltip (see chapter Tooltip)
+[b]v1.02[/b] - Saves the source and target languages selection
+[b]v1.01[/b] - Add search in dictionnary
+[b]v1.00[/b] - Initiale release
+
+[color=limegreen][b][u]INFORMATION[/u][/b] [/color]
+
+This tool is based on [url=http://skyrim.nexusmods.com/downloads/file.php?id=5064]TesVSnip v4.2 by figment.[/url].
+The source code of TesVSnip v4.2 is kept at 99.9% to facilitate updates.
+The TesVSnip  is released in GPl license also i publish my source code soon.
+
+I already translated and updated this mod with my tools.
+
+[url=http://skyrim.nexusmods.com/downloads/file.php?id=4984]Weapons and Armor fixes - French by SmaugNogardeht[/url]
+[url=http://skyrim.nexusmods.com/downloads/file.php?id=9923]Complete Crafting Overhaul - French by SmaugNogardeht[/url]
+[url=http://skyrim.nexusmods.com/downloads/file.php?id=11350]Smithing Perks Overhaul - French by SmaugNogardeht[/url]
+
+Only tested with english to french. 
+
+I will complete the documentation later.
+
+Tank's for your comment.
+
+[color=limegreen][b][u]INSTALLATION[/u][/b] [/color]
+
+Requires .NET Framework 4.0 installed. 
+Only decompress archive. 
+
+[color=limegreen][b][u]EXTRACT SKYRIM STRINGS FILES[/u][/b] [/color]
+
+For translation you must have in your [i]'..\Data\Strings'[/i] directory the source language files and the target language files. 
+
+Sample: If the mod is in english an you want translate it in french. You must have the files below: 
+
+* Skyrim_English.STRINGS / Skyrim_English.DLSTRINGS / Skyrim_English.ILSTRINGS 
+* Skyrim_French.STRINGS / Skyrim_French.DLSTRINGS / Skyrim_French.ILSTRINGS 
+
+and files below optional 
+
+* Update_English.STRINGS / Update_English.DLSTRINGS / Update_English.ILSTRINGS 
+* Update_French.STRINGS / Update_French.DLSTRINGS / Update_French.ILSTRINGS 
+
+For your translation in British English, you can use [url=http://skyrim.nexusmods.com/downloads/file.php?id=5351]English Strings for Skyrim by Seraphiel[/url]. 
+
+[u][b]How extract files ?[/b][/u]
+
+* Download [url=http://skyrim.nexusmods.com/downloads/file.php?id=1395]BSA Browser by Fawzib Rojas[/url]
+Decompress and run it.
+Clicked the menu below
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_003.png[/img] 
+
+* Browse and open '[i]Skyrim - Interface.bsa[/i]'
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_004.png[/img] 
+
+* Click on PATH column for sort by path.
+
+* Select all path with strings 
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_005.png[/img] 
+
+* Extract strings files in your [i]'..\Data\Strings'[/i] directory
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_006.png[/img] 
+
+[color=limegreen][b][u]BUILD THE DICTIONARY[/u][/b] [/color]
+
+Choose dictionnary language 
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_000.png[/img] 
+
+and click on 
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_007.png[/img] 
+
+[color=limegreen][b][u]BEGIN NEW TRANSLATION[/u][/b] [/color]
+
+Open plugin
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_009.png[/img] 
+
+The mod is analyzed and translated using the previously generated dictionary.
+
+[color=limegreen][b][u]TRANSLATOR HELPER - THE SCREEN[/u][/b] [/color]
+
+[b][u]SCREEN 1[/u][/b]
+
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_021.png[/img] 
+ [b]1[/b] - Project name
+ [b]2[/b] - Author of mod
+ [b]3[/b] - You if you want
+ [b]4[/b] - Source language
+ [b]5[/b] - Target language
+ [b]6[/b] - Mod information
+
+[b][u]SCREEN 2[/u][/b]
+
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_022.png[/img] 
+ [b]1[/b] - With right click you can filter or sorter
+ [b]2[/b] - Tab Header: String are organized by type (based on my statistic of skyrim.esm because one record type can be a string or dlstring). 
+ [b]3[/b] - Search text box. Below sample result for orcish.
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_023.png[/img] 
+
+[b][u]SCREEN 3[/u][/b]
+
+Mouse on over line display string.
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_024.png[/img] 
+
+[b][u]SCREEN 4[/u][/b]
+
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_025.png[/img] 
+ [b]1[/b] - Translated text. Double click on it open speecial windows for long text
+ [b]2[/b] - If not checking, string is not writing in mod. Why ? Because, i view in mod that record are used for parameter but record is identified like string id. This record should not be updated. But i can identified it. Also you can unchecked this record to prevent the update.
+ [b]3[/b] - Old text after update
+ [b]4[/b] - all possible string translation. I suggest the best translation, but in some cases there are several possibilities because some records are entries in the strings and dlstrings.
+
+[b][u]SCREEN 5[/u][/b]
+
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_026.png[/img] 
+
+[b][u]SCREEN 6[/u][/b]
+
+Text is strikeout after update if record has been deleted of mod.
+
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_027.png[/img] 
+
+[b][u]SCREEN 7[/u][/b]
+
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_028.png[/img] 
+
+[b]1[/b] - Source text:
+   * S=String of mod is different from String Skyrim
+   * M=String of mod is different from Old String of mod
+
+[b]2[/b] - Target text. 
+   * S=String of mod is different from String Skyrim
+   * M=String of mod is different from Old String of mod
+
+[color=limegreen][b][u]WRITE TRANSLATION[/u][/b] [/color]
+
+Select this menu. Check that the mod is loaded and selected.
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_012.png[/img] 
+
+When writing is complete, you can save it.
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_013.png[/img] 
+
+[color=limegreen][b][u]MANAGE PROJECT[/u][/b] [/color]
+
+You can open,save,close and delete your project.
+
+You can translate the mod on several days. Only open project file.
+
+You need to open the ESP file only to update it or writing translation inside.
+
+[color=limegreen][b][u]UPDATE MOD FROM ESP ALREADY TRANSLATED[/u][/b] [/color]
+
+With this option, you can import in project the target strings since a file already translated. The strings must be embedded in the mod.
+	
+In this process, the mod objects are analyzed and if the same item exists in the project then the target text is replaced.
+
+Select this menu and the after mod.
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_015.png[/img] 
+
+[color=limegreen][b][u]UPDATE MOD WITH NEW VERSION[/u][/b] [/color]
+
+2 choices.
+
+Choice 1: 
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_016.png[/img] 
+
+Choice 2: 
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_017.png[/img] 
+
+In the both cases answer questions of dialog box.
+
+In this process, the mod items are analyzed and if the same item exists in the project then the strings are compared. If the strings are diffenrets the source text is copy in old source textbox and after replaced. 
+
+If is a new item, the string is copied in source textbox and the translation is is looked up in the dictionary.
+
+In the both cases, the status is updated:
+  - if equal then you can see this suymbol '='
+  - if new then you can see this suymbol 'New'
+  - if updated then you can see this suymbol 'Upd'
+
+[color=limegreen][b][u]EDIT LONG TEXT[/u][/b] [/color]
+
+See below
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_018.png[/img] 
+
+[color=limegreen][b][u]TOOLTIP[/u][/b] [/color]
+
+See below
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_020.png[/img] 
+
+
+[color=limegreen][b][u]MESSAGE AND DEBUG[/u][/b] [/color]
+
+Some messages and errors are display here.
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_019.png[/img] 

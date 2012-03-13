@@ -15,6 +15,59 @@ namespace TESVSnip
         public static string gameDir { get; set; }
         public static string gameDataDir { get; set; }
 
+        public static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+        {
+          try
+          {
+            Exception ex = (Exception)e.ExceptionObject;
+
+            string msg = ex.Message +
+              Environment.NewLine +
+              Environment.NewLine +
+              ex.StackTrace +
+              Environment.NewLine +
+              Environment.NewLine +
+              ex.Source +
+              Environment.NewLine +
+              Environment.NewLine;
+
+            Clipboard.SetDataObject(msg, true);
+
+            MessageBox.Show(msg, "Fatal Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+          }
+          finally
+          {
+            Application.Exit();
+          }
+        }
+
+        public static void Application_ThreadException(object sender, System.Threading.ThreadExceptionEventArgs e)
+        {
+          DialogResult result = DialogResult.Abort;
+          try
+          {
+            string msg = e.Exception.Message +
+              Environment.NewLine +
+              Environment.NewLine +
+              e.Exception.StackTrace +
+              Environment.NewLine +
+              Environment.NewLine +
+              e.Exception.Source +
+              Environment.NewLine +
+              Environment.NewLine;
+
+            Clipboard.SetDataObject(msg, true);
+
+            result = MessageBox.Show(msg, "Application Error", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Stop);
+          }
+          finally
+          {
+            if (result == DialogResult.Abort)
+            {
+              Application.Exit();
+            }
+          }
+        }
 
         /// <summary>
         /// The main entry point for the application.
@@ -22,6 +75,9 @@ namespace TESVSnip
         [STAThread]
         private static void Main(string[] args)
         {
+          //AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
+          //Application.ThreadException += new System.Threading.ThreadExceptionEventHandler(Application_ThreadException);
+
             var plugins = new List<string>();
             settingsDir = Environment.CurrentDirectory;
             exeDir = Environment.CurrentDirectory;
@@ -164,7 +220,8 @@ namespace TESVSnip
             defLangMap.Add("Spanish", new FontLangInfo(1252, 1034, 0));
             defLangMap.Add("Russian", new FontLangInfo(1251, 1049, 204));
             defLangMap.Add("Polish", new FontLangInfo(1250, 1045, 0));
-            CP1252 = Properties.Settings.Default.UseUTF8?s_UTF8Encoding:s_CP1252Encoding;
+            defLangMap.Add("Japanese", new FontLangInfo(932, 1041, 128)); //128 => i'm not sure but i find on the web SHIFTJIS_CHARSET = 128
+            CP1252 = Properties.Settings.Default.UseUTF8?s_UTF8Encoding:s_CP1252Encoding;            
         }
 
 //         internal static System.Text.Encoding CP1252

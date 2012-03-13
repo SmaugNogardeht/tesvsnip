@@ -1,0 +1,155 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="T_PlugInStrings" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="T_PlugInStrings">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="GroupName" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordType" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordTypeTH" type="xs:string" minOccurs="0" />
+                <xs:element name="StringType" type="xs:string" minOccurs="0" />
+                <xs:element name="FormID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="FormIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SkyrimStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescSourceLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescTargetLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SourceStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="TargetStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="TargerItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="TargerItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetEditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="StringStatus" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatus" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatusTarget" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <T_PlugInStrings>
+    <GroupName>(BOOK) - Book</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782021</FormID>
+    <FormIDHexa>010012C5</FormIDHexa>
+    <EditorID>BookDragonCurse</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>The Dragon's Curse, v2.2</SourceItemDesc>
+    <SourceEditorID>BookDragonCurse</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>The Dragon's Curse, v2.2</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>BookDragonCurse</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(BOOK) - Book</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>16782021</FormID>
+    <FormIDHexa>010012C5</FormIDHexa>
+    <EditorID>BookDragonCurse</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>&lt;p align="center"&gt;
+
+
+Dragon Curse:
+Transform To A Dragon.
+
+
+by
+FailCake :D
+&lt;/p&gt;
+[pagebreak]
+&lt;p align="center"&gt;
+Important Notes :
+
+- Do not Save after Transformed! It might break your game!
+- The Shouts Dragon Shouts are located in your Shouts.
+- To use the Dragon Shouts, simply equip them and press the shout key.
+
+Have Fun. And Thanks everyone for Support!
+&lt;/p&gt;</SourceItemDesc>
+    <SourceEditorID>BookDragonCurse</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>&lt;p align="center"&gt;
+
+
+Dragon Curse:
+Transform To A Dragon.
+
+
+by
+FailCake :D
+&lt;/p&gt;
+[pagebreak]
+&lt;p align="center"&gt;
+Important Notes :
+
+- Do not Save after Transformed! It might break your game!
+- The Shouts Dragon Shouts are located in your Shouts.
+- To use the Dragon Shouts, simply equip them and press the shout key.
+
+Have Fun. And Thanks everyone for Support!
+&lt;/p&gt;</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>BookDragonCurse</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(BOOK) - Book</GroupName>
+    <RecordType>CNAM</RecordType>
+    <RecordTypeTH>CNAM:1</RecordTypeTH>
+    <StringType>ILStrings</StringType>
+    <FormID>16782021</FormID>
+    <FormIDHexa>010012C5</FormIDHexa>
+    <EditorID>BookDragonCurse</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Whom who reads the book shall be cursed with the Dragon's Curse!</SourceItemDesc>
+    <SourceEditorID>BookDragonCurse</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Whom who reads the book shall be cursed with the Dragon's Curse!</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>BookDragonCurse</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+</NewDataSet>

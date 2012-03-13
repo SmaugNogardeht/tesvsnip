@@ -1,0 +1,1187 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="T_PlugInStrings" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="T_PlugInStrings">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="GroupName" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordType" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordTypeTH" type="xs:string" minOccurs="0" />
+                <xs:element name="StringType" type="xs:string" minOccurs="0" />
+                <xs:element name="FormID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="FormIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SkyrimStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescSourceLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescTargetLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SourceStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="TargetStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="TargerItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="TargerItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetEditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="StringStatus" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatusSource" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatusTarget" type="xs:string" minOccurs="0" />
+                <xs:element name="WriteStringInPlugIn" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782022</FormID>
+    <FormIDHexa>010012C6</FormIDHexa>
+    <EditorID>083LunaMothPinkPeacock</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Luna Moth PinkPeacock</SourceItemDesc>
+    <SourceEditorID>083LunaMothPinkPeacock</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Luna Moth PinkPeacock</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083LunaMothPinkPeacock</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782022</FormID>
+    <FormIDHexa>010012C6</FormIDHexa>
+    <EditorID>083LunaMothPinkPeacock</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083LunaMothPinkPeacock</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083LunaMothPinkPeacock</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782023</FormID>
+    <FormIDHexa>010012C7</FormIDHexa>
+    <EditorID>083LunaMothSkull</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Luna Moth Skull</SourceItemDesc>
+    <SourceEditorID>083LunaMothSkull</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Luna Moth Skull</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083LunaMothSkull</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782023</FormID>
+    <FormIDHexa>010012C7</FormIDHexa>
+    <EditorID>083LunaMothSkull</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083LunaMothSkull</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083LunaMothSkull</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782024</FormID>
+    <FormIDHexa>010012C8</FormIDHexa>
+    <EditorID>083MothBlueBlackLime</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Blue Butterfly BlackLime</SourceItemDesc>
+    <SourceEditorID>083MothBlueBlackLime</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Blue Butterfly BlackLime</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothBlueBlackLime</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782024</FormID>
+    <FormIDHexa>010012C8</FormIDHexa>
+    <EditorID>083MothBlueBlackLime</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083MothBlueBlackLime</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothBlueBlackLime</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782025</FormID>
+    <FormIDHexa>010012C9</FormIDHexa>
+    <EditorID>083MothBlueBloodyRed</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Blue Butterfly BloodyRed</SourceItemDesc>
+    <SourceEditorID>083MothBlueBloodyRed</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Blue Butterfly BloodyRed</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothBlueBloodyRed</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782025</FormID>
+    <FormIDHexa>010012C9</FormIDHexa>
+    <EditorID>083MothBlueBloodyRed</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083MothBlueBloodyRed</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothBlueBloodyRed</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782026</FormID>
+    <FormIDHexa>010012CA</FormIDHexa>
+    <EditorID>083MothBlueGreenPeacock</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Blue Butterfly GreenPeacock</SourceItemDesc>
+    <SourceEditorID>083MothBlueGreenPeacock</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Blue Butterfly GreenPeacock</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothBlueGreenPeacock</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782026</FormID>
+    <FormIDHexa>010012CA</FormIDHexa>
+    <EditorID>083MothBlueGreenPeacock</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083MothBlueGreenPeacock</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothBlueGreenPeacock</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782027</FormID>
+    <FormIDHexa>010012CB</FormIDHexa>
+    <EditorID>083MothBluePurplePoison</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Blue Butterfly PurplePoison</SourceItemDesc>
+    <SourceEditorID>083MothBluePurplePoison</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Blue Butterfly PurplePoison</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothBluePurplePoison</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782027</FormID>
+    <FormIDHexa>010012CB</FormIDHexa>
+    <EditorID>083MothBluePurplePoison</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083MothBluePurplePoison</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothBluePurplePoison</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782028</FormID>
+    <FormIDHexa>010012CC</FormIDHexa>
+    <EditorID>083MothMonarchMintZebra</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Monarch Butterfly MintZebra</SourceItemDesc>
+    <SourceEditorID>083MothMonarchMintZebra</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Monarch Butterfly MintZebra</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothMonarchMintZebra</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782028</FormID>
+    <FormIDHexa>010012CC</FormIDHexa>
+    <EditorID>083MothMonarchMintZebra</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083MothMonarchMintZebra</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothMonarchMintZebra</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782029</FormID>
+    <FormIDHexa>010012CD</FormIDHexa>
+    <EditorID>083MothMonarchPinkZebra</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Monarch Butterfly PinkZebra</SourceItemDesc>
+    <SourceEditorID>083MothMonarchPinkZebra</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Monarch Butterfly PinkZebra</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothMonarchPinkZebra</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782029</FormID>
+    <FormIDHexa>010012CD</FormIDHexa>
+    <EditorID>083MothMonarchPinkZebra</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083MothMonarchPinkZebra</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothMonarchPinkZebra</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16780642</FormID>
+    <FormIDHexa>01000D62</FormIDHexa>
+    <EditorID>083LunaMothLightPink</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Luna Moth LightPink</SourceItemDesc>
+    <SourceEditorID>083LunaMothLightPink</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Luna Moth LightPink</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083LunaMothLightPink</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16780642</FormID>
+    <FormIDHexa>01000D62</FormIDHexa>
+    <EditorID>083LunaMothLightPink</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083LunaMothLightPink</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083LunaMothLightPink</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16783410</FormID>
+    <FormIDHexa>01001832</FormIDHexa>
+    <EditorID>083DragonflyMidnight</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonfly Midnight</SourceItemDesc>
+    <SourceEditorID>083DragonflyMidnight</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Dragonfly Midnight</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonflyMidnight</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16783410</FormID>
+    <FormIDHexa>01001832</FormIDHexa>
+    <EditorID>083DragonflyMidnight</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083DragonflyMidnight</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonflyMidnight</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782031</FormID>
+    <FormIDHexa>010012CF</FormIDHexa>
+    <EditorID>083MothMonarchLilac</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Monarch Butterfly Lilac</SourceItemDesc>
+    <SourceEditorID>083MothMonarchLilac</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Monarch Butterfly Lilac</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothMonarchLilac</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782031</FormID>
+    <FormIDHexa>010012CF</FormIDHexa>
+    <EditorID>083MothMonarchLilac</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083MothMonarchLilac</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothMonarchLilac</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782030</FormID>
+    <FormIDHexa>010012CE</FormIDHexa>
+    <EditorID>083MothMonarchBlueGold</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Monarch Butterfly BlueGold</SourceItemDesc>
+    <SourceEditorID>083MothMonarchBlueGold</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Monarch Butterfly BlueGold</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothMonarchBlueGold</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782030</FormID>
+    <FormIDHexa>010012CE</FormIDHexa>
+    <EditorID>083MothMonarchBlueGold</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083MothMonarchBlueGold</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083MothMonarchBlueGold</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786175</FormID>
+    <FormIDHexa>010022FF</FormIDHexa>
+    <EditorID>083DragonFly02Purple</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonfly Purple</SourceItemDesc>
+    <SourceEditorID>083DragonFly02Purple</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Dragonfly Purple</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonFly02Purple</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786175</FormID>
+    <FormIDHexa>010022FF</FormIDHexa>
+    <EditorID>083DragonFly02Purple</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083DragonFly02Purple</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonFly02Purple</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786174</FormID>
+    <FormIDHexa>010022FE</FormIDHexa>
+    <EditorID>083DragonFly02Ocean</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonfly Ocean</SourceItemDesc>
+    <SourceEditorID>083DragonFly02Ocean</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Dragonfly Ocean</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonFly02Ocean</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786174</FormID>
+    <FormIDHexa>010022FE</FormIDHexa>
+    <EditorID>083DragonFly02Ocean</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083DragonFly02Ocean</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Catch</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonFly02Ocean</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786173</FormID>
+    <FormIDHexa>010022FD</FormIDHexa>
+    <EditorID>083DragonFly02Jungle</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonfly Jungle</SourceItemDesc>
+    <SourceEditorID>083DragonFly02Jungle</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Libellule </TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonFly02Jungle</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786173</FormID>
+    <FormIDHexa>010022FD</FormIDHexa>
+    <EditorID>083DragonFly02Jungle</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083DragonFly02Jungle</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonFly02Jungle</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786172</FormID>
+    <FormIDHexa>010022FC</FormIDHexa>
+    <EditorID>083DragonFly02Green</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonfly Green</SourceItemDesc>
+    <SourceEditorID>083DragonFly02Green</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Libellule verte</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonFly02Green</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786172</FormID>
+    <FormIDHexa>010022FC</FormIDHexa>
+    <EditorID>083DragonFly02Green</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083DragonFly02Green</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonFly02Green</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786167</FormID>
+    <FormIDHexa>010022F7</FormIDHexa>
+    <EditorID>083DragonflyPink</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonfly Pink</SourceItemDesc>
+    <SourceEditorID>083DragonflyPink</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Dragonfly Pink</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonflyPink</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786167</FormID>
+    <FormIDHexa>010022F7</FormIDHexa>
+    <EditorID>083DragonflyPink</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083DragonflyPink</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonflyPink</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786168</FormID>
+    <FormIDHexa>010022F8</FormIDHexa>
+    <EditorID>083DragonflySunrise</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonfly Sunrise</SourceItemDesc>
+    <SourceEditorID>083DragonflySunrise</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Dragonfly Sunrise</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonflySunrise</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786168</FormID>
+    <FormIDHexa>010022F8</FormIDHexa>
+    <EditorID>083DragonflySunrise</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083DragonflySunrise</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonflySunrise</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786169</FormID>
+    <FormIDHexa>010022F9</FormIDHexa>
+    <EditorID>083DragonflyWhite</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonfly White</SourceItemDesc>
+    <SourceEditorID>083DragonflyWhite</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Dragonfly White</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonflyWhite</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786169</FormID>
+    <FormIDHexa>010022F9</FormIDHexa>
+    <EditorID>083DragonflyWhite</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083DragonflyWhite</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonflyWhite</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786170</FormID>
+    <FormIDHexa>010022FA</FormIDHexa>
+    <EditorID>083DragonflyYellow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonfly Yellow</SourceItemDesc>
+    <SourceEditorID>083DragonflyYellow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Dragonfly Yellow</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonflyYellow</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786170</FormID>
+    <FormIDHexa>010022FA</FormIDHexa>
+    <EditorID>083DragonflyYellow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083DragonflyYellow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonflyYellow</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786171</FormID>
+    <FormIDHexa>010022FB</FormIDHexa>
+    <EditorID>083DragonFly02Blue2</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonfly Blue2</SourceItemDesc>
+    <SourceEditorID>083DragonFly02Blue2</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Libellule bleu</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonFly02Blue2</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16786171</FormID>
+    <FormIDHexa>010022FB</FormIDHexa>
+    <EditorID>083DragonFly02Blue2</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083DragonFly02Blue2</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083DragonFly02Blue2</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782021</FormID>
+    <FormIDHexa>010012C5</FormIDHexa>
+    <EditorID>083LunaMothLightBlue</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Luna Moth LightBlue</SourceItemDesc>
+    <SourceEditorID>083LunaMothLightBlue</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Luna Moth LightBlue</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083LunaMothLightBlue</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16782021</FormID>
+    <FormIDHexa>010012C5</FormIDHexa>
+    <EditorID>083LunaMothLightBlue</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Catch</SourceItemDesc>
+    <SourceEditorID>083LunaMothLightBlue</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Attraper</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>083LunaMothLightBlue</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+</NewDataSet>

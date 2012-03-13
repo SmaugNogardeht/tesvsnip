@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="T_PlugInHeader" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="T_PlugInHeader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="PlugInName" type="xs:string" minOccurs="0" />
+                <xs:element name="Author" type="xs:string" minOccurs="0" />
+                <xs:element name="TranslatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceLanguage" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetLanguage" type="xs:string" minOccurs="0" />
+                <xs:element name="HashCode" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <T_PlugInHeader>
+    <PlugInName>dragoncurse_alpha_1_Test_Version</PlugInName>
+    <Author>Default</Author>
+    <TranslatedBy />
+    <SourceLanguage>English</SourceLanguage>
+    <TargetLanguage>French</TargetLanguage>
+    <HashCode>38352103</HashCode>
+  </T_PlugInHeader>
+</NewDataSet>

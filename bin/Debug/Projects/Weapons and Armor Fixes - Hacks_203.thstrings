@@ -1,0 +1,899 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="T_PlugInStrings" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="T_PlugInStrings">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="GroupName" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordType" type="xs:string" minOccurs="0" />
+                <xs:element name="StringType" type="xs:string" minOccurs="0" />
+                <xs:element name="FormID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="FormIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SkyrimStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescSourceLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescTargetLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SourceStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="TargetStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="TargerItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="TargerItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetEditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="StringStatus" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatus" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatusTarget" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>312267</FormID>
+    <FormIDHexa>0004C3CB</FormIDHexa>
+    <EditorID>ArmorFAlmerHelmet</EditorID>
+    <SkyrimStringID>63957</SkyrimStringID>
+    <SkyrimStringIDHexa>0000F9D5</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Falmer Helmet</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Casque falmer</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Falmer Helmet</SourceItemDesc>
+    <SourceItemDescOld>Casque falmer</SourceItemDescOld>
+    <SourceEditorID>ArmorFalmerHelmet</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Casque falmer</TargerItemDesc>
+    <TargerItemDescOld>Casque falmer</TargerItemDescOld>
+    <TargetEditorID>ArmorFalmerHelmet</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>376940</FormID>
+    <FormIDHexa>0005C06C</FormIDHexa>
+    <EditorID>ArmorFalmerShield</EditorID>
+    <SkyrimStringID>50362</SkyrimStringID>
+    <SkyrimStringIDHexa>0000C4BA</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Falmer Shield</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Bouclier falmer</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Falmer Shield</SourceItemDesc>
+    <SourceItemDescOld>Bouclier falmer</SourceItemDescOld>
+    <SourceEditorID>ArmorFalmerShield</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Bouclier falmer</TargerItemDesc>
+    <TargerItemDescOld>Bouclier falmer</TargerItemDescOld>
+    <TargetEditorID>ArmorFalmerShield</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>1001806</FormID>
+    <FormIDHexa>000F494E</FormIDHexa>
+    <EditorID>EnchArmorDraugrHelmetResistFire03</EditorID>
+    <SkyrimStringID>68346</SkyrimStringID>
+    <SkyrimStringIDHexa>00010AFA</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Ancient Helmet of the Unburned</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Casque draugr d'ininflammabilité</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Ancient Helmet of the Unburned</SourceItemDesc>
+    <SourceItemDescOld>Casque draugr d'ininflammabilité</SourceItemDescOld>
+    <SourceEditorID>EnchArmorDraugrHelmetResistFire03</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Casque draugr d'ininflammabilité</TargerItemDesc>
+    <TargerItemDescOld>Casque draugr d'ininflammabilité</TargerItemDescOld>
+    <TargetEditorID>EnchArmorDraugrHelmetResistFire03</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>99208</FormID>
+    <FormIDHexa>00018388</FormIDHexa>
+    <EditorID>ArmorDraugrCuirass</EditorID>
+    <SkyrimStringID>49296</SkyrimStringID>
+    <SkyrimStringIDHexa>0000C090</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Ancient Nord Armor</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Armure nordique antique</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Ancient Nord Armor</SourceItemDesc>
+    <SourceItemDescOld>Armure nordique antique</SourceItemDescOld>
+    <SourceEditorID>ArmorDraugrCuirass</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Armure nordique antique</TargerItemDesc>
+    <TargerItemDescOld>Armure nordique antique</TargerItemDescOld>
+    <TargetEditorID>ArmorDraugrCuirass</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>354973</FormID>
+    <FormIDHexa>00056A9D</FormIDHexa>
+    <EditorID>ArmorDraugrBoots</EditorID>
+    <SkyrimStringID>34001</SkyrimStringID>
+    <SkyrimStringIDHexa>000084D1</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Ancient Nord Boots</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Bottes nordiques antiques</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Ancient Nord Boots</SourceItemDesc>
+    <SourceItemDescOld>Bottes nordiques antiques</SourceItemDescOld>
+    <SourceEditorID>ArmorDraugrBoots</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Bottes nordiques antiques</TargerItemDesc>
+    <TargerItemDescOld>Bottes nordiques antiques</TargerItemDescOld>
+    <TargetEditorID>ArmorDraugrBoots</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>355095</FormID>
+    <FormIDHexa>00056B17</FormIDHexa>
+    <EditorID>ArmorDraugrGauntlets</EditorID>
+    <SkyrimStringID>61342</SkyrimStringID>
+    <SkyrimStringIDHexa>0000EF9E</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Ancient Nord Gauntlets</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Gantelets nordiques antiques</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Ancient Nord Gauntlets</SourceItemDesc>
+    <SourceItemDescOld>Gantelets nordiques antiques</SourceItemDescOld>
+    <SourceEditorID>ArmorDraugrGauntlets</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Gantelets nordiques antiques</TargerItemDesc>
+    <TargerItemDescOld>Gantelets nordiques antiques</TargerItemDescOld>
+    <TargetEditorID>ArmorDraugrGauntlets</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>354974</FormID>
+    <FormIDHexa>00056A9E</FormIDHexa>
+    <EditorID>ArmorDraugrHelmet</EditorID>
+    <SkyrimStringID>62988</SkyrimStringID>
+    <SkyrimStringIDHexa>0000F60C</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Ancient Nord Helmet</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Casque nordique antique</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Ancient Nord Helmet</SourceItemDesc>
+    <SourceItemDescOld>Casque nordique antique</SourceItemDescOld>
+    <SourceEditorID>ArmorDraugrHelmet</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Casque nordique antique</TargerItemDesc>
+    <TargerItemDescOld>Casque nordique antique</TargerItemDescOld>
+    <TargetEditorID>ArmorDraugrHelmet</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>754635</FormID>
+    <FormIDHexa>000B83CB</FormIDHexa>
+    <EditorID>ArmorFalmerCuirass</EditorID>
+    <SkyrimStringID>26633</SkyrimStringID>
+    <SkyrimStringIDHexa>00006809</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Falmer Armor</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Armure falmer</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Falmer Armor</SourceItemDesc>
+    <SourceItemDescOld>Armure falmer</SourceItemDescOld>
+    <SourceEditorID>ArmorFalmerCuirass</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Armure falmer</TargerItemDesc>
+    <TargerItemDescOld>Armure falmer</TargerItemDescOld>
+    <TargetEditorID>ArmorFalmerCuirass</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>754637</FormID>
+    <FormIDHexa>000B83CD</FormIDHexa>
+    <EditorID>ArmorFalmerBoots</EditorID>
+    <SkyrimStringID>43551</SkyrimStringID>
+    <SkyrimStringIDHexa>0000AA1F</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Falmer Boots</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Bottes falmers</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Falmer Boots</SourceItemDesc>
+    <SourceItemDescOld>Bottes falmers</SourceItemDescOld>
+    <SourceEditorID>ArmorFalmerBoots</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Bottes falmers</TargerItemDesc>
+    <TargerItemDescOld>Bottes falmers</TargerItemDescOld>
+    <TargetEditorID>ArmorFalmerBoots</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>754639</FormID>
+    <FormIDHexa>000B83CF</FormIDHexa>
+    <EditorID>ArmorFalmerGauntlets</EditorID>
+    <SkyrimStringID>5334</SkyrimStringID>
+    <SkyrimStringIDHexa>000014D6</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Falmer Gauntlets</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Gantelets falmers</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Falmer Gauntlets</SourceItemDesc>
+    <SourceItemDescOld>Gantelets falmers</SourceItemDescOld>
+    <SourceEditorID>ArmorFalmerGauntlets</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Gantelets falmers</TargerItemDesc>
+    <TargerItemDescOld>Gantelets falmers</TargerItemDescOld>
+    <TargetEditorID>ArmorFalmerGauntlets</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>81624</FormID>
+    <FormIDHexa>00013ED8</FormIDHexa>
+    <EditorID>ArmorImperialStuddedCuirass</EditorID>
+    <SkyrimStringID>28503</SkyrimStringID>
+    <SkyrimStringIDHexa>00006F57</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Studded Imperial Armor</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Armure impériale cloutée</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Studded Imperial Armor</SourceItemDesc>
+    <SourceItemDescOld>Armure impériale cloutée</SourceItemDescOld>
+    <SourceEditorID>ArmorImperialStuddedCuirass</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Armure impériale cloutée</TargerItemDesc>
+    <TargerItemDescOld>Armure impériale cloutée</TargerItemDescOld>
+    <TargetEditorID>ArmorImperialStuddedCuirass</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>289717</FormID>
+    <FormIDHexa>00046BB5</FormIDHexa>
+    <EditorID>EnchArmorImperialStuddedCuirassHealth02</EditorID>
+    <SkyrimStringID>61214</SkyrimStringID>
+    <SkyrimStringIDHexa>0000EF1E</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Studded Imperial Armor of Health</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Armure impériale cloutée de santé</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Studded Imperial Armor of Health</SourceItemDesc>
+    <SourceItemDescOld>Armure impériale cloutée de santé</SourceItemDescOld>
+    <SourceEditorID>EnchArmorImperialStuddedCuirassHealth02</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Armure impériale cloutée de santé</TargerItemDesc>
+    <TargerItemDescOld>Armure impériale cloutée de santé</TargerItemDescOld>
+    <TargetEditorID>EnchArmorImperialStuddedCuirassHealth02</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>289718</FormID>
+    <FormIDHexa>00046BB6</FormIDHexa>
+    <EditorID>EnchArmorImperialStuddedCuirassHealth03</EditorID>
+    <SkyrimStringID>58948</SkyrimStringID>
+    <SkyrimStringIDHexa>0000E644</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Studded Imperial Armor of Major Health</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Armure impériale cloutée de santé accrue</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Studded Imperial Armor of Major Health</SourceItemDesc>
+    <SourceItemDescOld>Armure impériale cloutée de santé accrue</SourceItemDescOld>
+    <SourceEditorID>EnchArmorImperialStuddedCuirassHealth03</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Armure impériale cloutée de santé accrue</TargerItemDesc>
+    <TargerItemDescOld>Armure impériale cloutée de santé accrue</TargerItemDescOld>
+    <TargetEditorID>EnchArmorImperialStuddedCuirassHealth03</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>289716</FormID>
+    <FormIDHexa>00046BB4</FormIDHexa>
+    <EditorID>EnchArmorImperialStuddedCuirassHealth01</EditorID>
+    <SkyrimStringID>48178</SkyrimStringID>
+    <SkyrimStringIDHexa>0000BC32</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Studded Imperial Armor of Minor Health</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Armure impériale cloutée de santé minime</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Studded Imperial Armor of Minor Health</SourceItemDesc>
+    <SourceItemDescOld>Armure impériale cloutée de santé minime</SourceItemDescOld>
+    <SourceEditorID>EnchArmorImperialStuddedCuirassHealth01</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Armure impériale cloutée de santé minime</TargerItemDesc>
+    <TargerItemDescOld>Armure impériale cloutée de santé minime</TargerItemDescOld>
+    <TargetEditorID>EnchArmorImperialStuddedCuirassHealth01</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>289721</FormID>
+    <FormIDHexa>00046BB9</FormIDHexa>
+    <EditorID>EnchArmorImperialStuddedCuirassLightArmor03</EditorID>
+    <SkyrimStringID>37838</SkyrimStringID>
+    <SkyrimStringIDHexa>000093CE</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Studded Imperial Armor of the Major Squire</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Armure impériale cloutée de grand écuyer</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Studded Imperial Armor of the Major Squire</SourceItemDesc>
+    <SourceItemDescOld>Armure impériale cloutée de grand écuyer</SourceItemDescOld>
+    <SourceEditorID>EnchArmorImperialStuddedCuirassLightArmor03</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Armure impériale cloutée de grand écuyer</TargerItemDesc>
+    <TargerItemDescOld>Armure impériale cloutée de grand écuyer</TargerItemDescOld>
+    <TargetEditorID>EnchArmorImperialStuddedCuirassLightArmor03</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>289719</FormID>
+    <FormIDHexa>00046BB7</FormIDHexa>
+    <EditorID>EnchArmorImperialStuddedCuirassLightArmor01</EditorID>
+    <SkyrimStringID>5594</SkyrimStringID>
+    <SkyrimStringIDHexa>000015DA</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Studded Imperial Armor of the Minor Squire</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Armure impériale cloutée d'humble écuyer</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Studded Imperial Armor of the Minor Squire</SourceItemDesc>
+    <SourceItemDescOld>Armure impériale cloutée d'humble écuyer</SourceItemDescOld>
+    <SourceEditorID>EnchArmorImperialStuddedCuirassLightArmor01</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Armure impériale cloutée d'humble écuyer</TargerItemDesc>
+    <TargerItemDescOld>Armure impériale cloutée d'humble écuyer</TargerItemDescOld>
+    <TargetEditorID>EnchArmorImperialStuddedCuirassLightArmor01</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(ARMO) - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>289720</FormID>
+    <FormIDHexa>00046BB8</FormIDHexa>
+    <EditorID>EnchArmorImperialStuddedCuirassLightArmor02</EditorID>
+    <SkyrimStringID>64861</SkyrimStringID>
+    <SkyrimStringIDHexa>0000FD5D</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Studded Imperial Armor of the Squire</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Armure impériale cloutée d'écuyer</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Studded Imperial Armor of the Squire</SourceItemDesc>
+    <SourceItemDescOld>Armure impériale cloutée d'écuyer</SourceItemDescOld>
+    <SourceEditorID>EnchArmorImperialStuddedCuirassLightArmor02</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Armure impériale cloutée d'écuyer</TargerItemDesc>
+    <TargerItemDescOld>Armure impériale cloutée d'écuyer</TargerItemDescOld>
+    <TargetEditorID>EnchArmorImperialStuddedCuirassLightArmor02</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(AMMO) - Ammunition Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>847518</FormID>
+    <FormIDHexa>000CEE9E</FormIDHexa>
+    <EditorID>ForswornArrow</EditorID>
+    <SkyrimStringID>58344</SkyrimStringID>
+    <SkyrimStringIDHexa>0000E3E8</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Forsworn Arrow</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Flèche de Parjure</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Forsworn Arrow</SourceItemDesc>
+    <SourceItemDescOld>Flèche de Parjure</SourceItemDescOld>
+    <SourceEditorID>ForswornArrow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Flèche de Parjure</TargerItemDesc>
+    <TargerItemDescOld>Flèche de Parjure</TargerItemDescOld>
+    <TargetEditorID>ForswornArrow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>241337</FormID>
+    <FormIDHexa>0003AEB9</FormIDHexa>
+    <EditorID>AkaviriKatana</EditorID>
+    <SkyrimStringID>22208</SkyrimStringID>
+    <SkyrimStringIDHexa>000056C0</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Blades Sword</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Épée de Lame</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Blades Sword</SourceItemDesc>
+    <SourceEditorID>AkaviriKatana</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Épée de Lame</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>AkaviriKatana</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>792969</FormID>
+    <FormIDHexa>000C1989</FormIDHexa>
+    <EditorID>dunBloatedMansKatana</EditorID>
+    <SkyrimStringID>62012</SkyrimStringID>
+    <SkyrimStringIDHexa>0000F23C</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Bolar's Oathblade</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Sermentière</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bolar's Oathblade</SourceItemDesc>
+    <SourceEditorID>dunBloatedMansKatana</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Sermentière</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>dunBloatedMansKatana</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>989889</FormID>
+    <FormIDHexa>000F1AC1</FormIDHexa>
+    <EditorID>MQ203AkaviriKatana1</EditorID>
+    <SkyrimStringID>67954</SkyrimStringID>
+    <SkyrimStringIDHexa>00010972</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Dragonbane</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Mort-dragon</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonbane</SourceItemDesc>
+    <SourceEditorID>MQ203AkaviriKatana1</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Mort-dragon</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>MQ203AkaviriKatana1</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>989889</FormID>
+    <FormIDHexa>000F1AC1</FormIDHexa>
+    <EditorID>MQ203AkaviriKatana1</EditorID>
+    <SkyrimStringID>69754</SkyrimStringID>
+    <SkyrimStringIDHexa>0001107A</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>&lt;20&gt; points of extra damage to dragons, &lt;10&gt; points of shock damage to others.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>&lt;20&gt; points de dégâts supplémentaires aux dragons, &lt;10&gt; points de dégâts de foudre aux autres victimes.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>&lt;20&gt; points of extra damage to dragons, &lt;10&gt; points of shock damage to others.</SourceItemDesc>
+    <SourceEditorID>MQ203AkaviriKatana1</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>&lt;20&gt; points de dégâts supplémentaires aux dragons, &lt;10&gt; points de dégâts de foudre aux autres victimes.</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>MQ203AkaviriKatana1</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>1012173</FormID>
+    <FormIDHexa>000F71CD</FormIDHexa>
+    <EditorID>MQ203AkaviriKatana2</EditorID>
+    <SkyrimStringID>66842</SkyrimStringID>
+    <SkyrimStringIDHexa>0001051A</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Dragonbane</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Mort-dragon</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonbane</SourceItemDesc>
+    <SourceEditorID>MQ203AkaviriKatana2</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Mort-dragon</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>MQ203AkaviriKatana2</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>1012173</FormID>
+    <FormIDHexa>000F71CD</FormIDHexa>
+    <EditorID>MQ203AkaviriKatana2</EditorID>
+    <SkyrimStringID>69659</SkyrimStringID>
+    <SkyrimStringIDHexa>0001101B</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>&lt;25&gt; points of extra damage to dragons, &lt;10&gt; points of shock damage to others.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>&lt;25&gt; points de dégâts supplémentaires aux dragons, &lt;10&gt; points de dégâts de foudre aux autres victimes.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>&lt;25&gt; points of extra damage to dragons, &lt;10&gt; points of shock damage to others.</SourceItemDesc>
+    <SourceEditorID>MQ203AkaviriKatana2</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>&lt;25&gt; points de dégâts supplémentaires aux dragons, &lt;10&gt; points de dégâts de foudre aux autres victimes.</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>MQ203AkaviriKatana2</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>1012174</FormID>
+    <FormIDHexa>000F71CE</FormIDHexa>
+    <EditorID>MQ203AkaviriKatana3</EditorID>
+    <SkyrimStringID>67628</SkyrimStringID>
+    <SkyrimStringIDHexa>0001082C</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Dragonbane</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Mort-dragon</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonbane</SourceItemDesc>
+    <SourceEditorID>MQ203AkaviriKatana3</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Mort-dragon</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>MQ203AkaviriKatana3</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>1012174</FormID>
+    <FormIDHexa>000F71CE</FormIDHexa>
+    <EditorID>MQ203AkaviriKatana3</EditorID>
+    <SkyrimStringID>69604</SkyrimStringID>
+    <SkyrimStringIDHexa>00010FE4</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>&lt;30&gt; points of extra damage to dragons, &lt;10&gt; points of shock damage to others.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>&lt;30&gt; points de dégâts supplémentaires aux dragons, &lt;10&gt; points de dégâts de foudre aux autres victimes.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>&lt;30&gt; points of extra damage to dragons, &lt;10&gt; points of shock damage to others.</SourceItemDesc>
+    <SourceEditorID>MQ203AkaviriKatana3</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>&lt;30&gt; points de dégâts supplémentaires aux dragons, &lt;10&gt; points de dégâts de foudre aux autres victimes.</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>MQ203AkaviriKatana3</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>1012175</FormID>
+    <FormIDHexa>000F71CF</FormIDHexa>
+    <EditorID>MQ203AkaviriKatana4</EditorID>
+    <SkyrimStringID>67629</SkyrimStringID>
+    <SkyrimStringIDHexa>0001082D</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Dragonbane</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Mort-dragon</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonbane</SourceItemDesc>
+    <SourceEditorID>MQ203AkaviriKatana4</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Mort-dragon</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>MQ203AkaviriKatana4</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>1012175</FormID>
+    <FormIDHexa>000F71CF</FormIDHexa>
+    <EditorID>MQ203AkaviriKatana4</EditorID>
+    <SkyrimStringID>69787</SkyrimStringID>
+    <SkyrimStringIDHexa>0001109B</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>&lt;35&gt; points of extra damage to dragons, &lt;10&gt; points of shock damage to others.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>&lt;35&gt; points de dégâts supplémentaires aux dragons, &lt;10&gt; points de dégâts de foudre aux autres victimes.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>&lt;35&gt; points of extra damage to dragons, &lt;10&gt; points of shock damage to others.</SourceItemDesc>
+    <SourceEditorID>MQ203AkaviriKatana4</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>&lt;35&gt; points de dégâts supplémentaires aux dragons, &lt;10&gt; points de dégâts de foudre aux autres victimes.</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>MQ203AkaviriKatana4</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>1012176</FormID>
+    <FormIDHexa>000F71D0</FormIDHexa>
+    <EditorID>MQ203AkaviriKatana5</EditorID>
+    <SkyrimStringID>68299</SkyrimStringID>
+    <SkyrimStringIDHexa>00010ACB</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Dragonbane</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Mort-dragon</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragonbane</SourceItemDesc>
+    <SourceEditorID>MQ203AkaviriKatana5</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Mort-dragon</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>MQ203AkaviriKatana5</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>1012176</FormID>
+    <FormIDHexa>000F71D0</FormIDHexa>
+    <EditorID>MQ203AkaviriKatana5</EditorID>
+    <SkyrimStringID>69788</SkyrimStringID>
+    <SkyrimStringIDHexa>0001109C</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>&lt;40&gt; points of extra damage to dragons, &lt;10&gt; points of shock damage to others.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>&lt;40&gt; points de dégâts supplémentaires aux dragons, &lt;10&gt; points de dégâts de foudre aux autres victimes.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>&lt;40&gt; points of extra damage to dragons, &lt;10&gt; points of shock damage to others.</SourceItemDesc>
+    <SourceEditorID>MQ203AkaviriKatana5</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>&lt;40&gt; points de dégâts supplémentaires aux dragons, &lt;10&gt; points de dégâts de foudre aux autres victimes.</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>MQ203AkaviriKatana5</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>837673</FormID>
+    <FormIDHexa>000CC829</FormIDHexa>
+    <EditorID>ForswornAxe</EditorID>
+    <SkyrimStringID>33690</SkyrimStringID>
+    <SkyrimStringIDHexa>0000839A</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Forsworn Axe</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Hache de Parjure</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Forsworn War Axe</SourceItemDesc>
+    <SourceEditorID>ForswornAxe</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Hache de guerre de Parjure</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>ForswornAxe</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget>&lt;&gt;</CompareStatusTarget>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>830953</FormID>
+    <FormIDHexa>000CADE9</FormIDHexa>
+    <EditorID>ForswornSword</EditorID>
+    <SkyrimStringID>11976</SkyrimStringID>
+    <SkyrimStringIDHexa>00002EC8</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Forsworn Sword</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Épée de Parjure</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Forsworn Sword</SourceItemDesc>
+    <SourceEditorID>ForswornSword</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Épée de Parjure</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>ForswornSword</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>847515</FormID>
+    <FormIDHexa>000CEE9B</FormIDHexa>
+    <EditorID>ForswornBow</EditorID>
+    <SkyrimStringID>57084</SkyrimStringID>
+    <SkyrimStringIDHexa>0000DEFC</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Forsworn Bow</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Arc de Parjure</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Forsworn Bow</SourceItemDesc>
+    <SourceEditorID>ForswornBow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Arc de Parjure</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>ForswornBow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>712839</FormID>
+    <FormIDHexa>000AE087</FormIDHexa>
+    <EditorID>dunLostValleyRedoubtAxe</EditorID>
+    <SkyrimStringID>59159</SkyrimStringID>
+    <SkyrimStringIDHexa>0000E717</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Briarheart Geis</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Geis de Roncecoeur</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Briarheart Geis</SourceItemDesc>
+    <SourceEditorID>dunLostValleyRedoubtAxe</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Geis de Roncecoeur</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>dunLostValleyRedoubtAxe</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(WEAP) - Weapon</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>712839</FormID>
+    <FormIDHexa>000AE087</FormIDHexa>
+    <EditorID>dunLostValleyRedoubtAxe</EditorID>
+    <SkyrimStringID>71015</SkyrimStringID>
+    <SkyrimStringIDHexa>00011567</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>&lt;5&gt; points of extra damage to Nords.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>&lt;5&gt; points de dégâts supplémentaires aux Nordiques.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>&lt;5&gt; points of extra damage to Nords.</SourceItemDesc>
+    <SourceEditorID>dunLostValleyRedoubtAxe</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>&lt;5&gt; points de dégâts supplémentaires aux Nordiques.</TargerItemDesc>
+    <TargerItemDescOld />
+    <TargetEditorID>dunLostValleyRedoubtAxe</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+</NewDataSet>

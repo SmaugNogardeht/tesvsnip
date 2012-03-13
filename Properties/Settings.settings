@@ -99,7 +99,13 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="UseUTF8" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="THSourceLanguage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">English</Value>
+    </Setting>
+    <Setting Name="THTargetLanguage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">French</Value>
     </Setting>
   </Settings>
 </SettingsFile>

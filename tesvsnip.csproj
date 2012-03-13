@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TESVSnip</RootNamespace>
     <AssemblyName>TESVSnip</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ApplicationIcon>Resources\tesv_ico.ico</ApplicationIcon>
     <FileUpgradeFlags>
@@ -30,6 +30,9 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup>
     <BUILD_ROOT Condition="'$(BUILD_ROOT)' == '' AND Exists('$(MSBuildProjectDirectory)\build\')">$(MSBuildProjectDirectory)\</BUILD_ROOT>
@@ -46,7 +49,7 @@
   <Import Project="$(BUILD_ROOT)\build\tesvsnip.common.targets" />
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
+    <DebugType>Full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
@@ -55,8 +58,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <NoWarn>
-    </NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -74,6 +75,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Data" />
@@ -426,6 +428,49 @@
     <Compile Include="RecordControls\HexElement.Designer.cs">
       <DependentUpon>HexElement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Translator\DataSetTH1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Translator\FormLongText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translator\FormLongText.designer.cs">
+      <DependentUpon>FormLongText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translator\Functions.cs" />
+    <Compile Include="Translator\MessageForm\IconRoutines\GroupIconResources.cs" />
+    <Compile Include="Translator\MessageForm\IconRoutines\IconEx.cs" />
+    <Compile Include="Translator\MessageForm\IconRoutines\IconRoutines.cs" />
+    <Compile Include="Translator\MessageForm\Message.cs" />
+    <Compile Include="Translator\MessageForm\MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translator\MessageForm\MessageForm.Designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translator\TranslatorHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translator\TranslatorHelper.designer.cs">
+      <DependentUpon>TranslatorHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translator\TranslatorHelperDictionnary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translator\TranslatorHelperFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translator\TranslatorHelperMainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translator\TranslatorHelperManageProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translator\TranslatorHelperPluginProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <EmbeddedResource Include="Controls\ballontooltip.resx">
       <DependentUpon>ballontooltip.cs</DependentUpon>
     </EmbeddedResource>
@@ -568,6 +613,15 @@
     <EmbeddedResource Include="RecordControls\TextElement.resx">
       <DependentUpon>TextElement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Translator\FormLongText.resx">
+      <DependentUpon>FormLongText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translator\MessageForm\MessageForm.resx">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translator\TranslatorHelper.resx">
+      <DependentUpon>TranslatorHelper.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="build\tesvsnip.snk" />
     <None Include="Controls\ObjectListView\ObjectListView.FxCop" />
     <None Include="Controls\ObjectListView\ObjectListView.shfb" />
@@ -698,6 +752,22 @@
     </Compile>
     <Compile Include="Main\TESsnipParser.cs" />
     <Compile Include="Main\TypeConverter.cs" />
+    <None Include="Translator\DataSetTH.xsc">
+      <DependentUpon>DataSetTH.xsd</DependentUpon>
+    </None>
+    <None Include="Translator\DataSetTH.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTH1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Translator\DataSetTH.xss">
+      <DependentUpon>DataSetTH.xsd</DependentUpon>
+    </None>
+    <None Include="_BBCode File\bbcode for nexus page.bbc" />
+    <None Include="_Files\Change code.docx" />
+    <None Include="_Files\RecordStructure_FIX-11405.rar" />
+    <None Include="_Files\skyrim_japanese_strings.7z" />
+    <None Include="_Files\TODO.odt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tesv_ico.ico" />
@@ -724,6 +794,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Controls\ObjectListView\CustomDictionary.xml" />
+    <Content Include="_BBCode File\BBCeditor.txt" />
     <None Include="Resources\bookmark_add.png" />
     <None Include="Resources\14_layer_deletelayer.png" />
     <Content Include="Resources\clear-filter.png" />
@@ -799,12 +870,23 @@
     <StageOutputDir>$(ProjectDir)\Output\</StageOutputDir>
     <MergeOutputFile>$(StageOutputDir)\$(TargetName)$(TargetExt)</MergeOutputFile>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
   <ItemGroup>
     <inputAssemblies Include="$(TargetPath)" />
     <inputAssemblies Include="$(TargetDir)\*.dll" />
     <CopyToStaging Include="$(ProjectDir)\LICENSE" />
     <CopyToStaging Include="$(ProjectDir)\README.TXT" />
     <CopyToStagingConf Include="$(ProjectDir)conf\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_UTF-8\" />
   </ItemGroup>
   <Target Name="Package">
     <MakeDir Directories="$(StageOutputDir)" />

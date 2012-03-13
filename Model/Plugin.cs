@@ -41,6 +41,13 @@ namespace TESVSnip
 
         private BaseRecord parent;
 
+        //Add for TranslatorHelper
+        public string GetFileName()
+        {
+          return FileName;
+        }
+        //End for TranslatorHelper
+
         public override BaseRecord Parent
         {
             get { return parent; }
@@ -340,6 +347,15 @@ namespace TESVSnip
 
         public void ReloadStrings()
         {
+          if (string.IsNullOrEmpty(StringsFolder) || string.IsNullOrEmpty(FileName) ||
+              !Directory.Exists(StringsFolder))
+            return;
+        }
+
+        public void ReloadStrings(string FileName, string Folder = "")
+        {
+          if (String.IsNullOrWhiteSpace(StringsFolder)) StringsFolder = Folder;
+
             if (string.IsNullOrEmpty(StringsFolder) || string.IsNullOrEmpty(FileName) ||
                 !Directory.Exists(StringsFolder))
                 return;

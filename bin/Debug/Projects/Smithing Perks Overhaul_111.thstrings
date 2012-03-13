@@ -1,0 +1,541 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="T_PlugInStrings" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="T_PlugInStrings">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="GroupName" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordType" type="xs:string" minOccurs="0" />
+                <xs:element name="StringType" type="xs:string" minOccurs="0" />
+                <xs:element name="FormID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="FormIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SkyrimStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescSourceLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescTargetLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SourceStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="TargetStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="TargerItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="TargerItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetEditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="StringStatus" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatus" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatusTarget" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>832532</FormID>
+    <FormIDHexa>000CB414</FormIDHexa>
+    <EditorID>AdvancedArmors</EditorID>
+    <SkyrimStringID>42544</SkyrimStringID>
+    <SkyrimStringIDHexa>0000A630</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Advanced Armors</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Armures supérieures</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Advanced Smithing</SourceItemDesc>
+    <SourceItemDescOld />
+    <SourceEditorID>SmithingAdvanced</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Forgeage avancé</TargerItemDesc>
+    <TargerItemDescOld>Forgeage avancé</TargerItemDescOld>
+    <TargetEditorID>SmithingAdvanced</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget>&lt;&gt;</CompareStatusTarget>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>832532</FormID>
+    <FormIDHexa>000CB414</FormIDHexa>
+    <EditorID>AdvancedArmors</EditorID>
+    <SkyrimStringID>61046</SkyrimStringID>
+    <SkyrimStringIDHexa>0000EE76</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Can create Scaled and Plate armor at forges, and improve them twice as much.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Permet de créer des armures d'écailles et de plates aux forges, et de multiplier par deux leur efficacité.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Can create advanced equipment at forges, and improve it twice as much.</SourceItemDesc>
+    <SourceItemDescOld>Permet de créer des équipements supérieurs dans les forges et de doubler les améliorations.</SourceItemDescOld>
+    <SourceEditorID>SmithingAdvanced</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Permet de créer des armures d'écailles et de plates aux forges, et de multiplier par deux leur efficacité.</TargerItemDesc>
+    <TargerItemDescOld>Permet de créer des armures d'écailles et de plates aux forges, et de multiplier par deux leur efficacité.</TargerItemDescOld>
+    <TargetEditorID>SmithingAdvanced</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>336270</FormID>
+    <FormIDHexa>0005218E</FormIDHexa>
+    <EditorID>ArcaneBlacksmith</EditorID>
+    <SkyrimStringID>58984</SkyrimStringID>
+    <SkyrimStringIDHexa>0000E668</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Arcane Blacksmith</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Forgeron d'enchantement</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Arcane Blacksmith</SourceItemDesc>
+    <SourceItemDescOld>Forgeron d'enchantement</SourceItemDescOld>
+    <SourceEditorID>SmithingArcane</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Forge d'enchantement</TargerItemDesc>
+    <TargerItemDescOld>Forgeron d'enchantement</TargerItemDescOld>
+    <TargetEditorID>SmithingArcane</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>336270</FormID>
+    <FormIDHexa>0005218E</FormIDHexa>
+    <EditorID>ArcaneBlacksmith</EditorID>
+    <SkyrimStringID>5388</SkyrimStringID>
+    <SkyrimStringIDHexa>0000150C</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>You can improve magical weapons and armor.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Vous permet d'améliorer les armes et armures magiques.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>You can improve magical equipment.</SourceItemDesc>
+    <SourceItemDescOld>Vous pouvez améliorer les équipements magique.</SourceItemDescOld>
+    <SourceEditorID>SmithingArcane</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Vous permet d'améliorer les armes et armures magiques.</TargerItemDesc>
+    <TargerItemDescOld>Vous permet d'améliorer les armes et armures magiques.</TargerItemDescOld>
+    <TargetEditorID>SmithingArcane</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>832525</FormID>
+    <FormIDHexa>000CB40D</FormIDHexa>
+    <EditorID>SteelSmithing</EditorID>
+    <SkyrimStringID>48378</SkyrimStringID>
+    <SkyrimStringIDHexa>0000BCFA</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Steel Smithing</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Forge d'acier</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Basic Smithing</SourceItemDesc>
+    <SourceItemDescOld>Forge de base</SourceItemDescOld>
+    <SourceEditorID>SmithingBasic</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Forge d'acier</TargerItemDesc>
+    <TargerItemDescOld>Forge d'acier</TargerItemDescOld>
+    <TargetEditorID>SmithingBasic</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>832525</FormID>
+    <FormIDHexa>000CB40D</FormIDHexa>
+    <EditorID>SteelSmithing</EditorID>
+    <SkyrimStringID>17653</SkyrimStringID>
+    <SkyrimStringIDHexa>000044F5</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Can create Steel armor and weapons at forges, and improve them twice as much.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Permet de créer des armes et armures d'acier aux forges, et de multiplier par deux leur efficacité.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Can create a greater variety of basic equipment at forges, and improve it twice as much.</SourceItemDesc>
+    <SourceItemDescOld>Permet de créer une plus grande variété d'équipements de base dans les forges et de doubler les améliorations.</SourceItemDescOld>
+    <SourceEditorID>SmithingBasic</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Permet de créer des armes et armures d'acier aux forges, et de multiplier par deux leur efficacité.</TargerItemDesc>
+    <TargerItemDescOld>Permet de créer des armes et armures d'acier aux forges, et de multiplier par deux leur efficacité.</TargerItemDescOld>
+    <TargetEditorID>SmithingBasic</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>832531</FormID>
+    <FormIDHexa>000CB413</FormIDHexa>
+    <EditorID>DaedricSmithing</EditorID>
+    <SkyrimStringID>6685</SkyrimStringID>
+    <SkyrimStringIDHexa>00001A1D</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Daedric Smithing</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Forge daedra</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Daedric Smithing</SourceItemDesc>
+    <SourceItemDescOld>Forge daedra</SourceItemDescOld>
+    <SourceEditorID>SmithingDaedric</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Forge daedra</TargerItemDesc>
+    <TargerItemDescOld>Forge daedra</TargerItemDescOld>
+    <TargetEditorID>SmithingDaedric</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>832531</FormID>
+    <FormIDHexa>000CB413</FormIDHexa>
+    <EditorID>DaedricSmithing</EditorID>
+    <SkyrimStringID>5501</SkyrimStringID>
+    <SkyrimStringIDHexa>0000157D</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Can create Daedric armor and weapons at forges, and improve them twice as much.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Permet de créer des armes et armures daedra aux forges, et de multiplier par deux leur efficacité.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Can create Daedric equipment at forges, and improve it twice as much.</SourceItemDesc>
+    <SourceItemDescOld>Permet de créer des équipements daedra dans les forges et de doubler les améliorations.</SourceItemDescOld>
+    <SourceEditorID>SmithingDaedric</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Permet de créer des armes et armures daedra aux forges, et de multiplier par deux leur efficacité.</TargerItemDesc>
+    <TargerItemDescOld>Permet de créer des armes et armures daedra aux forges, et de multiplier par deux leur efficacité.</TargerItemDescOld>
+    <TargetEditorID>SmithingDaedric</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>336272</FormID>
+    <FormIDHexa>00052190</FormIDHexa>
+    <EditorID>DragonArmor</EditorID>
+    <SkyrimStringID>35880</SkyrimStringID>
+    <SkyrimStringIDHexa>00008C28</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Dragon Armor</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Armurier draconique</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dragon Smithing</SourceItemDesc>
+    <SourceItemDescOld>Forge dragon</SourceItemDescOld>
+    <SourceEditorID>SmithingDragon</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Forge draconique</TargerItemDesc>
+    <TargerItemDescOld>Armurier draconique</TargerItemDescOld>
+    <TargetEditorID>SmithingDragon</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>336272</FormID>
+    <FormIDHexa>00052190</FormIDHexa>
+    <EditorID>DragonArmor</EditorID>
+    <SkyrimStringID>29662</SkyrimStringID>
+    <SkyrimStringIDHexa>000073DE</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Can create Dragon armor at forges, and improve them twice as much.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Permet de créer des armures draconiques aux forges et de multiplier par deux leur efficacité.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Can create Dragon equipment at forges, and improve it twice as much.</SourceItemDesc>
+    <SourceItemDescOld>Permet de créer des équipements dragon dans les forges et de doubler les améliorations.</SourceItemDescOld>
+    <SourceEditorID>SmithingDragon</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Permet de créer des armures draconiques aux forges et de multiplier par deux leur efficacité.</TargerItemDesc>
+    <TargerItemDescOld>Permet de créer des armures draconiques aux forges et de multiplier par deux leur efficacité.</TargerItemDescOld>
+    <TargetEditorID>SmithingDragon</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>832526</FormID>
+    <FormIDHexa>000CB40E</FormIDHexa>
+    <EditorID>DwarvenSmithing</EditorID>
+    <SkyrimStringID>6658</SkyrimStringID>
+    <SkyrimStringIDHexa>00001A02</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Dwarven Smithing</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Forge dwemer</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dwarven Smithing</SourceItemDesc>
+    <SourceItemDescOld>Forge dwemer</SourceItemDescOld>
+    <SourceEditorID>SmithingDwarven</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Forge dwemer</TargerItemDesc>
+    <TargerItemDescOld>Forge dwemer</TargerItemDescOld>
+    <TargetEditorID>SmithingDwarven</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>832526</FormID>
+    <FormIDHexa>000CB40E</FormIDHexa>
+    <EditorID>DwarvenSmithing</EditorID>
+    <SkyrimStringID>6637</SkyrimStringID>
+    <SkyrimStringIDHexa>000019ED</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Can create Dwarven armor and weapons at forges, and improve them twice as much.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Permet de créer des armes et armures dwemers aux forges, et de multiplier par deux leur efficacité.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Can create Dwarven equipment at forges, and improve it twice as much.</SourceItemDesc>
+    <SourceItemDescOld>Permet de créer des équipements dwemer dans les forges et de doubler les améliorations.</SourceItemDescOld>
+    <SourceEditorID>SmithingDwarven</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Permet de créer des armes et armures dwemers aux forges, et de multiplier par deux leur efficacité.</TargerItemDesc>
+    <TargerItemDescOld>Permet de créer des armes et armures dwemers aux forges, et de multiplier par deux leur efficacité.</TargerItemDescOld>
+    <TargetEditorID>SmithingDwarven</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>832530</FormID>
+    <FormIDHexa>000CB412</FormIDHexa>
+    <EditorID>EbonySmithing</EditorID>
+    <SkyrimStringID>6682</SkyrimStringID>
+    <SkyrimStringIDHexa>00001A1A</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Ebony Smithing</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Forge d'ébonite</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Ebony Smithing</SourceItemDesc>
+    <SourceItemDescOld>Forge d'ébonite</SourceItemDescOld>
+    <SourceEditorID>SmithingEbony</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Forge d'ébonite</TargerItemDesc>
+    <TargerItemDescOld>Forge d'ébonite</TargerItemDescOld>
+    <TargetEditorID>SmithingEbony</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>832530</FormID>
+    <FormIDHexa>000CB412</FormIDHexa>
+    <EditorID>EbonySmithing</EditorID>
+    <SkyrimStringID>6678</SkyrimStringID>
+    <SkyrimStringIDHexa>00001A16</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Can create Ebony armor and weapons at forges, and improve them twice as much.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Permet de créer des armes et armures d'ébonite aux forges, et de multiplier par deux leur efficacité.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Can create Ebony equipment at forges, and improve it twice as much.</SourceItemDesc>
+    <SourceItemDescOld>Permet de créer des équipements d'ébonite dans les forges et de doubler les améliorations.</SourceItemDescOld>
+    <SourceEditorID>SmithingEbony</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Permet de créer des armes et armures d'ébonite aux forges, et de multiplier par deux leur efficacité.</TargerItemDesc>
+    <TargerItemDescOld>Permet de créer des armes et armures d'ébonite aux forges, et de multiplier par deux leur efficacité.</TargerItemDescOld>
+    <TargetEditorID>SmithingEbony</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>832527</FormID>
+    <FormIDHexa>000CB40F</FormIDHexa>
+    <EditorID>ElvenSmithing</EditorID>
+    <SkyrimStringID>6665</SkyrimStringID>
+    <SkyrimStringIDHexa>00001A09</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Elven Smithing</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Forge elfique</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Elven Smithing</SourceItemDesc>
+    <SourceItemDescOld>Forge elfique</SourceItemDescOld>
+    <SourceEditorID>SmithingElven</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Forge elfique</TargerItemDesc>
+    <TargerItemDescOld>Forge elfique</TargerItemDescOld>
+    <TargetEditorID>SmithingElven</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>832527</FormID>
+    <FormIDHexa>000CB40F</FormIDHexa>
+    <EditorID>ElvenSmithing</EditorID>
+    <SkyrimStringID>6663</SkyrimStringID>
+    <SkyrimStringIDHexa>00001A07</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Can create Elven armor and weapons at forges, and improve them twice as much.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Permet de créer des armes et armures elfiques aux forges, et de multiplier par deux leur efficacité.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Can create Elven equipment at forges, and improve it twice as much.</SourceItemDesc>
+    <SourceItemDescOld>Permet de créer des équipements elfique dans les forges et de doubler les améliorations.</SourceItemDescOld>
+    <SourceEditorID>SmithingElven</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Permet de créer des armes et armures elfiques aux forges, et de multiplier par deux leur efficacité.</TargerItemDesc>
+    <TargerItemDescOld>Permet de créer des armes et armures elfiques aux forges, et de multiplier par deux leur efficacité.</TargerItemDescOld>
+    <TargetEditorID>SmithingElven</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>832529</FormID>
+    <FormIDHexa>000CB411</FormIDHexa>
+    <EditorID>GlassSmithing</EditorID>
+    <SkyrimStringID>6673</SkyrimStringID>
+    <SkyrimStringIDHexa>00001A11</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Glass Smithing</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Forge de verre</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Glass Smithing</SourceItemDesc>
+    <SourceItemDescOld>Forge de verre</SourceItemDescOld>
+    <SourceEditorID>SmithingGlass</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Forge de verre</TargerItemDesc>
+    <TargerItemDescOld>Forge de verre</TargerItemDescOld>
+    <TargetEditorID>SmithingGlass</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>832529</FormID>
+    <FormIDHexa>000CB411</FormIDHexa>
+    <EditorID>GlassSmithing</EditorID>
+    <SkyrimStringID>6672</SkyrimStringID>
+    <SkyrimStringIDHexa>00001A10</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Can create Glass armor and weapons at forges, and improve them twice as much.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Permet de créer des armes et armures de verre aux forges, et de multiplier par deux leur efficacité.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Can create Glass equipment at forges, and improve it twice as much.</SourceItemDesc>
+    <SourceItemDescOld>Permet de créer des équipements de verre dans les forges et de doubler les améliorations.</SourceItemDescOld>
+    <SourceEditorID>SmithingGlass</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Permet de créer des armes et armures de verre aux forges, et de multiplier par deux leur efficacité.</TargerItemDesc>
+    <TargerItemDescOld>Permet de créer des armes et armures de verre aux forges, et de multiplier par deux leur efficacité.</TargerItemDescOld>
+    <TargetEditorID>SmithingGlass</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <StringType>Strings</StringType>
+    <FormID>832528</FormID>
+    <FormIDHexa>000CB410</FormIDHexa>
+    <EditorID>OrcishSmithing</EditorID>
+    <SkyrimStringID>6671</SkyrimStringID>
+    <SkyrimStringIDHexa>00001A0F</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Orcish Smithing</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Forge orque</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Orcish Smithing</SourceItemDesc>
+    <SourceItemDescOld>Forge orque</SourceItemDescOld>
+    <SourceEditorID>SmithingOrcish</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Forge orque</TargerItemDesc>
+    <TargerItemDescOld>Forge orque</TargerItemDescOld>
+    <TargetEditorID>SmithingOrcish</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus />
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>(PERK) - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <StringType>DLStrings</StringType>
+    <FormID>832528</FormID>
+    <FormIDHexa>000CB410</FormIDHexa>
+    <EditorID>OrcishSmithing</EditorID>
+    <SkyrimStringID>27030</SkyrimStringID>
+    <SkyrimStringIDHexa>00006996</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Can create Orcish armor and weapons at forges, and improve them twice as much.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Permet de créer des armes et armures orques aux forges, et de multiplier par deux leur efficacité.</SkyrimItemDescTargetLang>
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Can create Orcish equipment at forges, and improve it twice as much.</SourceItemDesc>
+    <SourceItemDescOld>Permet de créer des équipements orque dans les forges et de doubler les améliorations.</SourceItemDescOld>
+    <SourceEditorID>SmithingOrcish</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc>Permet de créer des armes et armures orques aux forges, et de multiplier par deux leur efficacité.</TargerItemDesc>
+    <TargerItemDescOld>Permet de créer des armes et armures orques aux forges, et de multiplier par deux leur efficacité.</TargerItemDescOld>
+    <TargetEditorID>SmithingOrcish</TargetEditorID>
+    <StringStatus>Upd</StringStatus>
+    <CompareStatus>&lt;&gt;</CompareStatus>
+    <CompareStatusTarget />
+  </T_PlugInStrings>
+</NewDataSet>

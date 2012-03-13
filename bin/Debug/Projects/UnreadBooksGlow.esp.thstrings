@@ -1,0 +1,381 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="T_PlugInStrings" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="T_PlugInStrings">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="GroupName" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordType" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordTypeTH" type="xs:string" minOccurs="0" />
+                <xs:element name="StringType" type="xs:string" minOccurs="0" />
+                <xs:element name="FormID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="FormIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SkyrimStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescSourceLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescTargetLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SourceStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="TargetStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="TargerItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="TargerItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetEditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="StringStatus" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatusSource" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatusTarget" type="xs:string" minOccurs="0" />
+                <xs:element name="WriteStringInPlugIn" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <T_PlugInStrings>
+    <GroupName>MGEF - Magic Effect</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>16794432</FormID>
+    <FormIDHexa>01004340</FormIDHexa>
+    <EditorID>UBGSettingsEffect</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Unread Books Glow Settings</SourceItemDesc>
+    <SourceEditorID>UBGSettingsEffect</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc />
+    <TargerItemDescOld />
+    <TargetEditorID>UBGSettingsEffect</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>SPEL - Spell</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>16794431</FormID>
+    <FormIDHexa>0100433F</FormIDHexa>
+    <EditorID>UBGSettingsSpell</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>[Unread Books Glow Settings]</SourceItemDesc>
+    <SourceEditorID>UBGSettingsSpell</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc />
+    <TargerItemDescOld />
+    <TargetEditorID>UBGSettingsSpell</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>false</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>SPEL - Spell</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>16794431</FormID>
+    <FormIDHexa>0100433F</FormIDHexa>
+    <EditorID>UBGSettingsSpell</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Select this, then cast it like a spell to change brightness settings.</SourceItemDesc>
+    <SourceEditorID>UBGSettingsSpell</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc />
+    <TargerItemDescOld />
+    <TargetEditorID>UBGSettingsSpell</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MESG - Game messages</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>16794429</FormID>
+    <FormIDHexa>0100433D</FormIDHexa>
+    <EditorID>UBGNotification2Msg</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>See Magic -&gt; Powers -&gt; [Settings]</SourceItemDesc>
+    <SourceEditorID>UBGNotification2Msg</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc />
+    <TargerItemDescOld />
+    <TargetEditorID>UBGNotification2Msg</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MESG - Game messages</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>16793050</FormID>
+    <FormIDHexa>01003DDA</FormIDHexa>
+    <EditorID>UBGNotification1Msg</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Unread Books Glow loaded</SourceItemDesc>
+    <SourceEditorID>UBGNotification1Msg</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc />
+    <TargerItemDescOld />
+    <TargetEditorID>UBGNotification1Msg</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MESG - Game messages</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>16813747</FormID>
+    <FormIDHexa>01008EB3</FormIDHexa>
+    <EditorID>UBGBookAliasDisplayNameMsg</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>&lt;BaseName&gt; (Unread)</SourceItemDesc>
+    <SourceEditorID>UBGBookAliasDisplayNameMsg</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc />
+    <TargerItemDescOld />
+    <TargetEditorID>UBGBookAliasDisplayNameMsg</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MESG - Game messages</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>16794430</FormID>
+    <FormIDHexa>0100433E</FormIDHexa>
+    <EditorID>UBGSettingsMsg</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Change settings for the "Unread Books Glow" mod</SourceItemDesc>
+    <SourceEditorID>UBGSettingsMsg</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc />
+    <TargerItemDescOld />
+    <TargetEditorID>UBGSettingsMsg</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>false</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MESG - Game messages</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>16794430</FormID>
+    <FormIDHexa>0100433E</FormIDHexa>
+    <EditorID>UBGSettingsMsg</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Unread Books Glow Mod Settings</SourceItemDesc>
+    <SourceEditorID>UBGSettingsMsg</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc />
+    <TargerItemDescOld />
+    <TargetEditorID>UBGSettingsMsg</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MESG - Game messages</GroupName>
+    <RecordType>ITXT</RecordType>
+    <RecordTypeTH>ITXT:1</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>16794430</FormID>
+    <FormIDHexa>0100433E</FormIDHexa>
+    <EditorID>UBGSettingsMsg</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bright [Default]</SourceItemDesc>
+    <SourceEditorID>UBGSettingsMsg</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc />
+    <TargerItemDescOld />
+    <TargetEditorID>UBGSettingsMsg</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MESG - Game messages</GroupName>
+    <RecordType>ITXT</RecordType>
+    <RecordTypeTH>ITXT:2</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>16794430</FormID>
+    <FormIDHexa>0100433E</FormIDHexa>
+    <EditorID>UBGSettingsMsg</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Medium</SourceItemDesc>
+    <SourceEditorID>UBGSettingsMsg</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc />
+    <TargerItemDescOld />
+    <TargetEditorID>UBGSettingsMsg</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MESG - Game messages</GroupName>
+    <RecordType>ITXT</RecordType>
+    <RecordTypeTH>ITXT:3</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>16794430</FormID>
+    <FormIDHexa>0100433E</FormIDHexa>
+    <EditorID>UBGSettingsMsg</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dim</SourceItemDesc>
+    <SourceEditorID>UBGSettingsMsg</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc />
+    <TargerItemDescOld />
+    <TargetEditorID>UBGSettingsMsg</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MESG - Game messages</GroupName>
+    <RecordType>ITXT</RecordType>
+    <RecordTypeTH>ITXT:4</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>16794430</FormID>
+    <FormIDHexa>0100433E</FormIDHexa>
+    <EditorID>UBGSettingsMsg</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>All Books [Default]</SourceItemDesc>
+    <SourceEditorID>UBGSettingsMsg</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc />
+    <TargerItemDescOld />
+    <TargetEditorID>UBGSettingsMsg</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MESG - Game messages</GroupName>
+    <RecordType>ITXT</RecordType>
+    <RecordTypeTH>ITXT:5</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>16794430</FormID>
+    <FormIDHexa>0100433E</FormIDHexa>
+    <EditorID>UBGSettingsMsg</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Only Skill Books</SourceItemDesc>
+    <SourceEditorID>UBGSettingsMsg</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargerItemDesc />
+    <TargerItemDescOld />
+    <TargetEditorID>UBGSettingsMsg</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+</NewDataSet>
