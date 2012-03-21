@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Windows.Forms;
@@ -23,38 +24,128 @@ namespace TESVSnip.Docking
 {
   public partial class TranslatorHelper : BaseDockContent
   {
+    private DataTable tblStrings = new DataSetTH.T_StringsDataTable();
+    private DataView tblStringsDV = null;
+
+    public DataTable tblSkyrimEsmDict = new DataSetTH.T_StringsDictDataTable();
+    private DataView tblSkyrimEsmDictDV_FormIDHexa = null;
+    private DataView tblSkyrimEsmDictDV_SkyrimStringIDHexa = null;
+
+    private string LastLoadedSkyrimStringsDictionnary = String.Empty;
+    private string LastLoadedSkyrimEsmDictionnary = String.Empty;
+
+    /// <summary>
+    /// GetStringsDictionnaryPath
+    /// </summary>
+    /// <returns></returns>
+    private string GetStringsDictionnaryPath()
+    {
+      string languageSource = cboxSourceLanguage.Text;
+      string languageTarget = cboxTargetLanguage.Text;
+      string appPath = Path.GetDirectoryName(Application.ExecutablePath);
+      appPath = Path.Combine(appPath, @"Dict\");
+      System.IO.Directory.CreateDirectory(appPath);
+      return Path.Combine(appPath, @"Skyrim_" + languageSource + "_to_" + languageTarget + ".dicstr");
+    }
+
     /// <summary>
     /// GenerateSkyrimStringsDictionary
     /// </summary>
     /// <param name="language"></param>
     /// <param name="dict"></param>
-    /// <param name="type"></param>
-    public void GenerateSkyrimStringsDictionary(string language, LocalizedStringDict dict, string type, string action)
+    /// <param name="stringType"></param>
+    /// <param name="action"></param>
+    public void GenerateSkyrimStringsDictionary(string language, LocalizedStringDict dict, string stringType, string action)
     {
-      DataRow row;
+      DataRow row = tblStrings.NewRow();
+      string key;
+      string primaryKey;
+      DataRowView[] drv;
 
-      if (action == "CREATE") tblSkyrimStrings.Rows.Clear();
+      if (action == "CREATE") { tblStrings.Rows.Clear(); if (tblStringsDV != null) tblStringsDV.Table = null; }
+
+      if (tblStringsDV == null) tblStringsDV = new DataView();
+
+      if (tblStringsDV.Table == null)
+      {
+        tblStringsDV.Table = tblStrings;
+        tblStringsDV.Sort = "PK"; //PK= String ID + StringType (strings / dlstring /  ilstrings)
+      }
 
       foreach (System.Collections.Generic.KeyValuePair<uint, string> kvp in dict)
       {
-        row = tblSkyrimStrings.NewRow();
-        row["StringID"] = kvp.Key;
-        row["StringIDHexa"] = kvp.Key.ToString("X8").ToUpperInvariant(); ;
-        row["TextValue"] = kvp.Value;
-        row["StringType"] = type; //strings / dlstring /  ilstrings
-        tblSkyrimStrings.Rows.Add(row);
+        try
+        {
+          key = kvp.Key.ToString("X8").ToUpperInvariant();
+          primaryKey = key + "|" + stringType.ToUpperInvariant();
+
+          /// Create new row
+          if (language == cboxSourceLanguage.Text)
+          {
+            //if (key == "00000001")
+            //  key = "00000001";
+
+            drv = tblStringsDV.FindRows(new object[] { primaryKey });
+            if (drv.Length < 1)
+            {
+              row = tblStrings.NewRow();
+              row["PK"] = primaryKey;
+              row["StringID"] = kvp.Key;
+              row["StringIDHexa"] = key;
+              //if (kvp.Value.Length > 200)
+              //  row["SourceTextValue"] = kvp.Value.Substring(0, 200);
+              //else
+              row["SourceTextValue"] = kvp.Value;
+              row["TargetTextValue"] = "?";
+              row["StringType"] = stringType;
+              tblStrings.Rows.Add(row);
+            }
+            else
+            {
+              drv[0]["TargetTextValue"] = kvp.Value;
+            }
+          }
+
+          /// Add/Create new row
+          if (language == cboxTargetLanguage.Text)
+          {
+            //if (key == "00000001")
+            //  key = "00000001";
+
+            drv = tblStringsDV.FindRows(new object[] { primaryKey });
+            if (drv.Length < 1)
+            {
+              row = tblStrings.NewRow();
+              row["PK"] = primaryKey;
+              row["StringID"] = kvp.Key;
+              row["StringIDHexa"] = kvp.Key.ToString("X8").ToUpperInvariant();
+              row["SourceTextValue"] = "?";
+              //if (kvp.Value.Length > 200)
+              //  row["TargetTextValue"] = kvp.Value.Substring(0, 200);
+              //else
+              row["TargetTextValue"] = kvp.Value;
+              row["StringType"] = stringType;
+              tblStrings.Rows.Add(row);
+            }
+            else
+            {
+              drv[0]["TargetTextValue"] = kvp.Value;
+            }
+          }
+        }
+        catch (Exception crap)
+        {
+          edtMemo.Text += crap.Message + Environment.NewLine;
+          return;
+        }
       }
 
       if (action == "WRITE")
       {
-        string appPath = Path.GetDirectoryName(Application.ExecutablePath);
-        appPath = Path.Combine(appPath, @"Dict\");
-        System.IO.Directory.CreateDirectory(appPath);
-
-        string appPathPlugin = Path.Combine(appPath, "Skyrim_Strings_" + language + ".dicstr");
+        string appPathPlugin = GetStringsDictionnaryPath();
         if (File.Exists(appPathPlugin)) File.Delete(appPathPlugin);
-        tblSkyrimStrings.WriteXml(appPathPlugin, XmlWriteMode.WriteSchema);
-        tblSkyrimStrings.Rows.Clear();
+        tblStrings.WriteXml(appPathPlugin, XmlWriteMode.WriteSchema);
+        LastLoadedSkyrimStringsDictionnary = GetStringsDictionnaryPath();
       }
     }
 
@@ -67,29 +158,30 @@ namespace TESVSnip.Docking
     {
       string languageSource = cboxSourceLanguage.Text;
       string languageTarget = cboxTargetLanguage.Text;
-      string SourceStringIDHexa;
-      string StringType = String.Empty;
+      string sourceStringIDHexa;
+      string stringType = String.Empty;
+      string primaryKey;
 
       string appPath = Path.GetDirectoryName(Application.ExecutablePath);
       appPath = Path.Combine(appPath, @"Dict\");
 
       if (!LoadSkyrimStringsDictionnary()) return;
 
-      string sourceLang = String.Empty;
-      string targetLang = String.Empty;
+      string sourceLang = "????????";
+      string targetLang = "????????";
+
+      bool foundString;
 
       DataRowView[] foundRows;
       DataRow rowDict;
 
-      DataView dvSource = new DataView();
-      dvSource.Table = tblSkyrimSourceStrings;
-      dvSource.Sort = "StringIDHexa, StringType"; //StringType = strings / dlstring /  ilstrings
-      //dvSource.Sort = "StringIDHexa";
+      if (tblStringsDV == null) tblStringsDV = new DataView();
 
-      DataView dvTarget = new DataView();
-      dvTarget.Table = tblSkyrimTargetStrings;
-      dvTarget.Sort = "StringIDHexa, StringType"; //StringType = strings / dlstring /  ilstrings
-      //dvTarget.Sort = "StringIDHexa";
+      if (tblStringsDV.Table == null)
+      {
+        tblStringsDV.Table = tblStrings;
+        tblStringsDV.Sort = "PK"; //PK= String ID + StringType (strings / dlstring /  ilstrings)
+      } 
 
       try
       {
@@ -97,48 +189,59 @@ namespace TESVSnip.Docking
 
         foreach (DataRow row in tblPlugInStringsLoad.Rows)
         {
+          foundString = false;
           for (int stringTypeCpt = 1; stringTypeCpt <= 3; stringTypeCpt++)
           {
-            SourceStringIDHexa = Convert.ToString(row["SourceStringIDHexa"]);
+            sourceStringIDHexa = Convert.ToString(row["SourceStringIDHexa"]);
 
             sourceLang = String.Empty;
             targetLang = String.Empty;
 
-            StringType = "Strings";
-            if (stringTypeCpt == 2) StringType = "DLStrings";
-            if (stringTypeCpt == 3) StringType = "ILStrings";
+            stringType = "Strings";
+            if (stringTypeCpt == 2) stringType = "DLStrings";
+            if (stringTypeCpt == 3) stringType = "ILStrings";
 
-            foundRows = dvSource.FindRows(new object[] { SourceStringIDHexa, StringType });
-            //foundRows = dvSource.FindRows(new object[] { SourceStringIDHexa });
-            if (foundRows.Length == 1) sourceLang = foundRows[0]["TextValue"].ToString();
+            primaryKey = sourceStringIDHexa + "|" + stringType;
 
-            foundRows = dvTarget.FindRows(new object[] { SourceStringIDHexa, StringType });
-            if (foundRows.Length == 1) targetLang = foundRows[0]["TextValue"].ToString();
-
-            //foreach (DataRowView rowV in foundRows)
-            if (foundRows.Length == 1 | foundRows.Length == 1)
+            foundRows = tblStringsDV.FindRows(new object[] { primaryKey });
+            if (foundRows.Length == 1)
             {
-              //if (foundRows[0]["TextValue"].ToString().Length > 255)
-              //  sourceLang = foundRows[0]["TextValue"].ToString().Substring(0, 255);
-              //else
-              //sourceLang = foundRows[0]["TextValue"].ToString();
-
-              StringType = Convert.ToString(foundRows[0]["StringType"]);
+              sourceLang = foundRows[0]["SourceTextValue"].ToString();
+              targetLang = foundRows[0]["TargetTextValue"].ToString();
+              stringType = Convert.ToString(foundRows[0]["StringType"]);
 
               rowDict = tblSkyrimEsmDict.NewRow();
               rowDict["GroupName"] = row["GroupName"];
               rowDict["RecordType"] = row["RecordType"];
-              rowDict["StringType"] = StringType; // rowV["StringType"]; // row["StringType"];
+              rowDict["StringType"] = stringType; 
               rowDict["FormID"] = row["FormID"];
               rowDict["FormIDHexa"] = Convert.ToString(row["FormIDHexa"]).ToUpperInvariant();
               rowDict["EditorID"] = row["EditorID"];
               rowDict["SkyrimStringID"] = row["SourceStringID"];
-              rowDict["SkyrimStringIDHexa"] = Convert.ToString(row["SourceStringIDHexa"]).ToUpperInvariant();
+              rowDict["SkyrimStringIDHexa"] = sourceStringIDHexa.ToUpperInvariant();
               rowDict["SkyrimItemDescSourceLang"] = sourceLang;
               rowDict["SkyrimItemDescTargetLang"] = targetLang;
 
               tblSkyrimEsmDict.Rows.Add(rowDict);
+              foundString = true;
+              break;
             }
+          }
+
+          if (foundString == false)
+          {
+            rowDict = tblSkyrimEsmDict.NewRow();
+            rowDict["GroupName"] = row["GroupName"];
+            rowDict["RecordType"] = row["RecordType"];
+            rowDict["StringType"] = stringType; // rowV["StringType"]; // row["StringType"];
+            rowDict["FormID"] = row["FormID"];
+            rowDict["FormIDHexa"] = Convert.ToString(row["FormIDHexa"]).ToUpperInvariant();
+            rowDict["EditorID"] = row["EditorID"];
+            rowDict["SkyrimStringID"] = 0;
+            rowDict["SkyrimStringIDHexa"] = 0.ToString("X8").ToUpperInvariant();
+            rowDict["SkyrimItemDescSourceLang"] = "?";
+            rowDict["SkyrimItemDescTargetLang"] = "?";
+            tblSkyrimEsmDict.Rows.Add(rowDict);
           }
 
         }
@@ -149,14 +252,10 @@ namespace TESVSnip.Docking
       }
       finally
       {
-        dvSource.Dispose();
-        dvSource = null;
-        dvTarget.Dispose();
-        dvTarget = null;
-
         string appPathPlugin = Path.Combine(appPath, "Skyrim_" + languageSource + "_to_" + languageTarget + ".dic");
         tblSkyrimEsmDict.WriteXml(appPathPlugin, XmlWriteMode.WriteSchema);
-        tblSkyrimEsmDict.Rows.Clear();
+        //tblSkyrimEsmDict.Rows.Clear();
+        tblPlugInStringsLoad.Rows.Clear();
         GC.Collect();
       }
     }
@@ -166,67 +265,41 @@ namespace TESVSnip.Docking
     /// </summary>
     private bool LoadSkyrimStringsDictionnary()
     {
-      string languageSource = cboxSourceLanguage.Text;
-      string languageTarget = cboxTargetLanguage.Text;
-
-      string appPath = Path.GetDirectoryName(Application.ExecutablePath);
-      appPath = Path.Combine(appPath, @"Dict\");
-
-      string appPathPlugin = Path.Combine(appPath, "Skyrim_Strings_" + languageSource + ".dicstr");
+      string appPathPlugin = GetStringsDictionnaryPath();
 
       if (!File.Exists(appPathPlugin))
       {
-        MessageBox.Show("File doesn't exist." + Environment.NewLine + appPathPlugin, "Translator Helper", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        MessageBox.Show("Dictionnary doesn't exist." + Environment.NewLine + appPathPlugin, "Translator Helper", MessageBoxButtons.OK, MessageBoxIcon.Error);
         return false;
       }
 
       try
       {
-        #region Read Source Strings Dictionnary
+        tblStrings.Rows.Clear();
+        tblStrings.ReadXml(appPathPlugin);
 
-        tblSkyrimSourceStrings.Rows.Clear();
-        tblSkyrimSourceStrings.ReadXml(appPathPlugin);
-
-        if (tblSkyrimSourceStrings.Rows.Count == 0)
+        if (tblStrings.Rows.Count == 0)
         {
           edtMemo.Text += Environment.NewLine + "****** Strings file is empty." + Environment.NewLine + appPathPlugin;
-          MessageBox.Show("Strings file is empty." + Environment.NewLine + appPathPlugin, "Translator Helper", MessageBoxButtons.OK, MessageBoxIcon.Error);
-          return false;
-        }
-        //else
-        //  edtMemo.Text += Environment.NewLine + "Skyrim_Strings_" + languageSource + ".dicstr : " + tblSkyrimSourceStrings.Rows.Count.ToString() + " lines";
-
-        #endregion Read Source Strings Dictionnary
-
-        #region Read Target Strings Dictionnary
-
-        appPathPlugin = Path.Combine(appPath, "Skyrim_Strings_" + languageTarget + ".dicstr");
-
-        if (!File.Exists(appPathPlugin))
-        {
-          MessageBox.Show("File doesn't exist." + Environment.NewLine + appPathPlugin, "Translator Helper", MessageBoxButtons.OK, MessageBoxIcon.Error);
-          return false;
-        }
-
-        tblSkyrimTargetStrings.Rows.Clear();
-        tblSkyrimTargetStrings.ReadXml(appPathPlugin);
-
-        if (tblSkyrimTargetStrings.Rows.Count == 0)
-        {
-          edtMemo.Text += Environment.NewLine + "****** Strings file is empty." + Environment.NewLine + appPathPlugin;
-          MessageBox.Show("Strings file is empty." + Environment.NewLine + appPathPlugin, "Translator Helper", MessageBoxButtons.OK, MessageBoxIcon.Error);
+          MessageBox.Show("Dictionnary file is empty." + Environment.NewLine + appPathPlugin, "Translator Helper", MessageBoxButtons.OK, MessageBoxIcon.Error);
           return false;
         }
         else
-          edtMemo.Text += Environment.NewLine + "Skyrim_Strings_" + languageTarget + ".dicstr : " + tblSkyrimTargetStrings.Rows.Count.ToString() + " lines";
+        {
+          if (tblStringsDV == null) tblStringsDV = new DataView();
 
-        #endregion Read Target Strings Dictionnary
+          if (tblStringsDV.Table == null)
+          {
+            tblStringsDV.Table = tblStrings;
+            tblStringsDV.Sort = "PK"; //PK= String ID + StringType (strings / dlstring /  ilstrings)
+          }
+        }
 
         return true;
       }
       catch (Exception ex)
       {
-        edtMemo.Text += Environment.NewLine + "****** ERROR in ReadPlugInRecordsSubRecords ******" + ex.Message + Environment.NewLine + ex.Source + Environment.NewLine + ex.StackTrace;
+        edtMemo.Text += Environment.NewLine + "****** ERROR in LoadSkyrimStringsDictionnary ******" + ex.Message + Environment.NewLine + ex.Source + Environment.NewLine + ex.StackTrace;
         return false;
       }
     }
@@ -239,7 +312,10 @@ namespace TESVSnip.Docking
       string languageSource = cboxSourceLanguage.Text;
       string languageTarget = cboxTargetLanguage.Text;
 
-      if (LastLoadedSkyrimEsmDictionnary == "Skyrim_" + languageSource + "_to_" + languageTarget + ".dic") return true;
+      if (tblSkyrimEsmDict == null) return false;
+
+      if (tblSkyrimEsmDict.Rows.Count > 0)
+        if (LastLoadedSkyrimEsmDictionnary == "Skyrim_" + languageSource + "_to_" + languageTarget + ".dic") return true;
 
       string appPath = Path.GetDirectoryName(Application.ExecutablePath);
       appPath = Path.Combine(appPath, @"Dict\");
@@ -250,43 +326,19 @@ namespace TESVSnip.Docking
         MessageBox.Show("Dictionnary file doesn't exist." + Environment.NewLine + appPathPlugin, "Translator Helper", MessageBoxButtons.OK, MessageBoxIcon.Error);
         return false;
       }
-      else
-        edtMemo.Text += Environment.NewLine + "Skyrim_" + languageSource + "_to_" + languageTarget + ".dic : " + tblSkyrimTargetStrings.Rows.Count.ToString() + " lines";
 
       try
       {
-        if (listViewSkyrimDict != null) listViewSkyrimDict.Clear(); else listViewSkyrimDict = new System.Collections.Generic.List<ObjStringsDict>();
-        olvSkyrimDict.Items.Clear();
-        tblSkyrimEsmDict.Rows.Clear();
-        GC.Collect();
         tblSkyrimEsmDict.ReadXml(appPathPlugin);
+        edtMemo.Text += Environment.NewLine + "Skyrim_" + languageSource + "_to_" + languageTarget + ".dic : " + tblSkyrimEsmDict.Rows.Count.ToString() + " lines";
 
-        //if (!LoadSkyrimEsmDictionnary()) return;
-
-        foreach (DataRow row in tblSkyrimEsmDict.Rows)
-        {
-          if (Convert.ToString(row["SkyrimStringIDHexa"]) != 0.ToString("X8"))
-            if (!String.IsNullOrWhiteSpace(Convert.ToString(row["SkyrimItemDescSourceLang"])))
-              if (!String.IsNullOrWhiteSpace(Convert.ToString(row["SkyrimItemDescTargetLang"])))
-              {
-                listViewSkyrimDict.Add(new ObjStringsDict(
-                 Convert.ToString(row["SkyrimStringIDHexa"]),
-                 Convert.ToString(row["SkyrimItemDescSourceLang"]),
-                 Convert.ToString(row["SkyrimItemDescTargetLang"])
-                 ));
-              }
-        }
-
-        this.olvSkyrimDict.SetObjects(listViewSkyrimDict);
-        olvSkyrimDict.ShowGroups = false;
-        olvSkyrimDict.BuildList();
         LastLoadedSkyrimEsmDictionnary = "Skyrim_" + languageSource + "_to_" + languageTarget + ".dic";
 
         return true;
       }
       catch (Exception ex)
       {
-        edtMemo.Text += Environment.NewLine + "****** ERROR in ReadPlugInRecordsSubRecords ******" + ex.Message + Environment.NewLine + ex.Source + Environment.NewLine + ex.StackTrace;
+        edtMemo.Text += Environment.NewLine + "****** ERROR in LoadSkyrimEsmDictionnary ******" + ex.Message + Environment.NewLine + ex.Source + Environment.NewLine + ex.StackTrace;
         return false;
       }
     }

@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TESVSnip</RootNamespace>
     <AssemblyName>TESVSnip</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ApplicationIcon>Resources\tesv_ico.ico</ApplicationIcon>
     <FileUpgradeFlags>
@@ -32,7 +32,6 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <NoStdLib>False</NoStdLib>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup>
     <BUILD_ROOT Condition="'$(BUILD_ROOT)' == '' AND Exists('$(MSBuildProjectDirectory)\build\')">$(MSBuildProjectDirectory)\</BUILD_ROOT>
@@ -428,7 +427,32 @@
     <Compile Include="RecordControls\HexElement.Designer.cs">
       <DependentUpon>HexElement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Translator\DataSetTH1.Designer.cs">
+    <Compile Include="Translator\CheckBoxComboBox\CheckBoxComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translator\CheckBoxComboBox\CheckBoxComboBox.designer.cs">
+      <DependentUpon>CheckBoxComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translator\CheckBoxComboBox\GripBounds.cs" />
+    <Compile Include="Translator\CheckBoxComboBox\NativeMethods.cs" />
+    <Compile Include="Translator\CheckBoxComboBox\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translator\CheckBoxComboBox\Popup.designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translator\CheckBoxComboBox\PopupComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translator\CheckBoxComboBox\PopupComboBox.designer.cs">
+      <DependentUpon>PopupComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translator\CheckBoxComboBox\Selection Wrappers\ListSelectionWrapper.cs" />
+    <Compile Include="Translator\CheckBoxComboBox\Selection Wrappers\ObjectSelectionWrapper.cs" />
+    <Compile Include="Translator\TranslatorHelperObjClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translator\DataSetTH.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetTH.xsd</DependentUpon>
@@ -613,6 +637,9 @@
     <EmbeddedResource Include="RecordControls\TextElement.resx">
       <DependentUpon>TextElement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Translator\CheckBoxComboBox\PopupComboBox.resx">
+      <DependentUpon>PopupComboBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Translator\FormLongText.resx">
       <DependentUpon>FormLongText.cs</DependentUpon>
     </EmbeddedResource>
@@ -756,13 +783,14 @@
       <DependentUpon>DataSetTH.xsd</DependentUpon>
     </None>
     <None Include="Translator\DataSetTH.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSetTH1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTH.Designer.cs</LastGenOutput>
     </None>
     <None Include="Translator\DataSetTH.xss">
       <DependentUpon>DataSetTH.xsd</DependentUpon>
     </None>
+    <None Include="_BBCode File\BBCeditor.txt" />
     <None Include="_BBCode File\bbcode for nexus page.bbc" />
     <None Include="_Files\Change code.docx" />
     <None Include="_Files\RecordStructure_FIX-11405.rar" />
@@ -794,7 +822,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Controls\ObjectListView\CustomDictionary.xml" />
-    <Content Include="_BBCode File\BBCeditor.txt" />
     <None Include="Resources\bookmark_add.png" />
     <None Include="Resources\14_layer_deletelayer.png" />
     <Content Include="Resources\clear-filter.png" />
@@ -872,6 +899,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <RegisterForComInterop>False</RegisterForComInterop>
@@ -886,6 +914,7 @@
     <CopyToStagingConf Include="$(ProjectDir)conf\**" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="_SQLite\" />
     <Folder Include="_UTF-8\" />
   </ItemGroup>
   <Target Name="Package">

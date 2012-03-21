@@ -32,7 +32,7 @@ namespace TESVSnip.Docking
       {
         edtMemo.Text = String.Empty;
 
-        if (String.IsNullOrWhiteSpace(edtPlugInName.Text))
+        if (String.IsNullOrEmpty(edtPlugInName.Text))
         {
           MessageBox.Show("Open project or plugin before saved.", "Translator Helper", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
           return;
@@ -59,7 +59,7 @@ namespace TESVSnip.Docking
         tblPlugInHeader.Rows[0]["TranslatedBy"] = edtTranslatedBy.Text;
         tblPlugInHeader.Rows[0]["SourceLanguage"] = cboxSourceLanguage.Text;
         tblPlugInHeader.Rows[0]["TargetLanguage"] = cboxTargetLanguage.Text;
-        if (!String.IsNullOrWhiteSpace(PluginLocation)) tblPlugInHeader.Rows[0]["PluginLocation"] = PluginLocation;
+        if (!String.IsNullOrEmpty(PluginLocation)) tblPlugInHeader.Rows[0]["PluginLocation"] = PluginLocation;
         tblPlugInHeader.Rows[0]["ProjectStructureVersion"] = 1;
         tblPlugInHeader.Rows[0]["PluginInfo"] = edtPluginInfo.Text;
 
@@ -123,9 +123,7 @@ namespace TESVSnip.Docking
             {
               foreach (DataColumn colTmp in tbl.Columns)
                 if (col.ColumnName == colTmp.ColumnName)
-                {
                   row[col.ColumnName] = tbl.Rows[0][col.ColumnName];
-                }
             }
             tbl.Rows.Clear();
             tbl.Dispose();
@@ -163,6 +161,12 @@ namespace TESVSnip.Docking
                   {
                     row[col.ColumnName] = rowXml[col.ColumnName];
                   }
+                  else
+                    if (colTmp.ColumnName == "TargerItemDesc" & col.ColumnName == "TargetItemDesc")
+                      row["TargetItemDesc"] = rowXml["TargerItemDesc"];
+                    else
+                      if (colTmp.ColumnName == "TargerItemDescOld" & col.ColumnName == "TargetItemDescOld")
+                        row["TargetItemDescOld"] = rowXml["TargerItemDescOld"];
               }
 
               if (Convert.ToInt16(tblPlugInHeader.Rows[0]["ProjectStructureVersion"]) < 1) row["WriteStringInPlugIn"] = true;
@@ -185,9 +189,9 @@ namespace TESVSnip.Docking
 
 
           //Try open plugin associate to project
-          if (String.IsNullOrWhiteSpace(PluginLocation))
+          if (String.IsNullOrEmpty(PluginLocation))
           {
-            if (!String.IsNullOrWhiteSpace(edtPlugInName.Text))
+            if (!String.IsNullOrEmpty(edtPlugInName.Text))
             {
               string filePath = Path.Combine(Program.gameDataDir, edtPlugInName.Text);
               if (File.Exists(filePath))
@@ -285,21 +289,12 @@ namespace TESVSnip.Docking
       if (listViewStringsOther != null) listViewStringsOther.Clear();
       olvTHOtherStrings.Items.Clear();
 
-      //if (listViewSkyrimDict != null) listViewSkyrimDict.Clear();
-      //olvSkyrimDict.Items.Clear();
-
       if (listViewOtherSkyrimStringsSource != null) listViewOtherSkyrimStringsSource.Clear();
       olvTHSkyrimSourceStrings.Items.Clear();
 
-      tblPlugInHeader.Rows.Clear();
-
+      tblStrings.Rows.Clear();
       tblPlugInStringsLoad.Rows.Clear();
       tblPlugInStringsProject.Rows.Clear();
-
-      tblSkyrimSourceStrings.Rows.Clear();
-      tblSkyrimTargetStrings.Rows.Clear();
-      //tblSkyrimEsmDict.Rows.Clear();
-
       tblSkyrimStrings.Rows.Clear();
     }
 

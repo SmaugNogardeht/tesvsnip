@@ -20,6 +20,7 @@ using TESVSnip.Translator;
 using TESVSnip.Collections;
 using TESVSnip.Collections.Generic;
 using BrightIdeasSoftware;
+using System.Diagnostics;
 
 namespace TESVSnip.Docking
 {
@@ -47,22 +48,28 @@ namespace TESVSnip.Docking
     }
 
     /// <summary>
+    /// ClearMemo
+    /// </summary>
+    /// <param name="textValue"></param>
+    public void ClearMemo()
+    {
+      edtMemo.Text = String.Empty;
+    }
+
+    /// <summary>
     /// Create columns for ListView
     /// </summary>
     private void CreateListViewColumn()
     {
-      this.olvTHStrings.AllColumns.Clear();
-      this.olvTHDLStrings.AllColumns.Clear();
-      this.olvTHILStrings.AllColumns.Clear();
       this.olvSkyrimDict.AllColumns.Clear();
       this.olvTHSkyrimSourceStrings.AllColumns.Clear();
-
+      this.olvTHSkyrimTargetStrings.AllColumns.Clear();
+      
       string typeCol = String.Empty;
 
       System.Collections.Generic.List<OLVColumn> listCol = new System.Collections.Generic.List<OLVColumn>();
       BrightIdeasSoftware.OLVColumn olvCol;
       BrightIdeasSoftware.OLVColumn primarySortColumn;
-      BrightIdeasSoftware.OLVColumn secondarySortColumn;
 
       #region olvTHSkyrimSourceStrings / olvTHSkyrimTargetStrings
 
@@ -149,199 +156,259 @@ namespace TESVSnip.Docking
       olvCol.TextAlign = HorizontalAlignment.Left;
       olvCol.Sortable = true;
       listCol.Add(olvCol);
-      
+
       this.olvSkyrimDict.AllColumns.AddRange(listCol);
       this.olvSkyrimDict.RebuildColumns();
       this.olvSkyrimDict.PrimarySortColumn = primarySortColumn;
 
       #endregion
-
-      #region Other list
-      
-      for (int i = 0; i <= 3; i++)
-      {
-        listCol.Clear();
-        if (i == 1) typeCol = "DL";
-
-        olvCol = new BrightIdeasSoftware.OLVColumn();
-        olvCol.AspectName = "GroupName";
-        olvCol.Text = "Group";
-        olvCol.Width = 100;
-        olvCol.HeaderTextAlign = HorizontalAlignment.Center;
-        olvCol.Groupable = true;
-        olvCol.Name = "olvColGroup" + typeCol;
-        olvCol.HeaderFormatStyle = headerFormatStyleData;
-        olvCol.TextAlign = HorizontalAlignment.Left;
-        olvCol.Sortable = true;
-        olvCol.Groupable = true;
-        listCol.Add(olvCol);
-        primarySortColumn = olvCol;
-
-        olvCol = new BrightIdeasSoftware.OLVColumn();
-        olvCol.AspectName = "StringStatus";
-        olvCol.Text = "State";
-        olvCol.Width = 50;
-        olvCol.HeaderTextAlign = HorizontalAlignment.Center;
-        olvCol.Groupable = true;
-        olvCol.Name = "olvColStringStatus" + typeCol;
-        olvCol.HeaderFormatStyle = headerFormatStyleData;
-        olvCol.TextAlign = HorizontalAlignment.Center;
-        olvCol.Sortable = true;
-        listCol.Add(olvCol);
-
-        olvCol = new BrightIdeasSoftware.OLVColumn();
-        olvCol.AspectName = "CompareStatusSource";
-        olvCol.Text = "Src <>";
-        olvCol.Width = 50;
-        olvCol.HeaderTextAlign = HorizontalAlignment.Center;
-        olvCol.Groupable = true;
-        olvCol.Name = "olvColCompareStatus" + typeCol;
-        olvCol.HeaderFormatStyle = headerFormatStyleData;
-        olvCol.TextAlign = HorizontalAlignment.Center;
-        olvCol.Sortable = true;
-        listCol.Add(olvCol);
-
-        olvCol = new BrightIdeasSoftware.OLVColumn();
-        olvCol.AspectName = "CompareStatusTarget";
-        olvCol.Text = "Tgt <>";
-        olvCol.Width = 50;
-        olvCol.HeaderTextAlign = HorizontalAlignment.Center;
-        olvCol.Groupable = true;
-        olvCol.Name = "olvColCompareStatusTarget" + typeCol;
-        olvCol.HeaderFormatStyle = headerFormatStyleData;
-        olvCol.TextAlign = HorizontalAlignment.Center;
-        olvCol.Sortable = true;
-        listCol.Add(olvCol);
-
-        olvCol = new BrightIdeasSoftware.OLVColumn();
-        olvCol.AspectName = "RecordType";
-        olvCol.Text = "Type";
-        olvCol.Width = 60;
-        olvCol.HeaderTextAlign = HorizontalAlignment.Center;
-        olvCol.Groupable = true;
-        olvCol.Name = "olvColRecordType" + typeCol;
-        olvCol.HeaderFormatStyle = headerFormatStyleData;
-        olvCol.TextAlign = HorizontalAlignment.Left;
-        olvCol.Sortable = true;
-        secondarySortColumn = olvCol;
-        listCol.Add(olvCol);
-
-        olvCol = new BrightIdeasSoftware.OLVColumn();
-        olvCol.AspectName = "EditorID";
-        olvCol.Text = "Editor ID";
-        olvCol.Width = 200;
-        olvCol.HeaderTextAlign = HorizontalAlignment.Center;
-        olvCol.Groupable = false;
-        olvCol.Name = "olvColEditorID" + typeCol;
-        olvCol.HeaderFormatStyle = headerFormatStyleData;
-        olvCol.TextAlign = HorizontalAlignment.Left;
-        olvCol.Sortable = true;
-        listCol.Add(olvCol);
-        //secondarySortColumn = olvCol;
-
-        olvCol = new BrightIdeasSoftware.OLVColumn();
-        olvCol.AspectName = "SourceItemDesc";
-        olvCol.Text = "Source Text";
-        olvCol.Width = 300;
-        olvCol.HeaderTextAlign = HorizontalAlignment.Center;
-        olvCol.Groupable = false;
-        olvCol.Name = "olvColSourceItemDesc" + typeCol;
-        olvCol.HeaderFormatStyle = headerFormatStyleData;
-        olvCol.TextAlign = HorizontalAlignment.Left;
-        olvCol.Sortable = true;
-        secondarySortColumn = olvCol;
-        listCol.Add(olvCol);
-
-        olvCol = new BrightIdeasSoftware.OLVColumn();
-        olvCol.AspectName = "TargetItemDesc";
-        olvCol.Text = "Target Text";
-        olvCol.Width = 300;
-        olvCol.HeaderTextAlign = HorizontalAlignment.Center;
-        olvCol.Groupable = false;
-        olvCol.Name = "olvColTargerItemDesc" + typeCol;
-        olvCol.HeaderFormatStyle = headerFormatStyleData;
-        olvCol.TextAlign = HorizontalAlignment.Left;
-        olvCol.Sortable = true;
-        listCol.Add(olvCol);
-
-        olvCol = new BrightIdeasSoftware.OLVColumn();
-        olvCol.AspectName = "SourceStringIDHexa";
-        olvCol.Text = "String ID";
-        olvCol.Width = 70;
-        olvCol.HeaderTextAlign = HorizontalAlignment.Center;
-        olvCol.Groupable = false;
-        olvCol.Name = "olvColSourceStringIDHexa" + typeCol;
-        olvCol.HeaderFormatStyle = headerFormatStyleData;
-        olvCol.TextAlign = HorizontalAlignment.Center;
-        olvCol.Sortable = true;
-        olvCol.IsVisible = false;
-        listCol.Add(olvCol);
-
-        olvCol = new BrightIdeasSoftware.OLVColumn();
-        olvCol.AspectName = "WriteStringInPlugIn";
-        olvCol.Text = "Write";
-        olvCol.Width = 300;
-        olvCol.HeaderTextAlign = HorizontalAlignment.Center;
-        olvCol.Groupable = false;
-        olvCol.Name = "olvWriteStringInPlugIn" + typeCol;
-        olvCol.HeaderFormatStyle = headerFormatStyleData;
-        olvCol.TextAlign = HorizontalAlignment.Center;
-        olvCol.Sortable = true;
-        olvCol.IsVisible = false;
-        listCol.Add(olvCol);
-
-
-        olvCol = new BrightIdeasSoftware.OLVColumn();
-        olvCol.AspectName = "FormID";
-        olvCol.Text = "Form ID";
-        olvCol.Width = 70;
-        olvCol.HeaderTextAlign = HorizontalAlignment.Center;
-        olvCol.Groupable = false;
-        olvCol.Name = "olvColFormID" + typeCol;
-        olvCol.HeaderFormatStyle = headerFormatStyleData;
-        olvCol.TextAlign = HorizontalAlignment.Center;
-        olvCol.Sortable = true;
-        olvCol.IsVisible = false;
-        listCol.Add(olvCol);
-
-        if (i == 0)
-        {
-          this.olvTHStrings.AllColumns.AddRange(listCol);
-          this.olvTHStrings.RebuildColumns();
-          //this.olvTHStrings.AlwaysGroupByColumn = primarySortColumn;
-          this.olvTHStrings.PrimarySortColumn = primarySortColumn;
-          this.olvTHStrings.SecondarySortColumn = secondarySortColumn;
-        }
-
-        if (i == 1)
-        {
-          this.olvTHDLStrings.AllColumns.AddRange(listCol);
-          this.olvTHDLStrings.RebuildColumns();
-          this.olvTHDLStrings.PrimarySortColumn = primarySortColumn;
-          this.olvTHDLStrings.SecondarySortColumn = secondarySortColumn;
-        }
-
-        if (i == 2)
-        {
-          this.olvTHILStrings.AllColumns.AddRange(listCol);
-          this.olvTHILStrings.RebuildColumns();
-          this.olvTHILStrings.PrimarySortColumn = primarySortColumn;
-          this.olvTHILStrings.SecondarySortColumn = secondarySortColumn;
-        }
-
-        if (i == 3)
-        {
-          this.olvTHOtherStrings.AllColumns.AddRange(listCol);
-          this.olvTHOtherStrings.RebuildColumns();
-          this.olvTHOtherStrings.PrimarySortColumn = primarySortColumn;
-          this.olvTHOtherStrings.SecondarySortColumn = secondarySortColumn;
-        }
-      }
-
-      #endregion
     }
 
     /// <summary>
+    /// Create columns for ListView
+    /// </summary>
+    private void CreateListViewColumnTH(string olvType, string sortColumnName, SortOrder order)
+    {
+      if (olvType == "Strings") this.olvTHStrings.AllColumns.Clear();      
+      if (olvType == "DLStrings") this.olvTHILStrings.AllColumns.Clear();
+      if (olvType == "ILStrings") this.olvTHDLStrings.AllColumns.Clear();
+      if (olvType == "OtherStrings") this.olvTHOtherStrings.AllColumns.Clear();
+
+      string typeCol = "STR";      
+      if (olvType == "DLStrings") typeCol = "DL";
+      if (olvType == "ILStrings") typeCol = "IL";
+      if (olvType == "OtherStrings") typeCol = "OTHER";
+
+      System.Collections.Generic.List<OLVColumn> listCol = new System.Collections.Generic.List<OLVColumn>();
+      BrightIdeasSoftware.OLVColumn olvCol;
+      BrightIdeasSoftware.OLVColumn primarySortColumn = null;
+      BrightIdeasSoftware.OLVColumn secondarySortColumn = null;
+
+      listCol.Clear();
+
+      #region GroupName
+     
+      olvCol = new BrightIdeasSoftware.OLVColumn();
+      olvCol.AspectName = "GroupName";
+      olvCol.Text = "Group";
+      olvCol.Width = 100;
+      olvCol.HeaderTextAlign = HorizontalAlignment.Center;
+      olvCol.Groupable = true;
+      olvCol.Name = "olvColGroup" + typeCol;
+      olvCol.HeaderFormatStyle = headerFormatStyleData;
+      olvCol.TextAlign = HorizontalAlignment.Left;
+      olvCol.Sortable = true;
+      olvCol.Groupable = true;
+      listCol.Add(olvCol);
+      primarySortColumn = olvCol;
+
+      #endregion
+
+      #region StringStatus
+
+      olvCol = new BrightIdeasSoftware.OLVColumn();
+      olvCol.AspectName = "StringStatus";
+      olvCol.Text = "State";
+      olvCol.Width = 50;
+      olvCol.HeaderTextAlign = HorizontalAlignment.Center;
+      olvCol.Groupable = true;
+      olvCol.Name = "olvColStringStatus" + typeCol;
+      olvCol.HeaderFormatStyle = headerFormatStyleData;
+      olvCol.TextAlign = HorizontalAlignment.Center;
+      olvCol.Sortable = false;
+      olvCol.Groupable = false;
+      listCol.Add(olvCol);
+
+      #endregion
+
+      #region CompareStatusSource
+     
+      olvCol = new BrightIdeasSoftware.OLVColumn();
+      olvCol.AspectName = "CompareStatusSource";
+      olvCol.Text = "Src <>";
+      olvCol.Width = 50;
+      olvCol.HeaderTextAlign = HorizontalAlignment.Center;
+      olvCol.Groupable = true;
+      olvCol.Name = "olvColCompareStatus" + typeCol;
+      olvCol.HeaderFormatStyle = headerFormatStyleData;
+      olvCol.TextAlign = HorizontalAlignment.Center;
+      olvCol.Sortable = false;
+      olvCol.Groupable = false;
+      listCol.Add(olvCol);
+
+      #endregion
+
+      #region CompareStatusSource
+
+      olvCol = new BrightIdeasSoftware.OLVColumn();
+      olvCol.AspectName = "CompareStatusTarget";
+      olvCol.Text = "Tgt <>";
+      olvCol.Width = 50;
+      olvCol.HeaderTextAlign = HorizontalAlignment.Center;
+      olvCol.Groupable = true;
+      olvCol.Name = "olvColCompareStatusTarget" + typeCol;
+      olvCol.HeaderFormatStyle = headerFormatStyleData;
+      olvCol.TextAlign = HorizontalAlignment.Center;
+      olvCol.Sortable = false;
+      olvCol.Groupable = false;
+      listCol.Add(olvCol);
+
+      #endregion
+
+      #region CompareStatusSource
+
+      olvCol = new BrightIdeasSoftware.OLVColumn();
+      olvCol.AspectName = "RecordType";
+      olvCol.Text = "Type";
+      olvCol.Width = 60;
+      olvCol.HeaderTextAlign = HorizontalAlignment.Center;
+      olvCol.Groupable = true;
+      olvCol.Name = "olvColRecordType" + typeCol;
+      olvCol.HeaderFormatStyle = headerFormatStyleData;
+      olvCol.TextAlign = HorizontalAlignment.Left;
+      olvCol.Sortable = true;
+      olvCol.Groupable = false;
+      if (sortColumnName == "RecordType") secondarySortColumn = olvCol;
+      listCol.Add(olvCol);
+
+      #endregion
+
+      #region EditorID
+
+      olvCol = new BrightIdeasSoftware.OLVColumn();
+      olvCol.AspectName = "EditorID";
+      olvCol.Text = "Editor ID";
+      olvCol.Width = 200;
+      olvCol.HeaderTextAlign = HorizontalAlignment.Center;
+      olvCol.Groupable = false;
+      olvCol.Name = "olvColEditorID" + typeCol;
+      olvCol.HeaderFormatStyle = headerFormatStyleData;
+      olvCol.TextAlign = HorizontalAlignment.Left;
+      olvCol.Sortable = true;
+      olvCol.Groupable = false;
+      if (sortColumnName == "EditorID") { secondarySortColumn = olvCol; olvCol.HeaderImageKey = order == SortOrder.Ascending ? "sort-descend" : "sort-ascend"; }
+      listCol.Add(olvCol);
+
+      #endregion
+
+      #region SourceItemDesc
+
+      olvCol = new BrightIdeasSoftware.OLVColumn();
+      olvCol.AspectName = "SourceItemDesc";
+      olvCol.Text = "Source Text";
+      olvCol.Width = 300;
+      olvCol.HeaderTextAlign = HorizontalAlignment.Center;
+      olvCol.Groupable = false;
+      olvCol.Name = "olvColSourceItemDesc" + typeCol;
+      olvCol.HeaderFormatStyle = headerFormatStyleData;
+      olvCol.TextAlign = HorizontalAlignment.Left;
+      olvCol.Sortable = true;
+      olvCol.Groupable = false;
+      if (sortColumnName == "SourceItemDesc") secondarySortColumn = olvCol;
+      listCol.Add(olvCol);
+
+      #endregion
+
+      #region TargetItemDesc
+
+      olvCol = new BrightIdeasSoftware.OLVColumn();
+      olvCol.AspectName = "TargetItemDesc";
+      olvCol.Text = "Target Text";
+      olvCol.Width = 300;
+      olvCol.HeaderTextAlign = HorizontalAlignment.Center;
+      olvCol.Groupable = false;
+      olvCol.Name = "olvColTargetItemDesc" + typeCol;
+      olvCol.HeaderFormatStyle = headerFormatStyleData;
+      olvCol.TextAlign = HorizontalAlignment.Left;
+      olvCol.Sortable = true;
+      olvCol.Groupable = false;
+      if (sortColumnName == "TargetItemDesc") secondarySortColumn = olvCol;
+      listCol.Add(olvCol);
+
+      #endregion
+
+      #region SourceStringIDHexa
+
+      olvCol = new BrightIdeasSoftware.OLVColumn();
+      olvCol.AspectName = "SourceStringIDHexa";
+      olvCol.Text = "String ID";
+      olvCol.Width = 70;
+      olvCol.HeaderTextAlign = HorizontalAlignment.Center;
+      olvCol.Groupable = false;
+      olvCol.Name = "olvColSourceStringIDHexa" + typeCol;
+      olvCol.HeaderFormatStyle = headerFormatStyleData;
+      olvCol.TextAlign = HorizontalAlignment.Center;
+      olvCol.Sortable = false;
+      olvCol.Groupable = false;
+      olvCol.IsVisible = false;
+      listCol.Add(olvCol);
+
+      #endregion
+
+      #region WriteStringInPlugIn
+
+      olvCol = new BrightIdeasSoftware.OLVColumn();
+      olvCol.AspectName = "WriteStringInPlugIn";
+      olvCol.Text = "Write";
+      olvCol.Width = 300;
+      olvCol.HeaderTextAlign = HorizontalAlignment.Center;
+      olvCol.Groupable = false;
+      olvCol.Name = "olvWriteStringInPlugIn" + typeCol;
+      olvCol.HeaderFormatStyle = headerFormatStyleData;
+      olvCol.TextAlign = HorizontalAlignment.Center;
+      olvCol.Sortable = false;
+      olvCol.Groupable = false;
+      olvCol.IsVisible = false;
+      listCol.Add(olvCol);
+
+      #endregion
+
+      #region FormID
+
+      olvCol = new BrightIdeasSoftware.OLVColumn();
+      olvCol.AspectName = "FormID";
+      olvCol.Text = "Form ID";
+      olvCol.Width = 70;
+      olvCol.HeaderTextAlign = HorizontalAlignment.Center;
+      olvCol.Groupable = false;
+      olvCol.Name = "olvColFormID" + typeCol;
+      olvCol.HeaderFormatStyle = headerFormatStyleData;
+      olvCol.TextAlign = HorizontalAlignment.Center;
+      olvCol.Sortable = false;
+      olvCol.Groupable = false;
+      olvCol.IsVisible = false;
+      listCol.Add(olvCol);
+
+      #endregion
+
+      ObjectListView ovl = null;
+
+      if (olvType == "Strings") ovl = olvTHStrings;      
+      if (olvType == "DLStrings") ovl = olvTHDLStrings;
+      if (olvType == "ILStrings") ovl = olvTHILStrings;
+      if (olvType == "OtherStrings") ovl = olvTHOtherStrings;
+
+      if (olvType != null)
+      {        
+        ovl.BeginUpdate();
+        ovl.HeaderUsesThemes = false;
+        ovl.Items.Clear();
+        ovl.Columns.Clear();
+        ovl.AllColumns.AddRange(listCol);
+        ovl.RebuildColumns();
+        ovl.AlwaysGroupByColumn = primarySortColumn;
+        ovl.AlwaysGroupBySortOrder = SortOrder.Ascending;
+        ovl.SortGroupItemsByPrimaryColumn = true;
+        if (secondarySortColumn != null)
+        {
+          ovl.SecondarySortColumn = secondarySortColumn;
+          ovl.SecondarySortOrder = order;
+        }
+        ovl.EndUpdate();
+      }
+    }
+
+   /// <summary>
     /// PopulateLanguageComboBox
     /// </summary>
     private void PopulateLanguageComboBox()
@@ -406,7 +473,7 @@ namespace TESVSnip.Docking
            Convert.ToString(row["EditorID"]),
            Convert.ToString(row["SourceStringIDHexa"]),
            Convert.ToString(row["SourceItemDesc"]),
-           Convert.ToString(row["TargerItemDesc"]),
+           Convert.ToString(row["TargetItemDesc"]),
            Convert.ToBoolean(row["WriteStringInPlugIn"])
            ));
         }
@@ -423,7 +490,7 @@ namespace TESVSnip.Docking
            Convert.ToString(row["EditorID"]),
            Convert.ToString(row["SourceStringIDHexa"]),
            Convert.ToString(row["SourceItemDesc"]),
-           Convert.ToString(row["TargerItemDesc"]),
+           Convert.ToString(row["TargetItemDesc"]),
            Convert.ToBoolean(row["WriteStringInPlugIn"])
            ));
         }
@@ -440,7 +507,7 @@ namespace TESVSnip.Docking
            Convert.ToString(row["EditorID"]),
            Convert.ToString(row["SourceStringIDHexa"]),
            Convert.ToString(row["SourceItemDesc"]),
-           Convert.ToString(row["TargerItemDesc"]),
+           Convert.ToString(row["TargetItemDesc"]),
            Convert.ToBoolean(row["WriteStringInPlugIn"])
            ));
         }
@@ -457,7 +524,7 @@ namespace TESVSnip.Docking
            Convert.ToString(row["EditorID"]),
            Convert.ToString(row["SourceStringIDHexa"]),
            Convert.ToString(row["SourceItemDesc"]),
-           Convert.ToString(row["TargerItemDesc"]),
+           Convert.ToString(row["TargetItemDesc"]),
            Convert.ToBoolean(row["WriteStringInPlugIn"])
            ));
         }
@@ -484,7 +551,7 @@ namespace TESVSnip.Docking
       }
       else
         tabPageDLStrings.Text = "Description - 0 row";
-      
+
       if (listViewStringsIL.Count > 0)
       {
         olvTHILStrings.Items.Clear();
@@ -594,64 +661,45 @@ namespace TESVSnip.Docking
     /// </summary>
     /// <param name="recordName"></param>
     /// <returns></returns>
-    //listViewOtherSkyrimStringsTarget
-
-    //  if (listViewStringsOther.Count > 0)
-    //  {
-    //    olvTHOtherStrings.Items.Clear();
-    //    this.olvTHOtherStrings.SetObjects(listViewStringsOther);
-    //    olvTHOtherStrings.ShowGroups = true;
-    //    olvTHOtherStrings.BuildList();
-    //    tabPageOther.Text = "Other - " + listViewStringsOther.Count.ToString() + " rows";
-    //  }
-    //  else
-    //    tabPageOther.Text = "Other - 0 row";
     private void FindOtherPossibleStringTranslation()
     {
+      string key;
       listViewOtherSkyrimStringsSource.Clear();
       listViewOtherSkyrimStringsTarget.Clear();
       olvTHSkyrimSourceStrings.Items.Clear();
       olvTHSkyrimTargetStrings.Items.Clear();
 
-      if (listViewSkyrimDict.Count <= 0) return;
+      if (tblSkyrimEsmDict.Rows.Count == 0) return;
+
+      if (tblSkyrimEsmDictDV_FormIDHexa == null) tblSkyrimEsmDictDV_FormIDHexa = new DataView();
+      if (tblSkyrimEsmDictDV_FormIDHexa.Table == null)
+      {
+        tblSkyrimEsmDictDV_FormIDHexa.Table = tblSkyrimEsmDict;
+        tblSkyrimEsmDictDV_FormIDHexa.Sort = "FormIDHexa";
+      }
+
+      if (tblSkyrimEsmDictDV_SkyrimStringIDHexa == null) tblSkyrimEsmDictDV_SkyrimStringIDHexa = new DataView();
+      if (tblSkyrimEsmDictDV_SkyrimStringIDHexa.Table == null)
+      {
+        tblSkyrimEsmDictDV_SkyrimStringIDHexa.Table = tblSkyrimEsmDict;
+        tblSkyrimEsmDictDV_SkyrimStringIDHexa.Sort = "SkyrimStringIDHexa";
+      }
 
       DataRowView[] foundRowsDict = null;
-      DataView dvSkyrimEsmDict = new DataView();
       Dictionary<string, string> dictionary = new Dictionary<string, string>();
+      dictionary.Clear();
 
-      dvSkyrimEsmDict.Table = tblSkyrimEsmDict;
-
-      for (int countSearch = 1; countSearch <= 2; countSearch++)
+      foundRowsDict = tblSkyrimEsmDictDV_FormIDHexa.FindRows(new object[] { txtFormID.Text });
+      if (foundRowsDict.Length > 0)
       {
-       
-        //Look in the dictionary
-        if (countSearch == 1)
+        foreach (DataRowView row in foundRowsDict)
         {
-          dvSkyrimEsmDict.Sort = "FormIDHexa";
-          foundRowsDict = dvSkyrimEsmDict.FindRows(new object[] { txtFormID.Text });
-        }
-
-        if (countSearch == 2)
-        {
-          dvSkyrimEsmDict.Sort = "SkyrimStringIDHexa";
-          foundRowsDict = dvSkyrimEsmDict.FindRows(new object[] { txtSourceStringsID.Text });
-        }
-
-        //if (foundRowsDict.Length == 0)
-        //  foundRowsDict = dvSkyrimEsmDict.FindRows(new object[] { Convert.ToString(rowPlugInLoad["FormIDHexa"]) });
-        //if (foundRowsDict.Length == 0)
-        //  foundRowsDict = dvSkyrimEsmDictByRecordTypeStringIDHexa.FindRows(new object[] { Convert.ToString(rowPlugInLoad["RecordType"]), Convert.ToString(rowPlugInLoad["SourceStringIDHexa"]) });
-        //if (foundRowsDict.Length == 0)
-          //foundRowsDict = dvSkyrimEsmDictByStringIDHexa.FindRows(new object[] { Convert.ToString(rowPlugInLoad["SourceStringIDHexa"]) });
-
-
-        if (foundRowsDict.Length > 0)
-        {
-          foreach (DataRowView row in foundRowsDict)
+          key = Convert.ToString(row["EditorID"]) + "|" + Convert.ToString(row["RecordType"]);
+          if (!dictionary.ContainsKey(key))
           {
-            if (!dictionary.ContainsKey(txtFormID.Text))
+            if (Convert.ToString(row["SkyrimItemDescSourceLang"]) != "?")
             {
-              dictionary.Add(txtFormID.Text, txtSourceStringsID.Text);
+              dictionary.Add(key, txtSourceStringsID.Text);
 
               listViewOtherSkyrimStringsSource.Add(new ObjOtherSkyrimStrings(
                  Convert.ToString(row["SkyrimStringIDHexa"]),
@@ -662,8 +710,32 @@ namespace TESVSnip.Docking
                  Convert.ToString(row["SkyrimItemDescTargetLang"])));
             }
           }
-
         }
+      }
+
+      foundRowsDict = tblSkyrimEsmDictDV_SkyrimStringIDHexa.FindRows(new object[] { txtSourceStringsID.Text });
+      if (foundRowsDict.Length > 0)
+      {
+        foreach (DataRowView row in foundRowsDict)
+        {
+          key = Convert.ToString(row["EditorID"]) + "|" + Convert.ToString(row["RecordType"]);
+          if (!dictionary.ContainsKey(key))
+          {
+            if (Convert.ToString(row["SkyrimItemDescTargetLang"]) != "?")
+            {
+              dictionary.Add(key, txtSourceStringsID.Text);
+
+              listViewOtherSkyrimStringsSource.Add(new ObjOtherSkyrimStrings(
+                 Convert.ToString(row["SkyrimStringIDHexa"]),
+                 Convert.ToString(row["SkyrimItemDescSourceLang"])));
+
+              listViewOtherSkyrimStringsTarget.Add(new ObjOtherSkyrimStrings(
+                 Convert.ToString(row["SkyrimStringIDHexa"]),
+                 Convert.ToString(row["SkyrimItemDescTargetLang"])));
+            }
+          }
+        }
+
       }
 
       dictionary.Clear();
@@ -682,11 +754,8 @@ namespace TESVSnip.Docking
         olvTHSkyrimTargetStrings.ShowGroups = true;
         olvTHSkyrimTargetStrings.BuildList();
       }
-
-      dvSkyrimEsmDict.Dispose();
-      dvSkyrimEsmDict = null;
-
     }
 
   }
+
 }

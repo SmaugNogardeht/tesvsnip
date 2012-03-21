@@ -1077,6 +1077,7 @@ namespace TESVSnip {
       this.PerformLayout();
 
         }
+        private System.Windows.Forms.ToolStripMenuItem japaneseToolStripMenuItem;
 
 
         #endregion
@@ -1195,6 +1196,5 @@ namespace TESVSnip {
         private System.Windows.Forms.ToolStripMenuItem importStringsToFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem internalizeStringReferencesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uTF8ModeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem japaneseToolStripMenuItem;
     }
 }

@@ -52,11 +52,11 @@ namespace TESVSnip
 
     public MainView()
     {
-      this.WindowState = FormWindowState.Maximized; //Add for TranslatorHelper
-
+      //Add for TranslatorHelper
+      this.WindowState = FormWindowState.Maximized;
       AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(Program.CurrentDomain_UnhandledException);
       Application.ThreadException += new System.Threading.ThreadExceptionEventHandler(Program.Application_ThreadException);
-
+      //End for TranslatorHelper
 
       if (!RecordStructure.Loaded)
       {
@@ -76,7 +76,7 @@ namespace TESVSnip
       InitializeDockingWindows();
       RegisterMessageFilter();
 
-      uTF8ModeToolStripMenuItem.Checked = Properties.Settings.Default.UseUTF8;
+      uTF8ModeToolStripMenuItem.Checked = Properties.Settings.Default.UseUTF8; //Add for TranslatorHelper
 
       PluginTree.SelectionChanged += (o, e) => RebuildSelection();
 
@@ -1605,7 +1605,6 @@ namespace TESVSnip
           subrecordListContent.Show(this.pluginTreeContent.Pane, DockAlignment.Bottom, 0.5);
         if (!IsVisible(selectedTextContent) || force)
           selectedTextContent.Show(dockPanel, DockState.Document);
-
         //Add for TranslatorHelper
         if (!IsVisible(translatorHelperContent) || force)
           translatorHelperContent.Show(dockPanel, DockState.Document);

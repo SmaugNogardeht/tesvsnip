@@ -1,6 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+# SharpDevelop 4.2.0.8668-Beta 2
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tesvsnip", "tesvsnip.csproj", "{5FA31161-DDBB-430F-9E99-0ECE98B733DE}"
 EndProject
 Global

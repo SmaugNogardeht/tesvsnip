@@ -23,7 +23,6 @@ namespace TESVSnip.Docking
 {
   public partial class TranslatorHelper : BaseDockContent
   {
-
     internal MainView MainViewTH = null;
     public TESVSnip.Plugin PluginTree = null;
 
@@ -32,33 +31,31 @@ namespace TESVSnip.Docking
     public DataTable tblPlugInStringsLoad = new DataSetTH.T_PlugInStringsDataTable();
     public DataTable tblPlugInStringsProject = new DataSetTH.T_PlugInStringsDataTable();
 
-    public DataTable tblSkyrimSourceStrings = new DataSetTH.T_SkyrimStringsDataTable();
-    public DataTable tblSkyrimTargetStrings = new DataSetTH.T_SkyrimStringsDataTable();
-    public DataTable tblSkyrimEsmDict = new DataSetTH.T_StringsDictDataTable();
     private DataTable tblSkyrimStrings = new DataSetTH.T_SkyrimStringsDataTable();
 
     private string PluginLocation = String.Empty;
 
-    private System.Collections.Generic.List<ObjStrings> listViewStrings = null;
-    private System.Collections.Generic.List<ObjStrings> listViewStringsDL = null;
-    private System.Collections.Generic.List<ObjStrings> listViewStringsIL = null;
-    private System.Collections.Generic.List<ObjStrings> listViewStringsOther = null;
-
-    private System.Collections.Generic.List<ObjStringsDict> listViewSkyrimDict = null;
-
-    private System.Collections.Generic.List<ObjOtherSkyrimStrings> listViewOtherSkyrimStringsSource = null;
-    private System.Collections.Generic.List<ObjOtherSkyrimStrings> listViewOtherSkyrimStringsTarget = null;
-
     private DataView dvPlugIn = new DataView();
 
-    private TESVSnip.Docking.ObjStrings lastOLVListItem = null; //for update object in listview
-
-    private string LastLoadedSkyrimEsmDictionnary = String.Empty;
+    private TESVSnip.Docking.ObjStrings lastOLVListItemObjStrings = null; //for update object in listview
+    private OLVListItem lastOLVListItem = null;
 
     public string GetSourceLanguage() { return cboxSourceLanguage.Text; }
     public string GetTargetLanguage() { return cboxTargetLanguage.Text; }
 
     bool populateListViewStringsInProgress = false;
+
+    string olvTHStringsLastSelectedColumnName = String.Empty;
+    SortOrder olvTHStringsLastSortOrder = SortOrder.None;
+
+    string olvTHStringsDLLastSelectedColumnName = String.Empty;
+    SortOrder olvTHStringsDLLastSortOrder = SortOrder.None;
+
+    string olvTHStringsILLastSelectedColumnName = String.Empty;
+    SortOrder olvTHStringsILLastSortOrder = SortOrder.None;
+
+    string olvTHStringsOTHERLastSelectedColumnName = String.Empty;
+    SortOrder olvTHStringsOTHERLastSortOrder = SortOrder.None;
 
     /// <summary>
     /// Constructor TranslatorHelper
@@ -71,13 +68,33 @@ namespace TESVSnip.Docking
       tabControlTranslatorHelper.Dock = DockStyle.Fill;
       this.olvTHStrings.AddDecoration(new EditingCellBorderDecoration(true));
       this.olvTHDLStrings.AddDecoration(new EditingCellBorderDecoration(true));
+
       CreateListViewColumn();
+
+      CreateListViewColumnTH("Strings", "EditorID", SortOrder.None);
+      olvTHStringsLastSortOrder = SortOrder.Ascending; olvTHStringsLastSelectedColumnName = "EditorID";
+
+      CreateListViewColumnTH("DLStrings", "EditorID", SortOrder.None);
+      olvTHStringsDLLastSortOrder = SortOrder.Ascending; olvTHStringsDLLastSelectedColumnName = "EditorID";
+
+      CreateListViewColumnTH("ILStrings", "EditorID", SortOrder.None);
+      olvTHStringsILLastSortOrder = SortOrder.Ascending; olvTHStringsILLastSelectedColumnName = "EditorID";
+
+      CreateListViewColumnTH("OtherStrings", "EditorID", SortOrder.None);
+      olvTHStringsOTHERLastSortOrder = SortOrder.Ascending; olvTHStringsOTHERLastSelectedColumnName = "EditorID";
+
       PopulateLanguageComboBox();
+
       cboxSourceLanguage.Text = TESVSnip.Properties.Settings.Default.THSourceLanguage;
       cboxTargetLanguage.Text = TESVSnip.Properties.Settings.Default.THTargetLanguage;
       ClearTextBoxControl(this);
       dvPlugIn.Table = tblPlugInStringsProject;
       dvPlugIn.Sort = "FormIDHexa, StringType, RecordTypeTH";
+
+      cbSearchInSkyrimString.Items.Add("String");
+      cbSearchInSkyrimString.Items.Add("DLString");
+      cbSearchInSkyrimString.Items.Add("ILString");
+      cbSearchInSkyrimString.CheckBoxItems[0].Checked = true;
     }
 
     /// <summary>
@@ -129,35 +146,35 @@ namespace TESVSnip.Docking
     /// <param name="sender"></param>
     private void ListViewItemSelection(string sender)
     {
-      OLVListItem item = null; // (OLVListItem)e.Item;
-      //return;
+      Cursor.Current = Cursors.WaitCursor;
+
       string StringType;
       if (sender == "olvTHStrings")
       {
         StringType = "Strings";
-        item = olvTHStrings.SelectedItem;
+        lastOLVListItem = olvTHStrings.SelectedItem;
       }
       else
         if (sender == "olvTHDLStrings")
         {
           StringType = "DLStrings";
-          item = olvTHDLStrings.SelectedItem;
+          lastOLVListItem = olvTHDLStrings.SelectedItem;
         }
         else
           if (sender == "olvTHILStrings")
           {
             StringType = "ILStrings";
-            item = olvTHILStrings.SelectedItem;
+            lastOLVListItem = olvTHILStrings.SelectedItem;
           }
           else
           {
             StringType = "OtherStrings";
-            item = olvTHOtherStrings.SelectedItem;
+            lastOLVListItem = olvTHOtherStrings.SelectedItem;
           }
 
-      if (item == null) return;
+      if (lastOLVListItem == null) { Cursor.Current = Cursors.Default; return; }
 
-      TESVSnip.Docking.ObjStrings itemObj = (TESVSnip.Docking.ObjStrings)item.RowObject;
+      TESVSnip.Docking.ObjStrings itemObj = (TESVSnip.Docking.ObjStrings)lastOLVListItem.RowObject;
 
       DataRowView[] foundRows;
       try
@@ -177,7 +194,7 @@ namespace TESVSnip.Docking
           txtStringSkyrimDescTarget.Text = Convert.ToString(foundRows[0]["SkyrimItemDescTargetLang"]);
           txtSkyrimRecordType.Text = StringType;
           txtSkyrimRecordTypeTH.Text = Convert.ToString(foundRows[0]["RecordTypeTH"]);
-  
+
           txtSourceStringsID.Text = Convert.ToString(foundRows[0]["SourceStringIDHexa"]);
           txtSourceEditorID.Text = Convert.ToString(foundRows[0]["SourceEditorID"]);
           txtSourceStringNew.Text = Convert.ToString(foundRows[0]["SourceItemDesc"]);
@@ -185,8 +202,8 @@ namespace TESVSnip.Docking
 
           txtTargetStringsID.Text = Convert.ToString(foundRows[0]["TargetStringIDHexa"]);
           txtTargetEditorID.Text = Convert.ToString(foundRows[0]["TargetEditorID"]);
-          txtTargetStringNew.Text = Convert.ToString(foundRows[0]["TargerItemDesc"]);
-          txtTargetStringOld.Text = Convert.ToString(foundRows[0]["TargerItemDescOld"]);
+          txtTargetStringNew.Text = Convert.ToString(foundRows[0]["TargetItemDesc"]);
+          txtTargetStringOld.Text = Convert.ToString(foundRows[0]["TargetItemDescOld"]);
 
           if (Convert.ToBoolean(foundRows[0]["WriteStringInPlugIn"]))
             chkboxNewTextTranslate.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -215,16 +232,19 @@ namespace TESVSnip.Docking
             txtTargetStringNew.BackColor = System.Drawing.Color.White; // LemonChiffon;
           }
 
-          lastOLVListItem = itemObj;
+          lastOLVListItemObjStrings = itemObj;
 
           FindOtherPossibleStringTranslation();
 
           populateListViewStringsInProgress = false;
         }
+
+        Cursor.Current = Cursors.Default;
       }
       catch (Exception ex)
       {
         edtMemo.Text += ex.Message + Environment.NewLine;
+        Cursor.Current = Cursors.Default;
       }
     }
 
@@ -243,7 +263,7 @@ namespace TESVSnip.Docking
       e.StandardIcon = ToolTipControl.StandardIcons.InfoLarge;
       e.BackColor = System.Drawing.Color.AliceBlue;
       e.ForeColor = System.Drawing.Color.IndianRed;
-      e.AutoPopDelay = 15000;
+      e.AutoPopDelay = 25000;
       e.Font = new System.Drawing.Font("Tahoma", 10.0f);
       e.Text = stringValue;
     }
@@ -297,7 +317,8 @@ namespace TESVSnip.Docking
     /// <param name="e"></param>
     private void txtTargetStringNew_Validated(object sender, EventArgs e)
     {
-      if (!populateListViewStringsInProgress) SaveChange();
+      if (!populateListViewStringsInProgress)
+        SaveChange();
     }
 
     /// <summary>
@@ -307,26 +328,48 @@ namespace TESVSnip.Docking
     /// <param name="e"></param>
     private void chkboxNewTextTranslate_CheckedChanged(object sender, EventArgs e)
     {
-      if (!populateListViewStringsInProgress) SaveChange();
+      if (!populateListViewStringsInProgress) 
+        SaveChange();
     }
 
+    /// <summary>
+    /// SaveChange
+    /// </summary>
     private void SaveChange()
     {
       string FormID = txtFormID.Text;
       string RecordType = txtSkyrimRecordType.Text;
       string RecordName = txtSkyrimRecordTypeTH.Text;
 
-      DataRowView[] foundRows;
-      foundRows = dvPlugIn.FindRows(new object[] { FormID, RecordType, RecordName });
+      if (String.IsNullOrEmpty(txtFormID.Text)) return;
 
-      if (foundRows.Length == 1)
+      DataRowView[] foundRows;
+      try
       {
-        foundRows[0].BeginEdit();
-        foundRows[0].Row["TargerItemDesc"] = txtTargetStringNew.Text;
-        foundRows[0].Row["WriteStringInPlugIn"] = chkboxNewTextTranslate.Checked;
-        foundRows[0].EndEdit();
-        lastOLVListItem.TargetItemDesc = txtTargetStringNew.Text;
-        lastOLVListItem.WriteStringInPlugIn = chkboxNewTextTranslate.Checked;
+        foundRows = dvPlugIn.FindRows(new object[] { FormID, RecordType, RecordName });
+
+        if (foundRows.Length == 1)
+        {
+          foundRows[0].BeginEdit();
+          foundRows[0].Row["SourceItemDesc"] = txtSourceStringNew.Text;
+          foundRows[0].Row["SourceItemDescOld"] = txtSourceStringOld.Text;
+
+          foundRows[0].Row["TargetItemDesc"] = txtTargetStringNew.Text;
+          foundRows[0].Row["TargetItemDescOld"] = txtTargetStringOld.Text;
+
+          foundRows[0].Row["WriteStringInPlugIn"] = chkboxNewTextTranslate.Checked;
+          foundRows[0].EndEdit();
+
+          lastOLVListItemObjStrings.SourceItemDesc = txtSourceStringNew.Text;
+          lastOLVListItemObjStrings.TargetItemDesc = txtTargetStringNew.Text;
+          lastOLVListItemObjStrings.WriteStringInPlugIn = chkboxNewTextTranslate.Checked;
+          //TESVSnip.Docking.ObjStrings itemObj = (TESVSnip.Docking.ObjStrings)lastOLVListItem.RowObject;
+          olvTHStrings.RefreshItem(lastOLVListItem);
+        }
+      }
+      catch (Exception ex)
+      {
+        edtMemo.Text += ex.Message + Environment.NewLine;
       }
     }
 
@@ -355,7 +398,12 @@ namespace TESVSnip.Docking
     /// <param name="e"></param>
     private void txtTargetStringNew_KeyPress(object sender, KeyPressEventArgs e)
     {
-      e.Handled = e.KeyChar == 13;//block return key because there is no default button
+    //  e.Handled = e.KeyChar == 13;//block return key because there is no default button
+      if (e.KeyChar == 13)
+      {
+        SaveChange();
+        e.Handled = e.KeyChar == 13;
+      }
     }
 
     /// <summary>
@@ -365,7 +413,7 @@ namespace TESVSnip.Docking
     /// <param name="e"></param>
     private void txtSearchInStringsList_TextChanged(object sender, EventArgs e)
     {
-      if (!String.IsNullOrWhiteSpace(txtSearchInStringsList.Text))
+      if (!String.IsNullOrEmpty(txtSearchInStringsList.Text))
       {
         TextMatchFilter filter = TextMatchFilter.Contains(this.olvTHStrings, txtSearchInStringsList.Text);
         this.olvTHStrings.ModelFilter = filter;
@@ -380,7 +428,7 @@ namespace TESVSnip.Docking
     /// <param name="e"></param>
     private void txtSearchInDLStringsList_TextChanged(object sender, EventArgs e)
     {
-      if (!String.IsNullOrWhiteSpace(txtSearchInDLStringsList.Text))
+      if (!String.IsNullOrEmpty(txtSearchInDLStringsList.Text))
       {
         TextMatchFilter filter = TextMatchFilter.Contains(this.olvTHDLStrings, txtSearchInDLStringsList.Text);
         this.olvTHDLStrings.ModelFilter = filter;
@@ -395,7 +443,7 @@ namespace TESVSnip.Docking
     /// <param name="e"></param>
     private void txtSearchInILStringsList_TextChanged(object sender, EventArgs e)
     {
-      if (!String.IsNullOrWhiteSpace(txtSearchInILStringsList.Text))
+      if (!String.IsNullOrEmpty(txtSearchInILStringsList.Text))
       {
         TextMatchFilter filter = TextMatchFilter.Contains(this.olvTHILStrings, txtSearchInILStringsList.Text);
         this.olvTHILStrings.ModelFilter = filter;
@@ -408,14 +456,86 @@ namespace TESVSnip.Docking
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
+
     private void btnSearchDict_Click(object sender, EventArgs e)
     {
-      if (!String.IsNullOrWhiteSpace(txtSearchInSkyrimString.Text))
+      bool check = cbSearchInSkyrimString.CheckBoxItems[0].Checked | cbSearchInSkyrimString.CheckBoxItems[1].Checked | cbSearchInSkyrimString.CheckBoxItems[2].Checked;
+      if (!check)
       {
-        TextMatchFilter filter = TextMatchFilter.Contains(this.olvSkyrimDict, txtSearchInSkyrimString.Text);
-        this.olvSkyrimDict.ModelFilter = filter;
-        this.olvSkyrimDict.DefaultRenderer = new HighlightTextRenderer(filter);
+        Cliver.Message.Show("Translator Helper", System.Drawing.SystemIcons.Information, "Check one strings in list.", 0, "OK");
+        return;
       }
+
+      if (String.IsNullOrEmpty(txtSearchInSkyrimString.Text))
+      {
+        Cliver.Message.Show("Translator Helper", System.Drawing.SystemIcons.Information, "No text.", 0, "OK");
+        return;
+      }
+
+      if (listViewSkyrimDict != null) listViewSkyrimDict.Clear(); else listViewSkyrimDict = new System.Collections.Generic.List<ObjStringsDict>();
+      listViewSkyrimDict.Clear();
+      olvSkyrimDict.Items.Clear();
+      tblSkyrimEsmDict.Rows.Clear();
+      GC.Collect();
+
+      if (!LoadSkyrimStringsDictionnary()) return;
+
+      string src;
+      string trg;
+      string stringType;
+      bool strAdded;
+      bool typeOK;
+      foreach (DataRow row in tblStrings.Rows)
+      {
+        //if (Convert.ToString(row["StringIDHexa"]) != 0.ToString("X8"))
+        //{
+          stringType = Convert.ToString(row["StringType"]);
+          src = Convert.ToString(row["SourceTextValue"]);
+          trg = Convert.ToString(row["TargetTextValue"]);
+
+          typeOK = false;
+          check = cbSearchInSkyrimString.CheckBoxItems[0].Checked ;
+          if (check & stringType.ToUpper() == "STRINGS") typeOK = true;
+
+          check = cbSearchInSkyrimString.CheckBoxItems[1].Checked;
+          if (check & stringType.ToUpper() == "DLSTRINGS") typeOK = true;
+
+          check = cbSearchInSkyrimString.CheckBoxItems[2].Checked;
+          if (check & stringType.ToUpper() == "ILSTRINGS") typeOK = true;
+
+          if (typeOK)
+          {
+            strAdded = false;
+
+            if (!String.IsNullOrEmpty(src))
+              if (src.IndexOf(txtSearchInSkyrimString.Text, StringComparison.InvariantCultureIgnoreCase) >= 0) 
+                strAdded = true;
+
+            if (!strAdded)
+              if (!String.IsNullOrEmpty(trg))
+                if (trg.IndexOf(txtSearchInSkyrimString.Text, StringComparison.InvariantCultureIgnoreCase) >= 0) 
+                  strAdded = true;
+
+            if (strAdded)
+            {
+              listViewSkyrimDict.Add(new ObjStringsDict(
+               Convert.ToString(row["StringIDHexa"]),
+               Convert.ToString(row["SourceTextValue"]),
+               Convert.ToString(row["TargetTextValue"])
+               ));
+            }
+          }
+        //}
+      }
+
+      this.olvSkyrimDict.SetObjects(listViewSkyrimDict);
+      olvSkyrimDict.ShowGroups = false;
+      olvSkyrimDict.BuildList();
+
+      TextMatchFilter filter = TextMatchFilter.Contains(this.olvSkyrimDict, txtSearchInSkyrimString.Text);
+      this.olvSkyrimDict.ModelFilter = filter;
+      this.olvSkyrimDict.DefaultRenderer = new HighlightTextRenderer(filter);
+
     }
 
     /// <summary>
@@ -483,6 +603,7 @@ namespace TESVSnip.Docking
       TESVSnip.Docking.ObjOtherSkyrimStrings itemObj = (TESVSnip.Docking.ObjOtherSkyrimStrings)item.RowObject;
       txtSourceStringOld.Text = txtSourceStringNew.Text;
       txtSourceStringNew.Text = itemObj.SkyrimText;
+      SaveChange();
     }
 
     private void olvTHSkyrimTargetStrings_DoubleClick(object sender, EventArgs e)
@@ -491,119 +612,240 @@ namespace TESVSnip.Docking
       TESVSnip.Docking.ObjOtherSkyrimStrings itemObj = (TESVSnip.Docking.ObjOtherSkyrimStrings)item.RowObject;
       txtTargetStringOld.Text = txtTargetStringNew.Text;
       txtTargetStringNew.Text = itemObj.SkyrimText;
+      SaveChange();
     }
 
-
-  }
-
-
-  ///**************************************************************************************
-  ///**************************************************************************************
-  ///**************************************************************************************
-
-
-  /// <summary>
-  /// ObjStrings
-  /// </summary>
-  class ObjStrings
-  {
-    public ObjStrings() { }
-
-    public ObjStrings(string GroupName, string StringStatus, string CompareStatusSource,
-      string CompareStatusTarget, string RecordType, string FormIDHexa, string EditorID, string SourceStringIDHexa,
-      string SourceItemDesc, string TargetItemDesc, bool WriteStringInPlugIn)
+    /// <summary>
+    /// olvSkyrimDict_DoubleClick
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void olvSkyrimDict_DoubleClick(object sender, EventArgs e)
     {
 
-      this.groupName = GroupName;
-      this.stringStatus = StringStatus;
-      this.compareStatusSource = CompareStatusSource;
-      this.compareStatusTarget = CompareStatusTarget;
-      this.recordType = RecordType;
-      this.formID = FormIDHexa;
-      this.editorID = EditorID;
-      this.sourceStringIDHexa = SourceStringIDHexa;
-      this.sourceItemDesc = SourceItemDesc;
-      this.targetItemDesc = TargetItemDesc;
-      this.WriteStringInPlugIn = WriteStringInPlugIn;
+      if (lastOLVListItem == null) return;
+
+      OLVListItem item = ((BrightIdeasSoftware.ObjectListView)sender).SelectedItem;
+      TESVSnip.Docking.ObjStringsDict itemObj = (TESVSnip.Docking.ObjStringsDict)item.RowObject;
+      int colIdx = (((BrightIdeasSoftware.ObjectListView)sender)).HotColumnIndex;
+      string colName = (((BrightIdeasSoftware.ObjectListView)sender)).Columns[colIdx].Name; 
+
+      if (colName == "olvColSkyrimItemDescTargetLang")
+      {
+        txtTargetStringOld.Text = txtTargetStringNew.Text;
+        txtTargetStringNew.Text = itemObj.TargetString;
+        SaveChange();
+      }
+      else
+      {
+        txtSourceStringOld.Text = txtSourceStringNew.Text;
+        txtSourceStringNew.Text = itemObj.SourceString;
+        SaveChange();
+      }
+
     }
 
-    private string groupName;
-    public string GroupName { get { return groupName; } set { groupName = value; } }
-
-    private string stringStatus;
-    public string StringStatus { get { return stringStatus; } set { stringStatus = value; } }
-
-    private string compareStatusSource;
-    public string CompareStatusSource { get { return compareStatusSource; } set { compareStatusSource = value; } }
-
-    private string compareStatusTarget;
-    public string CompareStatusTarget { get { return compareStatusTarget; } set { compareStatusTarget = value; } }
-
-    private string recordType;
-    public string RecordType { get { return recordType; } set { recordType = value; } }
-
-    private string formID;
-    public string FormID { get { return formID; } set { formID = value; } }
-
-    private string editorID;
-    public string EditorID { get { return editorID; } set { editorID = value; } }
-
-    private string sourceStringIDHexa;
-    public string SourceStringIDHexa { get { return sourceStringIDHexa; } set { sourceStringIDHexa = value; } }
-
-    private string sourceItemDesc;
-    public string SourceItemDesc { get { return sourceItemDesc; } set { sourceItemDesc = value; } }
-
-    private string targetItemDesc;
-    public string TargetItemDesc { get { return targetItemDesc; } set { targetItemDesc = value; } }
-
-    private bool writeStringInPlugIn;
-    public bool WriteStringInPlugIn { get { return writeStringInPlugIn; } set { writeStringInPlugIn = value; } }
-
-  }
-
-  /// <summary>
-  /// ObjStringsDict
-  /// </summary>
-  class ObjStringsDict
-  {
-    public ObjStringsDict() { }
-
-    public ObjStringsDict(string StringID, string SourceString, string TargetString)
+    /// <summary>
+    /// olvTHStrings Sort
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void olvTHStrings_ColumnClick(object sender, ColumnClickEventArgs e)
     {
-      this.stringID = StringID;
-      this.sourceString = SourceString;
-      this.targetString = TargetString;
+      string colName = ((BrightIdeasSoftware.OLVColumn)((((BrightIdeasSoftware.ObjectListView)sender)).Columns[e.Column])).AspectName;
+      olvTHStringsSort(sender, colName);
     }
 
-    private string stringID;
-    public string StringID { get { return stringID; } set { stringID = value; } }
-
-    private string sourceString;
-    public string SourceString { get { return sourceString; } set { sourceString = value; } }
-
-    private string targetString;
-    public string TargetString { get { return targetString; } set { targetString = value; } }
-  }
-
-  /// <summary>
-  /// ObjStringsSkyrim
-  /// </summary>
-  class ObjOtherSkyrimStrings
-  {
-    public ObjOtherSkyrimStrings() { }
-
-    public ObjOtherSkyrimStrings(string StringID, string SkyrimText)
+    private void olvTHStringsSort(object sender, string colName)
     {
-      this.stringID = StringID;
-      this.skyrimText = SkyrimText;
+      OLVColumn ovlCol = null;
+
+      if (listViewStrings.Count <= 0) { tabPageStrings.Text = "Name - 0 row"; return; }
+
+      if (!String.IsNullOrEmpty(olvTHStringsLastSelectedColumnName))
+        if (olvTHStringsLastSelectedColumnName != colName)
+        {
+          ovlCol = (OLVColumn)((((BrightIdeasSoftware.ObjectListView)sender)).Columns["olvCol" + olvTHStringsLastSelectedColumnName + "STR"]);
+          ovlCol.HeaderImageKey = "";
+        }
+
+      if (listViewStrings.Count > 0)
+      {
+        if (olvTHStringsLastSortOrder == SortOrder.None)
+          olvTHStringsLastSortOrder = SortOrder.Ascending;
+        else
+          olvTHStringsLastSortOrder = olvTHStringsLastSortOrder == SortOrder.Ascending ? SortOrder.Descending : SortOrder.Ascending;
+
+
+
+        CreateListViewColumnTH("Strings", colName, olvTHStringsLastSortOrder);
+
+        olvTHStringsLastSelectedColumnName = colName;
+        olvTHStrings.Items.Clear();
+        this.olvTHStrings.SetObjects(listViewStrings);
+        olvTHStrings.ShowGroups = true;
+        olvTHStrings.BuildList();
+        ovlCol = (OLVColumn)((((BrightIdeasSoftware.ObjectListView)sender)).Columns["olvCol" + colName + "STR"]);
+        ovlCol.HeaderImageKey = olvTHStringsLastSortOrder == SortOrder.Descending ? "sort-descend" : "sort-ascend";
+        tabPageStrings.Text = "Name - " + listViewStrings.Count.ToString() + " rows";
+      }
+      else
+      {
+        tabPageStrings.Text = "Name - 0 row";
+      }
     }
 
-    private string stringID;
-    public string StringID { get { return stringID; } set { stringID = value; } }
+    /// <summary>
+    /// olvTHDLStrings Sort
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void olvTHDLStrings_ColumnClick(object sender, ColumnClickEventArgs e)
+    {
+      string colName = ((BrightIdeasSoftware.OLVColumn)((((BrightIdeasSoftware.ObjectListView)sender)).Columns[e.Column])).AspectName;
+      olvTHDLStringsSort(sender, colName);
+    }
 
-    private string skyrimText;
-    public string SkyrimText { get { return skyrimText; } set { skyrimText = value; } }
+    private void olvTHDLStringsSort(object sender, string colName)
+    {
+      OLVColumn ovlCol = null;
+
+      if (listViewStringsDL.Count <= 0) { tabPageDLStrings.Text = "Description - 0 row"; return; }
+
+      if (!String.IsNullOrEmpty(olvTHStringsDLLastSelectedColumnName))
+        if (olvTHStringsDLLastSelectedColumnName != colName)
+        {
+          ovlCol = (OLVColumn)((((BrightIdeasSoftware.ObjectListView)sender)).Columns["olvCol" + olvTHStringsDLLastSelectedColumnName + "DL"]);
+          ovlCol.HeaderImageKey = "";
+        }
+
+      if (listViewStringsDL.Count > 0)
+      {
+        if (olvTHStringsDLLastSortOrder == SortOrder.None)
+          olvTHStringsDLLastSortOrder = SortOrder.Ascending;
+        else
+          olvTHStringsDLLastSortOrder = olvTHStringsDLLastSortOrder == SortOrder.Ascending ? SortOrder.Descending : SortOrder.Ascending;
+
+
+
+        CreateListViewColumnTH("Strings", colName, olvTHStringsDLLastSortOrder);
+
+        olvTHStringsDLLastSelectedColumnName = colName;
+        olvTHDLStrings.Items.Clear();
+        this.olvTHDLStrings.SetObjects(listViewStringsDL);
+        olvTHDLStrings.ShowGroups = true;
+        olvTHDLStrings.BuildList();
+        ovlCol = (OLVColumn)((((BrightIdeasSoftware.ObjectListView)sender)).Columns["olvCol" + colName + "DL"]);
+        ovlCol.HeaderImageKey = olvTHStringsDLLastSortOrder == SortOrder.Descending ? "sort-descend" : "sort-ascend";
+        tabPageDLStrings.Text = "Description - " + listViewStringsDL.Count.ToString() + " rows";
+      }
+      else
+      {
+        tabPageDLStrings.Text = "Description - 0 row";
+      }
+    }
+
+    /// <summary>
+    ///  olvTHILStrings Sort
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void olvTHILStrings_ColumnClick(object sender, ColumnClickEventArgs e)
+    {
+      string colName = ((BrightIdeasSoftware.OLVColumn)((((BrightIdeasSoftware.ObjectListView)sender)).Columns[e.Column])).AspectName;
+      olvTHILStringsSort(sender, colName);
+    }
+
+    private void olvTHILStringsSort(object sender, string colName)
+    {
+      OLVColumn ovlCol = null;
+
+      if (listViewStringsIL.Count <= 0) { tabPageILStrings.Text = "Text - 0 row"; return; }
+
+      if (!String.IsNullOrEmpty(olvTHStringsILLastSelectedColumnName))
+        if (olvTHStringsILLastSelectedColumnName != colName)
+        {
+          ovlCol = (OLVColumn)((((BrightIdeasSoftware.ObjectListView)sender)).Columns["olvCol" + olvTHStringsILLastSelectedColumnName + "IL"]);
+          ovlCol.HeaderImageKey = "";
+        }
+
+      if (listViewStringsIL.Count > 0)
+      {
+        if (olvTHStringsILLastSortOrder == SortOrder.None)
+          olvTHStringsILLastSortOrder = SortOrder.Ascending;
+        else
+          olvTHStringsILLastSortOrder = olvTHStringsILLastSortOrder == SortOrder.Ascending ? SortOrder.Descending : SortOrder.Ascending;
+
+
+
+        CreateListViewColumnTH("Strings", colName, olvTHStringsILLastSortOrder);
+
+        olvTHStringsILLastSelectedColumnName = colName;
+        olvTHDLStrings.Items.Clear();
+        this.olvTHDLStrings.SetObjects(listViewStringsIL);
+        olvTHDLStrings.ShowGroups = true;
+        olvTHDLStrings.BuildList();
+        ovlCol = (OLVColumn)((((BrightIdeasSoftware.ObjectListView)sender)).Columns["olvCol" + colName + "IL"]);
+        ovlCol.HeaderImageKey = olvTHStringsILLastSortOrder == SortOrder.Descending ? "sort-descend" : "sort-ascend";
+        tabPageILStrings.Text = "Text - " + listViewStringsIL.Count.ToString() + " rows";
+      }
+      else
+      {
+        tabPageILStrings.Text = "Text - 0 row";
+      }
+    }
+
+    /// <summary>
+    ///  olvTHOtherStrings Sort
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void olvTHOtherStrings_ColumnClick(object sender, ColumnClickEventArgs e)
+    {
+      string colName = ((BrightIdeasSoftware.OLVColumn)((((BrightIdeasSoftware.ObjectListView)sender)).Columns[e.Column])).AspectName;
+      olvTHOtherStringsSort(sender, colName);
+    }
+
+    private void olvTHOtherStringsSort(object sender, string colName)
+    {
+      OLVColumn ovlCol = null;
+
+      if (listViewStringsOther.Count <= 0) { tabPageOther.Text = "Other - 0 row"; return; }
+
+      if (!String.IsNullOrEmpty(olvTHStringsOTHERLastSelectedColumnName))
+        if (olvTHStringsOTHERLastSelectedColumnName != colName)
+        {
+          ovlCol = (OLVColumn)((((BrightIdeasSoftware.ObjectListView)sender)).Columns["olvCol" + olvTHStringsOTHERLastSelectedColumnName + "OTHER"]);
+          ovlCol.HeaderImageKey = "";
+        }
+
+      if (listViewStringsOther.Count > 0)
+      {
+        if (olvTHStringsOTHERLastSortOrder == SortOrder.None)
+          olvTHStringsOTHERLastSortOrder = SortOrder.Ascending;
+        else
+          olvTHStringsOTHERLastSortOrder = olvTHStringsOTHERLastSortOrder == SortOrder.Ascending ? SortOrder.Descending : SortOrder.Ascending;
+
+
+
+        CreateListViewColumnTH("Strings", colName, olvTHStringsOTHERLastSortOrder);
+
+        olvTHStringsOTHERLastSelectedColumnName = colName;
+        olvTHDLStrings.Items.Clear();
+        this.olvTHDLStrings.SetObjects(listViewStringsOther);
+        olvTHDLStrings.ShowGroups = true;
+        olvTHDLStrings.BuildList();
+        ovlCol = (OLVColumn)((((BrightIdeasSoftware.ObjectListView)sender)).Columns["olvCol" + colName + "OTHER"]);
+        ovlCol.HeaderImageKey = olvTHStringsOTHERLastSortOrder == SortOrder.Descending ? "sort-descend" : "sort-ascend";
+        tabPageOther.Text = "Other - " + listViewStringsOther.Count.ToString() + " rows";
+      }
+      else
+      {
+        tabPageOther.Text = "Other - 0 row";
+      }
+    }
+
+
   }
 
 }

@@ -1,0 +1,1882 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="T_PlugInStrings" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="T_PlugInStrings">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="GroupName" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordType" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordTypeTH" type="xs:string" minOccurs="0" />
+                <xs:element name="StringType" type="xs:string" minOccurs="0" />
+                <xs:element name="FormID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="FormIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SkyrimStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescSourceLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescTargetLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SourceStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="TargetStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetEditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="StringStatus" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatusSource" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatusTarget" type="xs:string" minOccurs="0" />
+                <xs:element name="WriteStringInPlugIn" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <T_PlugInStrings>
+    <GroupName>MISC - Misc Item</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>241040</FormID>
+    <FormIDHexa>0003AD90</FormIDHexa>
+    <EditorID>DeerHide</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Elk Hide</SourceItemDesc>
+    <SourceItemDescOld>Peau d'élan</SourceItemDescOld>
+    <SourceEditorID>DeerHide</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Peau d'élan</TargetItemDesc>
+    <TargetItemDescOld>Peau de chevreuil</TargetItemDescOld>
+    <TargetEditorID>DeerHide</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S/M</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>AMMO - Ammunition Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>962527</FormID>
+    <FormIDHexa>000EAFDF</FormIDHexa>
+    <EditorID>NordHeroArrow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nord Hero Arrow</SourceItemDesc>
+    <SourceItemDescOld>Flèche du héros</SourceItemDescOld>
+    <SourceEditorID>NordHeroArrow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Flèche du héros</TargetItemDesc>
+    <TargetItemDescOld>Flèche du héros</TargetItemDescOld>
+    <TargetEditorID>NordHeroArrow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S/M</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>AMMO - Ammunition Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>847518</FormID>
+    <FormIDHexa>000CEE9E</FormIDHexa>
+    <EditorID>ForswornArrow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Forsworn Arrow</SourceItemDesc>
+    <SourceItemDescOld>Flèche de Parjure</SourceItemDescOld>
+    <SourceEditorID>ForswornArrow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Flèche de Parjure</TargetItemDesc>
+    <TargetItemDescOld>Flèche de Parjure</TargetItemDescOld>
+    <TargetEditorID>ForswornArrow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S/M</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>AMMO - Ammunition Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>230209</FormID>
+    <FormIDHexa>00038341</FormIDHexa>
+    <EditorID>FalmerArrow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Falmer Arrow</SourceItemDesc>
+    <SourceItemDescOld>Flèche falmer</SourceItemDescOld>
+    <SourceEditorID>FalmerArrow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Flèche falmer</TargetItemDesc>
+    <TargetItemDescOld>Flèche falmer</TargetItemDescOld>
+    <TargetEditorID>FalmerArrow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S/M</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>AMMO - Ammunition Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>213378</FormID>
+    <FormIDHexa>00034182</FormIDHexa>
+    <EditorID>DraugrArrow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Ancient Nord Arrow</SourceItemDesc>
+    <SourceItemDescOld>Flèche nordique antique</SourceItemDescOld>
+    <SourceEditorID>DraugrArrow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Flèche nordique antique</TargetItemDesc>
+    <TargetItemDescOld>Flèche nordique antique</TargetItemDescOld>
+    <TargetEditorID>DraugrArrow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S/M</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>AMMO - Ammunition Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>80320</FormID>
+    <FormIDHexa>000139C0</FormIDHexa>
+    <EditorID>DaedricArrow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Daedric Arrow</SourceItemDesc>
+    <SourceItemDescOld>Flèche daedra</SourceItemDescOld>
+    <SourceEditorID>DaedricArrow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Flèche daedra</TargetItemDesc>
+    <TargetItemDescOld>Flèche daedra</TargetItemDescOld>
+    <TargetEditorID>DaedricArrow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S/M</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>AMMO - Ammunition Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>80319</FormID>
+    <FormIDHexa>000139BF</FormIDHexa>
+    <EditorID>EbonyArrow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Ebony Arrow</SourceItemDesc>
+    <SourceItemDescOld />
+    <SourceEditorID>EbonyArrow</SourceEditorID>
+    <TargetStringID>22272</TargetStringID>
+    <TargetStringIDHexa>00005700</TargetStringIDHexa>
+    <TargetItemDesc>Flèche d'ébonite</TargetItemDesc>
+    <TargetItemDescOld>Flèche d'ébonite</TargetItemDescOld>
+    <TargetEditorID>EbonyArrow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>AMMO - Ammunition Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>80318</FormID>
+    <FormIDHexa>000139BE</FormIDHexa>
+    <EditorID>GlassArrow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Glass Arrow</SourceItemDesc>
+    <SourceItemDescOld>Flèche de verre</SourceItemDescOld>
+    <SourceEditorID>GlassArrow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Flèche de verre</TargetItemDesc>
+    <TargetItemDescOld>Flèche de verre</TargetItemDescOld>
+    <TargetEditorID>GlassArrow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S/M</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>AMMO - Ammunition Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>80317</FormID>
+    <FormIDHexa>000139BD</FormIDHexa>
+    <EditorID>ElvenArrow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Elven Arrow</SourceItemDesc>
+    <SourceItemDescOld>Flèche elfique</SourceItemDescOld>
+    <SourceEditorID>ElvenArrow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Flèche elfique</TargetItemDesc>
+    <TargetItemDescOld>Flèche elfique</TargetItemDescOld>
+    <TargetEditorID>ElvenArrow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S/M</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>AMMO - Ammunition Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>80316</FormID>
+    <FormIDHexa>000139BC</FormIDHexa>
+    <EditorID>DwarvenArrow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Dwarven Arrow</SourceItemDesc>
+    <SourceItemDescOld>Flèche dwemer</SourceItemDescOld>
+    <SourceEditorID>DwarvenArrow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Flèche dwemer</TargetItemDesc>
+    <TargetItemDescOld>Flèche dwemer</TargetItemDescOld>
+    <TargetEditorID>DwarvenArrow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S/M</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>AMMO - Ammunition Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>80315</FormID>
+    <FormIDHexa>000139BB</FormIDHexa>
+    <EditorID>OrcishArrow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Orcish Arrow</SourceItemDesc>
+    <SourceItemDescOld>Flèche orque</SourceItemDescOld>
+    <SourceEditorID>OrcishArrow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Flèche orque</TargetItemDesc>
+    <TargetItemDescOld>Flèche orque</TargetItemDescOld>
+    <TargetEditorID>OrcishArrow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S/M</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>AMMO - Ammunition Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>80255</FormID>
+    <FormIDHexa>0001397F</FormIDHexa>
+    <EditorID>SteelArrow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Steel Arrow</SourceItemDesc>
+    <SourceItemDescOld>Flèche d'acier</SourceItemDescOld>
+    <SourceEditorID>SteelArrow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Flèche d'acier</TargetItemDesc>
+    <TargetItemDescOld>Flèche d'acier</TargetItemDescOld>
+    <TargetEditorID>SteelArrow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S/M</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>AMMO - Ammunition Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>80253</FormID>
+    <FormIDHexa>0001397D</FormIDHexa>
+    <EditorID>IronArrow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Iron Arrow</SourceItemDesc>
+    <SourceItemDescOld>Flèche de fer</SourceItemDescOld>
+    <SourceEditorID>IronArrow</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Flèche de fer</TargetItemDesc>
+    <TargetItemDescOld>Flèche de fer</TargetItemDescOld>
+    <TargetEditorID>IronArrow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S/M</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781314</FormID>
+    <FormIDHexa>01001002</FormIDHexa>
+    <EditorID>ArmorElvenGildedGauntlets</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Elven Gilded Bracers</SourceItemDesc>
+    <SourceEditorID>ArmorElvenGildedGauntlets</SourceEditorID>
+    <TargetItemDesc>Gantelets elfique dorée</TargetItemDesc>
+    <TargetEditorID>ArmorElvenGildedGauntlets</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781315</FormID>
+    <FormIDHexa>01001003</FormIDHexa>
+    <EditorID>ArmorElvenGildedHelmet</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Elven Gilded Helmet</SourceItemDesc>
+    <SourceEditorID>ArmorElvenGildedHelmet</SourceEditorID>
+    <TargetItemDesc>Casque elfique dorée</TargetItemDesc>
+    <TargetEditorID>ArmorElvenGildedHelmet</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781316</FormID>
+    <FormIDHexa>01001004</FormIDHexa>
+    <EditorID>ArmorElvenGildedShield</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Elven Gilded Shield</SourceItemDesc>
+    <SourceEditorID>ArmorElvenGildedShield</SourceEditorID>
+    <TargetItemDesc>Bouclier elfique dorée</TargetItemDesc>
+    <TargetEditorID>ArmorElvenGildedShield</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781317</FormID>
+    <FormIDHexa>01001005</FormIDHexa>
+    <EditorID>ArmorElvenLightShield</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Elven Light Shield</SourceItemDesc>
+    <SourceEditorID>ArmorElvenLightShield</SourceEditorID>
+    <TargetItemDesc>Bouclier elfique léger</TargetItemDesc>
+    <TargetEditorID>ArmorElvenLightShield</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781499</FormID>
+    <FormIDHexa>010010BB</FormIDHexa>
+    <EditorID>ArmorGuardCuirassWindhelm</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Windhelm Guard's Armor</SourceItemDesc>
+    <SourceEditorID>ArmorGuardCuirassWindhelm</SourceEditorID>
+    <TargetItemDesc>Armure de garde de Vendeaume</TargetItemDesc>
+    <TargetEditorID>ArmorGuardCuirassWindhelm</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781504</FormID>
+    <FormIDHexa>010010C0</FormIDHexa>
+    <EditorID>ArmorNightingaleCuirassPlayerNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nightingale Armor</SourceItemDesc>
+    <SourceEditorID>ArmorNightingaleCuirassPlayerNoEnch</SourceEditorID>
+    <TargetItemDesc>Armure de Rossignol</TargetItemDesc>
+    <TargetEditorID>ArmorNightingaleCuirassPlayerNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781505</FormID>
+    <FormIDHexa>010010C1</FormIDHexa>
+    <EditorID>ArmorNightingaleBootsPlayerNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nightingale Boots</SourceItemDesc>
+    <SourceEditorID>ArmorNightingaleBootsPlayerNoEnch</SourceEditorID>
+    <TargetItemDesc>Bottes de Rossignol</TargetItemDesc>
+    <TargetEditorID>ArmorNightingaleBootsPlayerNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781506</FormID>
+    <FormIDHexa>010010C2</FormIDHexa>
+    <EditorID>ArmorNightingaleHelmetPlayerNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nightingale Hood</SourceItemDesc>
+    <SourceEditorID>ArmorNightingaleHelmetPlayerNoEnch</SourceEditorID>
+    <TargetItemDesc>Capuchon de Rossignol</TargetItemDesc>
+    <TargetEditorID>ArmorNightingaleHelmetPlayerNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781507</FormID>
+    <FormIDHexa>010010C3</FormIDHexa>
+    <EditorID>ArmorNightingaleGauntletsPlayerNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nightingale Gloves</SourceItemDesc>
+    <SourceEditorID>ArmorNightingaleGauntletsPlayerNoEnch</SourceEditorID>
+    <TargetItemDesc>Gants de Rossignol</TargetItemDesc>
+    <TargetItemDescOld>Gants de Rossignol</TargetItemDescOld>
+    <TargetEditorID>ArmorNightingaleGauntletsPlayerNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781473</FormID>
+    <FormIDHexa>010010A1</FormIDHexa>
+    <EditorID>DBArmorCuirassNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Shrouded Armor</SourceItemDesc>
+    <SourceEditorID>DBArmorCuirassNoEnch</SourceEditorID>
+    <TargetItemDesc>Armure sibylline</TargetItemDesc>
+    <TargetEditorID>DBArmorCuirassNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781496</FormID>
+    <FormIDHexa>010010B8</FormIDHexa>
+    <EditorID>DBArmorBootsNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Shrouded Boots</SourceItemDesc>
+    <SourceEditorID>DBArmorBootsNoEnch</SourceEditorID>
+    <TargetItemDesc>Bottes sibyllines</TargetItemDesc>
+    <TargetItemDescOld>Bottes sibyllines</TargetItemDescOld>
+    <TargetEditorID>DBArmorBootsNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781516</FormID>
+    <FormIDHexa>010010CC</FormIDHexa>
+    <EditorID>DBArmorGlovesNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Shrouded Gloves</SourceItemDesc>
+    <SourceEditorID>DBArmorGlovesNoEnch</SourceEditorID>
+    <TargetItemDesc>Gants sibyllins</TargetItemDesc>
+    <TargetItemDescOld>Gants sibyllins</TargetItemDescOld>
+    <TargetEditorID>DBArmorGlovesNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781523</FormID>
+    <FormIDHexa>010010D3</FormIDHexa>
+    <EditorID>DBArmorHelmetNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Shrouded Cowl</SourceItemDesc>
+    <SourceEditorID>DBArmorHelmetNoEnch</SourceEditorID>
+    <TargetItemDesc>Capuche sibylline</TargetItemDesc>
+    <TargetEditorID>DBArmorHelmetNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781533</FormID>
+    <FormIDHexa>010010DD</FormIDHexa>
+    <EditorID>DBArmorHelmetMaskLessNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Shrouded Cowl Maskless</SourceItemDesc>
+    <SourceEditorID>DBArmorHelmetMaskLessNoEnch</SourceEditorID>
+    <TargetItemDesc>Capuche sibylline ouverte</TargetItemDesc>
+    <TargetEditorID>DBArmorHelmetMaskLessNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781395</FormID>
+    <FormIDHexa>01001053</FormIDHexa>
+    <EditorID>ArmorThievesGuildCuirassPlayerNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Thieves Guild Armor</SourceItemDesc>
+    <SourceEditorID>ArmorThievesGuildCuirassPlayerNoEnch</SourceEditorID>
+    <TargetItemDesc>Armure de la Guilde des voleurs</TargetItemDesc>
+    <TargetEditorID>ArmorThievesGuildCuirassPlayerNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781551</FormID>
+    <FormIDHexa>010010EF</FormIDHexa>
+    <EditorID>ArmorThievesGuildBootsPlayerNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Thieves Guild Boots</SourceItemDesc>
+    <SourceEditorID>ArmorThievesGuildBootsPlayerNoEnch</SourceEditorID>
+    <TargetItemDesc>Bottes de la Guilde des voleurs</TargetItemDesc>
+    <TargetEditorID>ArmorThievesGuildBootsPlayerNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781552</FormID>
+    <FormIDHexa>010010F0</FormIDHexa>
+    <EditorID>ArmorThievesGuildGauntletsPlayerNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Thieves Guild Gloves</SourceItemDesc>
+    <SourceEditorID>ArmorThievesGuildGauntletsPlayerNoEnch</SourceEditorID>
+    <TargetItemDesc>Gants de la Guilde des voleurs</TargetItemDesc>
+    <TargetEditorID>ArmorThievesGuildGauntletsPlayerNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781553</FormID>
+    <FormIDHexa>010010F1</FormIDHexa>
+    <EditorID>ArmorThievesGuildHelmetPlayerNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Thieves Guild Hood</SourceItemDesc>
+    <SourceEditorID>ArmorThievesGuildHelmetPlayerNoEnch</SourceEditorID>
+    <TargetItemDesc>Capuchon de la Guilde des voleurs</TargetItemDesc>
+    <TargetEditorID>ArmorThievesGuildHelmetPlayerNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781562</FormID>
+    <FormIDHexa>010010FA</FormIDHexa>
+    <EditorID>ArmorMaskBronzeHelmet</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bronze Mask</SourceItemDesc>
+    <SourceEditorID>ArmorMaskBronzeHelmet</SourceEditorID>
+    <TargetItemDesc>Masque en bronze</TargetItemDesc>
+    <TargetEditorID>ArmorMaskBronzeHelmet</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781563</FormID>
+    <FormIDHexa>010010FB</FormIDHexa>
+    <EditorID>ArmorMaskCorundumHelmet</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Corundum Mask</SourceItemDesc>
+    <SourceEditorID>ArmorMaskCorundumHelmet</SourceEditorID>
+    <TargetItemDesc>Masque en corundum</TargetItemDesc>
+    <TargetEditorID>ArmorMaskCorundumHelmet</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781564</FormID>
+    <FormIDHexa>010010FC</FormIDHexa>
+    <EditorID>ArmorMaskEbonyHelmet</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Ebony Mask</SourceItemDesc>
+    <SourceEditorID>ArmorMaskEbonyHelmet</SourceEditorID>
+    <TargetItemDesc>Masque d'ébonite</TargetItemDesc>
+    <TargetEditorID>ArmorMaskEbonyHelmet</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781565</FormID>
+    <FormIDHexa>010010FD</FormIDHexa>
+    <EditorID>ArmorMaskIronHelmet</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Iron Mask</SourceItemDesc>
+    <SourceEditorID>ArmorMaskIronHelmet</SourceEditorID>
+    <TargetItemDesc>Masque de fer</TargetItemDesc>
+    <TargetEditorID>ArmorMaskIronHelmet</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781566</FormID>
+    <FormIDHexa>010010FE</FormIDHexa>
+    <EditorID>ArmorMaskMarbleHelmet</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Malachite Mask</SourceItemDesc>
+    <SourceEditorID>ArmorMaskMarbleHelmet</SourceEditorID>
+    <TargetItemDesc>Masque en malachite</TargetItemDesc>
+    <TargetEditorID>ArmorMaskMarbleHelmet</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781567</FormID>
+    <FormIDHexa>010010FF</FormIDHexa>
+    <EditorID>ArmorMaskMoonstoneHelmet</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Moonstone Mask</SourceItemDesc>
+    <SourceEditorID>ArmorMaskMoonstoneHelmet</SourceEditorID>
+    <TargetItemDesc>Masque en pierre de lune</TargetItemDesc>
+    <TargetEditorID>ArmorMaskMoonstoneHelmet</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781568</FormID>
+    <FormIDHexa>01001100</FormIDHexa>
+    <EditorID>ArmorMaskOrichalcumHelmet</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Orichalcum Mask</SourceItemDesc>
+    <SourceEditorID>ArmorMaskOrichalcumHelmet</SourceEditorID>
+    <TargetItemDesc>Masque d'orichalque</TargetItemDesc>
+    <TargetEditorID>ArmorMaskOrichalcumHelmet</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781569</FormID>
+    <FormIDHexa>01001101</FormIDHexa>
+    <EditorID>ArmorMaskSteelHelmet</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Steel Mask</SourceItemDesc>
+    <SourceEditorID>ArmorMaskSteelHelmet</SourceEditorID>
+    <TargetItemDesc>Masque en acier</TargetItemDesc>
+    <TargetEditorID>ArmorMaskSteelHelmet</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781570</FormID>
+    <FormIDHexa>01001102</FormIDHexa>
+    <EditorID>ArmorMaskUltraHelmet</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Daedric Mask</SourceItemDesc>
+    <SourceEditorID>ArmorMaskUltraHelmet</SourceEditorID>
+    <TargetItemDesc>Masque daedra</TargetItemDesc>
+    <TargetEditorID>ArmorMaskUltraHelmet</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781571</FormID>
+    <FormIDHexa>01001103</FormIDHexa>
+    <EditorID>ArmorMaskWoodHelmet</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Wooden Mask</SourceItemDesc>
+    <SourceEditorID>ArmorMaskWoodHelmet</SourceEditorID>
+    <TargetItemDesc>Masque en bois</TargetItemDesc>
+    <TargetEditorID>ArmorMaskWoodHelmet</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781587</FormID>
+    <FormIDHexa>01001113</FormIDHexa>
+    <EditorID>ArmorThievesGuildLeaderCuirassNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Guild Master's Armor</SourceItemDesc>
+    <SourceEditorID>ArmorThievesGuildLeaderCuirassNoEnch</SourceEditorID>
+    <TargetItemDesc>Armure de maître de guilde</TargetItemDesc>
+    <TargetEditorID>ArmorThievesGuildLeaderCuirassNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781588</FormID>
+    <FormIDHexa>01001114</FormIDHexa>
+    <EditorID>ArmorThievesGuildLeaderBootsNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Guild Master's Boots</SourceItemDesc>
+    <SourceEditorID>ArmorThievesGuildLeaderBootsNoEnch</SourceEditorID>
+    <TargetItemDesc>Bottes de maître de guilde</TargetItemDesc>
+    <TargetEditorID>ArmorThievesGuildLeaderBootsNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781589</FormID>
+    <FormIDHexa>01001115</FormIDHexa>
+    <EditorID>ArmorThievesGuildLeaderGauntletsNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Guild Master's Gloves</SourceItemDesc>
+    <SourceEditorID>ArmorThievesGuildLeaderGauntletsNoEnch</SourceEditorID>
+    <TargetItemDesc>Gants de maître de guilde</TargetItemDesc>
+    <TargetEditorID>ArmorThievesGuildLeaderGauntletsNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781590</FormID>
+    <FormIDHexa>01001116</FormIDHexa>
+    <EditorID>ArmorThievesGuildLeaderHelmetNoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Guild Master's Hood</SourceItemDesc>
+    <SourceEditorID>ArmorThievesGuildLeaderHelmetNoEnch</SourceEditorID>
+    <TargetItemDesc>Capuchon de maître de guilde</TargetItemDesc>
+    <TargetEditorID>ArmorThievesGuildLeaderHelmetNoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ARMO - Armor</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781313</FormID>
+    <FormIDHexa>01001001</FormIDHexa>
+    <EditorID>ArmorElvenGildedBoots</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Elven Gilded Boots</SourceItemDesc>
+    <SourceEditorID>ArmorElvenGildedBoots</SourceEditorID>
+    <TargetItemDesc>Bottes elfique dorée</TargetItemDesc>
+    <TargetEditorID>ArmorElvenGildedBoots</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MISC - Misc Item</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781534</FormID>
+    <FormIDHexa>010010DE</FormIDHexa>
+    <EditorID>AnimalHide</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Animal Hide or Pelt</SourceItemDesc>
+    <SourceEditorID>AnimalHide</SourceEditorID>
+    <TargetItemDesc>Peau ou fourrure d'animal</TargetItemDesc>
+    <TargetEditorID>AnimalHide</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MISC - Misc Item</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781447</FormID>
+    <FormIDHexa>01001087</FormIDHexa>
+    <EditorID>IngotFake</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Ingot</SourceItemDesc>
+    <SourceEditorID>IngotFake</SourceEditorID>
+    <TargetItemDesc>Lingot</TargetItemDesc>
+    <TargetEditorID>IngotFake</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>WEAP - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781320</FormID>
+    <FormIDHexa>01001008</FormIDHexa>
+    <EditorID>SkyforgeSteelWarhammer</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Skyforge Steel Warhammer</SourceItemDesc>
+    <SourceEditorID>SkyforgeSteelWarhammer</SourceEditorID>
+    <TargetItemDesc>Marteau d'acier de la Forgeciel</TargetItemDesc>
+    <TargetEditorID>SkyforgeSteelWarhammer</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>WEAP - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781321</FormID>
+    <FormIDHexa>01001009</FormIDHexa>
+    <EditorID>SkyforgeSteelBow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Skyforge Steel Bow</SourceItemDesc>
+    <SourceEditorID>SkyforgeSteelBow</SourceEditorID>
+    <TargetItemDesc>Arc d'acier de la Forgeciel</TargetItemDesc>
+    <TargetEditorID>SkyforgeSteelBow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>WEAP - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781619</FormID>
+    <FormIDHexa>01001133</FormIDHexa>
+    <EditorID>NightingaleBlade01NoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nightingale Blade</SourceItemDesc>
+    <SourceEditorID>NightingaleBlade01NoEnch</SourceEditorID>
+    <TargetItemDesc>Épée de Rossignol</TargetItemDesc>
+    <TargetEditorID>NightingaleBlade01NoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>WEAP - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781620</FormID>
+    <FormIDHexa>01001134</FormIDHexa>
+    <EditorID>NightingaleBlade02NoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nightingale Blade</SourceItemDesc>
+    <SourceEditorID>NightingaleBlade02NoEnch</SourceEditorID>
+    <TargetItemDesc>Épée de Rossignol</TargetItemDesc>
+    <TargetEditorID>NightingaleBlade02NoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>WEAP - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781621</FormID>
+    <FormIDHexa>01001135</FormIDHexa>
+    <EditorID>NightingaleBlade03NoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nightingale Blade</SourceItemDesc>
+    <SourceEditorID>NightingaleBlade03NoEnch</SourceEditorID>
+    <TargetItemDesc>Épée de Rossignol</TargetItemDesc>
+    <TargetEditorID>NightingaleBlade03NoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>WEAP - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781622</FormID>
+    <FormIDHexa>01001136</FormIDHexa>
+    <EditorID>NightingaleBlade04NoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nightingale Blade</SourceItemDesc>
+    <SourceEditorID>NightingaleBlade04NoEnch</SourceEditorID>
+    <TargetItemDesc>Épée de Rossignol</TargetItemDesc>
+    <TargetEditorID>NightingaleBlade04NoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>WEAP - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781623</FormID>
+    <FormIDHexa>01001137</FormIDHexa>
+    <EditorID>NightingaleBlade05NoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nightingale Blade</SourceItemDesc>
+    <SourceEditorID>NightingaleBlade05NoEnch</SourceEditorID>
+    <TargetItemDesc>Épée de Rossignol</TargetItemDesc>
+    <TargetEditorID>NightingaleBlade05NoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>WEAP - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781624</FormID>
+    <FormIDHexa>01001138</FormIDHexa>
+    <EditorID>NightingaleBow01NoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nightingale Bow</SourceItemDesc>
+    <SourceEditorID>NightingaleBow01NoEnch</SourceEditorID>
+    <TargetItemDesc>Arc de Rossignol</TargetItemDesc>
+    <TargetEditorID>NightingaleBow01NoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>WEAP - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781625</FormID>
+    <FormIDHexa>01001139</FormIDHexa>
+    <EditorID>NightingaleBow02NoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nightingale Bow</SourceItemDesc>
+    <SourceEditorID>NightingaleBow02NoEnch</SourceEditorID>
+    <TargetItemDesc>Arc de Rossignol</TargetItemDesc>
+    <TargetEditorID>NightingaleBow02NoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>WEAP - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781626</FormID>
+    <FormIDHexa>0100113A</FormIDHexa>
+    <EditorID>NightingaleBow03NoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nightingale Bow</SourceItemDesc>
+    <SourceEditorID>NightingaleBow03NoEnch</SourceEditorID>
+    <TargetItemDesc>Arc de Rossignol</TargetItemDesc>
+    <TargetEditorID>NightingaleBow03NoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>WEAP - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781627</FormID>
+    <FormIDHexa>0100113B</FormIDHexa>
+    <EditorID>NightingaleBow04NoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nightingale Bow</SourceItemDesc>
+    <SourceEditorID>NightingaleBow04NoEnch</SourceEditorID>
+    <TargetItemDesc>Arc de Rossignol</TargetItemDesc>
+    <TargetEditorID>NightingaleBow04NoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>WEAP - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781628</FormID>
+    <FormIDHexa>0100113C</FormIDHexa>
+    <EditorID>NightingaleBow05NoEnch</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Nightingale Bow</SourceItemDesc>
+    <SourceEditorID>NightingaleBow05NoEnch</SourceEditorID>
+    <TargetItemDesc>Arc de Rossignol</TargetItemDesc>
+    <TargetEditorID>NightingaleBow05NoEnch</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>WEAP - Weapon</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781319</FormID>
+    <FormIDHexa>01001007</FormIDHexa>
+    <EditorID>SkyforgeSteelMace</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Skyforge Steel Mace</SourceItemDesc>
+    <SourceEditorID>SkyforgeSteelMace</SourceEditorID>
+    <TargetItemDesc>Masse d'acier de la Forgeciel</TargetItemDesc>
+    <TargetEditorID>SkyforgeSteelMace</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>AMMO - Ammunition Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781392</FormID>
+    <FormIDHexa>01001050</FormIDHexa>
+    <EditorID>SkyforgeSteelArrow</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Skyforge Steel Arrow</SourceItemDesc>
+    <SourceEditorID>SkyforgeSteelArrow</SourceEditorID>
+    <TargetItemDesc>Flèche d'acier de la Forgeciel</TargetItemDesc>
+    <TargetEditorID>SkyforgeSteelArrow</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PROJ - Projectile</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781393</FormID>
+    <FormIDHexa>01001051</FormIDHexa>
+    <EditorID>ArrowSkyforgeProjectile</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Skyforge Steel Arrow</SourceItemDesc>
+    <SourceEditorID>ArrowSkyforgeProjectile</SourceEditorID>
+    <TargetItemDesc>Flèche d'acier de la Forgeciel</TargetItemDesc>
+    <TargetEditorID>ArrowSkyforgeProjectile</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MISC - Misc Item</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>16781448</FormID>
+    <FormIDHexa>01001088</FormIDHexa>
+    <EditorID>OreFake</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Ores or Dwemer Scrap</SourceItemDesc>
+    <SourceEditorID>OreFake</SourceEditorID>
+    <TargetItemDesc>Minerai ou ferraille dwemer</TargetItemDesc>
+    <TargetEditorID>OreFake</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>QUST - Quest</GroupName>
+    <RecordType>NNAM</RecordType>
+    <RecordTypeTH>NNAM:1</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>1069957</FormID>
+    <FormIDHexa>00105385</FormIDHexa>
+    <EditorID>TutorialBlacksmithing</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Craft an Iron Dagger</SourceItemDesc>
+    <SourceEditorID>TutorialBlacksmithing</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc />
+    <TargetItemDescOld />
+    <TargetEditorID>TutorialBlacksmithing</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>QUST - Quest</GroupName>
+    <RecordType>NNAM</RecordType>
+    <RecordTypeTH>NNAM:2</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>1069957</FormID>
+    <FormIDHexa>00105385</FormIDHexa>
+    <EditorID>TutorialBlacksmithing</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bring an Iron Dagger to &lt;Alias=QuestGiver&gt;</SourceItemDesc>
+    <SourceEditorID>TutorialBlacksmithing</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc />
+    <TargetItemDescOld />
+    <TargetEditorID>TutorialBlacksmithing</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>QUST - Quest</GroupName>
+    <RecordType>NNAM</RecordType>
+    <RecordTypeTH>NNAM:3</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>1069957</FormID>
+    <FormIDHexa>00105385</FormIDHexa>
+    <EditorID>TutorialBlacksmithing</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Temper an Iron Dagger</SourceItemDesc>
+    <SourceEditorID>TutorialBlacksmithing</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc />
+    <TargetItemDescOld />
+    <TargetEditorID>TutorialBlacksmithing</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>QUST - Quest</GroupName>
+    <RecordType>NNAM</RecordType>
+    <RecordTypeTH>NNAM:4</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>1069957</FormID>
+    <FormIDHexa>00105385</FormIDHexa>
+    <EditorID>TutorialBlacksmithing</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bring a Tempered Iron Dagger to &lt;Alias=QuestGiver&gt;</SourceItemDesc>
+    <SourceEditorID>TutorialBlacksmithing</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc />
+    <TargetItemDescOld />
+    <TargetEditorID>TutorialBlacksmithing</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>QUST - Quest</GroupName>
+    <RecordType>NNAM</RecordType>
+    <RecordTypeTH>NNAM:5</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>1069957</FormID>
+    <FormIDHexa>00105385</FormIDHexa>
+    <EditorID>TutorialBlacksmithing</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Craft some Leather</SourceItemDesc>
+    <SourceEditorID>TutorialBlacksmithing</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc />
+    <TargetItemDescOld />
+    <TargetEditorID>TutorialBlacksmithing</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>QUST - Quest</GroupName>
+    <RecordType>NNAM</RecordType>
+    <RecordTypeTH>NNAM:6</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>1069957</FormID>
+    <FormIDHexa>00105385</FormIDHexa>
+    <EditorID>TutorialBlacksmithing</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bring the Leather to &lt;Alias=QuestGiver&gt;</SourceItemDesc>
+    <SourceEditorID>TutorialBlacksmithing</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc />
+    <TargetItemDescOld />
+    <TargetEditorID>TutorialBlacksmithing</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>QUST - Quest</GroupName>
+    <RecordType>NNAM</RecordType>
+    <RecordTypeTH>NNAM:7</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>1069957</FormID>
+    <FormIDHexa>00105385</FormIDHexa>
+    <EditorID>TutorialBlacksmithing</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Craft a Hide Helmet</SourceItemDesc>
+    <SourceEditorID>TutorialBlacksmithing</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc />
+    <TargetItemDescOld />
+    <TargetEditorID>TutorialBlacksmithing</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>QUST - Quest</GroupName>
+    <RecordType>NNAM</RecordType>
+    <RecordTypeTH>NNAM:8</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>1069957</FormID>
+    <FormIDHexa>00105385</FormIDHexa>
+    <EditorID>TutorialBlacksmithing</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bring a Hide Helmet to &lt;Alias=QuestGiver&gt;</SourceItemDesc>
+    <SourceEditorID>TutorialBlacksmithing</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc />
+    <TargetItemDescOld />
+    <TargetEditorID>TutorialBlacksmithing</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>QUST - Quest</GroupName>
+    <RecordType>NNAM</RecordType>
+    <RecordTypeTH>NNAM:9</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>1069957</FormID>
+    <FormIDHexa>00105385</FormIDHexa>
+    <EditorID>TutorialBlacksmithing</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Temper a Hide Helmet</SourceItemDesc>
+    <SourceEditorID>TutorialBlacksmithing</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc />
+    <TargetItemDescOld />
+    <TargetEditorID>TutorialBlacksmithing</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>QUST - Quest</GroupName>
+    <RecordType>NNAM</RecordType>
+    <RecordTypeTH>NNAM:10</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>1069957</FormID>
+    <FormIDHexa>00105385</FormIDHexa>
+    <EditorID>TutorialBlacksmithing</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bring a Tempered Hide Helmet to &lt;Alias=QuestGiver&gt;</SourceItemDesc>
+    <SourceEditorID>TutorialBlacksmithing</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc />
+    <TargetItemDescOld />
+    <TargetEditorID>TutorialBlacksmithing</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>QUST - Quest</GroupName>
+    <RecordType>FNAM</RecordType>
+    <RecordTypeTH>FNAM:11</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>1069957</FormID>
+    <FormIDHexa>00105385</FormIDHexa>
+    <SkyrimStringID>258</SkyrimStringID>
+    <SkyrimStringIDHexa>00000102</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Dwarven Sphere</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Sphère dwemer</SkyrimItemDescTargetLang>
+    <SourceStringID>258</SourceStringID>
+    <SourceStringIDHexa>00000102</SourceStringIDHexa>
+    <SourceItemDesc>Dwarven Sphere</SourceItemDesc>
+    <SourceItemDescOld />
+    <SourceEditorID>TutorialBlacksmithing</SourceEditorID>
+    <TargetStringID>258</TargetStringID>
+    <TargetStringIDHexa>00000102</TargetStringIDHexa>
+    <TargetItemDesc>Sphère dwemer</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>TutorialBlacksmithing</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource />
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>GMST - Game setting</GroupName>
+    <RecordType>DATA</RecordType>
+    <RecordTypeTH>DATA</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>1086302</FormID>
+    <FormIDHexa>0010935E</FormIDHexa>
+    <EditorID>sDraugr</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>NORD</SourceItemDesc>
+    <SourceEditorID>sDraugr</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>DRAUGR</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>sDraugr</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+</NewDataSet>

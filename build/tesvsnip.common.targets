@@ -69,7 +69,7 @@
     <Error
         Text=" The THIRDPARTY_ROOT property must be set on the command line."
         Condition="'$(THIRDPARTY_ROOT)' == '' or !Exists('$(THIRDPARTY_ROOT)')" />
-
+              
     <Message Text="Version: $(Major).$(Minor).$(Build).$(Revision)" />
     <Message Text="GitInfo: $(GitProjectDate) $(GitVersionNumber)" />
     

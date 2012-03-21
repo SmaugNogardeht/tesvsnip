@@ -32,6 +32,8 @@
       BrightIdeasSoftware.HeaderStateStyle headerStateStyle7 = new BrightIdeasSoftware.HeaderStateStyle();
       BrightIdeasSoftware.HeaderStateStyle headerStateStyle8 = new BrightIdeasSoftware.HeaderStateStyle();
       BrightIdeasSoftware.HeaderStateStyle headerStateStyle9 = new BrightIdeasSoftware.HeaderStateStyle();
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TranslatorHelper));
+      PresentationControls.CheckBoxProperties checkBoxProperties2 = new PresentationControls.CheckBoxProperties();
       BrightIdeasSoftware.HeaderStateStyle headerStateStyle10 = new BrightIdeasSoftware.HeaderStateStyle();
       BrightIdeasSoftware.HeaderStateStyle headerStateStyle11 = new BrightIdeasSoftware.HeaderStateStyle();
       BrightIdeasSoftware.HeaderStateStyle headerStateStyle12 = new BrightIdeasSoftware.HeaderStateStyle();
@@ -44,23 +46,25 @@
       this.tabControlTranslatorHelper = new System.Windows.Forms.TabControl();
       this.tabPageStrings = new System.Windows.Forms.TabPage();
       this.panel1 = new System.Windows.Forms.Panel();
-      this.olvTHStrings = new BrightIdeasSoftware.ObjectListView();
+      this.olvTHStrings = new BrightIdeasSoftware.FastObjectListView();
+      this.headerFormatStyleData = new BrightIdeasSoftware.HeaderFormatStyle();
       this.hotItemStyleStrings = new BrightIdeasSoftware.HotItemStyle();
+      this.imageListSortHeader = new System.Windows.Forms.ImageList(this.components);
       this.panelSearchInStringsList = new System.Windows.Forms.Panel();
       this.txtSearchInStringsList = new System.Windows.Forms.TextBox();
       this.tabPageDLStrings = new System.Windows.Forms.TabPage();
       this.panel3 = new System.Windows.Forms.Panel();
-      this.olvTHDLStrings = new BrightIdeasSoftware.ObjectListView();
+      this.olvTHDLStrings = new BrightIdeasSoftware.FastObjectListView();
       this.panelSearchInDLStringsList = new System.Windows.Forms.Panel();
       this.txtSearchInDLStringsList = new System.Windows.Forms.TextBox();
       this.tabPageILStrings = new System.Windows.Forms.TabPage();
       this.panel2 = new System.Windows.Forms.Panel();
-      this.olvTHILStrings = new BrightIdeasSoftware.ObjectListView();
+      this.olvTHILStrings = new BrightIdeasSoftware.FastObjectListView();
       this.panelSearchInILStringsList = new System.Windows.Forms.Panel();
       this.txtSearchInILStringsList = new System.Windows.Forms.TextBox();
       this.tabPageOther = new System.Windows.Forms.TabPage();
       this.panel9 = new System.Windows.Forms.Panel();
-      this.olvTHOtherStrings = new BrightIdeasSoftware.ObjectListView();
+      this.olvTHOtherStrings = new BrightIdeasSoftware.FastObjectListView();
       this.panelSearchInOtherStringsList = new System.Windows.Forms.Panel();
       this.txtSearchInOtherStringsList = new System.Windows.Forms.TextBox();
       this.panelTranslatorMain = new System.Windows.Forms.Panel();
@@ -79,8 +83,8 @@
       this.panel7 = new System.Windows.Forms.Panel();
       this.olvSkyrimDict = new BrightIdeasSoftware.FastObjectListView();
       this.panel6 = new System.Windows.Forms.Panel();
+      this.cbSearchInSkyrimString = new PresentationControls.CheckBoxComboBox();
       this.btnSearchDict = new System.Windows.Forms.Button();
-      this.label25 = new System.Windows.Forms.Label();
       this.txtSearchInSkyrimString = new System.Windows.Forms.TextBox();
       this.panel4 = new System.Windows.Forms.Panel();
       this.edtMemo = new System.Windows.Forms.TextBox();
@@ -122,10 +126,8 @@
       this.label3 = new System.Windows.Forms.Label();
       this.txtGroupName = new System.Windows.Forms.TextBox();
       this.label16 = new System.Windows.Forms.Label();
-      this.headerFormatStyleData = new BrightIdeasSoftware.HeaderFormatStyle();
       this.OpenProjectModDialog = new System.Windows.Forms.OpenFileDialog();
       this.dataSetTH = new TESVSnip.Translator.DataSetTH();
-      this.bindingT_PlugInStrings = new System.Windows.Forms.BindingSource(this.components);
       this.headerFormatStyleData2 = new BrightIdeasSoftware.HeaderFormatStyle();
       this.contextMenuStripBtnTranslate.SuspendLayout();
       this.panelTranslatorTabControl.SuspendLayout();
@@ -161,7 +163,6 @@
       ((System.ComponentModel.ISupportInitialize)(this.olvTHSkyrimSourceStrings)).BeginInit();
       this.groupBoxSkyrim.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dataSetTH)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.bindingT_PlugInStrings)).BeginInit();
       this.SuspendLayout();
       // 
       // contextMenuStripBtnTranslate
@@ -256,12 +257,14 @@
       // olvTHStrings
       // 
       this.olvTHStrings.AlternateRowBackColor = System.Drawing.SystemColors.Info;
-      this.olvTHStrings.Cursor = System.Windows.Forms.Cursors.Default;
+      this.olvTHStrings.CheckBoxes = false;
       this.olvTHStrings.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.olvTHStrings.EmptyListMsg = "No PlugIn or Project Loaded";
+      this.olvTHStrings.EmptyListMsg = "No Project Loaded";
       this.olvTHStrings.EnableSearchByKeyboard = true;
       this.olvTHStrings.FullRowSelect = true;
       this.olvTHStrings.GridLines = true;
+      this.olvTHStrings.HeaderFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.olvTHStrings.HeaderFormatStyle = this.headerFormatStyleData;
       this.olvTHStrings.HeaderUsesThemes = false;
       this.olvTHStrings.HeaderWordWrap = true;
       this.olvTHStrings.HideSelection = false;
@@ -271,28 +274,52 @@
       this.olvTHStrings.Name = "olvTHStrings";
       this.olvTHStrings.OwnerDraw = true;
       this.olvTHStrings.SelectColumnsOnRightClickBehaviour = BrightIdeasSoftware.ObjectListView.ColumnSelectBehaviour.Submenu;
-      this.olvTHStrings.SelectedColumnTint = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
       this.olvTHStrings.ShowCommandMenuOnRightClick = true;
+      this.olvTHStrings.ShowGroups = false;
       this.olvTHStrings.ShowItemCountOnGroups = true;
       this.olvTHStrings.Size = new System.Drawing.Size(717, 886);
+      this.olvTHStrings.SmallImageList = this.imageListSortHeader;
       this.olvTHStrings.Sorting = System.Windows.Forms.SortOrder.Ascending;
-      this.olvTHStrings.SpaceBetweenGroups = 10;
-      this.olvTHStrings.TabIndex = 0;
+      this.olvTHStrings.SpaceBetweenGroups = 4;
+      this.olvTHStrings.TabIndex = 1;
       this.olvTHStrings.TintSortColumn = true;
-      this.olvTHStrings.UseAlternatingBackColors = true;
       this.olvTHStrings.UseCompatibleStateImageBehavior = false;
-      this.olvTHStrings.UseFiltering = true;
-      this.olvTHStrings.UseHotItem = true;
       this.olvTHStrings.View = System.Windows.Forms.View.Details;
+      this.olvTHStrings.VirtualMode = true;
       this.olvTHStrings.CellToolTipShowing += new System.EventHandler<BrightIdeasSoftware.ToolTipShowingEventArgs>(this.ListView_CellToolTipShowing);
       this.olvTHStrings.FormatRow += new System.EventHandler<BrightIdeasSoftware.FormatRowEventArgs>(this.ListView_FormatRow);
+      this.olvTHStrings.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.olvTHStrings_ColumnClick);
       this.olvTHStrings.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.ListView_ItemSelectionChanged);
       this.olvTHStrings.Click += new System.EventHandler(this.ListView_Item_Click);
+      // 
+      // headerFormatStyleData
+      // 
+      headerStateStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+      headerStateStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle7.ForeColor = System.Drawing.Color.Gainsboro;
+      this.headerFormatStyleData.Hot = headerStateStyle7;
+      headerStateStyle8.BackColor = System.Drawing.Color.Black;
+      headerStateStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle8.ForeColor = System.Drawing.Color.Gainsboro;
+      this.headerFormatStyleData.Normal = headerStateStyle8;
+      headerStateStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+      headerStateStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle9.ForeColor = System.Drawing.Color.Gainsboro;
+      headerStateStyle9.FrameColor = System.Drawing.Color.WhiteSmoke;
+      headerStateStyle9.FrameWidth = 2F;
+      this.headerFormatStyleData.Pressed = headerStateStyle9;
       // 
       // hotItemStyleStrings
       // 
       this.hotItemStyleStrings.BackColor = System.Drawing.Color.PeachPuff;
       this.hotItemStyleStrings.ForeColor = System.Drawing.Color.MediumBlue;
+      // 
+      // imageListSortHeader
+      // 
+      this.imageListSortHeader.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListSortHeader.ImageStream")));
+      this.imageListSortHeader.TransparentColor = System.Drawing.Color.Transparent;
+      this.imageListSortHeader.Images.SetKeyName(0, "sort-ascend");
+      this.imageListSortHeader.Images.SetKeyName(1, "sort-descend");
       // 
       // panelSearchInStringsList
       // 
@@ -340,12 +367,14 @@
       // olvTHDLStrings
       // 
       this.olvTHDLStrings.AlternateRowBackColor = System.Drawing.SystemColors.Info;
-      this.olvTHDLStrings.Cursor = System.Windows.Forms.Cursors.Default;
+      this.olvTHDLStrings.CheckBoxes = false;
       this.olvTHDLStrings.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.olvTHDLStrings.EmptyListMsg = "No PlugIn or Project Loaded";
+      this.olvTHDLStrings.EmptyListMsg = "No Project Loaded";
       this.olvTHDLStrings.EnableSearchByKeyboard = true;
       this.olvTHDLStrings.FullRowSelect = true;
       this.olvTHDLStrings.GridLines = true;
+      this.olvTHDLStrings.HeaderFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.olvTHDLStrings.HeaderFormatStyle = this.headerFormatStyleData;
       this.olvTHDLStrings.HeaderUsesThemes = false;
       this.olvTHDLStrings.HeaderWordWrap = true;
       this.olvTHDLStrings.HideSelection = false;
@@ -355,21 +384,20 @@
       this.olvTHDLStrings.Name = "olvTHDLStrings";
       this.olvTHDLStrings.OwnerDraw = true;
       this.olvTHDLStrings.SelectColumnsOnRightClickBehaviour = BrightIdeasSoftware.ObjectListView.ColumnSelectBehaviour.Submenu;
-      this.olvTHDLStrings.SelectedColumnTint = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
       this.olvTHDLStrings.ShowCommandMenuOnRightClick = true;
+      this.olvTHDLStrings.ShowGroups = false;
       this.olvTHDLStrings.ShowItemCountOnGroups = true;
       this.olvTHDLStrings.Size = new System.Drawing.Size(717, 886);
+      this.olvTHDLStrings.SmallImageList = this.imageListSortHeader;
       this.olvTHDLStrings.Sorting = System.Windows.Forms.SortOrder.Ascending;
-      this.olvTHDLStrings.SpaceBetweenGroups = 10;
-      this.olvTHDLStrings.TabIndex = 1;
-      this.olvTHDLStrings.TintSortColumn = true;
-      this.olvTHDLStrings.UseAlternatingBackColors = true;
+      this.olvTHDLStrings.SpaceBetweenGroups = 4;
+      this.olvTHDLStrings.TabIndex = 2;
       this.olvTHDLStrings.UseCompatibleStateImageBehavior = false;
-      this.olvTHDLStrings.UseFiltering = true;
-      this.olvTHDLStrings.UseHotItem = true;
       this.olvTHDLStrings.View = System.Windows.Forms.View.Details;
+      this.olvTHDLStrings.VirtualMode = true;
       this.olvTHDLStrings.CellToolTipShowing += new System.EventHandler<BrightIdeasSoftware.ToolTipShowingEventArgs>(this.ListView_CellToolTipShowing);
       this.olvTHDLStrings.FormatRow += new System.EventHandler<BrightIdeasSoftware.FormatRowEventArgs>(this.ListView_FormatRow);
+      this.olvTHDLStrings.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.olvTHDLStrings_ColumnClick);
       this.olvTHDLStrings.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.ListView_ItemSelectionChanged);
       this.olvTHDLStrings.Click += new System.EventHandler(this.ListView_Item_Click);
       // 
@@ -419,12 +447,14 @@
       // olvTHILStrings
       // 
       this.olvTHILStrings.AlternateRowBackColor = System.Drawing.SystemColors.Info;
-      this.olvTHILStrings.Cursor = System.Windows.Forms.Cursors.Default;
+      this.olvTHILStrings.CheckBoxes = false;
       this.olvTHILStrings.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.olvTHILStrings.EmptyListMsg = "No PlugIn or Project Loaded";
+      this.olvTHILStrings.EmptyListMsg = "No Project Loaded";
       this.olvTHILStrings.EnableSearchByKeyboard = true;
       this.olvTHILStrings.FullRowSelect = true;
       this.olvTHILStrings.GridLines = true;
+      this.olvTHILStrings.HeaderFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.olvTHILStrings.HeaderFormatStyle = this.headerFormatStyleData;
       this.olvTHILStrings.HeaderUsesThemes = false;
       this.olvTHILStrings.HeaderWordWrap = true;
       this.olvTHILStrings.HideSelection = false;
@@ -434,21 +464,20 @@
       this.olvTHILStrings.Name = "olvTHILStrings";
       this.olvTHILStrings.OwnerDraw = true;
       this.olvTHILStrings.SelectColumnsOnRightClickBehaviour = BrightIdeasSoftware.ObjectListView.ColumnSelectBehaviour.Submenu;
-      this.olvTHILStrings.SelectedColumnTint = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
       this.olvTHILStrings.ShowCommandMenuOnRightClick = true;
+      this.olvTHILStrings.ShowGroups = false;
       this.olvTHILStrings.ShowItemCountOnGroups = true;
       this.olvTHILStrings.Size = new System.Drawing.Size(717, 886);
+      this.olvTHILStrings.SmallImageList = this.imageListSortHeader;
       this.olvTHILStrings.Sorting = System.Windows.Forms.SortOrder.Ascending;
-      this.olvTHILStrings.SpaceBetweenGroups = 10;
-      this.olvTHILStrings.TabIndex = 2;
-      this.olvTHILStrings.TintSortColumn = true;
-      this.olvTHILStrings.UseAlternatingBackColors = true;
+      this.olvTHILStrings.SpaceBetweenGroups = 4;
+      this.olvTHILStrings.TabIndex = 3;
       this.olvTHILStrings.UseCompatibleStateImageBehavior = false;
-      this.olvTHILStrings.UseFiltering = true;
-      this.olvTHILStrings.UseHotItem = true;
       this.olvTHILStrings.View = System.Windows.Forms.View.Details;
+      this.olvTHILStrings.VirtualMode = true;
       this.olvTHILStrings.CellToolTipShowing += new System.EventHandler<BrightIdeasSoftware.ToolTipShowingEventArgs>(this.ListView_CellToolTipShowing);
       this.olvTHILStrings.FormatRow += new System.EventHandler<BrightIdeasSoftware.FormatRowEventArgs>(this.ListView_FormatRow);
+      this.olvTHILStrings.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.olvTHILStrings_ColumnClick);
       this.olvTHILStrings.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.ListView_ItemSelectionChanged);
       this.olvTHILStrings.Click += new System.EventHandler(this.ListView_Item_Click);
       // 
@@ -498,12 +527,14 @@
       // olvTHOtherStrings
       // 
       this.olvTHOtherStrings.AlternateRowBackColor = System.Drawing.SystemColors.Info;
-      this.olvTHOtherStrings.Cursor = System.Windows.Forms.Cursors.Default;
+      this.olvTHOtherStrings.CheckBoxes = false;
       this.olvTHOtherStrings.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.olvTHOtherStrings.EmptyListMsg = "No PlugIn or Project Loaded";
+      this.olvTHOtherStrings.EmptyListMsg = "No Project Loaded";
       this.olvTHOtherStrings.EnableSearchByKeyboard = true;
       this.olvTHOtherStrings.FullRowSelect = true;
       this.olvTHOtherStrings.GridLines = true;
+      this.olvTHOtherStrings.HeaderFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.olvTHOtherStrings.HeaderFormatStyle = this.headerFormatStyleData;
       this.olvTHOtherStrings.HeaderUsesThemes = false;
       this.olvTHOtherStrings.HeaderWordWrap = true;
       this.olvTHOtherStrings.HideSelection = false;
@@ -513,20 +544,20 @@
       this.olvTHOtherStrings.Name = "olvTHOtherStrings";
       this.olvTHOtherStrings.OwnerDraw = true;
       this.olvTHOtherStrings.SelectColumnsOnRightClickBehaviour = BrightIdeasSoftware.ObjectListView.ColumnSelectBehaviour.Submenu;
-      this.olvTHOtherStrings.SelectedColumnTint = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
       this.olvTHOtherStrings.ShowCommandMenuOnRightClick = true;
+      this.olvTHOtherStrings.ShowGroups = false;
       this.olvTHOtherStrings.ShowItemCountOnGroups = true;
       this.olvTHOtherStrings.Size = new System.Drawing.Size(717, 886);
+      this.olvTHOtherStrings.SmallImageList = this.imageListSortHeader;
       this.olvTHOtherStrings.Sorting = System.Windows.Forms.SortOrder.Ascending;
-      this.olvTHOtherStrings.SpaceBetweenGroups = 10;
-      this.olvTHOtherStrings.TabIndex = 2;
-      this.olvTHOtherStrings.TintSortColumn = true;
+      this.olvTHOtherStrings.SpaceBetweenGroups = 4;
+      this.olvTHOtherStrings.TabIndex = 4;
       this.olvTHOtherStrings.UseCompatibleStateImageBehavior = false;
-      this.olvTHOtherStrings.UseFiltering = true;
-      this.olvTHOtherStrings.UseHotItem = true;
       this.olvTHOtherStrings.View = System.Windows.Forms.View.Details;
+      this.olvTHOtherStrings.VirtualMode = true;
       this.olvTHOtherStrings.CellToolTipShowing += new System.EventHandler<BrightIdeasSoftware.ToolTipShowingEventArgs>(this.ListView_CellToolTipShowing);
       this.olvTHOtherStrings.FormatRow += new System.EventHandler<BrightIdeasSoftware.FormatRowEventArgs>(this.ListView_FormatRow);
+      this.olvTHOtherStrings.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.olvTHOtherStrings_ColumnClick);
       this.olvTHOtherStrings.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.ListView_ItemSelectionChanged);
       this.olvTHOtherStrings.Click += new System.EventHandler(this.ListView_Item_Click);
       // 
@@ -690,9 +721,9 @@
       this.panel5.Controls.Add(this.panel7);
       this.panel5.Controls.Add(this.panel6);
       this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.panel5.Location = new System.Drawing.Point(0, 678);
+      this.panel5.Location = new System.Drawing.Point(0, 650);
       this.panel5.Name = "panel5";
-      this.panel5.Size = new System.Drawing.Size(539, 245);
+      this.panel5.Size = new System.Drawing.Size(539, 273);
       this.panel5.TabIndex = 5;
       // 
       // panel7
@@ -701,7 +732,7 @@
       this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
       this.panel7.Location = new System.Drawing.Point(0, 27);
       this.panel7.Name = "panel7";
-      this.panel7.Size = new System.Drawing.Size(539, 218);
+      this.panel7.Size = new System.Drawing.Size(539, 246);
       this.panel7.TabIndex = 3;
       // 
       // olvSkyrimDict
@@ -720,7 +751,7 @@
       this.olvSkyrimDict.Name = "olvSkyrimDict";
       this.olvSkyrimDict.OwnerDraw = true;
       this.olvSkyrimDict.ShowGroups = false;
-      this.olvSkyrimDict.Size = new System.Drawing.Size(539, 218);
+      this.olvSkyrimDict.Size = new System.Drawing.Size(539, 246);
       this.olvSkyrimDict.TabIndex = 0;
       this.olvSkyrimDict.UseAlternatingBackColors = true;
       this.olvSkyrimDict.UseCompatibleStateImageBehavior = false;
@@ -729,17 +760,29 @@
       this.olvSkyrimDict.View = System.Windows.Forms.View.Details;
       this.olvSkyrimDict.VirtualMode = true;
       this.olvSkyrimDict.CellToolTipShowing += new System.EventHandler<BrightIdeasSoftware.ToolTipShowingEventArgs>(this.ListView_CellToolTipShowing);
+      this.olvSkyrimDict.DoubleClick += new System.EventHandler(this.olvSkyrimDict_DoubleClick);
       // 
       // panel6
       // 
+      this.panel6.Controls.Add(this.cbSearchInSkyrimString);
       this.panel6.Controls.Add(this.btnSearchDict);
-      this.panel6.Controls.Add(this.label25);
       this.panel6.Controls.Add(this.txtSearchInSkyrimString);
       this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
       this.panel6.Location = new System.Drawing.Point(0, 0);
       this.panel6.Name = "panel6";
       this.panel6.Size = new System.Drawing.Size(539, 27);
       this.panel6.TabIndex = 2;
+      // 
+      // cbSearchInSkyrimString
+      // 
+      checkBoxProperties2.ForeColor = System.Drawing.SystemColors.ControlText;
+      this.cbSearchInSkyrimString.CheckBoxProperties = checkBoxProperties2;
+      this.cbSearchInSkyrimString.DisplayMemberSingleItem = "";
+      this.cbSearchInSkyrimString.FormattingEnabled = true;
+      this.cbSearchInSkyrimString.Location = new System.Drawing.Point(3, 3);
+      this.cbSearchInSkyrimString.Name = "cbSearchInSkyrimString";
+      this.cbSearchInSkyrimString.Size = new System.Drawing.Size(161, 21);
+      this.cbSearchInSkyrimString.TabIndex = 49;
       // 
       // btnSearchDict
       // 
@@ -751,27 +794,14 @@
       this.btnSearchDict.UseVisualStyleBackColor = true;
       this.btnSearchDict.Click += new System.EventHandler(this.btnSearchDict_Click);
       // 
-      // label25
-      // 
-      this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-      this.label25.AutoSize = true;
-      this.label25.Location = new System.Drawing.Point(7, 7);
-      this.label25.Name = "label25";
-      this.label25.Size = new System.Drawing.Size(47, 13);
-      this.label25.TabIndex = 47;
-      this.label25.Text = "Search :";
-      this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-      // 
       // txtSearchInSkyrimString
       // 
       this.txtSearchInSkyrimString.BackColor = System.Drawing.Color.Snow;
       this.txtSearchInSkyrimString.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-      this.txtSearchInSkyrimString.Location = new System.Drawing.Point(55, 3);
+      this.txtSearchInSkyrimString.Location = new System.Drawing.Point(170, 3);
       this.txtSearchInSkyrimString.MaxLength = 32;
       this.txtSearchInSkyrimString.Name = "txtSearchInSkyrimString";
-      this.txtSearchInSkyrimString.Size = new System.Drawing.Size(446, 20);
+      this.txtSearchInSkyrimString.Size = new System.Drawing.Size(331, 20);
       this.txtSearchInSkyrimString.TabIndex = 46;
       this.txtSearchInSkyrimString.Text = "txtSearchInSkyrimString";
       // 
@@ -813,9 +843,9 @@
       this.groupBoxTarget.Dock = System.Windows.Forms.DockStyle.Top;
       this.groupBoxTarget.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.groupBoxTarget.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-      this.groupBoxTarget.Location = new System.Drawing.Point(0, 389);
+      this.groupBoxTarget.Location = new System.Drawing.Point(0, 375);
       this.groupBoxTarget.Name = "groupBoxTarget";
-      this.groupBoxTarget.Size = new System.Drawing.Size(539, 289);
+      this.groupBoxTarget.Size = new System.Drawing.Size(539, 275);
       this.groupBoxTarget.TabIndex = 3;
       this.groupBoxTarget.TabStop = false;
       this.groupBoxTarget.Text = "TRANSLATION :";
@@ -825,7 +855,7 @@
       this.label12.AutoSize = true;
       this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-      this.label12.Location = new System.Drawing.Point(4, 123);
+      this.label12.Location = new System.Drawing.Point(4, 122);
       this.label12.Name = "label12";
       this.label12.Size = new System.Drawing.Size(65, 13);
       this.label12.TabIndex = 63;
@@ -835,7 +865,7 @@
       // chkboxNewTextTranslate
       // 
       this.chkboxNewTextTranslate.AutoSize = true;
-      this.chkboxNewTextTranslate.Location = new System.Drawing.Point(29, 101);
+      this.chkboxNewTextTranslate.Location = new System.Drawing.Point(29, 100);
       this.chkboxNewTextTranslate.Name = "chkboxNewTextTranslate";
       this.chkboxNewTextTranslate.Size = new System.Drawing.Size(15, 14);
       this.chkboxNewTextTranslate.TabIndex = 62;
@@ -846,6 +876,7 @@
       // 
       this.olvTHSkyrimTargetStrings.AlternateRowBackColor = System.Drawing.SystemColors.Info;
       this.olvTHSkyrimTargetStrings.Cursor = System.Windows.Forms.Cursors.Default;
+      this.olvTHSkyrimTargetStrings.Dock = System.Windows.Forms.DockStyle.Bottom;
       this.olvTHSkyrimTargetStrings.EmptyListMsg = "No match found";
       this.olvTHSkyrimTargetStrings.EnableSearchByKeyboard = true;
       this.olvTHSkyrimTargetStrings.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -855,7 +886,7 @@
       this.olvTHSkyrimTargetStrings.HeaderWordWrap = true;
       this.olvTHSkyrimTargetStrings.HideSelection = false;
       this.olvTHSkyrimTargetStrings.HotItemStyle = this.hotItemStyleStrings;
-      this.olvTHSkyrimTargetStrings.Location = new System.Drawing.Point(6, 197);
+      this.olvTHSkyrimTargetStrings.Location = new System.Drawing.Point(3, 191);
       this.olvTHSkyrimTargetStrings.MultiSelect = false;
       this.olvTHSkyrimTargetStrings.Name = "olvTHSkyrimTargetStrings";
       this.olvTHSkyrimTargetStrings.OwnerDraw = true;
@@ -863,7 +894,7 @@
       this.olvTHSkyrimTargetStrings.SelectedColumnTint = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
       this.olvTHSkyrimTargetStrings.ShowCommandMenuOnRightClick = true;
       this.olvTHSkyrimTargetStrings.ShowItemCountOnGroups = true;
-      this.olvTHSkyrimTargetStrings.Size = new System.Drawing.Size(529, 89);
+      this.olvTHSkyrimTargetStrings.Size = new System.Drawing.Size(533, 81);
       this.olvTHSkyrimTargetStrings.Sorting = System.Windows.Forms.SortOrder.Ascending;
       this.olvTHSkyrimTargetStrings.SpaceBetweenGroups = 10;
       this.olvTHSkyrimTargetStrings.TabIndex = 60;
@@ -881,7 +912,7 @@
       this.txtTargetStringsID.BackColor = System.Drawing.Color.Cornsilk;
       this.txtTargetStringsID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.txtTargetStringsID.ForeColor = System.Drawing.Color.Black;
-      this.txtTargetStringsID.Location = new System.Drawing.Point(72, 19);
+      this.txtTargetStringsID.Location = new System.Drawing.Point(72, 17);
       this.txtTargetStringsID.Name = "txtTargetStringsID";
       this.txtTargetStringsID.ReadOnly = true;
       this.txtTargetStringsID.Size = new System.Drawing.Size(100, 20);
@@ -893,7 +924,7 @@
       // 
       this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label22.ForeColor = System.Drawing.Color.Black;
-      this.label22.Location = new System.Drawing.Point(176, 23);
+      this.label22.Location = new System.Drawing.Point(181, 21);
       this.label22.Name = "label22";
       this.label22.Size = new System.Drawing.Size(55, 13);
       this.label22.TabIndex = 59;
@@ -904,7 +935,7 @@
       // 
       this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label14.ForeColor = System.Drawing.Color.Black;
-      this.label14.Location = new System.Drawing.Point(11, 23);
+      this.label14.Location = new System.Drawing.Point(15, 21);
       this.label14.Name = "label14";
       this.label14.Size = new System.Drawing.Size(54, 13);
       this.label14.TabIndex = 51;
@@ -916,7 +947,7 @@
       this.label13.AutoSize = true;
       this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label13.ForeColor = System.Drawing.Color.Black;
-      this.label13.Location = new System.Drawing.Point(7, 163);
+      this.label13.Location = new System.Drawing.Point(10, 159);
       this.label13.Name = "label13";
       this.label13.Size = new System.Drawing.Size(59, 13);
       this.label13.TabIndex = 46;
@@ -928,7 +959,7 @@
       this.txtTargetStringNew.BackColor = System.Drawing.Color.White;
       this.txtTargetStringNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.txtTargetStringNew.ForeColor = System.Drawing.Color.Black;
-      this.txtTargetStringNew.Location = new System.Drawing.Point(74, 97);
+      this.txtTargetStringNew.Location = new System.Drawing.Point(74, 93);
       this.txtTargetStringNew.Multiline = true;
       this.txtTargetStringNew.Name = "txtTargetStringNew";
       this.txtTargetStringNew.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -944,7 +975,7 @@
       this.txtTargetEditorID.BackColor = System.Drawing.Color.Cornsilk;
       this.txtTargetEditorID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.txtTargetEditorID.ForeColor = System.Drawing.Color.Black;
-      this.txtTargetEditorID.Location = new System.Drawing.Point(235, 19);
+      this.txtTargetEditorID.Location = new System.Drawing.Point(235, 17);
       this.txtTargetEditorID.Name = "txtTargetEditorID";
       this.txtTargetEditorID.ReadOnly = true;
       this.txtTargetEditorID.Size = new System.Drawing.Size(298, 20);
@@ -956,7 +987,7 @@
       this.label21.AutoSize = true;
       this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-      this.label21.Location = new System.Drawing.Point(10, 61);
+      this.label21.Location = new System.Drawing.Point(17, 60);
       this.label21.Name = "label21";
       this.label21.Size = new System.Drawing.Size(52, 13);
       this.label21.TabIndex = 57;
@@ -968,7 +999,7 @@
       this.txtTargetStringOld.BackColor = System.Drawing.Color.Gainsboro;
       this.txtTargetStringOld.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.txtTargetStringOld.ForeColor = System.Drawing.Color.Black;
-      this.txtTargetStringOld.Location = new System.Drawing.Point(74, 147);
+      this.txtTargetStringOld.Location = new System.Drawing.Point(74, 143);
       this.txtTargetStringOld.Multiline = true;
       this.txtTargetStringOld.Name = "txtTargetStringOld";
       this.txtTargetStringOld.ReadOnly = true;
@@ -980,7 +1011,7 @@
       // 
       this.txtStringSkyrimDescTarget.BackColor = System.Drawing.Color.WhiteSmoke;
       this.txtStringSkyrimDescTarget.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txtStringSkyrimDescTarget.Location = new System.Drawing.Point(74, 45);
+      this.txtStringSkyrimDescTarget.Location = new System.Drawing.Point(74, 44);
       this.txtStringSkyrimDescTarget.Multiline = true;
       this.txtStringSkyrimDescTarget.Name = "txtStringSkyrimDescTarget";
       this.txtStringSkyrimDescTarget.ReadOnly = true;
@@ -1007,7 +1038,7 @@
       this.groupBoxSource.ForeColor = System.Drawing.Color.Purple;
       this.groupBoxSource.Location = new System.Drawing.Point(0, 100);
       this.groupBoxSource.Name = "groupBoxSource";
-      this.groupBoxSource.Size = new System.Drawing.Size(539, 289);
+      this.groupBoxSource.Size = new System.Drawing.Size(539, 275);
       this.groupBoxSource.TabIndex = 1;
       this.groupBoxSource.TabStop = false;
       this.groupBoxSource.Text = "ORIGINAL :";
@@ -1016,6 +1047,7 @@
       // 
       this.olvTHSkyrimSourceStrings.AlternateRowBackColor = System.Drawing.SystemColors.Info;
       this.olvTHSkyrimSourceStrings.Cursor = System.Windows.Forms.Cursors.Default;
+      this.olvTHSkyrimSourceStrings.Dock = System.Windows.Forms.DockStyle.Bottom;
       this.olvTHSkyrimSourceStrings.EmptyListMsg = "No match found";
       this.olvTHSkyrimSourceStrings.EnableSearchByKeyboard = true;
       this.olvTHSkyrimSourceStrings.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1025,7 +1057,7 @@
       this.olvTHSkyrimSourceStrings.HeaderWordWrap = true;
       this.olvTHSkyrimSourceStrings.HideSelection = false;
       this.olvTHSkyrimSourceStrings.HotItemStyle = this.hotItemStyleStrings;
-      this.olvTHSkyrimSourceStrings.Location = new System.Drawing.Point(4, 194);
+      this.olvTHSkyrimSourceStrings.Location = new System.Drawing.Point(3, 191);
       this.olvTHSkyrimSourceStrings.MultiSelect = false;
       this.olvTHSkyrimSourceStrings.Name = "olvTHSkyrimSourceStrings";
       this.olvTHSkyrimSourceStrings.OwnerDraw = true;
@@ -1033,7 +1065,7 @@
       this.olvTHSkyrimSourceStrings.SelectedColumnTint = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
       this.olvTHSkyrimSourceStrings.ShowCommandMenuOnRightClick = true;
       this.olvTHSkyrimSourceStrings.ShowItemCountOnGroups = true;
-      this.olvTHSkyrimSourceStrings.Size = new System.Drawing.Size(529, 89);
+      this.olvTHSkyrimSourceStrings.Size = new System.Drawing.Size(533, 81);
       this.olvTHSkyrimSourceStrings.Sorting = System.Windows.Forms.SortOrder.Ascending;
       this.olvTHSkyrimSourceStrings.SpaceBetweenGroups = 10;
       this.olvTHSkyrimSourceStrings.TabIndex = 56;
@@ -1050,7 +1082,7 @@
       // 
       this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label11.ForeColor = System.Drawing.Color.Black;
-      this.label11.Location = new System.Drawing.Point(11, 21);
+      this.label11.Location = new System.Drawing.Point(15, 21);
       this.label11.Name = "label11";
       this.label11.Size = new System.Drawing.Size(54, 13);
       this.label11.TabIndex = 44;
@@ -1062,7 +1094,7 @@
       this.label9.AutoSize = true;
       this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label9.ForeColor = System.Drawing.Color.Black;
-      this.label9.Location = new System.Drawing.Point(7, 160);
+      this.label9.Location = new System.Drawing.Point(10, 159);
       this.label9.Name = "label9";
       this.label9.Size = new System.Drawing.Size(59, 13);
       this.label9.TabIndex = 39;
@@ -1074,7 +1106,7 @@
       this.txtSourceStringOld.BackColor = System.Drawing.Color.Gainsboro;
       this.txtSourceStringOld.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.txtSourceStringOld.ForeColor = System.Drawing.Color.Black;
-      this.txtSourceStringOld.Location = new System.Drawing.Point(74, 144);
+      this.txtSourceStringOld.Location = new System.Drawing.Point(74, 143);
       this.txtSourceStringOld.Multiline = true;
       this.txtSourceStringOld.Name = "txtSourceStringOld";
       this.txtSourceStringOld.ReadOnly = true;
@@ -1088,7 +1120,7 @@
       this.label7.AutoSize = true;
       this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label7.ForeColor = System.Drawing.Color.Purple;
-      this.label7.Location = new System.Drawing.Point(4, 110);
+      this.label7.Location = new System.Drawing.Point(4, 109);
       this.label7.Name = "label7";
       this.label7.Size = new System.Drawing.Size(65, 13);
       this.label7.TabIndex = 41;
@@ -1099,7 +1131,7 @@
       // 
       this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label20.ForeColor = System.Drawing.Color.Black;
-      this.label20.Location = new System.Drawing.Point(176, 21);
+      this.label20.Location = new System.Drawing.Point(181, 21);
       this.label20.Name = "label20";
       this.label20.Size = new System.Drawing.Size(55, 13);
       this.label20.TabIndex = 55;
@@ -1110,12 +1142,12 @@
       // 
       this.txtStringSkyrimDescSource.BackColor = System.Drawing.Color.White;
       this.txtStringSkyrimDescSource.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txtStringSkyrimDescSource.Location = new System.Drawing.Point(74, 60);
+      this.txtStringSkyrimDescSource.Location = new System.Drawing.Point(74, 44);
       this.txtStringSkyrimDescSource.Multiline = true;
       this.txtStringSkyrimDescSource.Name = "txtStringSkyrimDescSource";
       this.txtStringSkyrimDescSource.ReadOnly = true;
       this.txtStringSkyrimDescSource.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-      this.txtStringSkyrimDescSource.Size = new System.Drawing.Size(459, 28);
+      this.txtStringSkyrimDescSource.Size = new System.Drawing.Size(459, 44);
       this.txtStringSkyrimDescSource.TabIndex = 32;
       this.txtStringSkyrimDescSource.Text = "txtStringSkyrimDescSource";
       // 
@@ -1124,7 +1156,7 @@
       this.txtSourceStringNew.BackColor = System.Drawing.Color.White;
       this.txtSourceStringNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.txtSourceStringNew.ForeColor = System.Drawing.Color.Black;
-      this.txtSourceStringNew.Location = new System.Drawing.Point(74, 94);
+      this.txtSourceStringNew.Location = new System.Drawing.Point(74, 93);
       this.txtSourceStringNew.Multiline = true;
       this.txtSourceStringNew.Name = "txtSourceStringNew";
       this.txtSourceStringNew.ReadOnly = true;
@@ -1163,7 +1195,7 @@
       this.label8.AutoSize = true;
       this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-      this.label8.Location = new System.Drawing.Point(10, 60);
+      this.label8.Location = new System.Drawing.Point(17, 60);
       this.label8.Name = "label8";
       this.label8.Size = new System.Drawing.Size(52, 13);
       this.label8.TabIndex = 37;
@@ -1335,23 +1367,6 @@
       this.label16.Text = "String ID :";
       this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
       // 
-      // headerFormatStyleData
-      // 
-      headerStateStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-      headerStateStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle7.ForeColor = System.Drawing.Color.Gainsboro;
-      this.headerFormatStyleData.Hot = headerStateStyle7;
-      headerStateStyle8.BackColor = System.Drawing.Color.Black;
-      headerStateStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle8.ForeColor = System.Drawing.Color.Gainsboro;
-      this.headerFormatStyleData.Normal = headerStateStyle8;
-      headerStateStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-      headerStateStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle9.ForeColor = System.Drawing.Color.Gainsboro;
-      headerStateStyle9.FrameColor = System.Drawing.Color.WhiteSmoke;
-      headerStateStyle9.FrameWidth = 2F;
-      this.headerFormatStyleData.Pressed = headerStateStyle9;
-      // 
       // OpenProjectModDialog
       // 
       this.OpenProjectModDialog.Filter = "Project (*.plugin)|*.plugin";
@@ -1363,11 +1378,6 @@
       // 
       this.dataSetTH.DataSetName = "DataSetTH";
       this.dataSetTH.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-      // 
-      // bindingT_PlugInStrings
-      // 
-      this.bindingT_PlugInStrings.DataMember = "T_PlugInStrings";
-      this.bindingT_PlugInStrings.DataSource = this.dataSetTH;
       // 
       // headerFormatStyleData2
       // 
@@ -1445,7 +1455,6 @@
       this.groupBoxSkyrim.ResumeLayout(false);
       this.groupBoxSkyrim.PerformLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dataSetTH)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.bindingT_PlugInStrings)).EndInit();
       this.ResumeLayout(false);
 
     }
@@ -1469,9 +1478,7 @@
     private System.Windows.Forms.TabPage tabPageILStrings;
     private System.Windows.Forms.Panel panelDetailString;
     private BrightIdeasSoftware.HeaderFormatStyle headerFormatStyleData;
-    private System.Windows.Forms.BindingSource bindingT_PlugInStrings;
     private Translator.DataSetTH dataSetTH;
-    private BrightIdeasSoftware.ObjectListView olvTHStrings;
     private BrightIdeasSoftware.HotItemStyle hotItemStyleStrings;
     private System.Windows.Forms.OpenFileDialog OpenProjectModDialog;
     private System.Windows.Forms.TextBox txtSourceStringNew;
@@ -1496,13 +1503,11 @@
     private System.Windows.Forms.TextBox txtStringSkyrimDescTarget;
     private System.Windows.Forms.Label label22;
     private System.Windows.Forms.TextBox txtTargetEditorID;
-    private BrightIdeasSoftware.ObjectListView olvTHDLStrings;
     private System.Windows.Forms.GroupBox groupBoxSkyrim;
     private System.Windows.Forms.GroupBox groupBoxSource;
     private System.Windows.Forms.GroupBox groupBoxTarget;
     private System.Windows.Forms.Label label10;
     private System.Windows.Forms.TextBox txtSkyrimRecordType;
-    private BrightIdeasSoftware.ObjectListView olvTHILStrings;
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.TextBox txtSkyrimRecordTypeTH;
     private System.Windows.Forms.Panel panelSearchInStringsList;
@@ -1517,14 +1522,12 @@
     private System.Windows.Forms.Panel panel5;
     private System.Windows.Forms.Panel panel7;
     private System.Windows.Forms.Panel panel6;
-    private System.Windows.Forms.Label label25;
     private System.Windows.Forms.TextBox txtSearchInSkyrimString;
     private System.Windows.Forms.Panel panel4;
     private BrightIdeasSoftware.FastObjectListView olvSkyrimDict;
     private System.Windows.Forms.Button btnSearchDict;
     private System.Windows.Forms.TabPage tabPageOther;
     private System.Windows.Forms.Panel panel9;
-    private BrightIdeasSoftware.ObjectListView olvTHOtherStrings;
     private System.Windows.Forms.Panel panelSearchInOtherStringsList;
     private System.Windows.Forms.TextBox txtSearchInOtherStringsList;
     private BrightIdeasSoftware.ObjectListView olvTHSkyrimSourceStrings;
@@ -1544,6 +1547,12 @@
     private BrightIdeasSoftware.HeaderFormatStyle headerFormatStyleData2;
     private System.Windows.Forms.CheckBox chkboxNewTextTranslate;
     private System.Windows.Forms.Label label12;
+    private PresentationControls.CheckBoxComboBox cbSearchInSkyrimString;
+    private BrightIdeasSoftware.FastObjectListView olvTHStrings;
+    private BrightIdeasSoftware.FastObjectListView olvTHDLStrings;
+    private BrightIdeasSoftware.FastObjectListView olvTHILStrings;
+    private BrightIdeasSoftware.FastObjectListView olvTHOtherStrings;
+    private System.Windows.Forms.ImageList imageListSortHeader;
 
   }
 }

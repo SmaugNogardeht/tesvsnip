@@ -160,7 +160,7 @@ namespace TESVSnip
         }
       }
 
-      if (String.IsNullOrWhiteSpace(pluginPath))
+      if (String.IsNullOrEmpty(pluginPath))
       {
         OpenModDialog.Multiselect = false;
         if (OpenModDialog.ShowDialog(this) == DialogResult.OK)
@@ -371,7 +371,7 @@ namespace TESVSnip
           wText.Write("EditorID"); wText.Write("\t");
           wText.Write("SourceStringIDHexa"); wText.Write("\t");
           wText.Write("SourceItemDesc"); wText.Write("\t");
-          wText.Write("TargerItemDesc"); wText.Write("\t");
+          wText.Write("TargetItemDesc"); wText.Write("\t");
           wText.Write("WriteStringInPlugIn");
           wText.Write(Environment.NewLine);
 
@@ -390,7 +390,7 @@ namespace TESVSnip
             wText.Write(Convert.ToString(row["EditorID"])); wText.Write("\t");
             wText.Write(Convert.ToString(row["SourceStringIDHexa"])); wText.Write("\t");
             wText.Write(Convert.ToString(row["SourceItemDesc"]).Replace(Environment.NewLine," ")); wText.Write("\t");
-            wText.Write(Convert.ToString(row["TargerItemDesc"]).Replace(Environment.NewLine," ")); wText.Write("\t");
+            wText.Write(Convert.ToString(row["TargetItemDesc"]).Replace(Environment.NewLine," ")); wText.Write("\t");
             wText.Write(Convert.ToBoolean(row["WriteStringInPlugIn"]));
             wText.Write(Environment.NewLine);
           }
@@ -462,7 +462,7 @@ namespace TESVSnip
       finally
       {
         Cursor.Current = Cursors.Default;
-        translatorHelperContent.AddToMemo("Elapsed time:" + TESVSnip.Functions.StopCounter() + Environment.NewLine);
+        translatorHelperContent.AddToMemo(Environment.NewLine + "Elapsed time:" + TESVSnip.Functions.StopCounter() );
       }
     }
 
@@ -471,16 +471,19 @@ namespace TESVSnip
     /// </summary>
     private void BuildSkyrimDictionnary_Click(object sender, EventArgs e)
     {
-      TESVSnip.Functions.StartCounter();
+      //TESVSnip.Functions.StartCounter();
 
       Cursor.Current = Cursors.WaitCursor;
       Update();
 
       try
       {
+        translatorHelperContent.ClearMemo();
         CloseProject_Click(sender, new EventArgs());
 
         Plugin p = new Plugin();
+
+        TESVSnip.Functions.StartCounter();
 
         string filePath = Path.Combine(Program.gameDataDir, @"Strings\Skyrim_" + translatorHelperContent.GetSourceLanguage() + ".strings");
         if (!File.Exists(filePath))
@@ -506,11 +509,11 @@ namespace TESVSnip
         p.ReloadStrings("Update", Path.Combine(Program.gameDataDir, "Strings"));
         translatorHelperContent.GenerateSkyrimStringsDictionary(Properties.Settings.Default.LocalizationName, p.Strings, "Strings", String.Empty);
         translatorHelperContent.GenerateSkyrimStringsDictionary(Properties.Settings.Default.LocalizationName, p.DLStrings, "DLStrings", String.Empty);
-        translatorHelperContent.GenerateSkyrimStringsDictionary(Properties.Settings.Default.LocalizationName, p.ILStrings, "ILStrings", "WRITE");
+        translatorHelperContent.GenerateSkyrimStringsDictionary(Properties.Settings.Default.LocalizationName, p.ILStrings, "ILStrings", String.Empty); //"WRITE");
 
         Properties.Settings.Default.LocalizationName = translatorHelperContent.GetTargetLanguage();
         p.ReloadStrings("Skyrim", Path.Combine(Program.gameDataDir, "Strings"));
-        translatorHelperContent.GenerateSkyrimStringsDictionary(Properties.Settings.Default.LocalizationName, p.Strings, "Strings", "CREATE");
+        translatorHelperContent.GenerateSkyrimStringsDictionary(Properties.Settings.Default.LocalizationName, p.Strings, "Strings", String.Empty); //"CREATE");
         translatorHelperContent.GenerateSkyrimStringsDictionary(Properties.Settings.Default.LocalizationName, p.DLStrings, "DLStrings", String.Empty);
         translatorHelperContent.GenerateSkyrimStringsDictionary(Properties.Settings.Default.LocalizationName, p.ILStrings, "ILStrings", String.Empty);
         p.ReloadStrings("Update", Path.Combine(Program.gameDataDir, "Strings"));
@@ -518,18 +521,27 @@ namespace TESVSnip
         translatorHelperContent.GenerateSkyrimStringsDictionary(Properties.Settings.Default.LocalizationName, p.DLStrings, "DLStrings", String.Empty);
         translatorHelperContent.GenerateSkyrimStringsDictionary(Properties.Settings.Default.LocalizationName, p.ILStrings, "ILStrings", "WRITE");
 
+        translatorHelperContent.AddToMemo("Load Strings in " + TESVSnip.Functions.StopCounter() + Environment.NewLine);
+
+        TESVSnip.Functions.StartCounter();
         PluginTree.UpdateRoots();
         OpenPlugin(Path.Combine(Program.gameDataDir, "Skyrim.esm"), false);
         PluginTree.SelectedRecord = PluginTree.TopRecord;
         translatorHelperContent.PluginTree = GetPluginFromNode(PluginTree.SelectedRecord);
+        translatorHelperContent.AddToMemo("Load Skyrim.esm in " + TESVSnip.Functions.StopCounter() + Environment.NewLine);
+
+        TESVSnip.Functions.StartCounter();
         translatorHelperContent.ProcessPlugIn(true, false, false, String.Empty);
+        translatorHelperContent.AddToMemo("Parse Skyrim.esm in " + TESVSnip.Functions.StopCounter() + Environment.NewLine);
         translatorHelperContent.GenerateSkyrimStringsDictionaryWithSkyrimReference();
+
+        CloseAll();
       }
       finally
       {
         Cursor.Current = Cursors.Default;
         CloseAll();
-        translatorHelperContent.AddToMemo("Elapsed time:" + TESVSnip.Functions.StopCounter() + Environment.NewLine);
+        //translatorHelperContent.AddToMemo("Elapsed time:" + TESVSnip.Functions.StopCounter() + Environment.NewLine);
       }
 
       MessageBox.Show(

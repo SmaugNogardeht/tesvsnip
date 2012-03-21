@@ -1,0 +1,285 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="T_PlugInStrings" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="T_PlugInStrings">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="GroupName" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordType" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordTypeTH" type="xs:string" minOccurs="0" />
+                <xs:element name="StringType" type="xs:string" minOccurs="0" />
+                <xs:element name="FormID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="FormIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SkyrimStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescSourceLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescTargetLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SourceStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="TargetStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetEditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="StringStatus" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatusSource" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatusTarget" type="xs:string" minOccurs="0" />
+                <xs:element name="WriteStringInPlugIn" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <T_PlugInStrings>
+    <GroupName>CONT - Container</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>150692</FormID>
+    <FormIDHexa>00024CA4</FormIDHexa>
+    <EditorID>Cupboard01</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>1414</SourceStringID>
+    <SourceStringIDHexa>00000586</SourceStringIDHexa>
+    <SourceItemDesc>Cupboard</SourceItemDesc>
+    <SourceItemDescOld />
+    <SourceEditorID>Cupboard01</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Placard</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>Cupboard01</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>CONT - Container</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>1079692</FormID>
+    <FormIDHexa>0010798C</FormIDHexa>
+    <EditorID>TGStrongbox</EditorID>
+    <SkyrimStringID>71207</SkyrimStringID>
+    <SkyrimStringIDHexa>00011627</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Strong Box</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Coffre</SkyrimItemDescTargetLang>
+    <SourceStringID>71207</SourceStringID>
+    <SourceStringIDHexa>00011627</SourceStringIDHexa>
+    <SourceItemDesc>Strong Box</SourceItemDesc>
+    <SourceItemDescOld />
+    <SourceEditorID>TGStrongbox</SourceEditorID>
+    <TargetStringID>71207</TargetStringID>
+    <TargetStringIDHexa>00011627</TargetStringIDHexa>
+    <TargetItemDesc>Coffre</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>TGStrongbox</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource />
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>CONT - Container</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>132697</FormID>
+    <FormIDHexa>00020659</FormIDHexa>
+    <EditorID>TreasFalmerChest</EditorID>
+    <SkyrimStringID>57218</SkyrimStringID>
+    <SkyrimStringIDHexa>0000DF82</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Chest</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Coffre</SkyrimItemDescTargetLang>
+    <SourceStringID>57218</SourceStringID>
+    <SourceStringIDHexa>0000DF82</SourceStringIDHexa>
+    <SourceItemDesc>Chest</SourceItemDesc>
+    <SourceItemDescOld />
+    <SourceEditorID>TreasFalmerChest</SourceEditorID>
+    <TargetStringID>57218</TargetStringID>
+    <TargetStringIDHexa>0000DF82</TargetStringIDHexa>
+    <TargetItemDesc>Coffre</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>TreasFalmerChest</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource />
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>DOOR - Door</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>786543</FormID>
+    <FormIDHexa>000C006F</FormIDHexa>
+    <EditorID>ImpDoorSingle01MinUse</EditorID>
+    <SkyrimStringID>36810</SkyrimStringID>
+    <SkyrimStringIDHexa>00008FCA</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Wooden Door</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Porte en bois</SkyrimItemDescTargetLang>
+    <SourceStringID>36810</SourceStringID>
+    <SourceStringIDHexa>00008FCA</SourceStringIDHexa>
+    <SourceItemDesc>Wooden Door</SourceItemDesc>
+    <SourceItemDescOld />
+    <SourceEditorID>ImpDoorSingle01MinUse</SourceEditorID>
+    <TargetStringID>36810</TargetStringID>
+    <TargetStringIDHexa>00008FCA</TargetStringIDHexa>
+    <TargetItemDesc>Porte en bois</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>ImpDoorSingle01MinUse</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource />
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>34</FormID>
+    <FormIDHexa>00000022</FormIDHexa>
+    <EditorID>DefaultAshPile2</EditorID>
+    <SkyrimStringID>16785</SkyrimStringID>
+    <SkyrimStringIDHexa>00004191</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Ash Pile</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Tas de cendres</SkyrimItemDescTargetLang>
+    <SourceStringID>16785</SourceStringID>
+    <SourceStringIDHexa>00004191</SourceStringIDHexa>
+    <SourceItemDesc>Ash Pile</SourceItemDesc>
+    <SourceItemDescOld>Search</SourceItemDescOld>
+    <SourceEditorID>DefaultAshPile2</SourceEditorID>
+    <TargetStringID>16785</TargetStringID>
+    <TargetStringIDHexa>00004191</TargetStringIDHexa>
+    <TargetItemDesc>Tas de cendres</TargetItemDesc>
+    <TargetItemDescOld>Fouiller</TargetItemDescOld>
+    <TargetEditorID>DefaultAshPile2</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource />
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>ACTI - Activator</GroupName>
+    <RecordType>RNAM</RecordType>
+    <RecordTypeTH>RNAM</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>34</FormID>
+    <FormIDHexa>00000022</FormIDHexa>
+    <EditorID>DefaultAshPile2</EditorID>
+    <SkyrimStringID>67530</SkyrimStringID>
+    <SkyrimStringIDHexa>000107CA</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Search</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Fouiller</SkyrimItemDescTargetLang>
+    <SourceStringID>67530</SourceStringID>
+    <SourceStringIDHexa>000107CA</SourceStringIDHexa>
+    <SourceItemDesc>Search</SourceItemDesc>
+    <SourceItemDescOld />
+    <SourceEditorID>DefaultAshPile2</SourceEditorID>
+    <TargetStringID>67530</TargetStringID>
+    <TargetStringIDHexa>000107CA</TargetStringIDHexa>
+    <TargetItemDesc>Fouiller</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DefaultAshPile2</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource />
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>RACE - Race / Creature Type</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>558996</FormID>
+    <FormIDHexa>00088794</FormIDHexa>
+    <EditorID>NordRaceVampire</EditorID>
+    <SkyrimStringID>44852</SkyrimStringID>
+    <SkyrimStringIDHexa>0000AF34</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Nord</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Nordique</SkyrimItemDescTargetLang>
+    <SourceStringID>44852</SourceStringID>
+    <SourceStringIDHexa>0000AF34</SourceStringIDHexa>
+    <SourceItemDesc>Nord</SourceItemDesc>
+    <SourceItemDescOld />
+    <SourceEditorID>NordRaceVampire</SourceEditorID>
+    <TargetStringID>44852</TargetStringID>
+    <TargetStringIDHexa>0000AF34</TargetStringIDHexa>
+    <TargetItemDesc>Nordique</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>NordRaceVampire</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource />
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>RACE - Race / Creature Type</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>558996</FormID>
+    <FormIDHexa>00088794</FormIDHexa>
+    <EditorID>NordRaceVampire</EditorID>
+    <SkyrimStringID>58536</SkyrimStringID>
+    <SkyrimStringIDHexa>0000E4A8</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang>Citizens of Skyrim, they are a tall and fair-haired people.  Strong and hardy, Nords are famous for their resistance to cold and their talent as warriors. They can use a Battlecry to make opponents flee.</SkyrimItemDescSourceLang>
+    <SkyrimItemDescTargetLang>Habitants de Bordeciel, ils sont grands et ont les cheveux blonds. Aussi forts qu'intrépides, les Nordiques sont célèbres pour leur résistance au froid et leur amour inné du combat. Ils peuvent se servir du Cri de guerre pour faire fuir leurs adversaires.</SkyrimItemDescTargetLang>
+    <SourceStringID>58536</SourceStringID>
+    <SourceStringIDHexa>0000E4A8</SourceStringIDHexa>
+    <SourceItemDesc>Citizens of Skyrim, they are a tall and fair-haired people.  Strong and hardy, Nords are famous for their resistance to cold and their talent as warriors. They can use a Battlecry to make opponents flee.</SourceItemDesc>
+    <SourceItemDescOld />
+    <SourceEditorID>NordRaceVampire</SourceEditorID>
+    <TargetStringID>58536</TargetStringID>
+    <TargetStringIDHexa>0000E4A8</TargetStringIDHexa>
+    <TargetItemDesc>Habitants de Bordeciel, ils sont grands et ont les cheveux blonds. Aussi forts qu'intrépides, les Nordiques sont célèbres pour leur résistance au froid et leur amour inné du combat. Ils peuvent se servir du Cri de guerre pour faire fuir leurs adversaires.</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>NordRaceVampire</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource />
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>RACE - Race / Creature Type</GroupName>
+    <RecordType>PHWT</RecordType>
+    <RecordTypeTH>PHWT</RecordTypeTH>
+    <StringType>OtherStrings</StringType>
+    <FormID>558996</FormID>
+    <FormIDHexa>00088794</FormIDHexa>
+    <EditorID>NordRaceVampire</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>š™&#x19;?&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;š™™&gt;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;</SourceItemDesc>
+    <SourceEditorID>NordRaceVampire</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc />
+    <TargetItemDescOld />
+    <TargetEditorID>NordRaceVampire</TargetEditorID>
+    <StringStatus>New</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget />
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+</NewDataSet>

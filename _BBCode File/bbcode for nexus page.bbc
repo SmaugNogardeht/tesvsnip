@@ -1,4 +1,4 @@
-[color=#FF8080][u][b]TESVSnip Skyrim Edition v4.2.4447.2 With Translator Helper 1.11 Release 1[/b][/u]
+[color=#FF8080][u][b]TESVSnip Skyrim Edition v4.2.4458.50 With Translator Helper 1.20 Release 2[/b][/u]
 [/color]
 
 [color=orange][u][b]TABLE OF CONTENTS[/b][/u][/color]
@@ -6,7 +6,8 @@
  * Credit
  * Version history
  * Information
- * Instalaltion
+ * How TH retrieve strings
+ * Installation
  * Extract Skyrim strings files
  * Build the dictionnary
  * Begin new translation
@@ -17,22 +18,41 @@
  * Update mod with new version
  * Edit long text
  * ToolTip
+ * CRTL+C / CTRL+V
  * Message and Debug
 
 [color=limegreen][b][u]CREDIT[/u][/b] [/color]
 
 [i][b][color=yellow]Please endorse it to thank them for their great work.[/color][/b][/i]
 
-Thank's to:
-
 [url=http://skyrim.nexusmods.com/downloads/file.php?id=5064]tesvsnip v 4.2 by figment[/url]
 [url=http://skyrim.nexusmods.com/downloads/file.php?id=11405]tesvsnip_utf-8 by leihao figment[/url]
 
+[color=limegreen][b][u]FUTUR PLAN[/u][/b] [/color]
+   - Localized TH
+   - Localized TESvSnip
+   - Import mod with external file strings
+
 [color=limegreen][b][u]VERSION HISTORY[/u][/b] [/color]
 
+[b]v1.20r2[/b]
+   - Fix GUI bugs
+   - Added a chapter: CRTL+C / CTRL+V
+
+[b]v1.20r1[/b] - [color=yellow][u][b]Very important :[/b] Rebuild dictionnary (approximately 10 mn)[/u][/color]
+Thank's to: Scharesoft, PlanB29, Zottel83
+   - Requires .NET Framework 3.5 SP1 instead .NET Framework 4.0
+   - Improved reading of records
+   - Improved identification of strings 
+   - Bugs fixed in dictionary generation
+   - Added a chapter on used method for retrieve string. Read it.
+   - A project is opened more quickly.
+   - Improved GUI (see chapter <Translator Helper - The screen>, subchapter <SCREEN 8 and 9>)
+   - Implementation sorting on columns (see chapter <Translator Helper - The screen>, subchapter <SCREEN 10>)
+
 [b]v1.11r1[/b] - [color=yellow][u][b]Very important :[/b] Rebuild dictionnary[/u][/color]
-   - Improve reading of records
-   - Improve UI (see chapter <Translator Helper - The screen>, subchapter <SCREEN 5,6 and 7>)
+   - Improved rading of records
+   - ImprovedUI (see chapter <Translator Helper - The screen>, subchapter <SCREEN 5,6 and 7>)
    - Bugs fix
    - Add fix of [url=http://skyrim.nexusmods.com/downloads/file.php?id=11405]tesvsnip_utf-8 by Leihao [/url]
    - Add 'Export to CSV'
@@ -85,9 +105,38 @@ I will complete the documentation later.
 
 Tank's for your comment.
 
+[color=limegreen][b][u]HOW TH RETRIEVE STRINGS[/u][/b] [/color]
+
+For the moment, TH don't handle mod with external strings (file in .STRINGS, .DLSTRINGS and .ILSTRINGS).
+	
+Also to choose translation, TH search by the type of record (ex: FULL) and the type of string (.STRINGS, .DLSTRINGS or .ILSTRINGS).
+For record type like FULL, no problem. The string type is always Strings.
+But, for sample, the record type ALFD is associated with the 3 types of strings.
+In the first time i analyzed it and for ALFD i found :
+
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_029.png[/img] 
+
+Also when TH search translation it will take in priority ILStrings because there's the largest number of occurrence.
+
+[u]Translation problem ?[/u]
+
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_030.png[/img] 
+ [b]1[/b] - No matches found
+ [b]2[/b] - A forgetting of Bethesda !!
+
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_034.png[/img] 
+Becareful. Sample
+ [b]1[/b] - Original strings is NORD, Translation findind is DRAUGR !!!!
+ [b]2[/b] - Get FormID
+ [b]3[/b] - CTRL+F. In search box write FormID, in combobox select FormID. Find.
+ [b]4[/b] - Double click
+ [b]5[/b] - View record in record list
+ [b]6[/b] - Select subrecord. Here is Setting value. For this mod, author has replacing DRAUGR setting with NORD. Also replace DRAUGR with NORD in translation box. Author perhaps correct bug ?
+ [b]7[/b] - If you want, you can uncheck for disable the translation writing.
+
 [color=limegreen][b][u]INSTALLATION[/u][/b] [/color]
 
-Requires .NET Framework 4.0 installed. 
+Requires .NET Framework 3.5 SP1 installed. 
 Only decompress archive. 
 
 [color=limegreen][b][u]EXTRACT SKYRIM STRINGS FILES[/u][/b] [/color]
@@ -170,7 +219,7 @@ Mouse on over line display string.
  [b]1[/b] - Translated text. Double click on it open speecial windows for long text
  [b]2[/b] - If not checking, string is not writing in mod. Why ? Because, i view in mod that record are used for parameter but record is identified like string id. This record should not be updated. But i can identified it. Also you can unchecked this record to prevent the update.
  [b]3[/b] - Old text after update
- [b]4[/b] - all possible string translation. I suggest the best translation, but in some cases there are several possibilities because some records are entries in the strings and dlstrings.
+ [b]4[/b] - All possible string translation. I suggest the best translation, but in some cases there are several possibilities because some records are entries in the Strings, DLStrings and/or ILStrings and i can determine the good strings.
 
 [b][u]SCREEN 5[/u][/b]
 
@@ -193,6 +242,27 @@ Text is strikeout after update if record has been deleted of mod.
 [b]2[/b] - Target text. 
    * S=String of mod is different from String Skyrim
    * M=String of mod is different from Old String of mod
+
+[b][u]SCREEN 8[/u][/b]
+
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_031.png[/img] 
+
+ [b]1[/b] - Choose a type of string for search
+ [b]2[/b] - Text to find
+ [b]3[/b] - Matching text is display in yellow
+ [b]4[/b] - Double click on column (source or target) replace text project.
+
+[b][u]SCREEN 9[/u][/b]
+
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_032.png[/img] 
+
+ [b]1[/b] - Double click on column (source or target) replace text in new text box.
+
+[b][u]SCREEN 10[/u][/b]
+
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_033.png[/img] 
+
+Can sort ascendent and descendent. Use click on column for change order. Don't use sub-menu.
 
 [color=limegreen][b][u]WRITE TRANSLATION[/u][/b] [/color]
 
@@ -250,6 +320,12 @@ See below
 See below
 [img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_020.png[/img] 
 
+[color=limegreen][b][u]CRTL+C / CTRL+V[/u][/b] [/color]
+
+See below
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_035.png[/img] 
+
+Check <Use Windows Clipboard>
 
 [color=limegreen][b][u]MESSAGE AND DEBUG[/u][/b] [/color]
 
