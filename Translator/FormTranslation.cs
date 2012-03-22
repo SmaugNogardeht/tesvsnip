@@ -23,6 +23,7 @@ namespace TESVSnip.Translator
       this.sourceLang = sourceLang;
       this.targetLang = targetLang;
       this.translateWithWeb = translateWithWeb;
+      this.Text = "Translation with Web Engine - " + sourceLang + " to " + targetLang;
     }
 
     public void SetTextBox(int selectionStart, int selectionLength, string sourceText)

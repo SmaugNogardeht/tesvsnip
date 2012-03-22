@@ -29,14 +29,14 @@
     private void InitializeComponent()
     {
       this.components = new System.ComponentModel.Container();
-      BrightIdeasSoftware.HeaderStateStyle headerStateStyle1 = new BrightIdeasSoftware.HeaderStateStyle();
-      BrightIdeasSoftware.HeaderStateStyle headerStateStyle2 = new BrightIdeasSoftware.HeaderStateStyle();
-      BrightIdeasSoftware.HeaderStateStyle headerStateStyle3 = new BrightIdeasSoftware.HeaderStateStyle();
+      BrightIdeasSoftware.HeaderStateStyle headerStateStyle7 = new BrightIdeasSoftware.HeaderStateStyle();
+      BrightIdeasSoftware.HeaderStateStyle headerStateStyle8 = new BrightIdeasSoftware.HeaderStateStyle();
+      BrightIdeasSoftware.HeaderStateStyle headerStateStyle9 = new BrightIdeasSoftware.HeaderStateStyle();
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TranslatorHelper));
-      PresentationControls.CheckBoxProperties checkBoxProperties1 = new PresentationControls.CheckBoxProperties();
-      BrightIdeasSoftware.HeaderStateStyle headerStateStyle4 = new BrightIdeasSoftware.HeaderStateStyle();
-      BrightIdeasSoftware.HeaderStateStyle headerStateStyle5 = new BrightIdeasSoftware.HeaderStateStyle();
-      BrightIdeasSoftware.HeaderStateStyle headerStateStyle6 = new BrightIdeasSoftware.HeaderStateStyle();
+      PresentationControls.CheckBoxProperties checkBoxProperties2 = new PresentationControls.CheckBoxProperties();
+      BrightIdeasSoftware.HeaderStateStyle headerStateStyle10 = new BrightIdeasSoftware.HeaderStateStyle();
+      BrightIdeasSoftware.HeaderStateStyle headerStateStyle11 = new BrightIdeasSoftware.HeaderStateStyle();
+      BrightIdeasSoftware.HeaderStateStyle headerStateStyle12 = new BrightIdeasSoftware.HeaderStateStyle();
       this.contextMenuStripBtnTranslate = new System.Windows.Forms.ContextMenuStrip(this.components);
       this.toolStripTranslateMenuItemSkyrimReplaceAll = new System.Windows.Forms.ToolStripMenuItem();
       this.toolStripTranslateMenuItemSkyrimFindEmpty = new System.Windows.Forms.ToolStripMenuItem();
@@ -297,20 +297,20 @@
       // 
       // headerFormatStyleData
       // 
-      headerStateStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-      headerStateStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle1.ForeColor = System.Drawing.Color.Gainsboro;
-      this.headerFormatStyleData.Hot = headerStateStyle1;
-      headerStateStyle2.BackColor = System.Drawing.Color.Black;
-      headerStateStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle2.ForeColor = System.Drawing.Color.Gainsboro;
-      this.headerFormatStyleData.Normal = headerStateStyle2;
-      headerStateStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-      headerStateStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle3.ForeColor = System.Drawing.Color.Gainsboro;
-      headerStateStyle3.FrameColor = System.Drawing.Color.WhiteSmoke;
-      headerStateStyle3.FrameWidth = 2F;
-      this.headerFormatStyleData.Pressed = headerStateStyle3;
+      headerStateStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+      headerStateStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle7.ForeColor = System.Drawing.Color.Gainsboro;
+      this.headerFormatStyleData.Hot = headerStateStyle7;
+      headerStateStyle8.BackColor = System.Drawing.Color.Black;
+      headerStateStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle8.ForeColor = System.Drawing.Color.Gainsboro;
+      this.headerFormatStyleData.Normal = headerStateStyle8;
+      headerStateStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+      headerStateStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle9.ForeColor = System.Drawing.Color.Gainsboro;
+      headerStateStyle9.FrameColor = System.Drawing.Color.WhiteSmoke;
+      headerStateStyle9.FrameWidth = 2F;
+      this.headerFormatStyleData.Pressed = headerStateStyle9;
       // 
       // hotItemStyleStrings
       // 
@@ -661,6 +661,7 @@
       this.cboxSourceLanguage.Name = "cboxSourceLanguage";
       this.cboxSourceLanguage.Size = new System.Drawing.Size(150, 21);
       this.cboxSourceLanguage.TabIndex = 40;
+      this.cboxSourceLanguage.SelectedIndexChanged += new System.EventHandler(this.cboxLanguage_SelectedIndexChanged);
       // 
       // edtPlugInAuthor
       // 
@@ -778,8 +779,8 @@
       // 
       // cbSearchInSkyrimString
       // 
-      checkBoxProperties1.ForeColor = System.Drawing.SystemColors.ControlText;
-      this.cbSearchInSkyrimString.CheckBoxProperties = checkBoxProperties1;
+      checkBoxProperties2.ForeColor = System.Drawing.SystemColors.ControlText;
+      this.cbSearchInSkyrimString.CheckBoxProperties = checkBoxProperties2;
       this.cbSearchInSkyrimString.DisplayMemberSingleItem = "";
       this.cbSearchInSkyrimString.FormattingEnabled = true;
       this.cbSearchInSkyrimString.Location = new System.Drawing.Point(3, 3);
@@ -1411,20 +1412,20 @@
       // 
       // headerFormatStyleData2
       // 
-      headerStateStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-      headerStateStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle4.ForeColor = System.Drawing.Color.Gainsboro;
-      this.headerFormatStyleData2.Hot = headerStateStyle4;
-      headerStateStyle5.BackColor = System.Drawing.Color.Gray;
-      headerStateStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle5.ForeColor = System.Drawing.Color.White;
-      this.headerFormatStyleData2.Normal = headerStateStyle5;
-      headerStateStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-      headerStateStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle6.ForeColor = System.Drawing.Color.Gainsboro;
-      headerStateStyle6.FrameColor = System.Drawing.Color.WhiteSmoke;
-      headerStateStyle6.FrameWidth = 2F;
-      this.headerFormatStyleData2.Pressed = headerStateStyle6;
+      headerStateStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+      headerStateStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle10.ForeColor = System.Drawing.Color.Gainsboro;
+      this.headerFormatStyleData2.Hot = headerStateStyle10;
+      headerStateStyle11.BackColor = System.Drawing.Color.Gray;
+      headerStateStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle11.ForeColor = System.Drawing.Color.White;
+      this.headerFormatStyleData2.Normal = headerStateStyle11;
+      headerStateStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+      headerStateStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle12.ForeColor = System.Drawing.Color.Gainsboro;
+      headerStateStyle12.FrameColor = System.Drawing.Color.WhiteSmoke;
+      headerStateStyle12.FrameWidth = 2F;
+      this.headerFormatStyleData2.Pressed = headerStateStyle12;
       // 
       // TranslatorHelper
       // 

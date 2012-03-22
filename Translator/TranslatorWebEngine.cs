@@ -41,10 +41,10 @@ namespace TESVSnip.Translator
     public Int32 CodePage { get { return _codePage; } set { _codePage = value; iso = System.Text.Encoding.GetEncoding(_codePage); } }
 
     private string _sourceLang = "en";
-    public string SourceLang { get { return _sourceLang; } set { _sourceLang=value; } }
+    public string SourceLang { get { return _sourceLang; } set { _sourceLang = GetTranslationCodeLang(value); } }
 
     private string _targetLang = "fr";
-    public string TargetLang { get { return _targetLang; } set { _targetLang=value; } }
+    public string TargetLang { get { return _targetLang; } set { _targetLang = GetTranslationCodeLang(value); } }
 
     /// <summary>
     /// Translates a text using screenscaping on Google Translate
@@ -102,5 +102,23 @@ namespace TESVSnip.Translator
       return translatedText;
     }
 
+    /// <summary>
+    ///GetTranslationCodeLang
+    /// </summary>
+    /// <param name="lang">Code language for translation</param>
+    /// <returns></returns>
+    private string GetTranslationCodeLang(string lang)
+    {
+      if (lang == "English") return "en";
+      if (lang == "Czech") return "cs";
+      if (lang == "French") return "fr";
+      if (lang == "German") return "de";
+      if (lang == "Italian") return "it";
+      if (lang == "Spanish") return "es";
+      if (lang == "Russian") return "ru";
+      if (lang == "Polish") return "pl";
+      if (lang == "Japanese") return "ja";
+      return "en";
+    }
   }
 }

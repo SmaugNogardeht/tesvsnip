@@ -851,7 +851,8 @@ namespace TESVSnip.Docking
     /// <param name="e"></param>
     private void btnTranslateSkyrimSrcWithWebEngine_Click(object sender, EventArgs e)
     {
-      TESVSnip.Translator.FormTranslation formTranslation = new TESVSnip.Translator.FormTranslation(TESVSnip.Encoding.CP1252.CodePage, "en", "fr", ref translateWithWeb);
+      TESVSnip.Translator.FormTranslation formTranslation =
+        new TESVSnip.Translator.FormTranslation(TESVSnip.Encoding.CP1252.CodePage, cboxSourceLanguage.Text, cboxTargetLanguage.Text, ref translateWithWeb);
       formTranslation.SetTextBox(txtStringSkyrimDescSource.SelectionStart, txtStringSkyrimDescSource.SelectionLength, txtStringSkyrimDescSource.Text);
       formTranslation.TranslateText();
       if (formTranslation.ShowDialog() == DialogResult.OK)
@@ -871,7 +872,7 @@ namespace TESVSnip.Docking
     /// <param name="e"></param>
     private void btnTranslatePlugInSrcWithWebEngine_Click(object sender, EventArgs e)
     {
-      TESVSnip.Translator.FormTranslation formTranslation = new TESVSnip.Translator.FormTranslation(TESVSnip.Encoding.CP1252.CodePage, "en", "fr", ref translateWithWeb);
+      TESVSnip.Translator.FormTranslation formTranslation = new TESVSnip.Translator.FormTranslation(TESVSnip.Encoding.CP1252.CodePage, cboxSourceLanguage.Text, cboxTargetLanguage.Text, ref translateWithWeb);
       formTranslation.SetTextBox(txtSourceStringNew.SelectionStart, txtSourceStringNew.SelectionLength, txtSourceStringNew.Text);
       formTranslation.TranslateText();
       if (formTranslation.ShowDialog() == DialogResult.OK)

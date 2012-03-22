@@ -441,7 +441,8 @@ namespace TESVSnip
     {
       uTF8ModeToolStripMenuItem.Checked = setUTF8;
       Properties.Settings.Default.UseUTF8 = uTF8ModeToolStripMenuItem.Checked;
-      uTF8ModeToolStripMenuItem_Click(this, new EventArgs());
+      Properties.Settings.Default.Save();
+      //uTF8ModeToolStripMenuItem_Click(this, new EventArgs());
     }
 
     
