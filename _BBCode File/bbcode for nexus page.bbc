@@ -18,6 +18,7 @@
  * Update mod with new version
  * Edit long text
  * ToolTip
+ * Web Translation with Google
  * CRTL+C / CTRL+V
  * Message and Debug
 
@@ -34,6 +35,10 @@
    - Import mod with external file strings
 
 [color=limegreen][b][u]VERSION HISTORY[/u][/b] [/color]
+
+[b]v1.30r1[/b]
+   - Fix bug in <Update Translation/New Text strings from an external '.esp.' file.> menu
+   - Added Web Translation with Google. See chapter
 
 [b]v1.20r2[/b]
    - Fix GUI bugs
@@ -326,6 +331,14 @@ See below
 [img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_035.png[/img] 
 
 Check <Use Windows Clipboard>
+
+[color=limegreen][b][u]WEB TRANSLATION WITH GOOGLE[/u][/b] [/color]
+
+Translate text or selected text.
+The first translation is slow due to time for connection.
+
+See below
+[img]http://piblf.perso.sfr.fr/skyrim/tesvsnip_th_036.png[/img] 
 
 [color=limegreen][b][u]MESSAGE AND DEBUG[/u][/b] [/color]
 

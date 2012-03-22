@@ -28,7 +28,7 @@ namespace TESVSnip
 
       itemTranslator.DropDownItems.Add("Process selected PlugIn", null, ProcessSelectedPlugin_Click);
       itemTranslator.DropDownItems.Add("Open PlugIn and process it", null, OpenPluginAndProcess_Click);
-      itemTranslator.DropDownItems.Add("Update translated strings from an external '.esp.' file (Replace all strings).", null, OpenPluginAndUpdateTargetStringsOnly_Click);
+      itemTranslator.DropDownItems.Add("Update Translation/New Text strings from an external '.esp.' file.", null, OpenPluginAndUpdateTargetStringsOnly_Click);
 
       itemTranslator.DropDownItems.Add(new ToolStripSeparator());
 

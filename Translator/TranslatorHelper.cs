@@ -21,6 +21,7 @@ using BrightIdeasSoftware;
 
 namespace TESVSnip.Docking
 {
+
   public partial class TranslatorHelper : BaseDockContent
   {
     internal MainView MainViewTH = null;
@@ -39,6 +40,7 @@ namespace TESVSnip.Docking
 
     private TESVSnip.Docking.ObjStrings lastOLVListItemObjStrings = null; //for update object in listview
     private OLVListItem lastOLVListItem = null;
+    private TranslatorWebEngine translateWithWeb = new TranslatorWebEngine();
 
     public string GetSourceLanguage() { return cboxSourceLanguage.Text; }
     public string GetTargetLanguage() { return cboxTargetLanguage.Text; }
@@ -328,7 +330,7 @@ namespace TESVSnip.Docking
     /// <param name="e"></param>
     private void chkboxNewTextTranslate_CheckedChanged(object sender, EventArgs e)
     {
-      if (!populateListViewStringsInProgress) 
+      if (!populateListViewStringsInProgress)
         SaveChange();
     }
 
@@ -398,7 +400,7 @@ namespace TESVSnip.Docking
     /// <param name="e"></param>
     private void txtTargetStringNew_KeyPress(object sender, KeyPressEventArgs e)
     {
-    //  e.Handled = e.KeyChar == 13;//block return key because there is no default button
+      //  e.Handled = e.KeyChar == 13;//block return key because there is no default button
       if (e.KeyChar == 13)
       {
         SaveChange();
@@ -489,42 +491,42 @@ namespace TESVSnip.Docking
       {
         //if (Convert.ToString(row["StringIDHexa"]) != 0.ToString("X8"))
         //{
-          stringType = Convert.ToString(row["StringType"]);
-          src = Convert.ToString(row["SourceTextValue"]);
-          trg = Convert.ToString(row["TargetTextValue"]);
+        stringType = Convert.ToString(row["StringType"]);
+        src = Convert.ToString(row["SourceTextValue"]);
+        trg = Convert.ToString(row["TargetTextValue"]);
 
-          typeOK = false;
-          check = cbSearchInSkyrimString.CheckBoxItems[0].Checked ;
-          if (check & stringType.ToUpper() == "STRINGS") typeOK = true;
+        typeOK = false;
+        check = cbSearchInSkyrimString.CheckBoxItems[0].Checked;
+        if (check & stringType.ToUpper() == "STRINGS") typeOK = true;
 
-          check = cbSearchInSkyrimString.CheckBoxItems[1].Checked;
-          if (check & stringType.ToUpper() == "DLSTRINGS") typeOK = true;
+        check = cbSearchInSkyrimString.CheckBoxItems[1].Checked;
+        if (check & stringType.ToUpper() == "DLSTRINGS") typeOK = true;
 
-          check = cbSearchInSkyrimString.CheckBoxItems[2].Checked;
-          if (check & stringType.ToUpper() == "ILSTRINGS") typeOK = true;
+        check = cbSearchInSkyrimString.CheckBoxItems[2].Checked;
+        if (check & stringType.ToUpper() == "ILSTRINGS") typeOK = true;
 
-          if (typeOK)
-          {
-            strAdded = false;
+        if (typeOK)
+        {
+          strAdded = false;
 
-            if (!String.IsNullOrEmpty(src))
-              if (src.IndexOf(txtSearchInSkyrimString.Text, StringComparison.InvariantCultureIgnoreCase) >= 0) 
+          if (!String.IsNullOrEmpty(src))
+            if (src.IndexOf(txtSearchInSkyrimString.Text, StringComparison.InvariantCultureIgnoreCase) >= 0)
+              strAdded = true;
+
+          if (!strAdded)
+            if (!String.IsNullOrEmpty(trg))
+              if (trg.IndexOf(txtSearchInSkyrimString.Text, StringComparison.InvariantCultureIgnoreCase) >= 0)
                 strAdded = true;
 
-            if (!strAdded)
-              if (!String.IsNullOrEmpty(trg))
-                if (trg.IndexOf(txtSearchInSkyrimString.Text, StringComparison.InvariantCultureIgnoreCase) >= 0) 
-                  strAdded = true;
-
-            if (strAdded)
-            {
-              listViewSkyrimDict.Add(new ObjStringsDict(
-               Convert.ToString(row["StringIDHexa"]),
-               Convert.ToString(row["SourceTextValue"]),
-               Convert.ToString(row["TargetTextValue"])
-               ));
-            }
+          if (strAdded)
+          {
+            listViewSkyrimDict.Add(new ObjStringsDict(
+             Convert.ToString(row["StringIDHexa"]),
+             Convert.ToString(row["SourceTextValue"]),
+             Convert.ToString(row["TargetTextValue"])
+             ));
           }
+        }
         //}
       }
 
@@ -628,7 +630,7 @@ namespace TESVSnip.Docking
       OLVListItem item = ((BrightIdeasSoftware.ObjectListView)sender).SelectedItem;
       TESVSnip.Docking.ObjStringsDict itemObj = (TESVSnip.Docking.ObjStringsDict)item.RowObject;
       int colIdx = (((BrightIdeasSoftware.ObjectListView)sender)).HotColumnIndex;
-      string colName = (((BrightIdeasSoftware.ObjectListView)sender)).Columns[colIdx].Name; 
+      string colName = (((BrightIdeasSoftware.ObjectListView)sender)).Columns[colIdx].Name;
 
       if (colName == "olvColSkyrimItemDescTargetLang")
       {
@@ -725,7 +727,6 @@ namespace TESVSnip.Docking
           olvTHStringsDLLastSortOrder = SortOrder.Ascending;
         else
           olvTHStringsDLLastSortOrder = olvTHStringsDLLastSortOrder == SortOrder.Ascending ? SortOrder.Descending : SortOrder.Ascending;
-
 
 
         CreateListViewColumnTH("Strings", colName, olvTHStringsDLLastSortOrder);
@@ -826,8 +827,6 @@ namespace TESVSnip.Docking
         else
           olvTHStringsOTHERLastSortOrder = olvTHStringsOTHERLastSortOrder == SortOrder.Ascending ? SortOrder.Descending : SortOrder.Ascending;
 
-
-
         CreateListViewColumnTH("Strings", colName, olvTHStringsOTHERLastSortOrder);
 
         olvTHStringsOTHERLastSelectedColumnName = colName;
@@ -843,6 +842,46 @@ namespace TESVSnip.Docking
       {
         tabPageOther.Text = "Other - 0 row";
       }
+    }
+
+    /// <summary>
+    /// btnTranslateSkyrimSrcWithWebEngine_Click
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void btnTranslateSkyrimSrcWithWebEngine_Click(object sender, EventArgs e)
+    {
+      TESVSnip.Translator.FormTranslation formTranslation = new TESVSnip.Translator.FormTranslation(TESVSnip.Encoding.CP1252.CodePage, "en", "fr", ref translateWithWeb);
+      formTranslation.SetTextBox(txtStringSkyrimDescSource.SelectionStart, txtStringSkyrimDescSource.SelectionLength, txtStringSkyrimDescSource.Text);
+      formTranslation.TranslateText();
+      if (formTranslation.ShowDialog() == DialogResult.OK)
+      {
+        txtTargetStringNew.Text = formTranslation.GeTextTranslated();
+        txtTargetStringNew_Validated(sender, e);
+      }
+      formTranslation.Close();
+      formTranslation.Dispose();
+      formTranslation = null;
+    }
+
+    /// <summary>
+    /// btnTranslatePlugInSrcWithWebEngine_Click
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void btnTranslatePlugInSrcWithWebEngine_Click(object sender, EventArgs e)
+    {
+      TESVSnip.Translator.FormTranslation formTranslation = new TESVSnip.Translator.FormTranslation(TESVSnip.Encoding.CP1252.CodePage, "en", "fr", ref translateWithWeb);
+      formTranslation.SetTextBox(txtSourceStringNew.SelectionStart, txtSourceStringNew.SelectionLength, txtSourceStringNew.Text);
+      formTranslation.TranslateText();
+      if (formTranslation.ShowDialog() == DialogResult.OK)
+      {
+        txtTargetStringNew.Text = formTranslation.GeTextTranslated();
+        txtTargetStringNew_Validated(sender, e);
+      }
+      formTranslation.Close();
+      formTranslation.Dispose();
+      formTranslation = null;
     }
 
 

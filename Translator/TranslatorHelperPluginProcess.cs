@@ -89,7 +89,6 @@ namespace TESVSnip.Docking
       DataRowView[] foundRowsStringsDict = null;
       string itemDesc;
       string stringID;
-      int countRowsDict;
       int countRows;
       string key;
       string sourceItemDesc;
@@ -108,7 +107,7 @@ namespace TESVSnip.Docking
         DataView dvSkyrimEsmDictByEditorIdRecordType = new DataView();
         dvSkyrimEsmDictByEditorIdRecordType.Table = tblSkyrimEsmDict;
         dvSkyrimEsmDictByEditorIdRecordType.Sort = "EditorID, RecordType";
-        
+
         DataView dvSkyrimEsmDictByEditorId = new DataView();
         dvSkyrimEsmDictByEditorId.Table = tblSkyrimEsmDict;
         dvSkyrimEsmDictByEditorId.Sort = "EditorID";
@@ -124,14 +123,6 @@ namespace TESVSnip.Docking
         DataView dvSkyrimEsmDictByFormIDHexa = new DataView();
         dvSkyrimEsmDictByFormIDHexa.Table = tblSkyrimEsmDict;
         dvSkyrimEsmDictByFormIDHexa.Sort = "FormIDHexa";
-
-        //DataView dvSkyrimEsmDictByRecordTypeStringIDHexa = new DataView();
-        //dvSkyrimEsmDictByRecordTypeStringIDHexa.Table = tblSkyrimEsmDict;
-        //dvSkyrimEsmDictByRecordTypeStringIDHexa.Sort = "RecordType, SkyrimStringIDHexa";
-
-        //DataView dvSkyrimEsmDictByStringIDHexa = new DataView();
-        //dvSkyrimEsmDictByStringIDHexa.Table = tblSkyrimEsmDict;
-        //dvSkyrimEsmDictByStringIDHexa.Sort = "SkyrimStringIDHexa";
 
         DataView dvPlugInByEditorID = new DataView();
         dvPlugInByEditorID.Table = tblPlugInStringsProject;
@@ -230,39 +221,39 @@ namespace TESVSnip.Docking
 
               //if (foundStringInStringsDic == false)
               //{
-                foundRowsEsmDict = dvSkyrimEsmDictByEditorIdRecordTypeStringType.FindRows(
-                  new object[] { Convert.ToString(rowPlugInLoad["EditorID"]), Convert.ToString(rowPlugInLoad["RecordType"]), Convert.ToString(rowPlugInLoad["StringType"]) });
+              foundRowsEsmDict = dvSkyrimEsmDictByEditorIdRecordTypeStringType.FindRows(
+                new object[] { Convert.ToString(rowPlugInLoad["EditorID"]), Convert.ToString(rowPlugInLoad["RecordType"]), Convert.ToString(rowPlugInLoad["StringType"]) });
 
-                if (foundRowsEsmDict.Length == 0)
+              if (foundRowsEsmDict.Length == 0)
                 foundRowsEsmDict = dvSkyrimEsmDictByEditorIdRecordType.FindRows(
                   new object[] { Convert.ToString(rowPlugInLoad["EditorID"]), Convert.ToString(rowPlugInLoad["RecordType"]) });
 
-                if (foundRowsEsmDict.Length == 0)
-                  foundRowsEsmDict = dvSkyrimEsmDictByEditorId.FindRows(new object[] { Convert.ToString(rowPlugInLoad["EditorID"]) });
+              if (foundRowsEsmDict.Length == 0)
+                foundRowsEsmDict = dvSkyrimEsmDictByEditorId.FindRows(new object[] { Convert.ToString(rowPlugInLoad["EditorID"]) });
 
-                if (foundRowsEsmDict.Length == 0)
-                  foundRowsEsmDict = dvSkyrimEsmDictByFormIdRecordTypeStringType.FindRows(
-                    new object[] { Convert.ToString(rowPlugInLoad["EditorID"]), Convert.ToString(rowPlugInLoad["RecordType"]), Convert.ToString(rowPlugInLoad["StringType"]) });
+              if (foundRowsEsmDict.Length == 0)
+                foundRowsEsmDict = dvSkyrimEsmDictByFormIdRecordTypeStringType.FindRows(
+                  new object[] { Convert.ToString(rowPlugInLoad["EditorID"]), Convert.ToString(rowPlugInLoad["RecordType"]), Convert.ToString(rowPlugInLoad["StringType"]) });
 
-                if (foundRowsEsmDict.Length == 0)
-                  foundRowsEsmDict = dvSkyrimEsmDictByFormIdRecordType.FindRows(
-                    new object[] { Convert.ToString(rowPlugInLoad["FormIDHexa"]), Convert.ToString(rowPlugInLoad["RecordType"]) });
+              if (foundRowsEsmDict.Length == 0)
+                foundRowsEsmDict = dvSkyrimEsmDictByFormIdRecordType.FindRows(
+                  new object[] { Convert.ToString(rowPlugInLoad["FormIDHexa"]), Convert.ToString(rowPlugInLoad["RecordType"]) });
 
-                if (foundRowsEsmDict.Length == 0)
-                  foundRowsEsmDict = dvSkyrimEsmDictByFormIDHexa.FindRows(new object[] { Convert.ToString(rowPlugInLoad["FormIDHexa"]) });
+              if (foundRowsEsmDict.Length == 0)
+                foundRowsEsmDict = dvSkyrimEsmDictByFormIDHexa.FindRows(new object[] { Convert.ToString(rowPlugInLoad["FormIDHexa"]) });
 
-                if (foundRowsEsmDict.Length == 1) 
+              if (foundRowsEsmDict.Length == 1)
+              {
+                foundStringInEsmDic = true;
+                //sourceItemDesc = Convert.ToString(foundRowsDict[0]["SkyrimItemDescSourceLang"]);
+                //targetItemDesc = Convert.ToString(foundRowsDict[0]["SkyrimItemDescTargetLang"]);
+                if (foundStringInStringsDic == false)
                 {
-                  foundStringInEsmDic = true;
-                  //sourceItemDesc = Convert.ToString(foundRowsDict[0]["SkyrimItemDescSourceLang"]);
-                  //targetItemDesc = Convert.ToString(foundRowsDict[0]["SkyrimItemDescTargetLang"]);
-                  if (foundStringInStringsDic == false)
-                  {
-                    skyrimItemDescSourceLang = Convert.ToString(foundRowsEsmDict[0]["SkyrimItemDescSourceLang"]);
-                    skyrimItemDescTargetLang = Convert.ToString(foundRowsEsmDict[0]["SkyrimItemDescTargetLang"]);
-                  }
-                //  foundStringInStringsDic = true;
+                  skyrimItemDescSourceLang = Convert.ToString(foundRowsEsmDict[0]["SkyrimItemDescSourceLang"]);
+                  skyrimItemDescTargetLang = Convert.ToString(foundRowsEsmDict[0]["SkyrimItemDescTargetLang"]);
                 }
+                //  foundStringInStringsDic = true;
+              }
               //}
 
               if (foundStringInStringsDic)
@@ -349,38 +340,43 @@ namespace TESVSnip.Docking
 
                 foundRow.BeginEdit();
 
-                foundRow["EditorID"] = Convert.ToString(rowPlugInLoad["EditorID"]);
-                foundRow["SkyrimStringID"] = 0;
-                foundRow["SkyrimStringIDHexa"] = 0.ToString("x8").ToUpperInvariant();
-                foundRow["SkyrimItemDescSourceLang"] = String.Empty;
-                foundRow["SkyrimItemDescTargetLang"] = String.Empty;
-                //foundRow["StringType"] = "OtherStrings";
-
-                if (Convert.ToString(foundRow["StringStatus"]) == "New")
+                if (!onlyTargetStrings)
                 {
-                  foundRow["TargetStringID"] = rowPlugInLoad["SourceStringID"];
-                  foundRow["TargetStringIDHexa"] = rowPlugInLoad["SourceStringIDHexa"];
-                  foundRow["TargetItemDesc"] = skyrimItemDescTargetLang; //rowPlugInLoad["SourceItemDesc"];
-                  foundRow["TargetItemDescOld"] = String.Empty;
-                  foundRow["TargetStringID"] = rowPlugInLoad["SourceStringID"];
+                  foundRow["EditorID"] = Convert.ToString(rowPlugInLoad["EditorID"]);
+                  foundRow["SkyrimStringID"] = 0;
+                  foundRow["SkyrimStringIDHexa"] = 0.ToString("x8").ToUpperInvariant();
+                  foundRow["SkyrimItemDescSourceLang"] = String.Empty;
+                  foundRow["SkyrimItemDescTargetLang"] = String.Empty;
+                  //foundRow["StringType"] = "OtherStrings";
+
+                  if (Convert.ToString(foundRow["StringStatus"]) == "New")
+                  {
+                    foundRow["TargetStringID"] = rowPlugInLoad["SourceStringID"];
+                    foundRow["TargetStringIDHexa"] = rowPlugInLoad["SourceStringIDHexa"];
+                    foundRow["TargetItemDesc"] = skyrimItemDescTargetLang; //rowPlugInLoad["SourceItemDesc"];
+                    foundRow["TargetItemDescOld"] = String.Empty;
+                    foundRow["TargetStringID"] = rowPlugInLoad["SourceStringID"];
+                  }
+                  else
+                  {
+                    foundRow["StringStatus"] = "=";
+                    if (Convert.ToString(foundRow["SourceItemDesc"]) != Convert.ToString(rowPlugInLoad["SourceItemDesc"]))
+                    {
+                      foundRow["SourceStringID"] = rowPlugInLoad["SourceStringID"];
+                      foundRow["SourceStringIDHexa"] = rowPlugInLoad["SourceStringIDHexa"];
+                      foundRow["SourceItemDescOld"] = foundRow["SourceItemDesc"];
+                      foundRow["SourceItemDesc"] = rowPlugInLoad["SourceItemDesc"];
+                      foundRow["TargetItemDescOld"] = foundRow["TargetItemDesc"];
+                      foundRow["StringStatus"] = "Upd";
+                    }
+                  }
                 }
                 else
                 {
-                  foundRow["StringStatus"] = "=";
-                  if (Convert.ToString(foundRow["SourceItemDesc"]) != Convert.ToString(rowPlugInLoad["SourceItemDesc"]))
-                  {
-                    foundRow["SourceStringID"] = rowPlugInLoad["SourceStringID"];
-                    foundRow["SourceStringIDHexa"] = rowPlugInLoad["SourceStringIDHexa"];
-                    foundRow["SourceItemDescOld"] = foundRow["SourceItemDesc"];
-                    foundRow["SourceItemDesc"] = rowPlugInLoad["SourceItemDesc"];
-                    foundRow["TargetItemDescOld"] = foundRow["TargetItemDesc"];
-                    foundRow["StringStatus"] = "Upd";
-                  }
+                  foundRow["TargetItemDescOld"] = foundRow["TargetItemDesc"];
+                  foundRow["TargetItemDesc"] = rowPlugInLoad["SourceItemDesc"];
                 }
-
                 foundRow.EndEdit();
-
-                //foundRow["StringStatus"] = "?";
               }
 
 
@@ -542,7 +538,7 @@ namespace TESVSnip.Docking
     /// <param name="onlyReadRecord"></param>
     /// <param name="filtersRecords"></param>
     /// <param name="onlyTargetStrings"></param>
-    private void ReadWritePlugInRecordsSubRecords(ref TESVSnip.GroupRecord groupRec, bool onlyReadRecord, bool filtersRecords, bool onlyTargetStrings,bool updateStringsPlugIn)
+    private void ReadWritePlugInRecordsSubRecords(ref TESVSnip.GroupRecord groupRec, bool onlyReadRecord, bool filtersRecords, bool onlyTargetStrings, bool updateStringsPlugIn)
     {
       TESVSnip.Record record;
       DataRow row;
@@ -690,7 +686,7 @@ namespace TESVSnip.Docking
                     if (subRec.Name == "RPLI") { subRecord_RPLI_Counter++; }
                     if (subRec.Name == "WNAM") { subRecord_WNAM_Counter++; }
                     if (subRec.Name == "PNAM") { subRecord_PNAM_Counter++; }
-                    
+
                     ArraySegment<byte> dataSegment = new ArraySegment<byte>(subRec.GetData(), 0x00, (int)subRec.Size);
                     bool isString = TypeConverter.IsLikelyString(dataSegment);
                     string itemDescTemp = String.Empty;
@@ -763,10 +759,10 @@ namespace TESVSnip.Docking
                         if (subRec.Name == "FNAM") recTypeTH = recType + ":" + subRecord_FNAM_ounter.ToString();
                         if (subRec.Name == "ITXT") recTypeTH = recType + ":" + subRecord_ITXT_Counter.ToString();
                         if (subRec.Name == "NNAM") recTypeTH = recType + ":" + subRecord_NNAM_Counter.ToString();
-                        if (subRec.Name == "PFO2") recTypeTH = recType + ":" + subRecord_PFO2_Counter.ToString();      
+                        if (subRec.Name == "PFO2") recTypeTH = recType + ":" + subRecord_PFO2_Counter.ToString();
                         if (subRec.Name == "DNAM") recTypeTH = recType + ":" + subRecord_DNAM_Counter.ToString();
                         if (subRec.Name == "TNAM") recTypeTH = recType + ":" + subRecord_TNAM_Counter.ToString();
-                        if (subRec.Name == "RPLI") recTypeTH = recType + ":" + subRecord_RPLI_Counter.ToString();                       
+                        if (subRec.Name == "RPLI") recTypeTH = recType + ":" + subRecord_RPLI_Counter.ToString();
                         if (subRec.Name == "WNAM") recTypeTH = recType + ":" + subRecord_WNAM_Counter.ToString();
                         if (subRec.Name == "PNAM") recTypeTH = recType + ":" + subRecord_PNAM_Counter.ToString();
 
@@ -862,7 +858,7 @@ namespace TESVSnip.Docking
         edtMemo.Text += Environment.NewLine + "****** ERROR in ReadPlugInRecords ******" + ex.Message + Environment.NewLine + ex.Source + Environment.NewLine + ex.StackTrace;
         return false;
       }
- 
+
     }
 
   }

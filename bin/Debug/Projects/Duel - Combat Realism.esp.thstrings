@@ -1,0 +1,2494 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="T_PlugInStrings" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="T_PlugInStrings">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="GroupName" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordType" type="xs:string" minOccurs="0" />
+                <xs:element name="RecordTypeTH" type="xs:string" minOccurs="0" />
+                <xs:element name="StringType" type="xs:string" minOccurs="0" />
+                <xs:element name="FormID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="FormIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SkyrimStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescSourceLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimItemDescTargetLang" type="xs:string" minOccurs="0" />
+                <xs:element name="SkyrimEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="SourceStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="SourceEditorID" msdata:Caption="EditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetStringID" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="TargetStringIDHexa" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetItemDesc" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetItemDescOld" type="xs:string" minOccurs="0" />
+                <xs:element name="TargetEditorID" type="xs:string" minOccurs="0" />
+                <xs:element name="StringStatus" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatusSource" type="xs:string" minOccurs="0" />
+                <xs:element name="CompareStatusTarget" type="xs:string" minOccurs="0" />
+                <xs:element name="WriteStringInPlugIn" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <T_PlugInStrings>
+    <GroupName>MGEF - Magic Effect</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33562696</FormID>
+    <FormIDHexa>02002048</FormIDHexa>
+    <EditorID>DuelMaceMagicEffect</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel Mace ME</SourceItemDesc>
+    <SourceEditorID>DuelMaceMagicEffect</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Massue (ME)</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelMaceMagicEffect</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MGEF - Magic Effect</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33564077</FormID>
+    <FormIDHexa>020025AD</FormIDHexa>
+    <EditorID>DuelWarHammerMagicEffect</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel WarHammer ME</SourceItemDesc>
+    <SourceEditorID>DuelWarHammerMagicEffect</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Marteau de guerre (ME)</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelWarHammerMagicEffect</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MGEF - Magic Effect</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>491675</FormID>
+    <FormIDHexa>0007809B</FormIDHexa>
+    <EditorID>StaggerAttackFFContact</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Stagger Attack</SourceItemDesc>
+    <SourceEditorID>StaggerAttackFFContact</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Attaque de déstabilisation</TargetItemDesc>
+    <TargetItemDescOld>Attaque déstabilisante</TargetItemDescOld>
+    <TargetEditorID>StaggerAttackFFContact</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MGEF - Magic Effect</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33562679</FormID>
+    <FormIDHexa>02002037</FormIDHexa>
+    <EditorID>DuelPush</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel Stagger Push</SourceItemDesc>
+    <SourceEditorID>DuelPush</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Déstabilisation</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelPush</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MGEF - Magic Effect</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33562698</FormID>
+    <FormIDHexa>0200204A</FormIDHexa>
+    <EditorID>DuelBattleAxeMagicEffect</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel BattleAxe ME</SourceItemDesc>
+    <SourceEditorID>DuelBattleAxeMagicEffect</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Hache d'armes (ME)</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelBattleAxeMagicEffect</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MGEF - Magic Effect</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33562681</FormID>
+    <FormIDHexa>02002039</FormIDHexa>
+    <EditorID>DuelSwordMagicEffect</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel Sword ME</SourceItemDesc>
+    <SourceEditorID>DuelSwordMagicEffect</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Epée (ME)</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelSwordMagicEffect</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MGEF - Magic Effect</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33562695</FormID>
+    <FormIDHexa>02002047</FormIDHexa>
+    <EditorID>DuelWarAxeMagicEffect</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel WarAxe ME</SourceItemDesc>
+    <SourceEditorID>DuelWarAxeMagicEffect</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Hache (ME)</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelWarAxeMagicEffect</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>MGEF - Magic Effect</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33562697</FormID>
+    <FormIDHexa>02002049</FormIDHexa>
+    <EditorID>DuelGreatSwordMagicEffect</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel GreatSword ME</SourceItemDesc>
+    <SourceEditorID>DuelGreatSwordMagicEffect</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Espadon (ME)</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelGreatSwordMagicEffect</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>SPEL - Spell</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33564082</FormID>
+    <FormIDHexa>020025B2</FormIDHexa>
+    <EditorID>DuelGreatSwordSpell</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel GreatSword Spell</SourceItemDesc>
+    <SourceEditorID>DuelGreatSwordSpell</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Espadon (Spell)</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelGreatSwordSpell</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>SPEL - Spell</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33564080</FormID>
+    <FormIDHexa>020025B0</FormIDHexa>
+    <EditorID>DuelMaceSpell</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel Mace Spell</SourceItemDesc>
+    <SourceEditorID>DuelMaceSpell</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Massue (Spell)</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelMaceSpell</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>SPEL - Spell</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33564078</FormID>
+    <FormIDHexa>020025AE</FormIDHexa>
+    <EditorID>DuelWarAxeSpell</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel WarAxe Spell</SourceItemDesc>
+    <SourceEditorID>DuelWarAxeSpell</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Hache (Spell)</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelWarAxeSpell</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>SPEL - Spell</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33562689</FormID>
+    <FormIDHexa>02002041</FormIDHexa>
+    <EditorID>DuelStaggerGreatSwordSpell</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel Stagger GreatSword</SourceItemDesc>
+    <SourceEditorID>DuelStaggerGreatSwordSpell</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel- Espadon - Déstabilisation</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelStaggerGreatSwordSpell</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>SPEL - Spell</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33564086</FormID>
+    <FormIDHexa>020025B6</FormIDHexa>
+    <EditorID>DuelWarHammerSpell</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel WarHammer Spell</SourceItemDesc>
+    <SourceEditorID>DuelWarHammerSpell</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Marteau de guerre (Spell)</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelWarHammerSpell</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>SPEL - Spell</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33562687</FormID>
+    <FormIDHexa>0200203F</FormIDHexa>
+    <EditorID>DuelStaggerMaceSpell</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel Stagger Mace</SourceItemDesc>
+    <SourceEditorID>DuelStaggerMaceSpell</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Massue - Déstabilisation</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelStaggerMaceSpell</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>SPEL - Spell</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33562691</FormID>
+    <FormIDHexa>02002043</FormIDHexa>
+    <EditorID>DuelStaggerBattleAxeSpell</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel Stagger Battle Axe</SourceItemDesc>
+    <SourceEditorID>DuelStaggerBattleAxeSpell</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Hache d'armes - Déstabilisation</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelStaggerBattleAxeSpell</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>SPEL - Spell</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33562693</FormID>
+    <FormIDHexa>02002045</FormIDHexa>
+    <EditorID>DuelStaggerWarHammerSpell</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel Stagger War Hammer</SourceItemDesc>
+    <SourceEditorID>DuelStaggerWarHammerSpell</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Mateau de guerre - Déstabilisation</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelStaggerWarHammerSpell</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>SPEL - Spell</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33562684</FormID>
+    <FormIDHexa>0200203C</FormIDHexa>
+    <EditorID>DuelStaggerWarAxeSpell</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel Stagger WarAxe</SourceItemDesc>
+    <SourceEditorID>DuelStaggerWarAxeSpell</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Hache - Déstabilisation</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelStaggerWarAxeSpell</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>SPEL - Spell</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33562683</FormID>
+    <FormIDHexa>0200203B</FormIDHexa>
+    <EditorID>DuelSwordSpell</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel Sword Spell</SourceItemDesc>
+    <SourceEditorID>DuelSwordSpell</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Epée (Spell)</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelSwordSpell</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>SPEL - Spell</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33562680</FormID>
+    <FormIDHexa>02002038</FormIDHexa>
+    <EditorID>DuelStaggerSwordSpell</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel Stagger Sword</SourceItemDesc>
+    <SourceEditorID>DuelStaggerSwordSpell</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Epée - Déstabilisation</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelStaggerSwordSpell</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>SPEL - Spell</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>33564084</FormID>
+    <FormIDHexa>020025B4</FormIDHexa>
+    <EditorID>DuelBattleAxeSpell</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Duel WarAxe Spell</SourceItemDesc>
+    <SourceEditorID>DuelBattleAxeSpell</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Duel - Hache d'armes (Spell)</TargetItemDesc>
+    <TargetItemDescOld />
+    <TargetEditorID>DuelBattleAxeSpell</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>NPC_ - NPC Package</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>582897</FormID>
+    <FormIDHexa>0008E4F1</FormIDHexa>
+    <EditorID>AlduinBase</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Alduin</SourceItemDesc>
+    <SourceEditorID>AlduinBase</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Alduin</TargetItemDesc>
+    <TargetItemDescOld>Alduin</TargetItemDescOld>
+    <TargetEditorID>AlduinBase</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>WRLD - World Space</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>60</FormID>
+    <FormIDHexa>0000003C</FormIDHexa>
+    <EditorID>Tamriel</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Tamriel</SourceItemDesc>
+    <SourceItemDescOld>LOOKUP FAILED!</SourceItemDescOld>
+    <SourceEditorID>Tamriel</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Bordeciel</TargetItemDesc>
+    <TargetItemDescOld>Bordeciel</TargetItemDescOld>
+    <TargetEditorID>Tamriel</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496459</FormID>
+    <FormIDHexa>0007934B</FormIDHexa>
+    <EditorID>Overdraw40</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Overdraw</SourceItemDesc>
+    <SourceEditorID>Overdraw40</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Découvert</TargetItemDesc>
+    <TargetItemDescOld>Découvert</TargetItemDescOld>
+    <TargetEditorID>Overdraw40</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496459</FormID>
+    <FormIDHexa>0007934B</FormIDHexa>
+    <EditorID>Overdraw40</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bows do 60% more damage.</SourceItemDesc>
+    <SourceEditorID>Overdraw40</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les arcs infligent 60 % de dégâts supplémentaires.</TargetItemDesc>
+    <TargetItemDescOld>Les arcs infligent 60 % de dégâts supplémentaires.</TargetItemDescOld>
+    <TargetEditorID>Overdraw40</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496456</FormID>
+    <FormIDHexa>00079348</FormIDHexa>
+    <EditorID>Barbarian60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Barbarian</SourceItemDesc>
+    <SourceEditorID>Barbarian60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Barbare</TargetItemDesc>
+    <TargetItemDescOld>Barbare</TargetItemDescOld>
+    <TargetEditorID>Barbarian60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496456</FormID>
+    <FormIDHexa>00079348</FormIDHexa>
+    <EditorID>Barbarian60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Two-Handed weapons do 80% more damage.</SourceItemDesc>
+    <SourceEditorID>Barbarian60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les armes à deux mains infligent 80 % de dégâts supplémentaires.</TargetItemDesc>
+    <TargetItemDescOld>Les armes à deux mains infligent 80 % de dégâts supplémentaires.</TargetItemDescOld>
+    <TargetEditorID>Barbarian60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496457</FormID>
+    <FormIDHexa>00079349</FormIDHexa>
+    <EditorID>Barbarian80</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Barbarian</SourceItemDesc>
+    <SourceEditorID>Barbarian80</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Barbare</TargetItemDesc>
+    <TargetItemDescOld>Barbare</TargetItemDescOld>
+    <TargetEditorID>Barbarian80</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496457</FormID>
+    <FormIDHexa>00079349</FormIDHexa>
+    <EditorID>Barbarian80</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Two-Handed weapons do twice as much damage.</SourceItemDesc>
+    <SourceEditorID>Barbarian80</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les armes à deux mains infligent deux fois plus de dégâts.</TargetItemDesc>
+    <TargetItemDescOld>Les armes à deux mains infligent deux fois plus de dégâts.</TargetItemDescOld>
+    <TargetEditorID>Barbarian80</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496451</FormID>
+    <FormIDHexa>00079343</FormIDHexa>
+    <EditorID>Armsman20</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Armsman</SourceItemDesc>
+    <SourceEditorID>Armsman20</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Homme d'armes</TargetItemDesc>
+    <TargetItemDescOld>Homme d'armes</TargetItemDescOld>
+    <TargetEditorID>Armsman20</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496451</FormID>
+    <FormIDHexa>00079343</FormIDHexa>
+    <EditorID>Armsman20</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>One-Handed weapons do 40% more damage.</SourceItemDesc>
+    <SourceEditorID>Armsman20</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les armes à une main infligent 40% de dégâts en plus.</TargetItemDesc>
+    <TargetItemDescOld>Les armes à une main infligent 40% de dégâts en plus.</TargetItemDescOld>
+    <TargetEditorID>Armsman20</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496450</FormID>
+    <FormIDHexa>00079342</FormIDHexa>
+    <EditorID>Armsman40</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Armsman</SourceItemDesc>
+    <SourceEditorID>Armsman40</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Homme d'armes</TargetItemDesc>
+    <TargetItemDescOld>Homme d'armes</TargetItemDescOld>
+    <TargetEditorID>Armsman40</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496450</FormID>
+    <FormIDHexa>00079342</FormIDHexa>
+    <EditorID>Armsman40</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>One-Handed weapons do 60% more damage.</SourceItemDesc>
+    <SourceEditorID>Armsman40</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les armes à une main infligent 60% de dégâts en plus.</TargetItemDesc>
+    <TargetItemDescOld>Les armes à une main infligent 60% de dégâts en plus.</TargetItemDescOld>
+    <TargetEditorID>Armsman40</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496452</FormID>
+    <FormIDHexa>00079344</FormIDHexa>
+    <EditorID>Armsman60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Armsman</SourceItemDesc>
+    <SourceEditorID>Armsman60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Homme d'armes</TargetItemDesc>
+    <TargetItemDescOld>Homme d'armes</TargetItemDescOld>
+    <TargetEditorID>Armsman60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496452</FormID>
+    <FormIDHexa>00079344</FormIDHexa>
+    <EditorID>Armsman60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>One-Handed weapons do 80% more damage.</SourceItemDesc>
+    <SourceEditorID>Armsman60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les armes à une main infligent 80% de dégâts en plus.</TargetItemDesc>
+    <TargetItemDescOld>Les armes à une main infligent 80% de dégâts en plus.</TargetItemDescOld>
+    <TargetEditorID>Armsman60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496453</FormID>
+    <FormIDHexa>00079345</FormIDHexa>
+    <EditorID>Armsman80</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Armsman</SourceItemDesc>
+    <SourceEditorID>Armsman80</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Homme d'armes</TargetItemDesc>
+    <TargetItemDescOld>Homme d'armes</TargetItemDescOld>
+    <TargetEditorID>Armsman80</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496453</FormID>
+    <FormIDHexa>00079345</FormIDHexa>
+    <EditorID>Armsman80</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>One-Handed weapons do twice as much damage.</SourceItemDesc>
+    <SourceEditorID>Armsman80</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les armes à une main infligent deux fois plus de dégâts.</TargetItemDesc>
+    <TargetItemDescOld>Les armes à une main infligent deux fois plus de dégâts.</TargetItemDescOld>
+    <TargetEditorID>Armsman80</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496472</FormID>
+    <FormIDHexa>00079358</FormIDHexa>
+    <EditorID>ShieldWall80</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Shield Wall</SourceItemDesc>
+    <SourceEditorID>ShieldWall80</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Défense impénétrable</TargetItemDesc>
+    <TargetItemDescOld>Défense impénétrable</TargetItemDescOld>
+    <TargetEditorID>ShieldWall80</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496472</FormID>
+    <FormIDHexa>00079358</FormIDHexa>
+    <EditorID>ShieldWall80</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Blocking is 50% more effective.</SourceItemDesc>
+    <SourceEditorID>ShieldWall80</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>La parade est plus efficace de 50 %.</TargetItemDesc>
+    <TargetItemDescOld>La parade est plus efficace de 40 %.</TargetItemDescOld>
+    <TargetEditorID>ShieldWall80</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496454</FormID>
+    <FormIDHexa>00079346</FormIDHexa>
+    <EditorID>Barbarian20</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Barbarian</SourceItemDesc>
+    <SourceEditorID>Barbarian20</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Barbare</TargetItemDesc>
+    <TargetItemDescOld>Barbare</TargetItemDescOld>
+    <TargetEditorID>Barbarian20</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496454</FormID>
+    <FormIDHexa>00079346</FormIDHexa>
+    <EditorID>Barbarian20</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Two-Handed weapons do 40% more damage.</SourceItemDesc>
+    <SourceEditorID>Barbarian20</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les armes à deux mains infligent 40 % de dégâts supplémentaires.</TargetItemDesc>
+    <TargetItemDescOld>Les armes à deux mains infligent 40 % de dégâts supplémentaires.</TargetItemDescOld>
+    <TargetEditorID>Barbarian20</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>764900</FormID>
+    <FormIDHexa>000BABE4</FormIDHexa>
+    <EditorID>Armsman00</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Armsman</SourceItemDesc>
+    <SourceEditorID>Armsman00</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Homme d'armes</TargetItemDesc>
+    <TargetItemDescOld>Homme d'armes</TargetItemDescOld>
+    <TargetEditorID>Armsman00</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>764900</FormID>
+    <FormIDHexa>000BABE4</FormIDHexa>
+    <EditorID>Armsman00</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>One-Handed weapons do 20% more damage.</SourceItemDesc>
+    <SourceEditorID>Armsman00</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les armes à une main infligent 20% de dégâts en plus.</TargetItemDesc>
+    <TargetItemDescOld>Les armes à une main infligent 20% de dégâts en plus.</TargetItemDescOld>
+    <TargetEditorID>Armsman00</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496471</FormID>
+    <FormIDHexa>00079357</FormIDHexa>
+    <EditorID>ShieldWall60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Shield Wall</SourceItemDesc>
+    <SourceEditorID>ShieldWall60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Défense impénétrable</TargetItemDesc>
+    <TargetItemDescOld>Défense impénétrable</TargetItemDescOld>
+    <TargetEditorID>ShieldWall60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496471</FormID>
+    <FormIDHexa>00079357</FormIDHexa>
+    <EditorID>ShieldWall60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Blocking is 40% more effective.</SourceItemDesc>
+    <SourceEditorID>ShieldWall60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>La parade est plus efficace de 40 %.</TargetItemDesc>
+    <TargetItemDescOld>La parade est plus efficace de 35 %.</TargetItemDescOld>
+    <TargetEditorID>ShieldWall60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496470</FormID>
+    <FormIDHexa>00079356</FormIDHexa>
+    <EditorID>ShieldWall40</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Shield wall</SourceItemDesc>
+    <SourceEditorID>ShieldWall40</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Défense impénétrable</TargetItemDesc>
+    <TargetItemDescOld>Défense impénétrable</TargetItemDescOld>
+    <TargetEditorID>ShieldWall40</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496470</FormID>
+    <FormIDHexa>00079356</FormIDHexa>
+    <EditorID>ShieldWall40</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Blocking is 30% more effective.</SourceItemDesc>
+    <SourceEditorID>ShieldWall40</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>La parade est plus efficace de 30 %.</TargetItemDesc>
+    <TargetItemDescOld>La parade est plus efficace de 30 %.</TargetItemDescOld>
+    <TargetEditorID>ShieldWall40</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496469</FormID>
+    <FormIDHexa>00079355</FormIDHexa>
+    <EditorID>ShieldWall20</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Shield Wall</SourceItemDesc>
+    <SourceEditorID>ShieldWall20</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Défense impénétrable</TargetItemDesc>
+    <TargetItemDescOld>Défense impénétrable</TargetItemDescOld>
+    <TargetEditorID>ShieldWall20</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496469</FormID>
+    <FormIDHexa>00079355</FormIDHexa>
+    <EditorID>ShieldWall20</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Blocking is 20% more effective.</SourceItemDesc>
+    <SourceEditorID>ShieldWall20</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>La parade est plus efficace de 20 %.</TargetItemDesc>
+    <TargetItemDescOld>La parade est plus efficace de 25 %.</TargetItemDescOld>
+    <TargetEditorID>ShieldWall20</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>794257</FormID>
+    <FormIDHexa>000C1E91</FormIDHexa>
+    <EditorID>Bladesman90</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bladesman</SourceItemDesc>
+    <SourceEditorID>Bladesman90</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Fine lame</TargetItemDesc>
+    <TargetItemDescOld>Fine lame</TargetItemDescOld>
+    <TargetEditorID>Bladesman90</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>794257</FormID>
+    <FormIDHexa>000C1E91</FormIDHexa>
+    <EditorID>Bladesman90</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Attacks with a swords have a 20% chance of doing even more critical damage.</SourceItemDesc>
+    <SourceEditorID>Bladesman90</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les attaques à l'épée ont 20 % de chances d'infliger des dégâts critiques.</TargetItemDesc>
+    <TargetItemDescOld>Les attaques à l'épée ont 20 % de chances d'infliger encore plus de dégâts critiques.</TargetItemDescOld>
+    <TargetEditorID>Bladesman90</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>794256</FormID>
+    <FormIDHexa>000C1E90</FormIDHexa>
+    <EditorID>Bladesman60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bladesman</SourceItemDesc>
+    <SourceEditorID>Bladesman60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Fine lame</TargetItemDesc>
+    <TargetItemDescOld>Fine lame</TargetItemDescOld>
+    <TargetEditorID>Bladesman60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>794256</FormID>
+    <FormIDHexa>000C1E90</FormIDHexa>
+    <EditorID>Bladesman60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Attacks with swords have a 15% chance of doing more critical damage.</SourceItemDesc>
+    <SourceEditorID>Bladesman60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les attaques à l'épée ont 15 % de chances d'infliger des dégâts critiques.</TargetItemDesc>
+    <TargetItemDescOld>Les attaques à l'épée ont 15 % de chances d'infliger plus de dégâts critiques.</TargetItemDescOld>
+    <TargetEditorID>Bladesman60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>390511</FormID>
+    <FormIDHexa>0005F56F</FormIDHexa>
+    <EditorID>Bladesman30</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bladesman</SourceItemDesc>
+    <SourceEditorID>Bladesman30</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Fine lame</TargetItemDesc>
+    <TargetItemDescOld>Fine lame</TargetItemDescOld>
+    <TargetEditorID>Bladesman30</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>390511</FormID>
+    <FormIDHexa>0005F56F</FormIDHexa>
+    <EditorID>Bladesman30</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Attacks with swords have a 10% chance of doing critical damage.</SourceItemDesc>
+    <SourceEditorID>Bladesman30</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les attaques à l'épée ont 10 % de chances d'infliger des dégâts critiques.</TargetItemDesc>
+    <TargetItemDescOld>Les attaques à l'épée ont 10 % de chances d'infliger des dégâts critiques.</TargetItemDescOld>
+    <TargetEditorID>Bladesman30</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>794259</FormID>
+    <FormIDHexa>000C1E93</FormIDHexa>
+    <EditorID>BoneBreaker90</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bone Breaker</SourceItemDesc>
+    <SourceEditorID>BoneBreaker90</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Brise-os</TargetItemDesc>
+    <TargetItemDescOld>Brise-os</TargetItemDescOld>
+    <TargetEditorID>BoneBreaker90</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>794259</FormID>
+    <FormIDHexa>000C1E93</FormIDHexa>
+    <EditorID>BoneBreaker90</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Attacks with maces ignore 75% of armor.</SourceItemDesc>
+    <SourceEditorID>BoneBreaker90</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les attaques à la masse d'armes ignorent 75 % de l'armure.</TargetItemDesc>
+    <TargetItemDescOld>Les attaques à la masse d'armes ignorent 75 % de l'armure.
+</TargetItemDescOld>
+    <TargetEditorID>BoneBreaker90</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>794258</FormID>
+    <FormIDHexa>000C1E92</FormIDHexa>
+    <EditorID>BoneBreaker60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bone Breaker</SourceItemDesc>
+    <SourceEditorID>BoneBreaker60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Brise-os</TargetItemDesc>
+    <TargetItemDescOld>Brise-os</TargetItemDescOld>
+    <TargetEditorID>BoneBreaker60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>794258</FormID>
+    <FormIDHexa>000C1E92</FormIDHexa>
+    <EditorID>BoneBreaker60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Attacks with maces ignore 50% of armor.</SourceItemDesc>
+    <SourceEditorID>BoneBreaker60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les attaques à la masse d'armes ignorent 50 % de l'armure.</TargetItemDesc>
+    <TargetItemDescOld>Les attaques à la masse d'armes ignorent 50 % de l'armure.
+</TargetItemDescOld>
+    <TargetEditorID>BoneBreaker60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>390546</FormID>
+    <FormIDHexa>0005F592</FormIDHexa>
+    <EditorID>BoneBreaker30</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bone Breaker</SourceItemDesc>
+    <SourceEditorID>BoneBreaker30</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Brise-os</TargetItemDesc>
+    <TargetItemDescOld>Brise-os</TargetItemDescOld>
+    <TargetEditorID>BoneBreaker30</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>390546</FormID>
+    <FormIDHexa>0005F592</FormIDHexa>
+    <EditorID>BoneBreaker30</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Attacks with maces ignore 25% of armor.</SourceItemDesc>
+    <SourceEditorID>BoneBreaker30</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les attaques à la masse d'armes ignorent 25 % de l'armure.</TargetItemDesc>
+    <TargetItemDescOld>Les attaques à la masse d'armes ignorent 25 % de l'armure.
+</TargetItemDescOld>
+    <TargetEditorID>BoneBreaker30</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496455</FormID>
+    <FormIDHexa>00079347</FormIDHexa>
+    <EditorID>Barbarian40</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Barbarian</SourceItemDesc>
+    <SourceEditorID>Barbarian40</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Barbare</TargetItemDesc>
+    <TargetItemDescOld>Barbare</TargetItemDescOld>
+    <TargetEditorID>Barbarian40</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496455</FormID>
+    <FormIDHexa>00079347</FormIDHexa>
+    <EditorID>Barbarian40</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Two-Handed weapons do 60% more damage.</SourceItemDesc>
+    <SourceEditorID>Barbarian40</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les armes à deux mains infligent 60 % de dégâts supplémentaires.</TargetItemDesc>
+    <TargetItemDescOld>Les armes à deux mains infligent 60 % de dégâts supplémentaires.</TargetItemDescOld>
+    <TargetEditorID>Barbarian40</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>1072924</FormID>
+    <FormIDHexa>00105F1C</FormIDHexa>
+    <EditorID>CriticalShot30</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Critical Shot</SourceItemDesc>
+    <SourceEditorID>CriticalShot30</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Tir critique</TargetItemDesc>
+    <TargetItemDescOld>Tir critique</TargetItemDescOld>
+    <TargetEditorID>CriticalShot30</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>1072924</FormID>
+    <FormIDHexa>00105F1C</FormIDHexa>
+    <EditorID>CriticalShot30</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>10% chance of a critical hit that does extra damage.</SourceItemDesc>
+    <SourceEditorID>CriticalShot30</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>+10 % de chances de porter un coup critique infligeant des dégâts supplémentaires.</TargetItemDesc>
+    <TargetItemDescOld>+10 % de chances de porter un coup critique infligeant des dégâts supplémentaires.</TargetItemDescOld>
+    <TargetEditorID>CriticalShot30</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>794261</FormID>
+    <FormIDHexa>000C1E95</FormIDHexa>
+    <EditorID>DeepWounds90</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Deep Wounds</SourceItemDesc>
+    <SourceEditorID>DeepWounds90</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Blessure fatale</TargetItemDesc>
+    <TargetItemDescOld>Blessure fatale</TargetItemDescOld>
+    <TargetEditorID>DeepWounds90</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>794261</FormID>
+    <FormIDHexa>000C1E95</FormIDHexa>
+    <EditorID>DeepWounds90</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Attacks with greatswords have a 20% chance of doing even more critical damage.</SourceItemDesc>
+    <SourceEditorID>DeepWounds90</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les attaques à la grande épée ont 20 % de chances d'infliger plus de dégâts critiques.</TargetItemDesc>
+    <TargetItemDescOld>Les attaques à la grande épée ont 20 % de chances d'infliger encore plus de dégâts critiques.</TargetItemDescOld>
+    <TargetEditorID>DeepWounds90</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>1072926</FormID>
+    <FormIDHexa>00105F1E</FormIDHexa>
+    <EditorID>CriticalShot60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Critical Shot</SourceItemDesc>
+    <SourceEditorID>CriticalShot60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Tir critique</TargetItemDesc>
+    <TargetItemDescOld>Tir critique</TargetItemDescOld>
+    <TargetEditorID>CriticalShot60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>1072926</FormID>
+    <FormIDHexa>00105F1E</FormIDHexa>
+    <EditorID>CriticalShot60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>15% chance of a critical hit that does 25% more critical damage.</SourceItemDesc>
+    <SourceEditorID>CriticalShot60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>+15 % de chances de porter un coup critique infligeant 25% de dégâts supplémentaires.</TargetItemDesc>
+    <TargetItemDescOld>15 % de chances de porter un coup critique infligeant davantage de dégâts supplémentaires.</TargetItemDescOld>
+    <TargetEditorID>CriticalShot60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>241539</FormID>
+    <FormIDHexa>0003AF83</FormIDHexa>
+    <EditorID>DeepWounds30</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Deep Wounds</SourceItemDesc>
+    <SourceEditorID>DeepWounds30</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Blessure fatale</TargetItemDesc>
+    <TargetItemDescOld>Blessure fatale</TargetItemDescOld>
+    <TargetEditorID>DeepWounds30</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>241539</FormID>
+    <FormIDHexa>0003AF83</FormIDHexa>
+    <EditorID>DeepWounds30</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Attacks with greatswords have a 10% chance of doing critical damage.</SourceItemDesc>
+    <SourceEditorID>DeepWounds30</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les attaques à la grande épée ont 10 % de chances d'infliger des dégâts critiques.</TargetItemDesc>
+    <TargetItemDescOld>Les attaques à la grande épée ont 10 % de chances d'infliger des dégâts critiques.</TargetItemDescOld>
+    <TargetEditorID>DeepWounds30</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>794262</FormID>
+    <FormIDHexa>000C1E96</FormIDHexa>
+    <EditorID>Skullcrusher60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Skullcrusher</SourceItemDesc>
+    <SourceEditorID>Skullcrusher60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Brise-crâne</TargetItemDesc>
+    <TargetItemDescOld>Brise-crâne</TargetItemDescOld>
+    <TargetEditorID>Skullcrusher60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>794262</FormID>
+    <FormIDHexa>000C1E96</FormIDHexa>
+    <EditorID>Skullcrusher60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Attacks with warhammers ignore 50% of armor.</SourceItemDesc>
+    <SourceEditorID>Skullcrusher60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les attaques au marteau de guerre ignorent 50 % de l'armure.</TargetItemDesc>
+    <TargetItemDescOld>Les attaques au marteau de guerre ignorent 50 % de l'armure.
+</TargetItemDescOld>
+    <TargetEditorID>Skullcrusher60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>241540</FormID>
+    <FormIDHexa>0003AF84</FormIDHexa>
+    <EditorID>Skullcrusher30</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Skullcrusher</SourceItemDesc>
+    <SourceEditorID>Skullcrusher30</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Brise-crâne</TargetItemDesc>
+    <TargetItemDescOld>Brise-crâne</TargetItemDescOld>
+    <TargetEditorID>Skullcrusher30</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>241540</FormID>
+    <FormIDHexa>0003AF84</FormIDHexa>
+    <EditorID>Skullcrusher30</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Attacks with warhammers ignore 25% of armor.</SourceItemDesc>
+    <SourceEditorID>Skullcrusher30</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les attaques au marteau de guerre ignorent 25 % de l'armure.</TargetItemDesc>
+    <TargetItemDescOld>Les attaques au marteau de guerre ignorent 25 % de l'armure.
+</TargetItemDescOld>
+    <TargetEditorID>Skullcrusher30</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>773294</FormID>
+    <FormIDHexa>000BCCAE</FormIDHexa>
+    <EditorID>ShieldWall00</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Shield Wall</SourceItemDesc>
+    <SourceEditorID>ShieldWall00</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Défense impénétrable</TargetItemDesc>
+    <TargetItemDescOld>Défense impénétrable</TargetItemDescOld>
+    <TargetEditorID>ShieldWall00</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>773294</FormID>
+    <FormIDHexa>000BCCAE</FormIDHexa>
+    <EditorID>ShieldWall00</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Blocking is 10% more effective.</SourceItemDesc>
+    <SourceEditorID>ShieldWall00</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>La parade est plus efficace de 10 %.</TargetItemDesc>
+    <TargetItemDescOld>La parade est plus efficace de 20 %.</TargetItemDescOld>
+    <TargetEditorID>ShieldWall00</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>764909</FormID>
+    <FormIDHexa>000BABED</FormIDHexa>
+    <EditorID>Overdraw00</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Overdraw</SourceItemDesc>
+    <SourceEditorID>Overdraw00</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Découvert</TargetItemDesc>
+    <TargetItemDescOld>Découvert</TargetItemDescOld>
+    <TargetEditorID>Overdraw00</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>764909</FormID>
+    <FormIDHexa>000BABED</FormIDHexa>
+    <EditorID>Overdraw00</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bows do 20% more damage.</SourceItemDesc>
+    <SourceEditorID>Overdraw00</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les arcs infligent 20 % de dégâts supplémentaires.</TargetItemDesc>
+    <TargetItemDescOld>Les arcs infligent 20 % de dégâts supplémentaires.</TargetItemDescOld>
+    <TargetEditorID>Overdraw00</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>764904</FormID>
+    <FormIDHexa>000BABE8</FormIDHexa>
+    <EditorID>Barbarian00</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Barbarian</SourceItemDesc>
+    <SourceEditorID>Barbarian00</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Barbare</TargetItemDesc>
+    <TargetItemDescOld>Barbare</TargetItemDescOld>
+    <TargetEditorID>Barbarian00</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>764904</FormID>
+    <FormIDHexa>000BABE8</FormIDHexa>
+    <EditorID>Barbarian00</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Two-Handed weapons do 20% more damage.</SourceItemDesc>
+    <SourceEditorID>Barbarian00</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les armes à deux mains infligent 20 % de dégâts supplémentaires.</TargetItemDesc>
+    <TargetItemDescOld>Les armes à deux mains infligent 20 % de dégâts supplémentaires.</TargetItemDescOld>
+    <TargetEditorID>Barbarian00</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496461</FormID>
+    <FormIDHexa>0007934D</FormIDHexa>
+    <EditorID>Overdraw60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Overdraw</SourceItemDesc>
+    <SourceEditorID>Overdraw60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Découvert</TargetItemDesc>
+    <TargetItemDescOld>Découvert</TargetItemDescOld>
+    <TargetEditorID>Overdraw60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496461</FormID>
+    <FormIDHexa>0007934D</FormIDHexa>
+    <EditorID>Overdraw60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bows do 80% more damage.</SourceItemDesc>
+    <SourceEditorID>Overdraw60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les arcs infligent 80 % de dégâts supplémentaires.</TargetItemDesc>
+    <TargetItemDescOld>Les arcs infligent 80 % de dégâts supplémentaires.</TargetItemDescOld>
+    <TargetEditorID>Overdraw60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496468</FormID>
+    <FormIDHexa>00079354</FormIDHexa>
+    <EditorID>Overdraw80</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Overdraw</SourceItemDesc>
+    <SourceEditorID>Overdraw80</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Découvert</TargetItemDesc>
+    <TargetItemDescOld>Découvert</TargetItemDescOld>
+    <TargetEditorID>Overdraw80</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496468</FormID>
+    <FormIDHexa>00079354</FormIDHexa>
+    <EditorID>Overdraw80</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bows do twice as much damage.</SourceItemDesc>
+    <SourceEditorID>Overdraw80</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les arcs infligent deux fois plus de dégâts.</TargetItemDesc>
+    <TargetItemDescOld>Les arcs infligent deux fois plus de dégâts.</TargetItemDescOld>
+    <TargetEditorID>Overdraw80</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>364392</FormID>
+    <FormIDHexa>00058F68</FormIDHexa>
+    <EditorID>DeflectArrows</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Deflect Arrows</SourceItemDesc>
+    <SourceEditorID>DeflectArrows</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Flèches déviées</TargetItemDesc>
+    <TargetItemDescOld>Flèches déviées</TargetItemDescOld>
+    <TargetEditorID>DeflectArrows</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>364392</FormID>
+    <FormIDHexa>00058F68</FormIDHexa>
+    <EditorID>DeflectArrows</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Arrows that hit the shield do no damage.</SourceItemDesc>
+    <SourceEditorID>DeflectArrows</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les flèches qui frappent le bouclier n'infligent pas de dégâts.</TargetItemDesc>
+    <TargetItemDescOld>Les flèches qui frappent le bouclier n'infligent pas de dégâts.</TargetItemDescOld>
+    <TargetEditorID>DeflectArrows</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>794260</FormID>
+    <FormIDHexa>000C1E94</FormIDHexa>
+    <EditorID>DeepWounds60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Deep Wounds</SourceItemDesc>
+    <SourceEditorID>DeepWounds60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Blessure fatale</TargetItemDesc>
+    <TargetItemDescOld>Blessure fatale</TargetItemDescOld>
+    <TargetEditorID>DeepWounds60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>794260</FormID>
+    <FormIDHexa>000C1E94</FormIDHexa>
+    <EditorID>DeepWounds60</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Attacks with greatswords have a 15% chance of doing more critical damage.</SourceItemDesc>
+    <SourceEditorID>DeepWounds60</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les attaques à la grande épée ont 15 % de chances d'infliger plus de dégâts critiques.</TargetItemDesc>
+    <TargetItemDescOld>Les attaques à la grande épée ont 15 % de chances d'infliger plus de dégâts critiques.</TargetItemDescOld>
+    <TargetEditorID>DeepWounds60</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>496458</FormID>
+    <FormIDHexa>0007934A</FormIDHexa>
+    <EditorID>Overdraw20</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Overdraw</SourceItemDesc>
+    <SourceEditorID>Overdraw20</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Découvert</TargetItemDesc>
+    <TargetItemDescOld>Découvert</TargetItemDescOld>
+    <TargetEditorID>Overdraw20</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>496458</FormID>
+    <FormIDHexa>0007934A</FormIDHexa>
+    <EditorID>Overdraw20</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Bows do 40% more damage.</SourceItemDesc>
+    <SourceEditorID>Overdraw20</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les arcs infligent 40 % de dégâts supplémentaires.</TargetItemDesc>
+    <TargetItemDescOld>Les arcs infligent 40 % de dégâts supplémentaires.</TargetItemDescOld>
+    <TargetEditorID>Overdraw20</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>1072927</FormID>
+    <FormIDHexa>00105F1F</FormIDHexa>
+    <EditorID>CriticalShot90</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Critical Shot</SourceItemDesc>
+    <SourceEditorID>CriticalShot90</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Tir critique</TargetItemDesc>
+    <TargetItemDescOld>Tir critique</TargetItemDescOld>
+    <TargetEditorID>CriticalShot90</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>1072927</FormID>
+    <FormIDHexa>00105F1F</FormIDHexa>
+    <EditorID>CriticalShot90</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>20% chance of a critical hit that does 50% more critical damage.</SourceItemDesc>
+    <SourceEditorID>CriticalShot90</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>+20 % de chances de porter un coup critique infligeant 50% de dégâts supplémentaires.</TargetItemDesc>
+    <TargetItemDescOld>+20 % de chances de porter un coup critique infligeant davantage de dégâts supplémentaires.</TargetItemDescOld>
+    <TargetEditorID>CriticalShot90</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>FULL</RecordType>
+    <RecordTypeTH>FULL</RecordTypeTH>
+    <StringType>Strings</StringType>
+    <FormID>794263</FormID>
+    <FormIDHexa>000C1E97</FormIDHexa>
+    <EditorID>Skullcrusher90</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Skullcrusher</SourceItemDesc>
+    <SourceEditorID>Skullcrusher90</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Brise-crâne</TargetItemDesc>
+    <TargetItemDescOld>Brise-crâne</TargetItemDescOld>
+    <TargetEditorID>Skullcrusher90</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+  <T_PlugInStrings>
+    <GroupName>PERK - Perk</GroupName>
+    <RecordType>DESC</RecordType>
+    <RecordTypeTH>DESC</RecordTypeTH>
+    <StringType>DLStrings</StringType>
+    <FormID>794263</FormID>
+    <FormIDHexa>000C1E97</FormIDHexa>
+    <EditorID>Skullcrusher90</EditorID>
+    <SkyrimStringID>0</SkyrimStringID>
+    <SkyrimStringIDHexa>00000000</SkyrimStringIDHexa>
+    <SkyrimItemDescSourceLang />
+    <SkyrimItemDescTargetLang />
+    <SourceStringID>0</SourceStringID>
+    <SourceStringIDHexa>00000000</SourceStringIDHexa>
+    <SourceItemDesc>Attacks with warhammers ignore 75% of armor.</SourceItemDesc>
+    <SourceEditorID>Skullcrusher90</SourceEditorID>
+    <TargetStringID>0</TargetStringID>
+    <TargetStringIDHexa>00000000</TargetStringIDHexa>
+    <TargetItemDesc>Les attaques au marteau de guerre ignorent 75 % de l'armure.</TargetItemDesc>
+    <TargetItemDescOld>Les attaques au marteau de guerre ignorent 75 % de l'armure.
+</TargetItemDescOld>
+    <TargetEditorID>Skullcrusher90</TargetEditorID>
+    <StringStatus>=</StringStatus>
+    <CompareStatusSource>S</CompareStatusSource>
+    <CompareStatusTarget>S/M</CompareStatusTarget>
+    <WriteStringInPlugIn>true</WriteStringInPlugIn>
+  </T_PlugInStrings>
+</NewDataSet>

@@ -79,6 +79,8 @@
     <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WeifenLuo.WinFormsUI.Docking">
@@ -449,6 +451,12 @@
     </Compile>
     <Compile Include="Translator\CheckBoxComboBox\Selection Wrappers\ListSelectionWrapper.cs" />
     <Compile Include="Translator\CheckBoxComboBox\Selection Wrappers\ObjectSelectionWrapper.cs" />
+    <Compile Include="Translator\FormTranslation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translator\FormTranslation.Designer.cs">
+      <DependentUpon>FormTranslation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Translator\TranslatorHelperObjClass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -495,6 +503,7 @@
     <Compile Include="Translator\TranslatorHelperPluginProcess.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Translator\TranslatorWebEngine.cs" />
     <EmbeddedResource Include="Controls\ballontooltip.resx">
       <DependentUpon>ballontooltip.cs</DependentUpon>
     </EmbeddedResource>
@@ -642,6 +651,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Translator\FormLongText.resx">
       <DependentUpon>FormLongText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translator\FormTranslation.resx">
+      <DependentUpon>FormTranslation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Translator\MessageForm\MessageForm.resx">
       <DependentUpon>MessageForm.cs</DependentUpon>
@@ -837,6 +849,7 @@
     <None Include="Resources\RolledBack.bmp" />
     <None Include="Resources\Save.bmp" />
     <None Include="Resources\Open.bmp" />
+    <None Include="Resources\language skills_16x16.png" />
     <Content Include="Resources\sort-ascending.png" />
     <Content Include="Resources\sort-descending.png" />
     <None Include="Resources\warning.ico" />

@@ -57,6 +57,7 @@ C:\Users\pl\Documents\Visual Studio 2010\Skyrim\TesVSnipWithTranslatorHelper\obj
 C:\Users\pl\Documents\Visual Studio 2010\Skyrim\TesVSnipWithTranslatorHelper\obj\Debug\TESVSnip.exe
 C:\Users\pl\Documents\Visual Studio 2010\Skyrim\TesVSnipWithTranslatorHelper\obj\Debug\TESVSnip.pdb
 C:\Users\pl\Documents\Visual Studio 2010\Skyrim\TesVSnipWithTranslatorHelper\obj\Debug\TESVSnip.Translator.FormLongText.resources
-C:\Users\pl\Documents\Visual Studio 2010\Skyrim\TesVSnipWithTranslatorHelper\obj\Debug\TESVSnip.Docking.TranslatorHelper.resources
 C:\Users\pl\Documents\Visual Studio 2010\Skyrim\TesVSnipWithTranslatorHelper\obj\Debug\Cliver.MessageForm.resources
 C:\Users\pl\Documents\Visual Studio 2010\Skyrim\TesVSnipWithTranslatorHelper\obj\Debug\PresentationControls.PopupComboBox.resources
+C:\Users\pl\Documents\Visual Studio 2010\Skyrim\TesVSnipWithTranslatorHelper\obj\Debug\TESVSnip.Docking.TranslatorHelper.resources
+C:\Users\pl\Documents\Visual Studio 2010\Skyrim\TesVSnipWithTranslatorHelper\obj\Debug\TESVSnip.Translator.FormTranslation.resources

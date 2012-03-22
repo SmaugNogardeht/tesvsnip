@@ -15,13 +15,13 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyCompany("TESVSnip")]
-[assembly: AssemblyTitle("TESVSnip Skyrim Edition v4.2.4458.50 With Translator Helper 1.20 Release 2")]
+[assembly: AssemblyTitle("TESVSnip Skyrim Edition v4.2.4458.50 With Translator Helper 1.30 Release 1")]
 [assembly: AssemblyCopyright("Copyright (c) 2012")]
 [assembly: AssemblyTrademark("All Rights Reserved")]
 [assembly: CLSCompliant(false)]
 [assembly: AssemblyDelaySign(false)]
 [assembly: AssemblyVersion("4.2.4458.50")]
 [assembly: AssemblyFileVersion("4.2.4458.50")]
-[assembly: AssemblyInformationalVersion("TESVSnip Skyrim Edition v4.2.4458.50 With Translator Helper 1.20 Release 2")]
+[assembly: AssemblyInformationalVersion("TESVSnip Skyrim Edition v4.2.4458.50 With Translator Helper 1.30 Release 1")]
 
 

@@ -29,14 +29,14 @@
     private void InitializeComponent()
     {
       this.components = new System.ComponentModel.Container();
-      BrightIdeasSoftware.HeaderStateStyle headerStateStyle7 = new BrightIdeasSoftware.HeaderStateStyle();
-      BrightIdeasSoftware.HeaderStateStyle headerStateStyle8 = new BrightIdeasSoftware.HeaderStateStyle();
-      BrightIdeasSoftware.HeaderStateStyle headerStateStyle9 = new BrightIdeasSoftware.HeaderStateStyle();
+      BrightIdeasSoftware.HeaderStateStyle headerStateStyle1 = new BrightIdeasSoftware.HeaderStateStyle();
+      BrightIdeasSoftware.HeaderStateStyle headerStateStyle2 = new BrightIdeasSoftware.HeaderStateStyle();
+      BrightIdeasSoftware.HeaderStateStyle headerStateStyle3 = new BrightIdeasSoftware.HeaderStateStyle();
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TranslatorHelper));
-      PresentationControls.CheckBoxProperties checkBoxProperties2 = new PresentationControls.CheckBoxProperties();
-      BrightIdeasSoftware.HeaderStateStyle headerStateStyle10 = new BrightIdeasSoftware.HeaderStateStyle();
-      BrightIdeasSoftware.HeaderStateStyle headerStateStyle11 = new BrightIdeasSoftware.HeaderStateStyle();
-      BrightIdeasSoftware.HeaderStateStyle headerStateStyle12 = new BrightIdeasSoftware.HeaderStateStyle();
+      PresentationControls.CheckBoxProperties checkBoxProperties1 = new PresentationControls.CheckBoxProperties();
+      BrightIdeasSoftware.HeaderStateStyle headerStateStyle4 = new BrightIdeasSoftware.HeaderStateStyle();
+      BrightIdeasSoftware.HeaderStateStyle headerStateStyle5 = new BrightIdeasSoftware.HeaderStateStyle();
+      BrightIdeasSoftware.HeaderStateStyle headerStateStyle6 = new BrightIdeasSoftware.HeaderStateStyle();
       this.contextMenuStripBtnTranslate = new System.Windows.Forms.ContextMenuStrip(this.components);
       this.toolStripTranslateMenuItemSkyrimReplaceAll = new System.Windows.Forms.ToolStripMenuItem();
       this.toolStripTranslateMenuItemSkyrimFindEmpty = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,6 +102,8 @@
       this.txtTargetStringOld = new System.Windows.Forms.TextBox();
       this.txtStringSkyrimDescTarget = new System.Windows.Forms.TextBox();
       this.groupBoxSource = new System.Windows.Forms.GroupBox();
+      this.btnTranslatePlugInSrcWithWebEngine = new System.Windows.Forms.Button();
+      this.btnTranslateSkyrimSrcWithWebEngine = new System.Windows.Forms.Button();
       this.olvTHSkyrimSourceStrings = new BrightIdeasSoftware.ObjectListView();
       this.label11 = new System.Windows.Forms.Label();
       this.label9 = new System.Windows.Forms.Label();
@@ -129,6 +131,7 @@
       this.OpenProjectModDialog = new System.Windows.Forms.OpenFileDialog();
       this.dataSetTH = new TESVSnip.Translator.DataSetTH();
       this.headerFormatStyleData2 = new BrightIdeasSoftware.HeaderFormatStyle();
+      this.toolTipTH = new System.Windows.Forms.ToolTip(this.components);
       this.contextMenuStripBtnTranslate.SuspendLayout();
       this.panelTranslatorTabControl.SuspendLayout();
       this.paneltabControlTranslatorHelper.SuspendLayout();
@@ -294,20 +297,20 @@
       // 
       // headerFormatStyleData
       // 
-      headerStateStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-      headerStateStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle7.ForeColor = System.Drawing.Color.Gainsboro;
-      this.headerFormatStyleData.Hot = headerStateStyle7;
-      headerStateStyle8.BackColor = System.Drawing.Color.Black;
-      headerStateStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle8.ForeColor = System.Drawing.Color.Gainsboro;
-      this.headerFormatStyleData.Normal = headerStateStyle8;
-      headerStateStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-      headerStateStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle9.ForeColor = System.Drawing.Color.Gainsboro;
-      headerStateStyle9.FrameColor = System.Drawing.Color.WhiteSmoke;
-      headerStateStyle9.FrameWidth = 2F;
-      this.headerFormatStyleData.Pressed = headerStateStyle9;
+      headerStateStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+      headerStateStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle1.ForeColor = System.Drawing.Color.Gainsboro;
+      this.headerFormatStyleData.Hot = headerStateStyle1;
+      headerStateStyle2.BackColor = System.Drawing.Color.Black;
+      headerStateStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle2.ForeColor = System.Drawing.Color.Gainsboro;
+      this.headerFormatStyleData.Normal = headerStateStyle2;
+      headerStateStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+      headerStateStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle3.ForeColor = System.Drawing.Color.Gainsboro;
+      headerStateStyle3.FrameColor = System.Drawing.Color.WhiteSmoke;
+      headerStateStyle3.FrameWidth = 2F;
+      this.headerFormatStyleData.Pressed = headerStateStyle3;
       // 
       // hotItemStyleStrings
       // 
@@ -775,8 +778,8 @@
       // 
       // cbSearchInSkyrimString
       // 
-      checkBoxProperties2.ForeColor = System.Drawing.SystemColors.ControlText;
-      this.cbSearchInSkyrimString.CheckBoxProperties = checkBoxProperties2;
+      checkBoxProperties1.ForeColor = System.Drawing.SystemColors.ControlText;
+      this.cbSearchInSkyrimString.CheckBoxProperties = checkBoxProperties1;
       this.cbSearchInSkyrimString.DisplayMemberSingleItem = "";
       this.cbSearchInSkyrimString.FormattingEnabled = true;
       this.cbSearchInSkyrimString.Location = new System.Drawing.Point(3, 3);
@@ -965,6 +968,7 @@
       this.txtTargetStringNew.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
       this.txtTargetStringNew.Size = new System.Drawing.Size(459, 44);
       this.txtTargetStringNew.TabIndex = 0;
+      this.txtTargetStringNew.Text = "txtTargetStringNew";
       this.txtTargetStringNew.DoubleClick += new System.EventHandler(this.txtTargetStringNew_DoubleClick);
       this.txtTargetStringNew.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTargetStringNew_KeyPress);
       this.txtTargetStringNew.Validating += new System.ComponentModel.CancelEventHandler(this.txtTargetStringNew_Validating);
@@ -1022,6 +1026,8 @@
       // 
       // groupBoxSource
       // 
+      this.groupBoxSource.Controls.Add(this.btnTranslatePlugInSrcWithWebEngine);
+      this.groupBoxSource.Controls.Add(this.btnTranslateSkyrimSrcWithWebEngine);
       this.groupBoxSource.Controls.Add(this.olvTHSkyrimSourceStrings);
       this.groupBoxSource.Controls.Add(this.label11);
       this.groupBoxSource.Controls.Add(this.label9);
@@ -1042,6 +1048,28 @@
       this.groupBoxSource.TabIndex = 1;
       this.groupBoxSource.TabStop = false;
       this.groupBoxSource.Text = "ORIGINAL :";
+      // 
+      // btnTranslatePlugInSrcWithWebEngine
+      // 
+      this.btnTranslatePlugInSrcWithWebEngine.Image = global::TESVSnip.Properties.Resources.language_skills_16x16;
+      this.btnTranslatePlugInSrcWithWebEngine.Location = new System.Drawing.Point(47, 113);
+      this.btnTranslatePlugInSrcWithWebEngine.Name = "btnTranslatePlugInSrcWithWebEngine";
+      this.btnTranslatePlugInSrcWithWebEngine.Size = new System.Drawing.Size(24, 24);
+      this.btnTranslatePlugInSrcWithWebEngine.TabIndex = 58;
+      this.toolTipTH.SetToolTip(this.btnTranslatePlugInSrcWithWebEngine, "Translate with Google text or selected text.");
+      this.btnTranslatePlugInSrcWithWebEngine.UseVisualStyleBackColor = true;
+      this.btnTranslatePlugInSrcWithWebEngine.Click += new System.EventHandler(this.btnTranslatePlugInSrcWithWebEngine_Click);
+      // 
+      // btnTranslateSkyrimSrcWithWebEngine
+      // 
+      this.btnTranslateSkyrimSrcWithWebEngine.Image = global::TESVSnip.Properties.Resources.language_skills_16x16;
+      this.btnTranslateSkyrimSrcWithWebEngine.Location = new System.Drawing.Point(47, 64);
+      this.btnTranslateSkyrimSrcWithWebEngine.Name = "btnTranslateSkyrimSrcWithWebEngine";
+      this.btnTranslateSkyrimSrcWithWebEngine.Size = new System.Drawing.Size(24, 24);
+      this.btnTranslateSkyrimSrcWithWebEngine.TabIndex = 57;
+      this.toolTipTH.SetToolTip(this.btnTranslateSkyrimSrcWithWebEngine, "Translate with Google text or selected text.");
+      this.btnTranslateSkyrimSrcWithWebEngine.UseVisualStyleBackColor = true;
+      this.btnTranslateSkyrimSrcWithWebEngine.Click += new System.EventHandler(this.btnTranslateSkyrimSrcWithWebEngine_Click);
       // 
       // olvTHSkyrimSourceStrings
       // 
@@ -1120,7 +1148,7 @@
       this.label7.AutoSize = true;
       this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label7.ForeColor = System.Drawing.Color.Purple;
-      this.label7.Location = new System.Drawing.Point(4, 109);
+      this.label7.Location = new System.Drawing.Point(4, 95);
       this.label7.Name = "label7";
       this.label7.Size = new System.Drawing.Size(65, 13);
       this.label7.TabIndex = 41;
@@ -1142,6 +1170,7 @@
       // 
       this.txtStringSkyrimDescSource.BackColor = System.Drawing.Color.White;
       this.txtStringSkyrimDescSource.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.txtStringSkyrimDescSource.HideSelection = false;
       this.txtStringSkyrimDescSource.Location = new System.Drawing.Point(74, 44);
       this.txtStringSkyrimDescSource.Multiline = true;
       this.txtStringSkyrimDescSource.Name = "txtStringSkyrimDescSource";
@@ -1156,6 +1185,7 @@
       this.txtSourceStringNew.BackColor = System.Drawing.Color.White;
       this.txtSourceStringNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.txtSourceStringNew.ForeColor = System.Drawing.Color.Black;
+      this.txtSourceStringNew.HideSelection = false;
       this.txtSourceStringNew.Location = new System.Drawing.Point(74, 93);
       this.txtSourceStringNew.Multiline = true;
       this.txtSourceStringNew.Name = "txtSourceStringNew";
@@ -1195,7 +1225,7 @@
       this.label8.AutoSize = true;
       this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-      this.label8.Location = new System.Drawing.Point(17, 60);
+      this.label8.Location = new System.Drawing.Point(17, 44);
       this.label8.Name = "label8";
       this.label8.Size = new System.Drawing.Size(52, 13);
       this.label8.TabIndex = 37;
@@ -1381,20 +1411,20 @@
       // 
       // headerFormatStyleData2
       // 
-      headerStateStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-      headerStateStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle10.ForeColor = System.Drawing.Color.Gainsboro;
-      this.headerFormatStyleData2.Hot = headerStateStyle10;
-      headerStateStyle11.BackColor = System.Drawing.Color.Gray;
-      headerStateStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle11.ForeColor = System.Drawing.Color.White;
-      this.headerFormatStyleData2.Normal = headerStateStyle11;
-      headerStateStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-      headerStateStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      headerStateStyle12.ForeColor = System.Drawing.Color.Gainsboro;
-      headerStateStyle12.FrameColor = System.Drawing.Color.WhiteSmoke;
-      headerStateStyle12.FrameWidth = 2F;
-      this.headerFormatStyleData2.Pressed = headerStateStyle12;
+      headerStateStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+      headerStateStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle4.ForeColor = System.Drawing.Color.Gainsboro;
+      this.headerFormatStyleData2.Hot = headerStateStyle4;
+      headerStateStyle5.BackColor = System.Drawing.Color.Gray;
+      headerStateStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle5.ForeColor = System.Drawing.Color.White;
+      this.headerFormatStyleData2.Normal = headerStateStyle5;
+      headerStateStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+      headerStateStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      headerStateStyle6.ForeColor = System.Drawing.Color.Gainsboro;
+      headerStateStyle6.FrameColor = System.Drawing.Color.WhiteSmoke;
+      headerStateStyle6.FrameWidth = 2F;
+      this.headerFormatStyleData2.Pressed = headerStateStyle6;
       // 
       // TranslatorHelper
       // 
@@ -1481,7 +1511,6 @@
     private Translator.DataSetTH dataSetTH;
     private BrightIdeasSoftware.HotItemStyle hotItemStyleStrings;
     private System.Windows.Forms.OpenFileDialog OpenProjectModDialog;
-    private System.Windows.Forms.TextBox txtSourceStringNew;
     private System.Windows.Forms.Label label7;
     private System.Windows.Forms.TextBox txtSourceStringOld;
     private System.Windows.Forms.Label label9;
@@ -1553,6 +1582,10 @@
     private BrightIdeasSoftware.FastObjectListView olvTHILStrings;
     private BrightIdeasSoftware.FastObjectListView olvTHOtherStrings;
     private System.Windows.Forms.ImageList imageListSortHeader;
+    private System.Windows.Forms.Button btnTranslateSkyrimSrcWithWebEngine;
+    private System.Windows.Forms.Button btnTranslatePlugInSrcWithWebEngine;
+    private System.Windows.Forms.ToolTip toolTipTH;
+    private System.Windows.Forms.TextBox txtSourceStringNew;
 
   }
 }
