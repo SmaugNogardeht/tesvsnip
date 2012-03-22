@@ -1,4 +1,4 @@
-[color=#FF8080][u][b]TESVSnip Skyrim Edition v4.2.4458.50 With Translator Helper 1.20 Release 2[/b][/u]
+[color=#FF8080][u][b]TESVSnip Skyrim Edition v4.2.4458.50 With Translator Helper 1.31 Release 1[/b][/u]
 [/color]
 
 [color=orange][u][b]TABLE OF CONTENTS[/b][/u][/color]
@@ -36,9 +36,12 @@
 
 [color=limegreen][b][u]VERSION HISTORY[/u][/b] [/color]
 
+[b]v1.31r1[/b]
+   - Fix code language in Web Translation with Google.
+
 [b]v1.30r1[/b]
    - Fix bug in <Update Translation/New Text strings from an external '.esp.' file.> menu
-   - Added Web Translation with Google. See chapter
+   - Added Web Translation with Google. See chapter.
 
 [b]v1.20r2[/b]
    - Fix GUI bugs
