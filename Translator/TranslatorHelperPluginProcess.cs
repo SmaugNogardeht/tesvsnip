@@ -797,11 +797,14 @@ namespace TESVSnip.Docking
                             //this.MainViewTH.UpdateMainTextByTH(subRec);
                             if (Convert.ToBoolean(foundRows[0]["WriteStringInPlugIn"]))
                             {
-                              byte[] itemName = TypeConverter.str2h(Convert.ToString(foundRows[0]["TargetItemDesc"]));
-                              subRec.SetData(itemName);
-                              countUpdatedRecords++;
-                              //this.MainViewTH.UpdateMainTextByTH(subRec);
-                              edtMemo.Text += Environment.NewLine + groupName + ": " + formIDHexa + " - " + recTypeTH;
+                              if (!String.IsNullOrEmpty(Convert.ToString(foundRows[0]["TargetItemDesc"]).Trim()))
+                              {
+                                byte[] itemName = TypeConverter.str2h(Convert.ToString(foundRows[0]["TargetItemDesc"]));
+                                subRec.SetData(itemName);
+                                countUpdatedRecords++;
+                                //this.MainViewTH.UpdateMainTextByTH(subRec);
+                                edtMemo.Text += Environment.NewLine + groupName + ": " + formIDHexa + " - " + recTypeTH;
+                              }
                             }
                           }
                         }
