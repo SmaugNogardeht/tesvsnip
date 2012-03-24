@@ -1,4 +1,4 @@
-[color=#FF8080][u][b]TESVSnip Skyrim Edition v4.2.4458.50 With Translator Helper 1.31 Release 1[/b][/u]
+[color=#FF8080][u][b]TESVSnip Skyrim Edition v4.2.4458.50 With Translator Helper 1.40 Release 1[/b][/u]
 [/color]
 
 [color=orange][u][b]TABLE OF CONTENTS[/b][/u][/color]
@@ -36,10 +36,18 @@
 
 [color=limegreen][b][u]VERSION HISTORY[/u][/b] [/color]
 
-[b]v1.31r1[/b]
+[u][b]v1.40r1[/b][/u]	
+Thank's to Scharesoft
+   - Fix: CTRL A/C/V in all forms
+   - Fix: Now, when you close a project, All lists are emptied
+   - Modification: When you write strings in mod, if text box 'New Text' in translation zone is empty, string isn't wrinting in plugin. 	
+Thank's to Zottel83
+   - Restore filter. Reduce the number of rows displayed when entering text in the filter area.
+
+[u][b]v1.31r1[/b][/u]
    - Fix code language in Web Translation with Google.
 
-[b]v1.30r1[/b]
+[u][b]v1.30r1[/b][/u]
    - Fix bug in <Update Translation/New Text strings from an external '.esp.' file.> menu
    - Added Web Translation with Google. See chapter.
 
@@ -47,7 +55,7 @@
    - Fix GUI bugs
    - Added a chapter: CRTL+C / CTRL+V
 
-[b]v1.20r1[/b] - [color=yellow][u][b]Very important :[/b] Rebuild dictionnary (approximately 10 mn)[/u][/color]
+[u][b]v1.20r1[/b][/u] - [color=yellow][u][b]Very important :[/b] Rebuild dictionnary (approximately 10 mn)[/u][/color]
 Thank's to: Scharesoft, PlanB29, Zottel83
    - Requires .NET Framework 3.5 SP1 instead .NET Framework 4.0
    - Improved reading of records
@@ -58,7 +66,7 @@ Thank's to: Scharesoft, PlanB29, Zottel83
    - Improved GUI (see chapter <Translator Helper - The screen>, subchapter <SCREEN 8 and 9>)
    - Implementation sorting on columns (see chapter <Translator Helper - The screen>, subchapter <SCREEN 10>)
 
-[b]v1.11r1[/b] - [color=yellow][u][b]Very important :[/b] Rebuild dictionnary[/u][/color]
+[u][b]v1.11r1[/b][/u] - [color=yellow][u][b]Very important :[/b] Rebuild dictionnary[/u][/color]
    - Improved rading of records
    - ImprovedUI (see chapter <Translator Helper - The screen>, subchapter <SCREEN 5,6 and 7>)
    - Bugs fix
@@ -66,9 +74,10 @@ Thank's to: Scharesoft, PlanB29, Zottel83
    - Add 'Export to CSV'
    - Before writing the strings in the mod see <Translator Helper - The screen>, subchapter <SCREEN 4> and read the point number 2
 
-[b]v1.10r2[/b] - Fix Twice menu display. Thank's Scharesoft.
+[u][b]v1.10r2[/b][/u] 
+   - Fix Twice menu display. Thank's Scharesoft.
 
-[b]v1.10r1[/b] - [color=yellow][u][b]Very important :[/b] Rebuild dictionnary[/u][/color]
+[u][[b]v1.10r1[/b][/u] - [color=yellow][u][b]Very important :[/b] Rebuild dictionnary[/u][/color]
 * Change log:
    - Big thank's at Leihao for utf-8 version
    - Add fix of [url=http://skyrim.nexusmods.com/downloads/file.php?id=11405]tesvsnip_utf-8 by Leihao [/url]
@@ -89,11 +98,21 @@ Thank's to: Scharesoft, PlanB29, Zottel83
    - Add possibility write/not write string in mod
    - Bugs fix
 
-[b]v1.04[/b] - Fix bugs
-v1.03 - Fix bugs - Add editor for long text (see chapter Edit long text) - Adding translated text in lists - Add tooltip (see chapter Tooltip)
-[b]v1.02[/b] - Saves the source and target languages selection
-[b]v1.01[/b] - Add search in dictionnary
-[b]v1.00[/b] - Initiale release
+[u][b]v1.04[/b][/u] 
+   - Fix bugs
+
+[u][b]v1.03[/b][/u]
+   - Fix bugs - Add editor for long text (see chapter Edit long text) - Adding translated text in lists - Add tooltip (see chapter Tooltip)
+
+[u][b]v1.02[/b][/u]
+   - Saves the source and target languages selection
+
+[u][b]v1.01[/b][/u] 
+   - Add search in dictionnary
+
+[u][b]v1.00[/b][/u] 
+   - Initiale release
+
 
 [color=limegreen][b][u]INFORMATION[/u][/b] [/color]
 
