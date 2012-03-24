@@ -275,27 +275,54 @@ namespace TESVSnip.Docking
     /// </summary>
     public void ClearProject()
     {
-      ClearTextBoxControl(this);
+      try
+      {
+        tblStrings.Rows.Clear();
+        tblPlugInStringsLoad.Rows.Clear();
+        tblPlugInStringsProject.Rows.Clear();
+        tblSkyrimStrings.Rows.Clear();
 
-      if (listViewStrings != null) listViewStrings.Clear();
-      olvTHStrings.Items.Clear();
+        ClearTextBoxControl(this);
 
-      if (listViewStringsDL != null) listViewStringsDL.Clear();
-      olvTHDLStrings.Items.Clear();
+        if (listViewStrings != null) listViewStrings.Clear();
+        olvTHStrings.Clear();
+        olvTHStrings.ClearObjects();
+        tabPageStrings.Text = "Name - 0 row";
 
-      if (listViewStringsIL != null) listViewStringsIL.Clear();
-      olvTHILStrings.Items.Clear();
+        if (listViewStringsDL != null) listViewStringsDL.Clear();
+        olvTHDLStrings.Items.Clear();
+        olvTHDLStrings.ClearObjects();
+        tabPageDLStrings.Text = "Description - 0 row";
 
-      if (listViewStringsOther != null) listViewStringsOther.Clear();
-      olvTHOtherStrings.Items.Clear();
+        if (listViewStringsIL != null) listViewStringsIL.Clear();
+        olvTHILStrings.Items.Clear();
+        olvTHILStrings.ClearObjects();
+        tabPageILStrings.Text = "Text - 0 row";
 
-      if (listViewOtherSkyrimStringsSource != null) listViewOtherSkyrimStringsSource.Clear();
-      olvTHSkyrimSourceStrings.Items.Clear();
+        if (listViewStringsOther != null) listViewStringsOther.Clear();
+        olvTHOtherStrings.Items.Clear();
+        olvTHOtherStrings.ClearObjects();
+        tabPageOther.Text = "Other - 0 row";
 
-      tblStrings.Rows.Clear();
-      tblPlugInStringsLoad.Rows.Clear();
-      tblPlugInStringsProject.Rows.Clear();
-      tblSkyrimStrings.Rows.Clear();
+        if (listViewOtherSkyrimStringsSource != null) listViewOtherSkyrimStringsSource.Clear();
+        olvTHOtherStrings.Items.Clear();
+        olvTHOtherStrings.ClearObjects();
+
+        if (listViewOtherSkyrimStringsSource != null) listViewOtherSkyrimStringsSource.Clear();
+        olvTHSkyrimSourceStrings.Items.Clear();
+        olvTHSkyrimSourceStrings.ClearObjects();
+
+        if (listViewOtherSkyrimStringsTarget != null) listViewOtherSkyrimStringsTarget.Clear();
+        olvTHSkyrimTargetStrings.Items.Clear();
+        olvTHSkyrimTargetStrings.ClearObjects();
+
+        BuildAllStringsListView();
+      }
+      catch (Exception ex)
+      {
+        edtMemo.Text += Environment.NewLine + ex.Message;
+      }
+
     }
 
     /// <summary>
