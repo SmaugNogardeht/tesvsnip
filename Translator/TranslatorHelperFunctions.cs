@@ -399,6 +399,7 @@ namespace TESVSnip.Docking
         ovl.AlwaysGroupByColumn = primarySortColumn;
         ovl.AlwaysGroupBySortOrder = SortOrder.Ascending;
         ovl.SortGroupItemsByPrimaryColumn = true;
+        ovl.GridLines = true;
         if (secondarySortColumn != null)
         {
           ovl.SecondarySortColumn = secondarySortColumn;
@@ -668,6 +669,8 @@ namespace TESVSnip.Docking
       listViewOtherSkyrimStringsTarget.Clear();
       olvTHSkyrimSourceStrings.Items.Clear();
       olvTHSkyrimTargetStrings.Items.Clear();
+      olvTHSkyrimSourceStrings.ClearObjects();
+      olvTHSkyrimTargetStrings.ClearObjects();
 
       if (tblSkyrimEsmDict.Rows.Count == 0) return;
 
