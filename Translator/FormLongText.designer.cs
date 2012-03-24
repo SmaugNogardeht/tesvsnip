@@ -32,15 +32,15 @@
       this.panel1 = new System.Windows.Forms.Panel();
       this.btnCancel = new System.Windows.Forms.Button();
       this.panel2 = new System.Windows.Forms.Panel();
+      this.panel4 = new System.Windows.Forms.Panel();
       this.txtLongTextTarget = new System.Windows.Forms.TextBox();
+      this.panel3 = new System.Windows.Forms.Panel();
       this.txtLongTextSource = new System.Windows.Forms.TextBox();
       this.btnCopy = new System.Windows.Forms.Button();
-      this.panel3 = new System.Windows.Forms.Panel();
-      this.panel4 = new System.Windows.Forms.Panel();
       this.panel1.SuspendLayout();
       this.panel2.SuspendLayout();
-      this.panel3.SuspendLayout();
       this.panel4.SuspendLayout();
+      this.panel3.SuspendLayout();
       this.SuspendLayout();
       // 
       // btnSave
@@ -87,6 +87,15 @@
       this.panel2.Size = new System.Drawing.Size(838, 617);
       this.panel2.TabIndex = 3;
       // 
+      // panel4
+      // 
+      this.panel4.Controls.Add(this.txtLongTextTarget);
+      this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.panel4.Location = new System.Drawing.Point(0, 287);
+      this.panel4.Name = "panel4";
+      this.panel4.Size = new System.Drawing.Size(838, 330);
+      this.panel4.TabIndex = 4;
+      // 
       // txtLongTextTarget
       // 
       this.txtLongTextTarget.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -96,6 +105,16 @@
       this.txtLongTextTarget.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
       this.txtLongTextTarget.Size = new System.Drawing.Size(838, 330);
       this.txtLongTextTarget.TabIndex = 1;
+      // 
+      // panel3
+      // 
+      this.panel3.Controls.Add(this.txtLongTextSource);
+      this.panel3.Controls.Add(this.btnCopy);
+      this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+      this.panel3.Location = new System.Drawing.Point(0, 0);
+      this.panel3.Name = "panel3";
+      this.panel3.Size = new System.Drawing.Size(838, 287);
+      this.panel3.TabIndex = 3;
       // 
       // txtLongTextSource
       // 
@@ -119,25 +138,6 @@
       this.btnCopy.UseVisualStyleBackColor = true;
       this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
       // 
-      // panel3
-      // 
-      this.panel3.Controls.Add(this.txtLongTextSource);
-      this.panel3.Controls.Add(this.btnCopy);
-      this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-      this.panel3.Location = new System.Drawing.Point(0, 0);
-      this.panel3.Name = "panel3";
-      this.panel3.Size = new System.Drawing.Size(838, 287);
-      this.panel3.TabIndex = 3;
-      // 
-      // panel4
-      // 
-      this.panel4.Controls.Add(this.txtLongTextTarget);
-      this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.panel4.Location = new System.Drawing.Point(0, 287);
-      this.panel4.Name = "panel4";
-      this.panel4.Size = new System.Drawing.Size(838, 330);
-      this.panel4.TabIndex = 4;
-      // 
       // FormLongText
       // 
       this.AcceptButton = this.btnSave;
@@ -149,6 +149,7 @@
       this.Controls.Add(this.panel2);
       this.Controls.Add(this.panel1);
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+      this.KeyPreview = true;
       this.Name = "FormLongText";
       this.ShowInTaskbar = false;
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -156,10 +157,10 @@
       this.TopMost = true;
       this.panel1.ResumeLayout(false);
       this.panel2.ResumeLayout(false);
-      this.panel3.ResumeLayout(false);
-      this.panel3.PerformLayout();
       this.panel4.ResumeLayout(false);
       this.panel4.PerformLayout();
+      this.panel3.ResumeLayout(false);
+      this.panel3.PerformLayout();
       this.ResumeLayout(false);
 
     }
