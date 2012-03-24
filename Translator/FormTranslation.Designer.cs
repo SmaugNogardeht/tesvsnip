@@ -36,8 +36,8 @@
       this.panel2 = new System.Windows.Forms.Panel();
       this.panel3 = new System.Windows.Forms.Panel();
       this.panel1 = new System.Windows.Forms.Panel();
-      this.btnCancel = new System.Windows.Forms.Button();
       this.btnTranslate = new System.Windows.Forms.Button();
+      this.btnCancel = new System.Windows.Forms.Button();
       this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
       this.panel4.SuspendLayout();
       this.panel2.SuspendLayout();
@@ -119,18 +119,6 @@
       this.panel1.Size = new System.Drawing.Size(887, 51);
       this.panel1.TabIndex = 4;
       // 
-      // btnCancel
-      // 
-      this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-      this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btnCancel.ForeColor = System.Drawing.Color.Red;
-      this.btnCancel.Location = new System.Drawing.Point(772, 3);
-      this.btnCancel.Name = "btnCancel";
-      this.btnCancel.Size = new System.Drawing.Size(108, 45);
-      this.btnCancel.TabIndex = 1;
-      this.btnCancel.Text = "Cancel";
-      this.btnCancel.UseVisualStyleBackColor = true;
-      // 
       // btnTranslate
       // 
       this.btnTranslate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -143,6 +131,18 @@
       this.btnTranslate.UseVisualStyleBackColor = true;
       this.btnTranslate.Click += new System.EventHandler(this.btnTranslate_Click);
       // 
+      // btnCancel
+      // 
+      this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+      this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.btnCancel.ForeColor = System.Drawing.Color.Red;
+      this.btnCancel.Location = new System.Drawing.Point(772, 3);
+      this.btnCancel.Name = "btnCancel";
+      this.btnCancel.Size = new System.Drawing.Size(108, 45);
+      this.btnCancel.TabIndex = 1;
+      this.btnCancel.Text = "Cancel";
+      this.btnCancel.UseVisualStyleBackColor = true;
+      // 
       // FormTranslation
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,6 +152,7 @@
       this.Controls.Add(this.panel2);
       this.Controls.Add(this.panel1);
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+      this.KeyPreview = true;
       this.Name = "FormTranslation";
       this.ShowInTaskbar = false;
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
