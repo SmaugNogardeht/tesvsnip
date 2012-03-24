@@ -73,17 +73,7 @@ namespace TESVSnip.Docking
 
       CreateListViewColumn();
 
-      CreateListViewColumnTH("Strings", "EditorID", SortOrder.None);
-      olvTHStringsLastSortOrder = SortOrder.Ascending; olvTHStringsLastSelectedColumnName = "EditorID";
-
-      CreateListViewColumnTH("DLStrings", "EditorID", SortOrder.None);
-      olvTHStringsDLLastSortOrder = SortOrder.Ascending; olvTHStringsDLLastSelectedColumnName = "EditorID";
-
-      CreateListViewColumnTH("ILStrings", "EditorID", SortOrder.None);
-      olvTHStringsILLastSortOrder = SortOrder.Ascending; olvTHStringsILLastSelectedColumnName = "EditorID";
-
-      CreateListViewColumnTH("OtherStrings", "EditorID", SortOrder.None);
-      olvTHStringsOTHERLastSortOrder = SortOrder.Ascending; olvTHStringsOTHERLastSelectedColumnName = "EditorID";
+      BuildAllStringsListView();
 
       PopulateLanguageComboBox();
 
@@ -99,6 +89,23 @@ namespace TESVSnip.Docking
       cbSearchInSkyrimString.CheckBoxItems[0].Checked = true;
     }
 
+    /// <summary>
+    /// BuildAllStringsListView
+    /// </summary>
+    private void BuildAllStringsListView()
+    {
+      CreateListViewColumnTH("Strings", "EditorID", SortOrder.None);
+      olvTHStringsLastSortOrder = SortOrder.Ascending; olvTHStringsLastSelectedColumnName = "EditorID";
+
+      CreateListViewColumnTH("DLStrings", "EditorID", SortOrder.None);
+      olvTHStringsDLLastSortOrder = SortOrder.Ascending; olvTHStringsDLLastSelectedColumnName = "EditorID";
+
+      CreateListViewColumnTH("ILStrings", "EditorID", SortOrder.None);
+      olvTHStringsILLastSortOrder = SortOrder.Ascending; olvTHStringsILLastSelectedColumnName = "EditorID";
+
+      CreateListViewColumnTH("OtherStrings", "EditorID", SortOrder.None);
+      olvTHStringsOTHERLastSortOrder = SortOrder.Ascending; olvTHStringsOTHERLastSelectedColumnName = "EditorID";
+    }
     /// <summary>
     /// SetTextAsString
     /// </summary>
